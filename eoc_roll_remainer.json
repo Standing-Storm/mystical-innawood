@@ -1,0 +1,56 @@
+[
+   {
+     "type": "recipe",
+     "activity_level": "LIGHT_EXERCISE",
+     "name": "magical research: forest (easy)",
+     "id": "magical_research_druid_easy",
+     "description": "Conduct magical research related to the basic manipulation of plants and living things.  Performing it without the ability to sense magic will accomplish little.",
+     "category": "CC_RESEARCH",
+     "subcategory": "CSC_RESEARCH_SPELLS",
+     "difficulty": 2,
+     "time": "12 h",
+     "autolearn": false,
+     "tools": [ [ [ "magical_research_volume_2", -1 ] ] ],
+     "components": [ [ [ "paper", 10 ], [ "magical_research_paper_2", 5 ] ] ],
+    "book_learn": {
+      "magical_research_volume_2": { "skill_level": 2, "hidden": true }
+    },
+      "skill_used": "spellcraft",
+     "flags": [ "SECRET", "BLIND_HARD" ],
+     "proficiencies": [ 
+        { "proficiency": "prof_magical_research", "required": true },
+        { "proficiency": "prof_magical_theory", "required": false }
+     ],
+     "result_eocs": [ 
+       {
+         "id": "EOC_GET_DRUID_SPELLS_EASY", 
+          "condition": {
+             "and": [
+                { "u_has_effect": "magical_musings" },
+                { "roll_contested": { "math": [ "rng( u_val('intelligence'), u_skill('spellcraft') )"] },
+                  "difficulty": 13
+                }
+             ]
+          },
+         "effect": [
+           { "u_roll_remainder": 
+             [
+                "druid_veggrasp",
+                "druid_woodshaft",
+                "summon_cats",
+                "fungicide",
+                "druidic_healing",
+                "create_rune_druid",
+                "druid_bandage_heal",
+                "druid_bramble_spear"
+             ],
+             "type": "spell"
+           }
+         ],
+         "false_effect": [
+           { "u_message": "There's something on the edge of your mind, but you can't quite grasp it.  You've hit a dead end.  You'll need to try a new approach.", "type": "bad" }
+        ]
+      } 
+    ]
+   }
+]
