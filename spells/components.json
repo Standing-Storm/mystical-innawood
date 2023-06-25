@@ -1,0 +1,18 @@
+[
+  {
+     "id": "spell_components_druid_arrow",
+     "type": "requirement",
+     "//": "Sticks for the for the Harvest of the Hunter spell",
+     "components": [
+       [ [ "pine_bough", 2 ], [ "stick", 2 ], ["stick_long", 2], ["stick_fiber", 2] ]
+    ]
+   },
+   {
+   "id": "spell_components_druid_bramble_spear",
+   "type": "requirement",
+    "//": "Sticks to turn into a bramble spear",
+   "components": [
+    [ [ "stick", 1 ], ["stick_long", 1] ]
+    ]
+  }
+]

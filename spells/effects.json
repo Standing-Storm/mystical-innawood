@@ -1,0 +1,19 @@
+[
+  {
+		"type": "effect_type",
+		"id": "effect_tremorsense",
+		"name": [ "Tremorsense" ],
+		"desc": [ "You can feel them moving around you." ],
+		"apply_message": "",
+		"remove_message": "You can no longer discern the vibrations of the living earth.",
+		"rating": "good",
+		"max_duration": "30 minutes", 
+		"enchantments": [
+			{
+				"values": [
+					{ "value": "MOTION_VISION_RANGE", "add": { "math": [ "( u_val('spell_level', 'spell: earthshaper_danger_sense') * 3)" ] } }
+				] 
+			} 
+		] 
+	}
+]
