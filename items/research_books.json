@@ -25,8 +25,8 @@
     "name": { "str": "research notes abstract" },
     "category": "books",
     "description": "A bunch of loose notes for researching bugs, which you're probably doing if you can see this.",
-    "weight": "454 g",
-    "volume": "250 ml",
+    "weight": "50 g",
+    "volume": "15 ml",
     "longest_side": "22 cm",
     "to_hit": -3,
     "color": "white",
@@ -50,8 +50,8 @@
       "wood"
     ], 
     "skill": "spellcraft",
-    "required_level": 3,
-    "max_level": 4,
+    "required_level": 4,
+    "max_level": 5,
     "intelligence": 12,
     "time": "60 m",
     "fun": -2
@@ -67,8 +67,8 @@
       "stone"
     ],
     "skill": "spellcraft",
-    "required_level": 3,
-    "max_level": 4,
+    "required_level": 4,
+    "max_level": 5,
     "intelligence": 12,
     "time": "60 m",
     "fun": -2
@@ -79,15 +79,19 @@
     "copy-from": "research_tome_abstract",
     "name": { "str": "sky magic research materials", "str_pl": "sets of sky magic research materials"  },
     "description": "A set of documents, scribbed notes, musings, astrological observations, and other esoterica for research into magic.  Using this, you might be able to discover a magical formula related to the sky.",
-    "material": [
-      "paper"
-    ],
     "skill": "spellcraft",
-    "required_level": 3,
-    "max_level": 4,
+    "required_level": 4,
+    "max_level": 5,
     "intelligence": 12,
     "time": "60 m",
     "fun": -2
+  },
+  {
+    "type": "GENERIC",
+    "id": "used_research_materials",
+    "copy-from": "research_tome_abstract",
+    "name": { "str": "old research materials", "str_pl": "sets of old research materials"  },
+    "description": "A set of documents, scribbed notes, and other esoterica you used for your research into magic.  Unfortunately it was a dead end, but it might be useful for kindling.",
   },
   {
     "type": "GENERIC",
@@ -102,5 +106,12 @@
     "copy-from": "research_notes_abstract",
     "name": { "str": "apprentice occult research results", "str_pl": "sets of apprentice occult research results" },
     "description": "Musings and tangents mixed with a few real insights.  You know there's power to be grasped out there, if you can just find out how to do it."
+  },
+  {
+    "type": "GENERIC",
+    "id": "used_occult_notes",
+    "copy-from": "research_notes_abstract",
+    "name": { "str": "old occult research notes", "str_pl": "sets of old occult research notes" },
+    "description": "A set of your notes about the occult.  You've already gotten all the value you can out of these, but they would work well as kindling."
   }
 ]
