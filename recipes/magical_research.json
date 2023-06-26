@@ -1,0 +1,17 @@
+  [
+    {
+      "type": "recipe",
+      "activity_level": "NO_EXERCISE",
+      "result": "occult_research_intro",
+      "category": "CC_ENCHANTING",
+      "subcategory": "CSC_ENCHANTING_RESEARCH",
+      "difficulty": 1,
+      "time": "2h",
+      "autolearn": true,
+      "using": [ [ "writing_standard", 1 ] ],
+      "components": [ [ [ "paper", 1 ] ] ],
+      "proficiencies": [
+        { "proficiency": "prof_occult_exploration", "skill_penalty": 1, "required": false }
+      ]
+    }
+  ]
