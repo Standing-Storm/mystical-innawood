@@ -88,4 +88,30 @@
        { "proficiency": "prof_thaumatology", "required": false },
        { "proficiency": "prof_spell_research", "required": false }
      ],
+      "result_eocs": [ 
+       {
+         "id": "EOC_METHODS_OF_DETECTING_MAGIC", 
+         "condition": { "roll_contested": { "math": [ "rng( u_val('intelligence'), u_skill('spellcraft') )"] }, "difficulty": 15 },
+         "effect": [
+           { "run_eocs": "EOC_METHODS_OF_DETECTING_MAGIC_2" }
+         ],
+         "false_effect": [
+           { "u_message": "The ingredients you're using are inert, or at least you can't sense anything special about them.  You'll need to find new ones and try again.", "type": "bad" }
+        ]
+      } 
+    ]
+   },
+    {
+      "id": "EOC_METHODS_OF_DETECTING_MAGIC_2", 
+      "condition": { "math": [ "u_val('vitamin', 'name:vitamin_magical_research_insight_basic')", "<", "5" ] },
+      "effect": [
+        { "u_message": "There's something here, you can tell.  You can feel it.  You just need a little more experimentation to confirm the sensations and you'll make an amazing discovery.", "type": "bad" },
+        { "math": [ "u_val('vitamin', 'name:vitamin_magical_research_insight_basic')", "+=", "1" ] }
+      ],
+      "false_effect": [
+        { "u_message": "You've done it.  You've systemized an approaching to sensing magical energies.  Now with the proper materials, you can transcribe the formulae necessary to learn your first real spell.", "type": "good" },
+        { "u_learn_recipe": "spell_formula_witchsight" },
+        { "u_learn_recipe": "magical_ink" }
+      ]
+    }
   ]
