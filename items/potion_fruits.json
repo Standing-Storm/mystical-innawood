@@ -1,0 +1,10 @@
+[
+  {
+    "type": "COMESTIBLE",
+    "id": "potion_fruit_apple",
+    "name": { "str": "potion frut (apple)" },
+    "copy-from": "apple",
+    "proportional": {  "quench": 0.5, "calories": 0.5, "spoils_in": 10 },
+    "use_action": { "type": "cast_spell", "spell_id": "pfruit_heal", "no_fail": true, "level": 0 }
+  }
+]
