@@ -2,6 +2,11 @@
   {
     "type": "tool_quality",
     "id": "MAGICAL_RESEARCH",
-    "name": { "str": "otherworldly research" }
+    "name": { "str": "occult research" }
+  },
+    {
+    "type": "tool_quality",
+    "id": "SPELLCRAFTING",
+    "name": { "str": "spellcrafting" }
   }
 ]
