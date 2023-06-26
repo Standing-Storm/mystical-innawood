@@ -43,7 +43,7 @@
     "type": "GENERIC",
     "id": "druid_research_materials",
     "copy-from": "research_tome_abstract",
-    "name": { "str": "forest magic research materials" },
+    "name": { "str": "forest magic research materials", "str_pl": "sets of forest magic research materials" },
     "description": "A set of documents, scribbed notes, musings, bits of pressed leaves and flowers, and other esoterica for research into magic.  Using this, you might be able to discover a magical formula related to the natural world.",
     "material": [
       "paper",
@@ -60,7 +60,7 @@
     "type": "GENERIC",
     "id": "earthshaper_research_materials",
     "copy-from": "research_tome_abstract",
-    "name": { "str": "earth magic research materials" },
+    "name": { "str": "earth magic research materials", "str_pl": "sets of earth magic research materials"  },
     "description": "A set of documents, scribbed notes, musings, polished rocks and samples of soil, and other esoterica for research into magic.  Using this, you might be able to discover a magical formula related to the earth.",
     "material": [
       "paper",
@@ -77,7 +77,7 @@
     "type": "GENERIC",
     "id": "stormshaper_research_materials",
     "copy-from": "research_tome_abstract",
-    "name": { "str": "sky magic research materials" },
+    "name": { "str": "sky magic research materials", "str_pl": "sets of sky magic research materials"  },
     "description": "A set of documents, scribbed notes, musings, astrological observations, and other esoterica for research into magic.  Using this, you might be able to discover a magical formula related to the sky.",
     "material": [
       "paper"
@@ -93,7 +93,14 @@
     "type": "GENERIC",
     "id": "occult_research_intro",
     "copy-from": "research_notes_abstract",
-    "name": { "str": "rudimentary occult research results" },
+    "name": { "str": "rudimentary occult research results", "str_pl": "sets of rudimentary occult research results" },
     "description": "Jotted down thoughts about the hidden things of the world.  Nothing here is particularly profound, and you'll probably not need to consult this again."
+  },
+  {
+    "type": "GENERIC",
+    "id": "occult_research_minor",
+    "copy-from": "research_notes_abstract",
+    "name": { "str": "apprentice occult research results", "str_pl": "sets of apprentice occult research results" },
+    "description": "Musings and tangents mixed with a few real insights.  You know there's power to be grasped out there, if you can just find out how to do it."
   }
 ]
