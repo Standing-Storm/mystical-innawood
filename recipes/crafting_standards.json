@@ -7,5 +7,13 @@
       [ [ "survival_marker", -1 ] ],
       [ [ "feather", -1], [ "homemade_ink", 2 ] ]
     ]
+  },
+	{
+    "id": "writing_formulae_simple_standard",
+    "type": "requirement",
+    "//": "Tools and components for writing very basic spells.",
+    "tools": [ 
+      [ [ "feather", -1], [ "magical_ink_simple", 2 ] ]
+    ]
 	}
 ]
