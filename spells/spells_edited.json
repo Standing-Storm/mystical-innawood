@@ -1,0 +1,30 @@
+[
+  {
+    "id": "summon_cats",
+    "type": "SPELL",
+    "name": { "str": "Call of the Litter" },
+    "description": "Summon a group of tamed cats to your side.  They are unlikely to do much damage against a determined enemy, but may provide a distraction.",
+    "valid_targets": [ "ground" ],
+    "flags": [ "LOUD", "SOMATIC", "SPAWN_GROUP" ],
+    "min_damage": 1,
+    "max_damage": 12,
+    "damage_increment": 1.0,
+    "min_range": 3,
+    "range_increment": 0.8,
+    "max_range": 7,
+    "min_aoe": 3,
+    "max_aoe": 3,
+    "spell_class": "DRUID",
+    "base_casting_time": 250,
+    "energy_source": "MANA",
+    "max_level": 25,
+    "min_duration": 6000,
+    "max_duration": 60000,
+    "duration_increment": 1000,
+    "difficulty": 1,
+    "base_energy_cost": 265,
+    "shape": "blast",
+    "effect": "summon",
+    "effect_str": "GROUP_STRAY_CATS"
+  }
+]
