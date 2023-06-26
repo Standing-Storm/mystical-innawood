@@ -1,0 +1,9 @@
+[
+  {
+    "type": "SPECIES",
+    "id": "FOREST_ELEMENTAL",
+    "description": "a magical being of the forest",
+    "anger_triggers": [ "FRIEND_ATTACKED" ],
+    "fear_triggers": [ "FIRE" ]
+  }
+]
