@@ -57,10 +57,7 @@
            { "u_spawn_item": "used_occult_notes", "suppress_message": true },
            { "u_roll_remainder": 
              [
-                "manatouched_path_intro",
-                "magic_path_intro",
-                "botanic_enchant_path_intro",
-                "enchant_path_intro"
+                "detect_magic_research"
              ],
              "type": "recipe"
            }
