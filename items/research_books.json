@@ -29,7 +29,13 @@
     "material": [
       "paper",
       "wood"
-    ]
+    ], 
+    "skill": "spellcraft",
+    "required_level": 5,
+    "max_level": 7,
+    "intelligence": 12,
+    "time": "60 m",
+    "fun": -2
   },
   {
     "type": "GENERIC",
@@ -40,7 +46,13 @@
     "material": [
       "paper",
       "stone"
-    ]
+    ],
+    "skill": "spellcraft",
+    "required_level": 5,
+    "max_level": 7,
+    "intelligence": 12,
+    "time": "60 m",
+    "fun": -2
   },
   {
     "type": "GENERIC",
@@ -50,6 +62,12 @@
     "description": "A set of documents, scribbed notes, musings, astrological observations, and other esoterica for research into magic.  Using this, you might be able to discover a magical formula related to the sky.",
     "material": [
       "paper"
-    ]
+    ],
+    "skill": "spellcraft",
+    "required_level": 5,
+    "max_level": 7,
+    "intelligence": 12,
+    "time": "60 m",
+    "fun": -2
   }
 ]
