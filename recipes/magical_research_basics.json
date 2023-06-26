@@ -79,8 +79,8 @@
       "subcategory": "CSC_ENCHANTING_RESEARCH",
      "difficulty": 3,
      "time": "6 h",
-      "using": [ [ "writing_standard", 1 ], [ "mana_energy_weak", 1 ] ],
-     "components": [ [ [ "paper", 10 ] ] ],
+      "using": [ [ "writing_standard", 1 ] ],
+     "components": [ [ [ "paper", 10 ] ], [ [ "mana_energy_weak", 1 ] ] ],
       "skill_used": "spellcraft",
      "flags": [ "SECRET", "BLIND_HARD" ],
      "proficiencies": [ 
