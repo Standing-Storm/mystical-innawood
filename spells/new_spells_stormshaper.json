@@ -1,0 +1,21 @@
+[
+  {
+    "id": "actinic_glare",
+    "type": "SPELL",
+    "name": "Actinic Glare",
+    "description": "Summon the harsh blue light of the storm from the air around you, illuminating your surroundings.",
+    "valid_targets": [ "self" ],
+    "effect": "attack",
+    "effect_str": "effect_actinic_glare",
+    "shape": "blast",
+    "energy_source": "MANA",
+    "flags": [ "CONCENTRATE", "VERBAL", "NO_LEGS" ],
+    "difficulty": 3,
+    "max_level": 15,
+    "base_casting_time": 500,
+    "base_energy_cost": 600,
+    "min_duration": 24000,
+    "max_duration": 360000,
+    "duration_increment": 24000
+  }
+]
