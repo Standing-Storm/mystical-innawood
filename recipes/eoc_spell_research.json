@@ -4,9 +4,9 @@
      "activity_level": "LIGHT_EXERCISE",
      "name": "magical research: forest (easy)",
      "id": "magical_research_druid_easy",
-     "description": "Conduct magical research related to the basic manipulation of plants and living things.  Performing it without the ability to sense magic will accomplish little.",
-     "category": "CC_RESEARCH",
-     "subcategory": "CSC_RESEARCH_SPELLS",
+     "description": "Conduct magical research related to the basic manipulation of plants and living things.",
+      "category": "CC_*",
+      "subcategory": "CSC_*_NESTED",
      "difficulty": 2,
      "time": "12 h",
      "autolearn": false,
@@ -22,7 +22,7 @@
      "result_eocs": [ 
        {
          "id": "EOC_GET_DRUID_SPELLS_EASY", 
-          "condition": { "roll_contested": { "math": [ "rng( u_val('intelligence'), u_skill('spellcraft') )"] } },
+          "condition": { "roll_contested": { "math": [ "rng( u_val('intelligence'), u_skill('spellcraft') )"] }, "difficulty": 12 },
          "effect": [
            { "u_roll_remainder": 
              [
@@ -49,9 +49,9 @@
      "activity_level": "LIGHT_EXERCISE",
      "name": "magical research: forest (medium)",
      "id": "magical_research_druid_medium",
-     "description": "Conduct magical research related to complex manipulation of plants and living things.  Performing it without the ability to sense magic will accomplish little.",
-     "category": "CC_RESEARCH",
-     "subcategory": "CSC_RESEARCH_SPELLS",
+     "description": "Conduct magical research related to complex manipulation of plants and living things.",
+      "category": "CC_*",
+      "subcategory": "CSC_*_NESTED",
      "difficulty": 4,
      "time": "24 h",
      "autolearn": false,
@@ -70,7 +70,7 @@
      "result_eocs": [ 
        {
          "id": "EOC_GET_DRUID_SPELLS_MEDIUM", 
-          "condition": { "roll_contested": { "math": [ "rng( u_val('intelligence'), u_skill('spellcraft') )"] } },
+          "condition": { "roll_contested": { "math": [ "rng( u_val('intelligence'), u_skill('spellcraft') )"] }, "difficulty": 15 },
          "effect": [
            { "u_roll_remainder": 
              [
@@ -98,9 +98,9 @@
      "activity_level": "LIGHT_EXERCISE",
      "name": "magical research: forest (hard)",
      "id": "magical_research_druid_hard",
-     "description": "Conduct magical research related to esoteric manipulation of plants and living things.  Performing it without the ability to sense magic will accomplish little.",
-     "category": "CC_RESEARCH",
-     "subcategory": "CSC_RESEARCH_SPELLS",
+     "description": "Conduct magical research related to esoteric manipulation of plants and living things.",
+      "category": "CC_*",
+      "subcategory": "CSC_*_NESTED",
      "difficulty": 7,
      "time": "48 h",
      "autolearn": false,
@@ -119,7 +119,7 @@
      "result_eocs": [ 
        {
          "id": "EOC_GET_DRUID_SPELLS_HARD", 
-          "condition": { "roll_contested": { "math": [ "rng( u_val('intelligence'), u_skill('spellcraft') )"] } },
+          "condition": { "roll_contested": { "math": [ "rng( u_val('intelligence'), u_skill('spellcraft') )"] }, "difficulty": 18 },
          "effect": [
            { "u_roll_remainder": 
              [
@@ -145,9 +145,9 @@
      "activity_level": "LIGHT_EXERCISE",
      "name": "magical research: earth (easy)",
      "id": "magical_research_earthshaper_easy",
-     "description": "Conduct magical research related to the basic manipulation of rock and soil.  Performing it without the ability to sense magic will accomplish little.",
-     "category": "CC_RESEARCH",
-     "subcategory": "CSC_RESEARCH_SPELLS",
+     "description": "Conduct magical research related to the basic manipulation of rock and soil.",
+      "category": "CC_*",
+      "subcategory": "CSC_*_NESTED",
      "difficulty": 2,
      "time": "12 h",
      "autolearn": false,
@@ -166,7 +166,7 @@
      "result_eocs": [ 
        {
          "id": "EOC_GET_EARTHSHAPER_SPELLS_EASY", 
-          "condition": { "roll_contested": { "math": [ "rng( u_val('intelligence'), u_skill('spellcraft') )"] } },
+          "condition": { "roll_contested": { "math": [ "rng( u_val('intelligence'), u_skill('spellcraft') )"] }, "difficulty": 12 },
          "effect": [
            { "u_roll_remainder": 
              [
@@ -194,9 +194,9 @@
      "activity_level": "LIGHT_EXERCISE",
      "name": "magical research: earth (medium)",
      "id": "magical_research_earthshaper_medium",
-     "description": "Conduct magical research related to complex manipulation of rock and soil.  Performing it without the ability to sense magic will accomplish little.",
-     "category": "CC_RESEARCH",
-     "subcategory": "CSC_RESEARCH_SPELLS",
+     "description": "Conduct magical research related to complex manipulation of rock and soil.",
+      "category": "CC_*",
+      "subcategory": "CSC_*_NESTED",
      "difficulty": 4,
      "time": "24 h",
      "autolearn": false,
@@ -215,7 +215,7 @@
      "result_eocs": [ 
        {
          "id": "EOC_GET_EARTHSHAPER_SPELLS_MEDIUM", 
-          "condition": { "roll_contested": { "math": [ "rng( u_val('intelligence'), u_skill('spellcraft') )"] } },
+          "condition": { "roll_contested": { "math": [ "rng( u_val('intelligence'), u_skill('spellcraft') )"] }, "difficulty": 15 },
          "effect": [
            { "u_roll_remainder": 
              [
@@ -241,9 +241,9 @@
      "activity_level": "LIGHT_EXERCISE",
      "name": "magical research: earth (hard)",
      "id": "magical_research_earthshaper_hard",
-     "description": "Conduct magical research related to esoteric manipulation of rock and soil.  Performing it without the ability to sense magic will accomplish little.",
-     "category": "CC_RESEARCH",
-     "subcategory": "CSC_RESEARCH_SPELLS",
+     "description": "Conduct magical research related to esoteric manipulation of rock and soil.",
+      "category": "CC_*",
+      "subcategory": "CSC_*_NESTED",
      "difficulty": 7,
      "time": "48 h",
      "autolearn": false,
@@ -262,7 +262,7 @@
      "result_eocs": [ 
        {
          "id": "EOC_GET_EARTHSHAPER_SPELLS_HARD", 
-          "condition": { "roll_contested": { "math": [ "rng( u_val('intelligence'), u_skill('spellcraft') )"] } },
+          "condition": { "roll_contested": { "math": [ "rng( u_val('intelligence'), u_skill('spellcraft') )"] }, "difficulty": 18 },
           "effect": [
              { "u_roll_remainder": 
                 [
@@ -286,10 +286,10 @@
      "type": "recipe",
      "activity_level": "LIGHT_EXERCISE",
      "name": "magical research: sky (easy)",
-     "id": "magical_research_earthshaper_easy",
-     "description": "Conduct magical research related to the basic manipulation of wind and storm.  Performing it without the ability to sense magic will accomplish little.",
-     "category": "CC_RESEARCH",
-     "subcategory": "CSC_RESEARCH_SPELLS",
+     "id": "magical_research_stormshaper_easy",
+     "description": "Conduct magical research related to the basic manipulation of wind and storm.",
+      "category": "CC_*",
+      "subcategory": "CSC_*_NESTED",
      "difficulty": 2,
      "time": "12 h",
      "autolearn": false,
@@ -308,7 +308,7 @@
      "result_eocs": [ 
        {
          "id": "EOC_GET_STORMSHAPER_SPELLS_EASY", 
-          "condition": { "roll_contested": { "math": [ "rng( u_val('intelligence'), u_skill('spellcraft') )"] } },
+          "condition": { "roll_contested": { "math": [ "rng( u_val('intelligence'), u_skill('spellcraft') )"] }, "difficulty": 12 },
           "effect": [
              { "u_roll_remainder": 
                 [
@@ -322,6 +322,101 @@
                    "electric_arts",
                    "air_bubble",
                    "actinic_glare"
+                ],
+                "type": "spell"
+             }
+          ],
+          "false_effect": [
+             { "u_message": "There's something on the edge of your mind, but you can't quite grasp it.  You've hit a dead end.  You'll need to try a new approach.", "type": "bad" }
+          ]
+       }
+     ]
+   },
+   {
+      "type": "recipe",
+     "activity_level": "LIGHT_EXERCISE",
+     "name": "magical research: sky (medium)",
+     "id": "magical_research_stormshaper_medium",
+     "description": "Conduct magical research related to the basic manipulation of wind and storm."
+      "category": "CC_*",
+      "subcategory": "CSC_*_NESTED",
+     "difficulty": 2,
+     "time": "24 h",
+     "autolearn": false,
+     "tools": [ [ [ "magical_research_volume_2", -1 ] ] ],
+      "components": [ 
+        [ [ "paper", 10 ], [ "magical_research_paper_2", 5 ] ], 
+        [ [ "stormshaper_research_materials", 1 ] ] 
+     ],
+      "book_learn": { "stormshaper_research_materials": { "skill_level": 5, "hidden": true } },
+      "skill_used": "spellcraft",
+     "flags": [ "SECRET", "BLIND_HARD" ],
+     "proficiencies": [ 
+        { "proficiency": "prof_magical_research", "required": true },
+        { "proficiency": "prof_magical_theory", "required": false }
+     ],
+     "result_eocs": [ 
+       {
+         "id": "EOC_GET_STORMSHAPER_SPELLS_MEDIUM", 
+          "condition": { "roll_contested": { "math": [ "rng( u_val('intelligence'), u_skill('spellcraft') )"] }, "difficulty": 15 },
+          "effect": [
+             { "u_roll_remainder": 
+                [
+                   "stormshaper_repelling_arc",
+                   "lightning_bolt",
+                   "stormfist",
+                   "storm_shipwrecker",
+                   "explosive_decompression",
+                   "storm_superconductor",
+                   "shocking_dash",
+                   "toxtricity",
+                   "electric_eye",
+                   "electric_waves"
+                ],
+                "type": "spell"
+             }
+          ],
+          "false_effect": [
+             { "u_message": "There's something on the edge of your mind, but you can't quite grasp it.  You've hit a dead end.  You'll need to try a new approach.", "type": "bad" }
+          ]
+       }
+     ]
+   },
+   {
+     "type": "recipe",
+     "activity_level": "LIGHT_EXERCISE",
+     "name": "magical research: sky (hard)",
+     "id": "magical_research_stormshaper_hard",
+     "description": "Conduct magical research related to the basic manipulation of wind and storm.",
+      "category": "CC_*",
+      "subcategory": "CSC_*_NESTED",
+     "difficulty": 2,
+     "time": "48 h",
+     "autolearn": false,
+     "tools": [ [ [ "magical_research_volume_2", -1 ] ] ],
+      "components": [ 
+        [ [ "paper", 10 ], [ "magical_research_paper_2", 5 ] ], 
+        [ [ "stormshaper_research_materials", 1 ] ] 
+     ],
+      "book_learn": { "stormshaper_research_materials": { "skill_level": 8, "hidden": true } },
+      "skill_used": "spellcraft",
+     "flags": [ "SECRET", "BLIND_HARD" ],
+     "proficiencies": [ 
+        { "proficiency": "prof_magical_research", "required": true },
+        { "proficiency": "prof_magical_theory", "required": false }
+     ],
+     "result_eocs": [ 
+       {
+         "id": "EOC_GET_STORMSHAPER_SPELLS_HARD", 
+          "condition": { "roll_contested": { "math": [ "rng( u_val('intelligence'), u_skill('spellcraft') )"] }, "difficulty": 18 },
+          "effect": [
+             { "u_roll_remainder": 
+                [
+                   "summon_teravolt",
+                   "stormshaper_ionization",
+                   "lightning_storm",
+                   "lightning_blast",
+                   "vacuum_decompression"
                 ],
                 "type": "spell"
              }
