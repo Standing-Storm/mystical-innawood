@@ -1,0 +1,18 @@
+[
+  {
+    "type": "BOOK",
+    "copy-from": "spell_scroll",
+    "id": "spell_formula_witchsight",
+    "name": { "str": "Spell Formula for Witchsight", "str_pl": "Spell Formulae for Witchsight" },
+    "description": "The gestures, incantations, and mental constructs necessary to open yourself up to the unseen world.",
+    "use_action": { "type": "learn_spell", "spells": [ "witchsight" ] }
+  },
+   {
+    "type": "BOOK",
+    "copy-from": "spell_scroll",
+    "id": "spell_formula_crystallize_mana",
+    "name": { "str": "Spell Formula for the Ritual of Arcane Coalescence", "str_pl": "Spell Formula for the Ritual of Arcane Coalescence" },
+    "description": "The gestures, incantations, and mental constructs necessary to perform a length ritual that distills magical energy into a solid form, usable for futher experimentation.",
+    "use_action": { "type": "learn_spell", "spells": [ "crystallize_mana_innawood" ] }
+  }
+]
