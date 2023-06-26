@@ -1,0 +1,18 @@
+[
+  {
+    "type": "MONSTER_BLACKLIST",
+    "monsters": [
+      "mon_ogre",
+      "mon_were_zolf",
+      "mon_zorc",
+      "mon_troll_zombie",
+      "mon_troll",
+      "mon_workshop_elf",
+      "mon_claygolem",
+      "mon_plasticgolem",
+      "mon_leprechaun",
+      "mon_stonegolem",
+      "mon_irongolem"
+    ]
+  }
+]
