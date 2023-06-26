@@ -1,0 +1,13 @@
+[
+ {
+    "id": "harvest_shambling",
+    "type": "harvest",
+    "entries": [
+      { "drop": "withered", "type": "flesh", "mass_ratio": 0.4 },
+      { "drop": "veggy", "type": "flesh", "mass_ratio": 0.08 },
+      { "drop": "stick", "type": "bone", "mass_ratio": 0.03 },
+      { "drop": "down_feather", "type": "skin", "mass_ratio": 0.005 },
+      { "drop": "shambling_eyes", "scale_num": [ 1, 2 ], "max": 2, "type": "offal" }
+    ]
+  }
+]
