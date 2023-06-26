@@ -2,5 +2,31 @@
   {
     "id": "shambling_eyes",
     
+  },
+  {
+    
+    "id": "mossling_fur"
+    "copy-from": "grass",
+    "name": { "str": "tuft of mossling fur", "str_pl": "tufts of mossling fur" },
+    "description": "A tangled tuft of mossling fur, more like grass or lichen than the fur of an animal.  A cow might be able to eat it, but you couldn't.",
+    "calories": 70,
+    "weight": "100 g",
+    "volume": "250 ml",
+    "type": "COMESTIBLE",
+    "flags": [ "TRADER_AVOID", "INEDIBLE", ]
+  },
+  {
+    "type": "GENERIC",
+    "id": "dryad_bark",
+    "copy-from": "alder_bark",
+    "name": { "str": "dryad bark" },
+    "description": "A strip of bark taken from a fallen dryad.  It's still slightly supple, as though it were attached to a living tree."
+  },
+  {
+    "type": "GENERIC",
+    "id": "witchwood_bark",
+    "copy-from": "alder_bark",
+    "weight": "234 g",
+    "description": "A thin strip of silvery-blue bark harvested from a witchwood tree.  Touching it makes your fingers tingle slightly."
   }
 ]
