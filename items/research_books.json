@@ -1,10 +1,10 @@
 [
   {
     "type": "GENERIC",
-    "id": "research_abstract",
-    "name": { "str": "research abstract" },
+    "id": "research_tome_abstract",
+    "name": { "str": "research tome abstract" },
     "category": "books",
-    "description": "A file for researching bugs, which you're probably doing if you can see this.",
+    "description": "A thick tome for researching bugs, which you're probably doing if you can see this.",
     "weight": "1587 g",
     "volume": "1750 ml",
     "longest_side": "22 cm",
@@ -14,7 +14,26 @@
     "material": [
       "paper"
     ],
-    "volume": "50 ml",
+    "flags": [
+      "TRADER_AVOID",
+      "TINDER"
+    ]
+  },
+  {
+    "type": "GENERIC",
+    "id": "research_notes_abstract",
+    "name": { "str": "research notes abstract" },
+    "category": "books",
+    "description": "A bunch of loose notes for researching bugs, which you're probably doing if you can see this.",
+    "weight": "454 g",
+    "volume": "250 ml",
+    "longest_side": "22 cm",
+    "to_hit": -3,
+    "color": "white",
+    "symbol": ",",
+    "material": [
+      "paper"
+    ],
     "flags": [
       "TRADER_AVOID",
       "TINDER"
@@ -23,7 +42,7 @@
   {
     "type": "GENERIC",
     "id": "druid_research_materials",
-    "copy-from": "research_abstract",
+    "copy-from": "research_tome_abstract",
     "name": { "str": "forest magic research materials" },
     "description": "A set of documents, scribbed notes, musings, bits of pressed leaves and flowers, and other esoterica for research into magic.  Using this, you might be able to discover a magical formula related to the natural world.",
     "material": [
@@ -40,7 +59,7 @@
   {
     "type": "GENERIC",
     "id": "earthshaper_research_materials",
-    "copy-from": "research_abstract",
+    "copy-from": "research_tome_abstract",
     "name": { "str": "earth magic research materials" },
     "description": "A set of documents, scribbed notes, musings, polished rocks and samples of soil, and other esoterica for research into magic.  Using this, you might be able to discover a magical formula related to the earth.",
     "material": [
@@ -57,7 +76,7 @@
   {
     "type": "GENERIC",
     "id": "stormshaper_research_materials",
-    "copy-from": "research_abstract",
+    "copy-from": "research_tome_abstract",
     "name": { "str": "sky magic research materials" },
     "description": "A set of documents, scribbed notes, musings, astrological observations, and other esoterica for research into magic.  Using this, you might be able to discover a magical formula related to the sky.",
     "material": [
@@ -69,5 +88,12 @@
     "intelligence": 12,
     "time": "60 m",
     "fun": -2
+  },
+  {
+    "type": "GENERIC",
+    "id": "occult_research_intro",
+    "copy-from": "research_notes_abstract",
+    "name": { "str": "rudimentary occult research results" },
+    "description": "Jotted down thoughts about the hidden things of the world.  Nothing here is particularly profound, and you'll probably not need to consult this again."
   }
 ]
