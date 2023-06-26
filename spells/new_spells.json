@@ -26,8 +26,8 @@
   {
     "id": "crystallize_mana_innawood",
     "type": "SPELL",
-    "name": "Crystallize Mana",
-    "description": "Crystallizes mana into solid form, allowing it to be used in magical research or enchanting.",
+    "name": "The Ritual of Arcane Coalescence",
+    "description": "Crystallizes subtle energies into a solid form, allowing it to be used in magical research or enchanting.",
     "valid_targets": [ "self" ],
     "spell_class": "NONE",
     "flags": [ "CONCENTRATE", "NO_LEGS", "CONCENTRATE" ],
