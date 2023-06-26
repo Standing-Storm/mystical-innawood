@@ -1,10 +1,10 @@
 [
   {
-    "id": "mon_shambling_mound",
+    "id": "mon_brackenwight",
     "type": "MONSTER",
-    "name": "shambling mound",
+    "name": "brackenwight",
     "copy-from": "mon_shambling_mound",
-    "description": "An animate pile of moss, leaves, sticks, and other forest detritus, but towering almost three metres high.  Three pits with a lambent green glow might be eyes. It slowly walks on two massive limbs.",
+    "description": "An animate pile of moss, leaves, sticks, and other forest detritus, but towering almost three metres high.  Three pits with a lambent green glow might be eyes.  It slowly walks on massive limbs.",
     "default_faction": "forest_elemental_faction",
     "species": [ "FOREST_ELEMENTAL" ],
     "hp": 400,
