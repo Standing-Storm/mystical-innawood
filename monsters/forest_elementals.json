@@ -16,7 +16,7 @@
     "special_attacks": [ { "type": "spell", "spell_data": { "id": "shambling_aoe", "min_level": 0 }, "cooldown": 15 } ],
     "armor": { "bash": 25, "cut": 15, "stab": 30, "bullet": 40, "heat": -30  },
     "flags": [ "SEES", "HEARS", "WARM", "HARDTOSHOOT", "BASHES", "DESTROYS", "ATTACKMON", "PUSH_MON", "PUSH_VEH" ],
-    "harvest": "harvest_shambling",
+    "harvest": "harvest_brackenwight",
     "biosignature": { "biosig_item": "withered", "biosig_timer": 12 },
     "death_function": { "message": "A %s collapses into a massive pile." }
   }
