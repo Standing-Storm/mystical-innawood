@@ -16,8 +16,8 @@
       "skill_used": "spellcraft",
      "flags": [ "SECRET", "BLIND_HARD" ],
      "proficiencies": [ 
-        { "proficiency": "prof_magical_research", "required": true },
-        { "proficiency": "prof_magical_theory", "required": false }
+        { "proficiency": "prof_thaumatology", "required": true },
+        { "proficiency": "prof_spell_research", "required": false }
      ],
      "result_eocs": [ 
        {
@@ -65,8 +65,8 @@
       "skill_used": "spellcraft",
      "flags": [ "SECRET", "BLIND_HARD" ],
      "proficiencies": [ 
-        { "proficiency": "prof_magical_research", "required": true },
-        { "proficiency": "prof_magical_theory", "required": false }
+        { "proficiency": "prof_thaumatology", "required": true },
+        { "proficiency": "prof_spell_research", "required": true }
      ],
      "result_eocs": [ 
        {
@@ -115,8 +115,8 @@
      "flags": [ "SECRET", "BLIND_HARD" ],
       "skill_used": "spellcraft",
      "proficiencies": [ 
-        { "proficiency": "prof_magical_research", "required": true },
-        { "proficiency": "prof_magical_theory", "required": true }
+        { "proficiency": "prof_thaumatology", "required": true },
+        { "proficiency": "prof_spell_research", "required": true }
      ],
      "result_eocs": [ 
        {
@@ -163,8 +163,8 @@
       "skill_used": "spellcraft",
      "flags": [ "SECRET", "BLIND_HARD" ],
      "proficiencies": [ 
-        { "proficiency": "prof_magical_research", "required": true },
-        { "proficiency": "prof_magical_theory", "required": false }
+        { "proficiency": "prof_thaumatology", "required": true },
+        { "proficiency": "prof_spell_research", "required": false }
      ],
      "result_eocs": [ 
        {
@@ -213,8 +213,8 @@
       "skill_used": "spellcraft",
      "flags": [ "SECRET", "BLIND_HARD" ],
      "proficiencies": [ 
-        { "proficiency": "prof_magical_research", "required": true },
-        { "proficiency": "prof_magical_theory", "required": false }
+        { "proficiency": "prof_thaumatology", "required": true },
+        { "proficiency": "prof_spell_research", "required": true }
      ],
      "result_eocs": [ 
        {
@@ -261,8 +261,8 @@
       "flags": [ "SECRET", "BLIND_HARD" ],
       "skill_used": "spellcraft",
       "proficiencies": [ 
-        { "proficiency": "prof_magical_research", "required": true },
-        { "proficiency": "prof_magical_theory", "required": true }
+        { "proficiency": "prof_thaumatology", "required": true },
+        { "proficiency": "prof_spell_research", "required": true }
      ],
      "result_eocs": [ 
        {
@@ -308,8 +308,8 @@
       "skill_used": "spellcraft",
      "flags": [ "SECRET", "BLIND_HARD" ],
      "proficiencies": [ 
-        { "proficiency": "prof_magical_research", "required": true },
-        { "proficiency": "prof_magical_theory", "required": false }
+        { "proficiency": "prof_thaumatology", "required": true },
+        { "proficiency": "prof_spell_research", "required": false }
      ],
      "result_eocs": [ 
        {
@@ -359,8 +359,8 @@
       "skill_used": "spellcraft",
      "flags": [ "SECRET", "BLIND_HARD" ],
      "proficiencies": [ 
-        { "proficiency": "prof_magical_research", "required": true },
-        { "proficiency": "prof_magical_theory", "required": false }
+        { "proficiency": "prof_thaumatology", "required": true },
+        { "proficiency": "prof_spell_research", "required": true }
      ],
      "result_eocs": [ 
        {
@@ -410,8 +410,8 @@
       "skill_used": "spellcraft",
      "flags": [ "SECRET", "BLIND_HARD" ],
      "proficiencies": [ 
-        { "proficiency": "prof_magical_research", "required": true },
-        { "proficiency": "prof_magical_theory", "required": false }
+        { "proficiency": "prof_thaumatology", "required": true },
+        { "proficiency": "prof_spell_research", "required": true }
      ],
      "result_eocs": [ 
        {
