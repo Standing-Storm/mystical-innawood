@@ -15,5 +15,14 @@
 				] 
 			} 
 		] 
-	}
+	},
+	{
+    "id": "effect_actinic_glare",
+    "type": "effect_type",
+    "name": [ "Actinic Glow" ],
+    "desc": [ "The air around you glows with a harsh blue light." ],
+    "rating": "good",
+    "show_intensity": false,
+    "enchantments": [ { "values": [ { "value": "LUMINATION", "add": { "math": [ "( u_val('spell_level', 'spell: actinic_glare') * 20 )" ] } } ] } ]
+  }
 ]
