@@ -23,8 +23,8 @@
 		"flags": [ "RANDOM_DAMAGE" ],
 		"shape": "blast",
 		"effect": "mod_moves",
-		"min_damage": -25,
-		"max_damage": -150,
+		"min_damage": -15,
+		"max_damage": -35,
 		"min_range": 1,
 		"max_range": 1
 	}
