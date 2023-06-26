@@ -35,7 +35,8 @@
         "CSC_ENCHANTED_MODS",
         "CSC_ENCHANTED_OTHER",
         "CSC_ENCHANTED_ENCHANTING",
-        "CSC_ENCHANTED_RESEARCH"
+        "CSC_ENCHANTED_RESEARCH",
+        "CSC_ENCHANTED_FORMULAE",
       ]
     },
     {
