@@ -19,5 +19,46 @@
         "CSC_PRACTICE_COMBAT",
         "CSC_PRACTICE_SPELLCRAFT"
       ]
+    },
+    {
+      "type": "recipe_category",
+      "id": "CC_ENCHANTED",
+      "recipe_subcategories": [
+        "CSC_ALL",
+        "CSC_ENCHANTED_MATERIALS",
+        "CSC_ENCHANTED_TOOLS",
+        "CSC_ENCHANTED_WEAPONS",
+        "CSC_ENCHANTED_AMMO",
+        "CSC_ENCHANTED_ARMOR",
+        "CSC_ENCHANTED_POTIONS",
+        "CSC_ENCHANTED_RUNES",
+        "CSC_ENCHANTED_MODS",
+        "CSC_ENCHANTED_OTHER",
+        "CSC_ENCHANTED_ENCHANTING",
+        "CSC_ENCHANTED_RESEARCH"
+      ]
+    },
+    {
+      "id": "nested_magical_research",
+      "type": "nested_category",
+      "activity_level": "LIGHT_EXERCISE",
+      "category": "CC_ENCHANTED",
+      "subcategory": "CSC_ENCHANTED_RESEARCH",
+      "name": "spell research",
+      "description": "Recipes related to directly applying magical theory to determine a spell formula.",
+      "skill_used": "spellcraft",
+      "nested_category_data":
+      [ 
+        "magical_research_druid_easy", 
+        "magical_research_druid_medium", 
+        "magical_research_druid_hard", 
+        "magical_research_earthshaper_easy", 
+        "magical_research_earthshaper_medium", 
+        "magical_research_earthshaper_hard", 
+        "magical_research_stormshaper_easy", 
+        "magical_research_stormshaper_medium", 
+        "magical_research_stormshaper_hard", 
+      ],
+      "difficulty": 1
     }
   ]
