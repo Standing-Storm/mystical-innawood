@@ -7,6 +7,6 @@
   {
     "id": "mana_energy_strong",
     "type": "requirement",
-    "extend": { "components": [ [ [ "dryad_bark", 3 ], [ "witchwood_bark", 1 ], [ "shambling_eye", 1 ] ] ] }
+    "extend": { "components": [ [ [ "dryad_bark", 3 ], [ "witchwood_bark", 1 ], [ "bracken_eye", 1 ] ] ] }
   }
 ]
