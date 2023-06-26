@@ -9,7 +9,7 @@
       "time": "2h",
       "autolearn": true,
       "using": [ [ "writing_standard", 1 ] ],
-      "components": [ [ [ "paper", 1 ] ] ],
+      "components": [ [ [ "paper", 10 ] ] ],
       "proficiencies": [
         { "proficiency": "prof_occult_exploration", "skill_penalty": 1, "required": false }
       ]
@@ -24,7 +24,7 @@
       "time": "4h",
       "autolearn": true,
       "using": [ [ "writing_standard", 1 ] ],
-      "components": [ [ [ "paper", 1 ] ] ],
+      "components": [ [ [ "paper", 20 ] ] ],
       "proficiencies": [
         { "proficiency": "prof_occult_exploration", "skill_penalty": 1, "required": false },
         { "proficiency": "prof_thaumatology", "time_multiplier": 10, "skill_penalty": 3, "required": false }
