@@ -16,7 +16,10 @@
       "mon_plasticgolem",
       "mon_leprechaun",
       "mon_stonegolem",
-      "mon_irongolem"
+      "mon_irongolem",
+      "mon_lemure",
+      "mon_owlbear_zombie_brute",
+      "mon_owlbear_zombie"  
     ]
   }
 ]
