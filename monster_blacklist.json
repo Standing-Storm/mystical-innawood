@@ -4,7 +4,10 @@
     "monsters": [
       "mon_ogre",
       "mon_were_zolf",
+      "mon_orc_warrior",
       "mon_zorc",
+      "mon_orc_archer",
+      "mon_orc_blood_warrior",
       "mon_troll_zombie",
       "mon_troll",
       "mon_workshop_elf",
