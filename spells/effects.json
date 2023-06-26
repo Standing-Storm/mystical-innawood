@@ -1,4 +1,20 @@
 [
+	{
+		"type": "effect_type",
+		"id": "effect_detect_magic",
+		"name": [ "Witchsight" ],
+		"desc": [ "You can see magical energy as a faint glow and distinguish the auras of living things.  The range is mostly too short to be useful outside dedicated research, however." ],
+		"rating": "good",
+		"max_duration": "12 hours", 
+		"enchantments": [
+			{
+				"values": [
+					{ "value": "PERCEPTION", "add": { "math": [ "( u_val('spell_level', 'spell: witchsight') * 0.15 )" ] } },
+					{ "value": "MOTION_VISION_RANGE", "add": { "math": [ "( u_val('spell_level', 'spell: witchsight') * 0.3 )" ] } }
+				] 
+			} 
+		] 
+	},
   {
 		"type": "effect_type",
 		"id": "effect_tremorsense",
