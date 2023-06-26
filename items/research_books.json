@@ -1,9 +1,8 @@
 [
   {
-    "type": "GENERIC",
+    "type": "BOOK",
     "id": "research_tome_abstract",
     "name": { "str": "research tome abstract" },
-    "category": "books",
     "description": "A thick tome for researching bugs, which you're probably doing if you can see this.",
     "weight": "1587 g",
     "volume": "1750 ml",
@@ -20,10 +19,9 @@
     ]
   },
   {
-    "type": "GENERIC",
+    "type": "BOOK",
     "id": "research_notes_abstract",
     "name": { "str": "research notes abstract" },
-    "category": "books",
     "description": "A bunch of loose notes for researching bugs, which you're probably doing if you can see this.",
     "weight": "50 g",
     "volume": "15 ml",
@@ -40,7 +38,7 @@
     ]
   },
   {
-    "type": "GENERIC",
+    "type": "BOOK",
     "id": "druid_research_materials",
     "copy-from": "research_tome_abstract",
     "name": { "str": "forest magic research materials", "str_pl": "sets of forest magic research materials" },
@@ -57,7 +55,7 @@
     "fun": -2
   },
   {
-    "type": "GENERIC",
+    "type": "BOOK",
     "id": "earthshaper_research_materials",
     "copy-from": "research_tome_abstract",
     "name": { "str": "earth magic research materials", "str_pl": "sets of earth magic research materials"  },
@@ -74,7 +72,7 @@
     "fun": -2
   },
   {
-    "type": "GENERIC",
+    "type": "BOOK",
     "id": "stormshaper_research_materials",
     "copy-from": "research_tome_abstract",
     "name": { "str": "sky magic research materials", "str_pl": "sets of sky magic research materials"  },
@@ -87,28 +85,28 @@
     "fun": -2
   },
   {
-    "type": "GENERIC",
+    "type": "BOOK",
     "id": "used_research_materials",
     "copy-from": "research_tome_abstract",
     "name": { "str": "old research materials", "str_pl": "sets of old research materials"  },
     "description": "A set of documents, scribbed notes, and other esoterica you used for your research into magic.  Unfortunately it was a dead end, but it might be useful for kindling.",
   },
   {
-    "type": "GENERIC",
+    "type": "BOOK",
     "id": "occult_research_intro",
     "copy-from": "research_notes_abstract",
     "name": { "str": "rudimentary occult research results", "str_pl": "sets of rudimentary occult research results" },
     "description": "Jotted down thoughts about the hidden things of the world.  Nothing here is particularly profound, and you'll probably not need to consult this again."
   },
   {
-    "type": "GENERIC",
+    "type": "BOOK",
     "id": "occult_research_minor",
     "copy-from": "research_notes_abstract",
     "name": { "str": "apprentice occult research results", "str_pl": "sets of apprentice occult research results" },
     "description": "Musings and tangents mixed with a few real insights.  You know there's power to be grasped out there, if you can just find out how to do it."
   },
   {
-    "type": "GENERIC",
+    "type": "BOOK",
     "id": "used_occult_notes",
     "copy-from": "research_notes_abstract",
     "name": { "str": "old occult research notes", "str_pl": "sets of old occult research notes" },
