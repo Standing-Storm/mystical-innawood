@@ -2,11 +2,11 @@
   {
     "id": "mana_energy_weak",
     "type": "requirement",
-    "extend": { "components": [ [ [ "mossling_fur", 2 ] ] ] }
+    "extend": { "components": [ [ [ "mossling_fur", 4 ], [ "dryad_bark", 1 ] ] ] }
   },
   {
     "id": "mana_energy_strong",
     "type": "requirement",
-    "extend": { "components": [ [ [ "dryad_bark", 1 ], [ "witchwood_bark", 1 ], [ "shambling_eye", 1 ] ] ] }
+    "extend": { "components": [ [ [ "dryad_bark", 3 ], [ "witchwood_bark", 1 ], [ "shambling_eye", 1 ] ] ] }
   }
 ]
