@@ -31,8 +31,8 @@
       "wood"
     ], 
     "skill": "spellcraft",
-    "required_level": 5,
-    "max_level": 7,
+    "required_level": 3,
+    "max_level": 4,
     "intelligence": 12,
     "time": "60 m",
     "fun": -2
@@ -48,8 +48,8 @@
       "stone"
     ],
     "skill": "spellcraft",
-    "required_level": 5,
-    "max_level": 7,
+    "required_level": 3,
+    "max_level": 4,
     "intelligence": 12,
     "time": "60 m",
     "fun": -2
@@ -64,8 +64,8 @@
       "paper"
     ],
     "skill": "spellcraft",
-    "required_level": 5,
-    "max_level": 7,
+    "required_level": 3,
+    "max_level": 4,
     "intelligence": 12,
     "time": "60 m",
     "fun": -2
