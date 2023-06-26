@@ -1,12 +1,12 @@
 [
  {
-    "id": "harvest_shambling",
+    "id": "harvest_brackenwight",
     "type": "harvest",
     "entries": [
       { "drop": "withered", "type": "flesh", "mass_ratio": 0.4 },
       { "drop": "veggy", "type": "flesh", "mass_ratio": 0.08 },
       { "drop": "stick", "type": "bone", "mass_ratio": 0.03 },
-      { "drop": "shambling_eye", "scale_num": [ 1, 2 ], "max": 3, "type": "offal" }
+      { "drop": "bracken_eye", "scale_num": [ 1, 2 ], "max": 3, "type": "offal" }
     ]
   }
 ]
