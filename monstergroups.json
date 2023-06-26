@@ -3,7 +3,8 @@
     "type": "monstergroup",
     "name": "GROUP_FOREST",
     "monsters": [
-      { "group": "GROUP_FOREST_ELEMENTAL", "weight": 10 }
+      { "group": "GROUP_FOREST_ELEMENTAL", "weight": 5, "conditions": [ "SPRING", "SUMMER", "AUTUMN" ] },
+      { "group": "GROUP_FOREST_ELEMENTAL", "weight": 10, "conditions": [ "SPRING", "SUMMER", "AUTUMN", "DAY" ] }
     ]
   },
   {
