@@ -18,6 +18,6 @@
     "flags": [ "SEES", "HEARS", "WARM", "HARDTOSHOOT", "BASHES", "DESTROYS", "ATTACKMON", "PUSH_MON", "PUSH_VEH" ],
     "harvest": "harvest_brackenwight",
     "biosignature": { "biosig_item": "withered", "biosig_timer": 12 },
-    "death_function": { "message": "A %s collapses into a massive pile." }
+    "death_function": { "message": "%s collapses into a massive pile." }
   }
 ]
