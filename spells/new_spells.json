@@ -48,5 +48,22 @@
     "final_casting_time": 60000,
     "casting_time_increment": -54000,
     "extra_effects": [ { "id": "mana_fatigue" } ]
-  }
+  },
+	{
+    "id": "channeling_fatigue_spell",
+    "type": "SPELL",
+    "name": { "str": "Channeling Fatigue Spell" },
+    "valid_targets": [ "self" ],
+    "description": "Applies the vitamin Channeling Drain to you.",
+    "flags": [ "SILENT", "NO_EXPLOSION_SFX" ],
+    "message": "",
+    "max_level": 100,
+    "effect": "attack",
+    "effect_str": "channeling_fatigue",
+    "shape": "blast",
+    "min_duration": 100,
+    "max_duration": 10000,
+		"duration_increment": 100
+  },
+	}
 ]
