@@ -1,12 +1,12 @@
 [
   {
-    "id": "mana_energy_weak",
+    "id": "enchanted_components_minor",
     "type": "requirement",
-    "extend": { "components": [ [ [ "mossling_fur", 4 ], [ "dryad_bark", 1 ] ] ] }
+    "components": [ [ [ "mossling_fur", 4 ], [ "dryad_bark", 1 ] ] ]
   },
   {
-    "id": "mana_energy_strong",
+    "id": "enchanted_components_major",
     "type": "requirement",
-    "extend": { "components": [ [ [ "dryad_bark", 3 ], [ "witchwood_bark", 1 ], [ "bracken_eye", 1 ] ] ] }
+    "components": [ [ [ "dryad_bark", 3 ], [ "witchwood_bark", 1 ], [ "bracken_eye", 1 ] ] ]
   }
 ]
