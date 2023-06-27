@@ -5,9 +5,9 @@
     "name": [ "Channeling Malaise", "Channeling Fatigue", "Channeling Enervation", "Channeling Exhaustion" ],
     "//": "Basically copied from anemia for the similar weakness effects",
     "desc": [
-      "A lack of iron in your diet has hampered the efficiency and regeneration of your red blood cells.",
-      "Prolonged lack of iron in your diet has compromised the efficiency and regeneration of your red blood cells.",
-      "Severe lack of iron in your diet results in your red blood cells dying faster then they are regenerating.",
+      "You feel tired and short of breath.  Perhaps you should rely on mundane methods for a time.",
+      "Your breathing is labored and you feel the effects of all that magic in every move you make.",
+      "Your magic has taken too much out of you.  Your muscles are shakey and your bones ache.",
       "You are barely able to stand.  You feel a bone-deep tiredness that affects everything you do."
     ],
     "apply_message": "The fatigue of manipulating arcane forces is taking its toll.",
@@ -20,6 +20,7 @@
     "rating": "bad",
     "base_mods": {
       "str_mod": [ -1 ],
+      "speed_mod": [ -10 ],
       "stamina_min": [ -100 ],
       "stamina_max": [ -200 ],
       "stamina_chance": [ 900 ],
@@ -33,6 +34,7 @@
     "scaling_mods": {
       "str_mod": [ -2 ],
       "dex_mod": [ -1.5 ],
+      "speed_mod": [ -5 ],
       "stamina_max": [ -500 ],
       "fatigue_max": [ 5 ],
       "stamina_chance": [ -200 ],
@@ -40,6 +42,15 @@
       "h_mod_min": [ -1 ],
       "h_mod_min_val": [ -50 ],
       "h_mod_chance": [ -200 ]
-    }
+    },
+    "limb_score_mods": [
+      { "limb_score": "manip", "modifier": 1.0, "scaling": -0.02 },
+      { "limb_score": "lift", "modifier": 1.0, "scaling": -0.1 },
+      { "limb_score": "grip", "modifier": 1.0, "scaling": -0.1 },
+      { "limb_score": "block", "modifier": 1.0, "scaling": -0.05 },
+      { "limb_score": "reaction", "modifier": 1.0, "scaling": -0.1 },
+      { "limb_score": "balance", "modifier": 1.0, "scaling": -0.2 }
+    ],
+    "flags": [ "EFFECT_LIMB_SCORE_MOD" ]
   }
 ]
