@@ -111,7 +111,8 @@
       "false_effect": [
         { "u_message": "You've done it.  You've systemized an approaching to sensing magical energies.  Now with the proper materials, you can transcribe the formulae necessary to learn your first real spell.", "type": "good" },
         { "u_learn_recipe": "spell_formula_witchsight" },
-        { "u_learn_recipe": "magical_ink" }
+        { "u_learn_recipe": "magical_ink" },
+        { "u_learn_recipe": "magical_grimoire_basic" }
       ]
     }
   ]
