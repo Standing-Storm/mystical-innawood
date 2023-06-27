@@ -1,7 +1,7 @@
 [
   {
     "type": "enchantment",
-    "id": "enchant_pyrokinetic_aura",
+    "id": "effect_thorn_skin",
     "condition": "ALWAYS",
     "has": "HELD",
     "hit_me_effect": [ { "id": "thorn_skin_attacked", "hit_self": false } ],
