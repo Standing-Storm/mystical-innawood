@@ -9,7 +9,7 @@
      "min_damage": 1,
      "max_damage": 1,
      "effect": "spawn_item",
-     "effect_str": "effect_breathing_water",
+     "effect_str": "item_breathing_water",
      "shape": "blast",
      "energy_source": "MANA",
      "spell_class": "SEA",
