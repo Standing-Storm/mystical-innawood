@@ -1,0 +1,19 @@
+[
+  {
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "result": "magical_grimoire_basic",
+    "category": "CC_OCCULT",
+    "subcategory": "CSC_OCCULT_MATERIALS",
+    "difficulty": 4,
+    "skill_used": "occult",
+    "time": "12 h", 
+    "using": [ [ "writing_formulae_simple_standard", 1 ] ],
+    "components": [ [ [ "paper", 100 ] ] ],
+    "proficiencies": [
+      { "proficiency": "prof_occult_exploration", "required": true },
+      { "proficiency": "prof_thaumatology", "required": false },
+      { "proficiency": "prof_spell_research", "required": false }
+    ]
+  }
+]
