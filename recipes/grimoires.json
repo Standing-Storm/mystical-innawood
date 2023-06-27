@@ -9,7 +9,7 @@
     "skill_used": "occult",
     "time": "12 h", 
     "using": [ [ "writing_formulae_simple_standard", 1 ] ],
-    "components": [ [ [ "paper", 100 ] ] ],
+    "components": [ [ [ "paper", 100 ] ], [ [ "detect_magic_research", 1 ] ] ],
     "proficiencies": [
       { "proficiency": "prof_occult_exploration", "required": true },
       { "proficiency": "prof_thaumatology", "required": false },
