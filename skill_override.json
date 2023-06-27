@@ -1,10 +1,10 @@
 [
   {
     "type": "skill",
-    "id": "spellcraft",
+    "id": "occult",
     "name": { "str": "occult" },
-    "display_category": "display_ranged",
-    "sort_rank": 14500,
+    "display_category": "display_interaction",
+    "sort_rank": 25500,
     "description": "Your knowledge of spirits, the unseen world, and other mystical topics. "
   }
 ]
