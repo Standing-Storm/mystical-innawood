@@ -4,7 +4,7 @@
     "id": "mystical_innawoods",
     "name": "Mystical Innwoods",
     "authors": [ "Standing Storm" ],
-    "maintainers": [ "tanding Storm" ],
+    "maintainers": [ "Standing Storm" ],
     "description": "Using natural materials and mystical ingredients, research magic and learn spells from nothing. Learn the magic of the earth, forest, sea, and sky, discover botanical enchantment, and conquer the untamed wilderness.  Just watch out for the spirits, who will not be happy that someone is interfering in their domain.",
     "category": "content",
     "dependencies": [ "dda", "innawood" ],
