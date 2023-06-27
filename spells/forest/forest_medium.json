@@ -1,4 +1,26 @@
 [
+	{
+		"id": "forest_thorn_skin",
+		"type": "SPELL",
+		"name": "Thornskin",
+		"description": "This spell transforms the caster's skin into a bark-like consistency covered in large thorns.",
+		"valid_targets": [ "self" ],
+		"flags": [ "CONCENTRATE", "VERBAL", "SOMATIC" ],
+		"effect": "attack",
+		"effect_str": "effect_thorn_skin",
+		"shape": "blast",
+		"energy_source": "MANA",
+		"spell_class": "FOREST",
+		"difficulty": 5,
+		"min_damage": 1,
+		"max_damage": 1,
+		"max_level": 15,
+		"base_casting_time": 1500,
+		"base_energy_cost": 500,
+		"min_duration": 24000,
+		"max_duration": 360000,
+		"duration_increment": 24000
+	},
   {
     "id": "forest_whispers",
     "type": "SPELL",
