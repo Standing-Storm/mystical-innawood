@@ -1,0 +1,24 @@
+ [
+   {
+     "id": "sea_breathing_water", 
+     "type": "SPELL", 
+     "name": "Rite of Traversing the Depths",
+     "description": "Take a deep breath and fill your lungs with air, allowing you to travel through water without needing to breath.  THis will also protect you from toxic gases or other .",
+     "valid_targets": [ "self" ],
+     "flags": [ "CONCENTRATE", "LOUD", "VERBAL", "NO_LEGS" ],
+     "min_damage": 1,
+     "max_damage": 1,
+     "effect": "spawn_item",
+     "effect_str": "effect_breathing_water",
+     "shape": "blast",
+     "energy_source": "MANA",
+     "spell_class": "SEA",
+     "difficulty": 3,
+     "max_level": 10,
+     "base_casting_time": 1000,
+     "base_energy_cost": 200,
+     "min_duration": 18000,
+     "max_duration": 180000,
+     "duration_increment": 18000
+   }
+ ]
