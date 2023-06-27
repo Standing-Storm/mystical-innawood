@@ -17,10 +17,10 @@
 		"min_damage": 1,
 		"max_damage": 1,
 		"max_level": 15,
-		"base_casting_time": 1200,
+		"base_casting_time": 12000,
 		"base_energy_cost": 350,
-		"min_duration": 24000,
-		"max_duration": 360000,
+		"min_duration": 60000,
+		"max_duration": 720000,
 		"duration_increment": 24000
 	},
   {
