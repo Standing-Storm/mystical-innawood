@@ -1,0 +1,82 @@
+[
+   {
+    "id": "forest_bandages",
+    "type": "GENERIC",
+    "category": "drugs",
+    "name": { "str": "Vegetative Poultice" },
+    "looks_like": "leaves",
+    "description": "A mixture of bark, moss, and leaves, glowing softly with verdant energy.",
+    "weight": "50 g",
+    "volume": "60 ml",
+    "price": 1,
+    "price_postapoc": 1,
+    "material": [ "wood" ],
+    "symbol": "!",
+    "color": "green",
+    "flags": [ "TRADER_AVOID", "SINGLE_USE" ],
+    "use_action": { "type": "heal", "bandages_power": 3, "bleed": 12, "move_cost": 300 }
+  },
+  {
+    "id": "arrow_harvest",
+    "type": "AMMO",
+    "price": 1,
+    "name": { "str": "twisted wooden arrow" },
+    "symbol": "=",
+    "color": "green",
+    "looks_like": "arrow_fire_hardened_fletched",
+    "description": "A arrow that looks more like it was grown than carved. Despite that, it flies straight and true. It explodes into a mass of entangling vegetation when it hits its target.",
+    "material": [ "wood" ],
+    "volume": "250 ml",
+    "price_postapoc": 1,
+    "weight": "25 g",
+    "longest_side": "76 cm",
+    "melee_damage": {
+      "bash": 3,
+      "cut": 1
+    },
+    "ammo_type": "arrow",
+    "damage": { "damage_type": "stab", "armor_penetration": 2 },
+    "dispersion": 100,
+    "loudness": 0,
+    "count": 10,
+    "show_stats": true,
+    "critical_multiplier": 10,
+    "effects": [ "TANGLE" ]
+  },
+  {
+    "type": "GENERIC",
+    "id": "bramble_spear_item",
+    "name": { "str": "spear of brambles" },
+    "looks_like": "spear_wood",
+    "description": "A twisted wooden spear whose branches twine together into a vicious point sticky with sap.",
+    "weight": "1500 g",
+    "price_postapoc": 1,
+    "color": "green",
+    "symbol": "/",
+    "material": [ "wood" ],
+    "techniques": [ "WBLOCK_1", "IMPALE" ],
+    "volume": "1350 ml",
+    "longest_side": "170 cm",
+     "melee_damage": {
+       "bash": 4,
+       "stab": 25
+     },
+    "to_hit": { "grip": "weapon", "length": "long", "surface": "point", "balance": "good" },
+    "flags": [
+      "SPEAR",
+      "REACH_ATTACK",
+      "NONCONDUCTIVE",
+      "SHEATH_SPEAR", 
+      "UNBREAKABLE_MELEE",
+      "NO_REPAIR",
+      "NO_SALVAGE"
+    ],
+    "weapon_category": [
+      "POLEARMS",
+      "SPEARS"
+    ],
+    "price": 1,
+    "qualities": [ [ "COOK", 1 ] ],  
+    "relic_data": { "passive_effects": [ { "has": "WIELD", "hit_you_effect": [ { "id": "bramble_spear_slow",  "hit_self": false } ] } ] }
+  }
+]
