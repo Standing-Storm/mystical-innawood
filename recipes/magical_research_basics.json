@@ -80,7 +80,7 @@
      "difficulty": 3,
      "time": "6 h",
       "using": [ [ "writing_standard", 1 ] ],
-     "components": [ [ [ "paper", 10 ] ], [ [ "mana_energy_weak", 1 ] ] ],
+     "components": [ [ [ "paper", 10 ] ], [ [ "enchanted_components_minor", 1 ] ] ],
       "skill_used": "occult",
      "flags": [ "SECRET", "BLIND_HARD" ],
      "proficiencies": [ 
