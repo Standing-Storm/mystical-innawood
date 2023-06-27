@@ -1,10 +1,17 @@
 [
   {
-    "id": "shambling_eyes",
-    
+    "type": "GENERIC",
+    "id": "bracken_eye",
+    "name": { "str": "brackenwight eye" },
+    "description": "A fist-sized lump of plant matter taken from a brackenwight.  It still glows a very faint green",
+    "weight": "133 g",
+    "volume": "250 ml",
+    "symbol": "*",
+    "color": "green",
+    "flags": [ "TRADER_AVOID", "LIGHT_3" ]
   },
   {
-    
+    "type": "COMESTIBLE",
     "id": "mossling_fur"
     "copy-from": "grass",
     "name": { "str": "tuft of mossling fur", "str_pl": "tufts of mossling fur" },
@@ -12,7 +19,6 @@
     "calories": 70,
     "weight": "100 g",
     "volume": "250 ml",
-    "type": "COMESTIBLE",
     "flags": [ "TRADER_AVOID", "INEDIBLE" ]
   },
   {
