@@ -10,6 +10,12 @@
     "looks_like": "cookbook",
     "symbol": "?",
     "color": "gray",
-    "qualities": [ [ "MAGICAL_RESEARCH", 1 ] ]
+    "qualities": [ [ "MAGICAL_RESEARCH", 1 ] ],
+    "skill": "occult",
+    "required_level": 3,
+    "max_level": 4,
+    "intelligence": 11,
+    "time": "60 m",
+    "fun": -2
   }
 ]
