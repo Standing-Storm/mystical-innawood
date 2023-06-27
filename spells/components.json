@@ -1,6 +1,6 @@
 [
   {
-     "id": "spell_components_druid_arrow",
+     "id": "spell_components_hunter_arrow",
      "type": "requirement",
      "//": "Sticks for the for the Harvest of the Hunter spell",
      "components": [
@@ -8,7 +8,7 @@
     ]
    },
    {
-   "id": "spell_components_druid_bramble_spear",
+   "id": "spell_components_bramble_spear",
    "type": "requirement",
     "//": "Sticks to turn into a bramble spear",
    "components": [
