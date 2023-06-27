@@ -1,0 +1,10 @@
+[
+  {
+    "type": "skill",
+    "id": "occult",
+    "name": { "str": "occult" },
+    "display_category": "display_interaction",
+    "sort_rank": 25500,
+    "description": "Your knowledge of spirits, the unseen world, and other mystical topics, occult is a path to abilities many might consider to be unnatural."
+  }
+]
