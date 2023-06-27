@@ -1,0 +1,24 @@
+[
+  {
+    "id": "forest_whispers",
+    "type": "SPELL",
+    "name": "Whisper of the Leaves",
+    "description": "This spell allows you to hear the trees' wisdom in the rustle of the leaves and the creaking of their roots.",
+    "valid_targets": [ "self" ],
+		"flags": [ "CONCENTRATE", "VERBAL", "SOMATIC" ],
+    "effect": "spawn_item",
+    "effect_str": "item_whisper_ear",
+    "shape": "blast",
+    "energy_source": "MANA",
+    "spell_class": "FOREST",
+    "difficulty": 6,
+    "min_damage": 1,
+    "max_damage": 1,
+    "max_level": 15,
+    "base_casting_time": 6000,
+    "base_energy_cost": 300,
+    "min_duration": 100000,
+    "max_duration": 400000,
+    "duration_increment": 20000
+  }
+]
