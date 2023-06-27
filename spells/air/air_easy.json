@@ -9,6 +9,7 @@
     "effect_str": "effect_actinic_glare",
     "shape": "blast",
     "energy_source": "MANA",
+    "spell_class": "AIR",
     "flags": [ "CONCENTRATE", "VERBAL", "NO_LEGS" ],
     "difficulty": 3,
     "max_level": 15,
