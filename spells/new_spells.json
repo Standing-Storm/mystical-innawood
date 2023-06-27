@@ -40,6 +40,7 @@
     "damage_increment": 1,
     "effect": "spawn_item",
     "effect_str": "crystallized_mana",
+		"extra_effects": [ { "id": "channeling_fatigue_spell", "hit_self": true, "max_level": 10 } ],
     "shape": "blast",
     "energy_source": "MANA",
     "base_energy_cost": 1000,
