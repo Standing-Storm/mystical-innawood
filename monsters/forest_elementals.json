@@ -41,6 +41,9 @@
     "armor": { "bash": 25, "cut": 5, "stab": 30, "bullet": 40, "heat": -30  },
 
     "material": [ "wood" ],
+    "special_attacks": [
+      { "id": "scratch", "cooldown": 8 }
+     ]
     
   },
   {
@@ -67,6 +70,13 @@
     "vision_day": 45,
     "vision_night": 6,
     "material": [ "veggy" ],
+     "special_attacks": [ 
+       { "id": "smash", "attack_upper": true, "throw_strength": 50, "cooldown": 10 },
+       { "type": "spell", "spell_data": { "id": "brackenstrike", "min_level": 5 },
+         "cooldown": 15,
+         "monster_message": "Roots explode out of %1$s and impale you!"
+       }
+    ],
     "flags": [ "SEES", "HEARS", "WARM", "HARDTOSHOOT", "BASHES", "DESTROYS", "ATTACKMON", "PUSH_MON", "PUSH_VEH" ],
     "harvest": "harvest_brackenwight",
     "biosignature": { "biosig_item": "withered", "biosig_timer": 12 },
