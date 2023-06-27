@@ -55,7 +55,7 @@
     "name": { "str": "Channeling Fatigue Spell" },
     "valid_targets": [ "self" ],
     "description": "Applies the vitamin Channeling Drain to you.",
-    "flags": [ "SILENT", "NO_EXPLOSION_SFX" ],
+    "flags": [ "SILENT", "NO_EXPLOSION_SFX", "RANDOM_DAMAGE" ],
     "message": "",
     "max_level": 100,
     "effect": "attack",
