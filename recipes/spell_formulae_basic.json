@@ -1,7 +1,7 @@
 [
   {
     "type": "recipe",
-    "activity_level": "NO_EXERCISE",
+    "activity_level": "LIGHT_EXERCISE",
     "result": "spell_formula_witchsight",
     "category": "CC_ENCHANTING",
     "subcategory": "CSC_ENCHANTED_FORMULAE",
