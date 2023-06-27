@@ -4,11 +4,10 @@
     "type": "MONSTER",
     "copy-from": "mon_bear",
     "name": "Nature's Guardian",
-    "description": "A bear summoned through druidic magic, ready to rend the enemies of nature. Its eyes are a brilliant green amd moss grows throughout its thick fur.",
+    "description": "A bear summoned through the magic of the forest, ready to rend the enemies of nature.  Its eyes are a brilliant green amd moss grows throughout its thick fur.",
     "default_faction": "bear",
     "melee_skill": 7,
-    "armor_bash": 10,
-    "armor_cut": 5,
+    "armor": { "bash": 10, "cut": 5 }
     "aggression": 20,
     "morale": 200,
     "anger_triggers": [ "HOSTILE_SEEN", "HURT", "STALK", "PLAYER_CLOSE" ], 
