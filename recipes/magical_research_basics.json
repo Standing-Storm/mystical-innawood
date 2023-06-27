@@ -42,7 +42,7 @@
      "time": "4 h",
      "autolearn": true,
      "components": [ [ [ "occult_research_minor", 1 ] ] ],
-      "skill_used": "spellcraft",
+      "skill_used": "occult",
      "flags": [ "SECRET", "BLIND_HARD" ],
      "proficiencies": [ 
         { "proficiency": "prof_occult_exploration", "required": false },
@@ -51,7 +51,7 @@
      "result_eocs": [ 
        {
          "id": "EOC_STUDY_OCCULT_RESEARCH_NOTES", 
-          "condition": { "roll_contested": { "math": [ "rng( u_val('intelligence'), u_skill('spellcraft') )"] }, "difficulty": 14 },
+          "condition": { "roll_contested": { "math": [ "rng( u_val('intelligence'), u_skill('occult') )"] }, "difficulty": 14 },
          "effect": [
            { "u_message": "You were right, there is something here!  It's a good thing you kept looking.", "type": "good" },
            { "u_spawn_item": "used_occult_notes", "suppress_message": true },
@@ -81,7 +81,7 @@
      "time": "6 h",
       "using": [ [ "writing_standard", 1 ] ],
      "components": [ [ [ "paper", 10 ] ], [ [ "mana_energy_weak", 1 ] ] ],
-      "skill_used": "spellcraft",
+      "skill_used": "occult",
      "flags": [ "SECRET", "BLIND_HARD" ],
      "proficiencies": [ 
        { "proficiency": "prof_occult_exploration", "required": false },
@@ -91,7 +91,7 @@
       "result_eocs": [ 
        {
          "id": "EOC_METHODS_OF_DETECTING_MAGIC", 
-         "condition": { "roll_contested": { "math": [ "rng( u_val('intelligence'), u_skill('spellcraft') )"] }, "difficulty": 15 },
+         "condition": { "roll_contested": { "math": [ "rng( u_val('intelligence'), u_skill('occult') )"] }, "difficulty": 15 },
          "effect": [
            { "run_eocs": "EOC_METHODS_OF_DETECTING_MAGIC_2" }
          ],
