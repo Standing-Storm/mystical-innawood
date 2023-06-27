@@ -11,6 +11,7 @@
      "max_damage": 1,
      "effect": "spawn_item",
      "effect_str": "item_breathing_water",
+    "extra_effects": [ { "id": "channeling_fatigue_spell", "hit_self": true, "max_level": 1 } ],
      "shape": "blast",
      "energy_source": "MANA",
      "spell_class": "SEA",
