@@ -39,7 +39,7 @@
   },
   {
     "type": "BOOK",
-    "id": "druid_research_materials",
+    "id": "forest_research_materials",
     "copy-from": "research_tome_abstract",
     "name": { "str": "forest magic research materials", "str_pl": "sets of forest magic research materials" },
     "description": "A set of documents, scribbed notes, musings, bits of pressed leaves and flowers, and other esoterica for research into magic.  Using this, you might be able to discover a magical formula related to the natural world.",
@@ -56,7 +56,7 @@
   },
   {
     "type": "BOOK",
-    "id": "earthshaper_research_materials",
+    "id": "earth_research_materials",
     "copy-from": "research_tome_abstract",
     "name": { "str": "earth magic research materials", "str_pl": "sets of earth magic research materials"  },
     "description": "A set of documents, scribbed notes, musings, polished rocks and samples of soil, and other esoterica for research into magic.  Using this, you might be able to discover a magical formula related to the earth.",
@@ -73,10 +73,23 @@
   },
   {
     "type": "BOOK",
-    "id": "stormshaper_research_materials",
+    "id": "sky_research_materials",
     "copy-from": "research_tome_abstract",
     "name": { "str": "sky magic research materials", "str_pl": "sets of sky magic research materials"  },
     "description": "A set of documents, scribbed notes, musings, astrological observations, and other esoterica for research into magic.  Using this, you might be able to discover a magical formula related to the sky.",
+    "skill": "occult",
+    "required_level": 4,
+    "max_level": 5,
+    "intelligence": 12,
+    "time": "60 m",
+    "fun": -2
+  },
+  {
+    "type": "BOOK",
+    "id": "sea_research_materials",
+    "copy-from": "research_tome_abstract",
+    "name": { "str": "sea magic research materials", "str_pl": "sets of sea magic research materials"  },
+    "description": "A set of documents, scribbed notes, musings, tidal records, and other esoterica for research into magic.  Using this, you might be able to discover a magical formula related to the sea.",
     "skill": "occult",
     "required_level": 4,
     "max_level": 5,
