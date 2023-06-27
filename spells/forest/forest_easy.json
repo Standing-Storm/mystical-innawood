@@ -5,6 +5,7 @@
 		"name": "Spear of Brambles",
 		"description": "This spell turns a stick into a vicious spear that drips with sticky sap.",
 		"valid_targets": [ "none" ],
+	  "skill": "occult",
 		"flags": [ "CONCENTRATE", "VERBAL" ],
 		"effect": "spawn_item",
 		"effect_str": "bramble_spear_item",
@@ -28,6 +29,7 @@
     "name": "Harvest of the Hunter",
     "description": "This spell creates a grouping of odd-looking but functional arrows out of forest detritus.",
     "valid_targets": [ "none" ],
+		"skill": "occult",
     "flags": [ "CONCENTRATE", "SOMATIC", "VERBAL", "NO_LEGS" ],
     "difficulty": 4,
     "max_level": 15,
@@ -47,5 +49,5 @@
     "min_duration": 180000,
     "max_duration": 1440000,
     "duration_increment": 84000
-  },
+  }
 ]
