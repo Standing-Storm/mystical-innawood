@@ -17,34 +17,26 @@
         "CSC_PRACTICE_MECHANICS",
         "CSC_PRACTICE_SOCIAL",
         "CSC_PRACTICE_COMBAT",
-        "CSC_PRACTICE_SPELLCRAFT"
+        "CSC_PRACTICE_OCCULT"
       ]
     },
     {
       "type": "recipe_category",
-      "id": "CC_ENCHANTED",
+      "id": "CC_OCCULT",
       "recipe_subcategories": [
         "CSC_ALL",
-        "CSC_ENCHANTED_MATERIALS",
-        "CSC_ENCHANTED_TOOLS",
-        "CSC_ENCHANTED_WEAPONS",
-        "CSC_ENCHANTED_AMMO",
-        "CSC_ENCHANTED_ARMOR",
-        "CSC_ENCHANTED_POTIONS",
-        "CSC_ENCHANTED_RUNES",
-        "CSC_ENCHANTED_MODS",
-        "CSC_ENCHANTED_OTHER",
-        "CSC_ENCHANTED_ENCHANTING",
-        "CSC_ENCHANTED_RESEARCH",
-        "CSC_ENCHANTED_FORMULAE",
+        "CSC_OCCULT_MATERIALS",
+        "CSC_OCCULT_FORMULAE",
+        "CSC_OCCULT_BOTANIC",
+        "CSC_OCCULT_RESEARCH"
       ]
     },
     {
       "id": "nested_magical_research",
       "type": "nested_category",
       "activity_level": "LIGHT_EXERCISE",
-      "category": "CC_ENCHANTED",
-      "subcategory": "CSC_ENCHANTED_RESEARCH",
+      "category": "CC_OCCULT",
+      "subcategory": "CSC_OCCULT_RESEARCH",
       "name": "spell research",
       "description": "Recipes related to directly applying magical theory to determine a spell formula.",
       "skill_used": "spellcraft",
