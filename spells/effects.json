@@ -26,6 +26,7 @@
       {
         "vitamin": "channeling_overload",
         "rate": [ [ 1, 1 ] ],
+	      "resist_rate": [ [ 0, 1 ] ],
         "tick": [ "1 s" ],
       }
     ]
