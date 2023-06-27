@@ -6,6 +6,6 @@
       "desc": [ "The air around you glows with a harsh blue light." ],
       "rating": "good",
       "show_intensity": false,
-      "enchantments": [ { "values": [ { "value": "LUMINATION", "add": { "math": [ "( u_val('spell_level', 'spell: actinic_glare') * 20 )" ] } } ] } ]
+      "enchantments": [ { "values": [ { "value": "LUMINATION", "add": { "math": [ "( u_val('spell_level', 'spell: air_actinic_glare') * 20 )" ] } } ] } ]
     }
   ]
