@@ -1,0 +1,30 @@
+[
+  {
+    "id": "item_breathing_water",
+    "name": { "str_sp": "full lungs" },
+    "description": "Your lungs are full of air and you do not need to breath.",
+    "type": "TOOL_ARMOR",
+    "category": "clothing",
+    "weight": "0 g",
+    "material": [ "wind" ],
+    "environmental_protection": 25,
+    "volume": "1 ml",
+    "symbol": "0",
+    "color": "white",
+    "armor": [ { "encumbrance": 0, "coverage": 75, "covers": [ "head", "mouth", "eyes" ] } ],
+    "flags": [
+      "WATER_FRIENDLY",
+      "SEMITANGIBLE",
+      "ONLY_ONE",
+      "OVERSIZE",
+      "AURA",
+      "ZERO_WEIGHT",
+      "NO_TAKEOFF",
+      "NONCONDUCTIVE",
+      "TRADER_AVOID",
+      "REBREATHER",
+      "UNBREAKABLE",
+      "ALLOWS_NATURAL_ATTACKS"
+    ]
+  }
+]
