@@ -61,9 +61,8 @@
     "effect": "attack",
     "effect_str": "channeling_fatigue",
     "shape": "blast",
-    "min_duration": 100,
-    "max_duration": 10000,
-		"duration_increment": 100
+    "min_duration": 0,
+    "max_duration": { "math": [ "(u_val('spell_level', 'spell: channeling_fatigue_spell') * 100)" ] },,
   },
 	}
 ]
