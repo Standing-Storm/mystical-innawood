@@ -6,7 +6,7 @@
     "category": "CC_ENCHANTING",
     "subcategory": "CSC_ENCHANTED_FORMULAE",
     "difficulty": 4,
-    "skill_used": "spellcraft",
+    "skill_used": "occult",
     "time": "6 h", 
     "using": [ [ "writing_formulae_simple_standard", 1 ] ],
     "components": [ [ [ "paper", 20 ] ] ],
