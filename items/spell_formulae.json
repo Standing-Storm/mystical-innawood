@@ -1,7 +1,21 @@
 [
   {
     "type": "BOOK",
-    "copy-from": "spell_scroll",
+    "category": "manuals",
+    "id": "spell_formula_abstract",
+    "name": "Spell forumla abstract",
+    "description": "The Platonic spell formula, the first letter of the universal text, the start of the Akashic Record.  If you can see this you debugged it in.",
+    "weight": "450 g",
+    "volume": "1 L",
+    "material": [ "paper" ],
+    "looks_like": "cookbook",
+    "symbol": "?",
+    "color": "white"
+  },
+  {
+    "type": "BOOK",
+    "category": "manuals",
+    "copy-from": "spell_formula_abstract",
     "id": "spell_formula_witchsight",
     "name": { "str": "Spell Formula for Witchsight", "str_pl": "Spell Formulae for Witchsight" },
     "description": "The gestures, incantations, and mental constructs necessary to open yourself up to the unseen world.",
@@ -9,7 +23,8 @@
   },
    {
     "type": "BOOK",
-    "copy-from": "spell_scroll",
+     "category": "manuals",
+    "copy-from": "spell_formula_abstract",
     "id": "spell_formula_crystallize_mana_innawood",
     "name": { "str": "Spell Formula for the Ritual of Arcane Coalescence", "str_pl": "Spell Formula for the Ritual of Arcane Coalescence" },
     "description": "The gestures, incantations, and mental constructs necessary to perform a length ritual that distills magical energy into a solid form, usable for futher experimentation.",
