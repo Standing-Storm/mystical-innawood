@@ -45,8 +45,8 @@
     "name": { "str": "Botanical Enchantment" },
     "description": "The art of instilling magical effects into fruit.",
     "can_learn": true,
-    "time_to_learn": "30 h",
-    "default_time_multiplier": 2,
-    "default_fail_multiplier": 1.2
+    "time_to_learn": "60 h",
+    "default_time_multiplier": 4,
+    "default_skill_penalty": 1.5
   }
 ]
