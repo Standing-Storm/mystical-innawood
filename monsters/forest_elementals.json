@@ -18,13 +18,14 @@
     "melee_skill": 2,
     "melee_dice": 1,
     "melee_dice_sides": 5,
+    "dodge": 5
     "armor": { "bash": 6, "stab": 8, "bullet": 12, "heat": -30 },
     "vision_day": 45,
     "vision_night": 6,
     "material": [ "veggy" ],
     "flags": [ "SEES", "HEARS", "WARM", "HARDTOSHOOT", "PATH_AVOID_DANGER_1", "HIT_AND_RUN" ],
-     "death_function": { "message": "%s collapses into a pile of moss." }
-    "harvest": "harvest_mossling"
+    "death_function": { "message": "%s collapses into a pile of moss." }
+    "death_drops": "mossling_drops"
   },
   {
     "id": "mon_dryad",
