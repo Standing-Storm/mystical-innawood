@@ -14,31 +14,5 @@
 				] 
 			} 
 		] 
-	},
-  {
-		"type": "effect_type",
-		"id": "effect_tremorsense",
-		"name": [ "Tremorsense" ],
-		"desc": [ "You can feel them moving around you." ],
-		"apply_message": "",
-		"remove_message": "You can no longer discern the vibrations of the living earth.",
-		"rating": "good",
-		"max_duration": "30 minutes", 
-		"enchantments": [
-			{
-				"values": [
-					{ "value": "MOTION_VISION_RANGE", "add": { "math": [ "( u_val('spell_level', 'spell: earthshaper_danger_sense') * 3)" ] } }
-				] 
-			} 
-		] 
-	},
-	{
-    "id": "effect_actinic_glare",
-    "type": "effect_type",
-    "name": [ "Actinic Glow" ],
-    "desc": [ "The air around you glows with a harsh blue light." ],
-    "rating": "good",
-    "show_intensity": false,
-    "enchantments": [ { "values": [ { "value": "LUMINATION", "add": { "math": [ "( u_val('spell_level', 'spell: actinic_glare') * 20 )" ] } } ] } ]
-  }
+	}
 ]
