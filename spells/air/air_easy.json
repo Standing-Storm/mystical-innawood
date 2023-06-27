@@ -5,6 +5,7 @@
     "name": "Actinic Glare",
     "description": "Summon the harsh blue light of the storm from the air around you, illuminating your surroundings.",
     "valid_targets": [ "self" ],
+    "skill": "occult",
     "effect": "attack",
     "effect_str": "effect_actinic_glare",
     "shape": "blast",
