@@ -17,7 +17,7 @@
       [ [ "sweet_fruit", 1, "LIST" ] ],
       [ [ "salt", 2 ] ],
       [ [ "vinegar", 2 ] ],
-      [ [ "mana_energy_weak", 1 ] ] 
+      [ [ "enchanted_components_minor", 1 ] ] 
     ]
   }
 ]
