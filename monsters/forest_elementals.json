@@ -3,7 +3,7 @@
     "id": "mon_mossling",
     "type": "MONSTER",
     "name": "mossling",
-    "description": "A dog-sized mass of lichen and plant matter, ambling about on a series of legs.  It looks around the forest floor for fallen leaves to eat.",
+    "description": "A dog-sized mass of lichen and plant matter, ambling about on a series of short limbs.  It looks around the forest floor for fallen leaves to eat.",
     "default_faction": "forest_elemental_faction",
     "species": [ "FOREST_ELEMENTAL" ],
     "volume": "30000 ml",
