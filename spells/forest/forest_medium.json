@@ -1,8 +1,31 @@
 [
 	{
+    "id": "forest_bandage_heal",
+    "type": "SPELL",
+    "name": "Vegetative Poultice",
+    "description": "This spell turns a mixture of bark and leaves into a powerful salve capable of stopping even grievous wounds from bleeding.",
+    "valid_targets": [ "none" ],
+    "flags": [ "CONCENTRATE", "SOMATIC", "VERBAL", "NO_LEGS" ],
+		"max_level": 15,
+    "spell_class": "FOREST",
+    "energy_source": "MANA"
+		"difficulty": 5,
+    "min_damage": 1,
+    "max_damage": 1,
+    "effect": "spawn_item",
+    "effect_str": "magic_bandages",
+    "components": "spell_components_forest_bandage",
+    "shape": "blast",
+    "base_casting_time": 6000,
+    "base_energy_cost": 450,
+    "min_duration": 24000,
+    "max_duration": 720000,
+    "duration_increment": 46400
+  },
+	{
 		"id": "forest_thorn_skin",
 		"type": "SPELL",
-		"name": "Thornskin",
+		"name": "Skin of Thorns",
 		"description": "This spell transforms the caster's skin into a bark-like consistency covered in large thorns.",
 		"valid_targets": [ "self" ],
 		"skill": "occult",
