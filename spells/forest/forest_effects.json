@@ -3,19 +3,11 @@
 		"type": "effect_type",
 		"id": "effect_thorn_skin",
 		"name": [ "Skin of Thorns" ],
-		"desc": [ "The air around you has its temperature controlled." ],
+		"desc": [ "Your skin is woody and covered in sharp thorns." ],
 		"apply_message": "",
-		"remove_message": "A cool breeze hits your skin.",
-		"decay_messages": [ 
-			[ "The warm air you've surrounded yourself with is nearly spent.", "bad"],
-			[ "The air around you is slowing beginning to cool.", "bad" ] 
-		],
+		"remove_message": "Your skin loses its wood-like texture.",
 		"rating": "good",
 		"max_duration": "60 minutes", 
-		"max_intensity": 77,
-		"dur_add_perc": 10,
-		"int_dur_factor": "46 s",
-		"enchantments": [ "enchant_pyrokin_cloak" ]
-	},
+		"enchantments": [ "enchant_thorn_skin" ]
   }
 ]
