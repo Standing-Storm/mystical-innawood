@@ -1,0 +1,33 @@
+[
+  {
+    "type": "enchantment",
+    "id": "enchant_pyrokinetic_aura",
+    "condition": "ALWAYS",
+    "has": "HELD",
+    "hit_me_effect": [ { "id": "thorn_skin_attacked", "hit_self": false } ],
+    "values": [ 
+      { "value": "DEXTERITY", "add": -1 },
+      { "value": "STRENGTH", "add": 1 },
+      { "value": "CLIMATE_CONTROL_HEAT", "add": 20 },
+      { "value": "ARMOR_HEAT", "add": 10 },
+      { "value": "ARMOR_ELEC", "add": -10 },
+      { "value": "ARMOR_STAB", "add": -10 },
+      { "value": "ARMOR_BASH", "add": -5 }
+    ]
+  },
+  {
+		 "id": "thorn_skin_attacked",
+		 "type": "SPELL",
+		 "name": "Thorn skin aura",
+		 "description": "Do a small amount of damage to a monster that attacked you.",
+		 "valid_targets": [ "hostile" ],
+		 "flags": [ "RANDOM_DAMAGE", "NO_EXPLOSION_SFX" ],
+		 "shape": "blast",
+		 "effect": "attack",
+		 "damage_type": "stab",
+		 "min_damage": 2,
+		 "max_damage": 6,
+		 "min_range": 1,
+		 "max_range": 1
+	 }
+]
