@@ -10,6 +10,7 @@
     "time": "6 h", 
     "using": [ [ "writing_formulae_simple_standard", 1 ] ],
     "components": [ [ [ "paper", 20 ] ] ],
+    "qualities": [ { "id": "MAGICAL_RESEARCH", "level": 1 } ],
     "proficiencies": [
       { "proficiency": "prof_occult_exploration", "required": true },
       { "proficiency": "prof_thaumatology", "required": false },
