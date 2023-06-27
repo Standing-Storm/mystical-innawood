@@ -1,7 +1,6 @@
 [
   {
-    "id": "druid_barkskin",
-    "//": "Not sure here. Like a tree, so armored and can photosynthesize, but slow",
+    "id": "item_barkskin",
     "type": "ARMOR",
     "name": "Verdant form",
     "description": "Filled with the power of nature, your skin is bark and covered in thorns and your hair is filled with vines and flowers.",
@@ -36,48 +35,8 @@
       }
     ]
   },
-	 {
-	    "id": "druid_thorn_skin",
-	    "//": " 'Tornskin' but working right",
-	    "type": "ARMOR",
-	    "name": "Thornskin",
-	    "description": "Your skin is barklike and covered in thorns.",
-	    "weight": "1g",
-	    "volume": "1ml",
-	    "price": 7777,
-	    "symbol": "o",
-	    "color": "green",
-	    "material": [ "wood" ],
-		  "material_thickness": 2,
-	    "flags": [ "AURA", "SEMITANGIBLE", "OVERSIZE", "ONLY_ONE", "TRADER_AVOID", "NO_REPAIR", "NO_TAKEOFF", "NONCONDUCTIVE" ],
-	    "relic_data": { "passive_effects": [ 
-	      {
-	        "has": "WORN",
-	        "condition": "ALWAYS",
-					"hit_me_effect": [ { "id": "thorn_skin_attacked" ,  "hit_self": false } ],
-	        "values": [ 
-						{ "value": "DEXTERITY", "add": -1 },
-						{ "value": "STRENGTH", "add": 1 },
-						{ "value": "CLIMATE_CONTROL_HEAT", "add": 20 },
-						{ "value": "ARMOR_HEAT", "add": 10 },
-						{ "value": "ARMOR_ELEC", "add": -10 },
-						{ "value": "ARMOR_STAB", "add": -10 },
-						{ "value": "ARMOR_BASH", "add": -5 }
-	               
-	              ] 
-	             } 
-	           ] 
-	      },      
-	    "armor": [
-	      {
-	        "encumbrance": 0,
-	        "coverage": 100,
-	        "covers": [ "leg_l", "leg_r", "torso", "arm_l", "arm_r", "hand_l", "hand_r", "head", "foot_l", "foot_r", "mouth", "eyes" ]
-	      }
-	    ]
-	  },
 {
-    "id": "druid_whisper_ear",
+    "id": "item_whisper_ear",
     "type": "ARMOR",
     "name": "Ear of Nature",
     "description": "You can sense the layout of the land.",
