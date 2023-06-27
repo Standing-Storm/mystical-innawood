@@ -3,7 +3,8 @@
     "type": "MONSTER_FACTION",
     "name": "forest_elemental_faction",
     "base_faction": "animal",
-    "neutral": [ "small_animal", "herbivore", "mega_herbivore", "canidae", "mega_bird" ],
-    "by_mood": [ "human" ],
+    "neutral": [ "small_animal", "herbivore", "mega_herbivore", "canidae", "fish", "mega_bird" ],
+    "hate": [ "zombie", "triffid", "fungus" ],
+    "by_mood": [ "human" ]
   }
 ]
