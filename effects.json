@@ -1,0 +1,45 @@
+[
+  {
+    "type": "effect_type",
+    "id": "power_drain_shock",
+    "name": [ "Channeling Malaise", "Channeling Fatigue", "Channeling Enervation", "Channeling Exhaustion" ],
+    "//": "Basically copied from anemia for the similar weakness effects",
+    "desc": [
+      "A lack of iron in your diet has hampered the efficiency and regeneration of your red blood cells.",
+      "Prolonged lack of iron in your diet has compromised the efficiency and regeneration of your red blood cells.",
+      "Severe lack of iron in your diet results in your red blood cells dying faster then they are regenerating.",
+      "You are barely able to stand.  You feel a bone-deep tiredness that affects everything you do."
+    ],
+    "apply_message": "The fatigue of manipulating arcane forces is taking its toll.",
+    "remove_message": "You have completely recovered from the aftereffects of the magical rituals you performed.",
+    "decay_messages": [
+      [ "Your weakness from performing too many magical rituals is nearly gone.", "good" ],
+      [ "You are no longer quite as fatigued from the sorcery you performed.", "good" ]
+    ],
+    "max_intensity": 3,
+    "rating": "bad",
+    "base_mods": {
+      "str_mod": [ -1 ],
+      "stamina_min": [ -100 ],
+      "stamina_max": [ -200 ],
+      "stamina_chance": [ 900 ],
+      "fatigue_min": [ 5 ],
+      "fatigue_max": [ 10 ],
+      "fatigue_chance": [ 900 ],
+      "h_mod_min": [ -1 ],
+      "h_mod_min_val": [ 0 ],
+      "h_mod_chance": [ 900 ]
+    },
+    "scaling_mods": {
+      "str_mod": [ -2 ],
+      "dex_mod": [ -1.5 ],
+      "stamina_max": [ -500 ],
+      "fatigue_max": [ 5 ],
+      "stamina_chance": [ -200 ],
+      "fatigue_chance": [ -200 ],
+      "h_mod_min": [ -1 ],
+      "h_mod_min_val": [ -50 ],
+      "h_mod_chance": [ -200 ]
+    }
+  }
+]
