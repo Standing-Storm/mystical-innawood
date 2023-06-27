@@ -109,12 +109,13 @@
     "damage_type": "electric",
     "sound_description": "a crackle"
   },
-	  {
+	{
     "id": "sky_reveal_world_map",
     "type": "SPELL",
     "name": "Like a Bird on the Wing",
     "description": "close your eyes and open yourself up to the sky, gazing down on the land below from a great height.  The ritual will only work when you have an unobstructed view of the sky.",
     "valid_targets": [ "self" ],
+		"skill": "occult",
     "flags": [ "NO_HANDS", "CONCENTRATE", "SILENT" ],
     "effect": "effect_on_condition",
     "effect_str": "EOC_SKY_BIRD_MAP",
