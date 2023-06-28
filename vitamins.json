@@ -6,7 +6,7 @@
       "vit_type": "counter",
       "name": { "str": "Magical Research Insight" },
       "min": 0,
-      "max": 100,
+      "max": 5,
       "rate": "0 m"
     },
     {
