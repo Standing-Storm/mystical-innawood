@@ -13,7 +13,7 @@
     "type": "requirement",
     "//": "Tools and components for writing very basic spells.",
     "tools": [ 
-      [ [ "feather", -1], [ "magical_ink_simple", 2 ] ]
+      [ [ "feather", -1], [ "magical_ink_simple", 5 ] ]
     ]
 	}
 ]
