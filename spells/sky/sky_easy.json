@@ -5,7 +5,7 @@
     "name": "Storm's Lambent Glow",
     "description": "Summon the harsh blue light of the storm from the air around you, illuminating your surroundings.",
     "valid_targets": [ "self" ],
-    "flags": [ "CONCENTRATE", "VERBAL", "NO_LEGS" ],
+    "flags": [ "CONCENTRATE", "VERBAL", "SOMATIC", "NO_LEGS" ],
     "skill": "occult",
     "effect": "attack",
     "effect_str": "effect_actinic_glare",
