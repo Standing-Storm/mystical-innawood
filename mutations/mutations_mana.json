@@ -65,7 +65,7 @@
 		"valid": false,
 		"transform": { "target": "WITCHSIGHT_INFUSED", "msg_transform": "The air around you loses its radiance.", "active": false, "moves": 10 },
     "metabolism_modifier": 0.1,   
-    "thirst_modifier": 0.1
+    "thirst_modifier": 0.1,
 		"enchantments": [
 			{
 				"values": [
