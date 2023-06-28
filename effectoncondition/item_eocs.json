@@ -16,7 +16,7 @@
       { "u_learn_recipe": "beginning_research_botanical" },
       { "u_learn_recipe": "beginning_research_items" }
     ],
-    "false-effect": [    
+    "false_effect": [    
       { "u_message": "" }
     ]
   }
