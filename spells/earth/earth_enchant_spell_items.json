@@ -21,7 +21,6 @@
           "condition": "ALWAYS", 
           "values": [ 
             { "value": "STRENGTH", "add": { "math": [ "( u_val('spell_level', 'spell: earth_resilience_mountain') * 0.2 )" ] } },
-            { "value": "PAIN", "multiply": -0.15 },
             { "value": "MOVE_COST", "multiply": 0.2 },
             { "value": "ATTACK_SPEED", "multiply": 0.2 },
             { "value": "FORCEFIELD", "add": 0.15 },
