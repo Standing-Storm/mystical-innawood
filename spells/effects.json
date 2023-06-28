@@ -22,7 +22,7 @@
     "desc": [ "Performing such a powerful act of magic is taking its toll." ],
     "apply_message": "You feel a sudden fatigue as the magic is unleashed.",
     "rating": "bad",
-		"resist_traits": [ "CHANNELINGPROFICIENCY" ],
+		"resist_traits": [ "CHANNELINGPROFICIENCY", "MANAOVERFLOW" ],
 		 "vitamins": [
       {
         "vitamin": "channeling_overload",
