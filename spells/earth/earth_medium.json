@@ -9,7 +9,7 @@
     "spell_class": "EARTH",
     "energy_source": "MANA",
     "effect": "attack",
-    "effect_str": "effect_stoneskin",
+    "effect_str": "effect_resilience_mountain",
     "components": "spell_components_resilience_mountain",
     "shape": "blast",
     "difficulty": 5,
