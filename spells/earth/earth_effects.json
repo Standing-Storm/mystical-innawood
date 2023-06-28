@@ -15,5 +15,15 @@
 				] 
 			} 
 		] 
+	},
+	{
+		"type": "effect_type",
+		"id": "effect_draw_earth_power",
+		"name": [ "Infused with Earth Power" ],
+		"desc": [ "The health and might of the earth fills your body." ],
+		"remove_message": "A sudden weakness fills you as the power of the earth leaves you.",
+		"rating": "good",
+		"max_duration": "60 minutes", 
+		"base_mods": { "health_min": [ 1 ], "health_chance": [ 50 ], "h_mod_min": [ 2 ], "h_mod_chance": [ 50 ], "healing_rate": [ 2.5 ] }
 	}
 ]
