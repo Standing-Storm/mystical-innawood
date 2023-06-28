@@ -18,7 +18,7 @@
   {
     "//": "Dummy trait for mana-affecting mutations.",
     "type": "mutation",
-    "id": "UNSEEN_WORLD_UNSEEN",
+    "id": "UNAWARE_WORLD",
     "name": { "str": "Unknowing" },
     "description": "You have no ability to sense or manipulate the Unseen World."
     "points": 0,
