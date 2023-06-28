@@ -28,8 +28,13 @@
     "types": [ "MANA_ADD", "MANA_MULT", "MANA_REGEN", "MANA_SIPHON" ],
     "cancels": [
       "WITCHSIGHT_INFUSED",
-
-
+			"MANA_RIVER1",
+			"MANA_RIVER2",
+			"MANA_RIVER3",
+			"MANA_RIVER4",
+			"BAD_MANA_RIVER1",
+			"BAD_MANA_RIVER2",
+			"BAD_MANA_RIVER3",
 			"UNSEEN_TOUCH1",
 			"UNSEEN_TOUCH2",
 			"UNSEEN_TOUCH3",
@@ -37,7 +42,6 @@
 			"BAD_UNSEEN_TOUCH1",
 			"BAD_UNSEEN_TOUCH2",
 			"BAD_UNSEEN_TOUCH3"
-      
     ]
   },
   {
@@ -74,9 +78,9 @@
   {
     "type": "mutation",
     "id": "MANA_RIVER1",
-    "name": "Lesser Mana Regeneration",
+    "name": "Mana Stream",
     "points": 1,
-    "description": "Your natural mana regeneration is slightly faster than normal.",
+    "description": "You recover slightly faster from performing rituals.",
     "cancels": [ "BAD_MANA_RIVER1", "BAD_MANA_RIVER2", "BAD_MANA_RIVER3" ],
     "changes_to": [ "MANA_RIVER2" ],
     "types": [ "MANA_REGEN" ],
@@ -88,9 +92,9 @@
   {
     "type": "mutation",
     "id": "MANA_RIVER2",
-    "name": "Mana Regeneration",
+    "name": "Mana River",
     "points": 3,
-    "description": "Your natural mana regeneration is faster than normal.",
+    "description": "You recover faster from performing rituals",
     "prereqs": [ "MANA_REGEN1" ],
     "cancels": [ "BAD_MANA_RIVER1", "BAD_MANA_RIVER2", "BAD_MANA_RIVER3" ],
     "changes_to": [ "MANA_RIVER3" ],
@@ -103,9 +107,9 @@
   {
     "type": "mutation",
     "id": "MANA_RIVER3",
-    "name": "Greater Mana Regeneration",
+    "name": "Mana Flood",
     "points": 8,
-    "description": "Your natural mana regeneration is much faster than normal.",
+    "description": "You recover much faster from performing rituals.",
     "prereqs": [ "MANA_REGEN2" ],
     "cancels": [ "BAD_MANA_RIVER1", "BAD_MANA_RIVER2", "BAD_MANA_RIVER3" ],
 		"changes_to": [ "MANA_RIVER4" ],
@@ -117,9 +121,9 @@
 	{
     "type": "mutation",
     "id": "MANA_RIVER4",
-    "name": "Greater Mana Regeneration",
+    "name": "Mana Torrent",
     "points": 10,
-    "description": "Your natural mana regeneration is much faster than normal.",
+    "description": "You recover extremely quickly from performing rituals.",
     "prereqs": [ "MANA_REGEN2" ],
     "cancels": [ "BAD_MANA_RIVER1", "BAD_MANA_RIVER2", "BAD_MANA_RIVER3" ],
     "types": [ "MANA_REGEN" ],
@@ -130,9 +134,9 @@
   {
     "type": "mutation",
     "id": "BAD_MANA_RIVER1",
-    "name": "Poor Mana Regeneration",
+    "name": "Mana Trickle",
     "points": -1,
-    "description": "Your natural mana regeneration is slightly slower than normal.",
+    "description": "It takes you slightly longer to recover from performing magical rituals.",
     "cancels": [ "MANA_RIVER1", "MANA_RIVER2", "MANA_RIVER3", "MANA_RIVER4" ],
     "changes_to": [ "BAD_MANA_RIVER2" ],
     "types": [ "MANA_REGEN" ],
@@ -144,23 +148,24 @@
 	{
     "type": "mutation",
     "id": "BAD_MANA_RIVER2",
-    "name": "Very Poor Mana Regeneration",
+    "name": "Mana Drip",
     "points": -3,
-    "description": "Your natural mana regeneration is slower than normal.",
+    "description": "It takes you longer to recover from performing magical rituals.",
     "prereqs": [ "BAD_MANA_RIVER1" ],
     "cancels": [ "MANA_RIVER1", "MANA_RIVER2", "MANA_RIVER3", "MANA_RIVER4" ],
     "changes_to": [ "BAD_MANA_RIVER3" ],
     "types": [ "MANA_REGEN" ],
     "category": [ "MANA", "MANA_BAD" ],
+		"starting_trait": true,
     "flags": [ "NON_THRESH" ],
     "mana_regen_multiplier": 0.66
   },
   {
     "type": "mutation",
     "id": "BAD_MANA_RIVER3",
-    "name": { "str": "Abysmal Mana Regeneration" },
+    "name": { "str": "Mana Dam" },
     "points": -6,
-    "description": "Your natural mana regeneration is much slower than normal.",
+    "description": "It takes you much longer to recover from performing magical rituals.",
     "prereqs": [ "BAD_MANA_RIVER2" ],
     "cancels": [ "MANA_RIVER1", "MANA_RIVER2", "MANA_RIVER3", "MANA_RIVER4" ],
     "types": [ "MANA_REGEN" ],
