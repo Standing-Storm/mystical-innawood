@@ -1,0 +1,34 @@
+[
+{
+    "type": "TOOL",
+    "id": "item_purify_water_token",
+    "name": { "str": "droplet of purification", "str_pl": "droplets of purification" },
+    "description": "What was once rock is now solid water, perfectly transparent but hard and cool to the touch.  It can be squeezed to dust and the dust used to purify more water.",
+    "weight": "150 g",
+    "color": "blue",
+    "use_action": {
+      "type": "transform",
+      "target": "item_purify_water_dust",
+      "msg": "You squeeze the crystalline droplet and it crushes into a fine dust.",
+      "target_charges": 15,
+      "menu_text": "Squeeze droplet"
+    },
+    "symbol": "!",
+    "volume": "250 ml",
+    "flags": [ "TRADER_AVOID" ]
+  },
+  {
+    "id": "item_purify_water_dust",
+    "type": "TOOL",
+    "name": "faintly glowing dust",
+    "description": "This fine dust glows with a growing intensity.",
+    "weight": "10 g",
+    "volume": "30 ml",
+    "price": 0,
+    "symbol": "!",
+    "color": "blue",
+    "initial_charges": 15,
+    "max_charges": 15,
+    "use_action": [ "WATER_PURIFIER", "LIGHT_5" ]
+  }
+]
