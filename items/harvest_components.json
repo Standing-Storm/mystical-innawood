@@ -32,6 +32,7 @@
     "type": "GENERIC",
     "id": "witchwood_bark",
     "copy-from": "alder_bark",
+    "name": { "str": "witchwood bark" },
     "weight": "234 g",
     "description": "A thin strip of silvery-blue bark harvested from a witchwood tree.  Touching it makes your fingers tingle slightly."
   }
