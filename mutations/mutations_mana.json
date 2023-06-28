@@ -31,7 +31,15 @@
       "MANA_GAIN1",
       "MANA_GAIN2",
       "MANA_GAIN3",
-      "MANA_LOSS1"
+      "MANA_LOSS1",
+
+			"UNSEEN_TOUCH1",
+			"UNSEEN_TOUCH2",
+			"UNSEEN_TOUCH3",
+			"UNSEEN_TOUCH4",
+			"BAD_UNSEEN_TOUCH1",
+			"BAD_UNSEEN_TOUCH2",
+			"BAD_UNSEEN_TOUCH3"
       
     ]
   },
@@ -184,7 +192,7 @@
     "id": "UNSEEN_TOUCH1",
     "name": "Touch of the Unseen",
     "points": 1,
-    "description": "You can sense the mana in your body slightly better than normal, allowing you to tap into more of your reserves.",
+    "description": "You have a greater connection to the Unseen World than a typical person, and recover more quickly from manipulating it.",
     "cancels": [ "BAD_UNSEEN_TOUCH1", "BAD_UNSEEN_TOUCH2", "BAD_UNSEEN_TOUCH3" ],
     "changes_to": [ "UNSEEN_TOUCH2" ],
     "types": [ "MANA_MULT" ],
@@ -196,9 +204,9 @@
   {
     "type": "mutation",
     "id": "UNSEEN_TOUCH2",
-    "name": "Mana Sensitivity",
+    "name": "Grasp of the Unseen",
     "points": 3,
-    "description": "You can sense the mana in your body better than normal, allowing you to tap into more of your reserves.",
+    "description": "The Unseen World is always around you, and your connection to it is much stronger than an ordinary person's.  You recover much more quickly from manipulating it.",
     "cancels": [ "BAD_UNSEEN_TOUCH1", "BAD_UNSEEN_TOUCH2", "BAD_UNSEEN_TOUCH3" ],
     "changes_to": [ "UNSEEN_TOUCH3" ],
     "types": [ "MANA_MULT" ],
@@ -211,9 +219,9 @@
   {
     "type": "mutation",
     "id": "UNSEEN_TOUCH3",
-    "name": "Greater Mana Sensitivity",
+    "name": "Embrace of the Unseen",
     "points": 8,
-    "description": "You can sense the mana in your body much better than normal, allowing you to tap into more of your reserves.",
+    "description": "The Unseen World is almost as much a part of you as the physical world.  You recover extremely quickly from manipulating it.",
     "cancels": [ "BAD_UNSEEN_TOUCH1", "BAD_UNSEEN_TOUCH2", "BAD_UNSEEN_TOUCH3" ],
     "types": [ "MANA_MULT" ],
     "changes_to": [ "UNSEEN_TOUCH4" ],
@@ -225,15 +233,15 @@
   {
     "type": "mutation",
     "id": "UNSEEN_TOUCH4",
-    "name": "Greater Mana Sensitivity",
+    "name": "Master of the Unseen",
     "points": 10,
-    "description": "You can sense the mana in your body much better than normal, allowing you to tap into more of your reserves.",
+    "description": "You may as well live entirely in the Unseen World.  You recover from manipulating it in almost no time at all.",
     "cancels": [ "BAD_UNSEEN_TOUCH1", "BAD_UNSEEN_TOUCH2", "BAD_UNSEEN_TOUCH3" ],
     "types": [ "MANA_MULT" ],
     "category": [ "MANA" ],
     "prereqs": [ "UNSEEN_TOUCH3" ],
     "flags": [ "NON_THRESH" ],
-    "mana_multiplier": 2.5
+    "mana_multiplier": 3.2
   },
   {
     "type": "mutation",
