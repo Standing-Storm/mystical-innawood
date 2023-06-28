@@ -2,7 +2,7 @@
   {
     "id": "item_breathing_water",
     "name": { "str_sp": "full lungs" },
-    "description": "Your lungs are full of air and you do not need to breath.",
+    "description": "Your lungs are full of air and you do not need to breathe.",
     "type": "TOOL_ARMOR",
     "category": "clothing",
     "weight": "0 g",
@@ -23,6 +23,36 @@
       "NONCONDUCTIVE",
       "TRADER_AVOID",
       "REBREATHER",
+      "UNBREAKABLE",
+      "ALLOWS_NATURAL_ATTACKS"
+    ]
+  },
+   {
+    "id": "item_water_protection",
+    "name": { "str_sp": "essence of the duck" },
+    "description": "You simply cannot get wet, no matter how much water you immerse yourself in.",
+    "type": "TOOL_ARMOR",
+    "category": "clothing",
+    "weight": "0 g",
+    "material": [ "wind" ],
+    "environmental_protection": 25,
+    "volume": "1 ml",
+    "symbol": "0",
+    "color": "blue",
+    "armor": [ { "encumbrance": 0, "coverage": 100, "covers": [ "head", "mouth", "eyes", "torso", "arm_l", "arm_r", "hand_l", "hand_r", "leg_l", "leg_r", "foot_l", "foot_r" ] } ],
+    "flags": [
+      "WATER_FRIENDLY",
+      "SWIM_GOGGLES",
+      "SEMITANGIBLE",
+      "ONLY_ONE",
+      "OVERSIZE",
+      "PERSONAL",
+      "ZERO_WEIGHT",
+      "NO_TAKEOFF",
+      "NONCONDUCTIVE",
+      "TRADER_AVOID",
+      "RAINPROOF",
+      "WATERPROOF",
       "UNBREAKABLE",
       "ALLOWS_NATURAL_ATTACKS"
     ]
