@@ -5,6 +5,7 @@
     "name": "Drawing on the Vitality of the Earth",
     "description": "In a place with a powerful connection to rock and stone, you can absorb some of the earth's health and vitality into yourself, improving your health and washing away fatigue.",
     "valid_targets": [ "self" ],
+	  "skill": "occult",
 		"effect": "effect_on_condition",
     "effect_str": "EOC_EARTH_DRAW_ON_POWER",
     "extra_effects": [ { "id": "channeling_fatigue_spell", "hit_self": true, "max_level": 5 } ],
