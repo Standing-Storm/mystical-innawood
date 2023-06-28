@@ -58,6 +58,7 @@
     "name": "Unity with Nature",
     "description": "Reaching out to the forest, you absorb some of its serenity and peace into yourself.",
     "valid_targets": [ "self" ],
+		"skill": "occult",
 		"effect": "effect_on_condition",
     "effect_str": "EOC_FOREST_NATURE_UNITY",
 		"extra_effects": [ { "id": "channeling_fatigue_spell", "hit_self": true, "max_level": 1 } ],
