@@ -9,7 +9,7 @@
     "price": 7777,
     "symbol": "o",
     "color": "green",
-    "material": [ "magical_material" ],
+    "material": [ "wood" ],
 	  "material_thickness": 2,
     "flags": [ "AURA", "SEMITANGIBLE", "OVERSIZE", "ONLY_ONE", "TRADER_AVOID", "NO_REPAIR", "NO_TAKEOFF", "NONCONDUCTIVE" ],
     "relic_data": { "passive_effects": [ 
@@ -17,16 +17,16 @@
         "has": "WORN",
         "condition": "ALWAYS",
         "mutations": [ 
-               "BARK",
-               "LEAVES2",
-               "ROOTS3", 
-               "THORNS", 
-               "STR_UP_2",
-	       "DRUID_FLOWER_SCENT"
-              ] 
-             } 
-           ] 
-      },      
+					"BARK",
+					"LEAVES2",
+					"ROOTS3",
+					"THORNS",
+					"STR_UP_2",
+					"DRUID_FLOWER_SCENT"
+				]
+			}
+		]
+		},      
     "armor": [
       {
         "encumbrance": 5,
@@ -35,7 +35,7 @@
       }
     ]
   },
-{
+	{
     "id": "item_whisper_ear",
     "type": "ARMOR",
     "name": "Ear of Nature",
@@ -52,11 +52,11 @@
         "has": "HELD",
         "condition": "ALWAYS",
           "mutations": [ 
-	       "TREE_COMMUNION"
-              ] 
-             } 
-           ] 
-      },      
-     "armor": [ { "encumbrance": 0, "coverage": 15, "covers": [ "eyes" ] } ]
-}
+						"TREE_COMMUNION"
+					]
+			}
+		]
+		},
+		"armor": [ { "encumbrance": 0, "coverage": 15, "covers": [ "eyes" ] } ]
+	}
 ]
