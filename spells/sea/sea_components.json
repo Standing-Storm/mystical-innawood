@@ -5,7 +5,7 @@
      "//": "Clean water for the Rite of Pure Water spell",
      "components": [
        [ [ "water_clean", 2 ] ],
-      [ [ "rock", 1 ] ]
+      [ [ "pebble", 10 ] ]
     ]
    }
 ]
