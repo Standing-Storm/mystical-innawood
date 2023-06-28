@@ -1,0 +1,23 @@
+[
+  {
+    "id": "earth_resilience_mountain",
+    "type": "SPELL",
+    "name": "Resilience of the Mountains",
+    "description": "Envelops your entire body in armor formed from living rock, encumbering yet protective.",
+    "flags": [ "SOMATIC", "LOUD" ],
+    "valid_targets": [ "self" ],
+    "spell_class": "EARTH",
+    "energy_source": "MANA",
+    "effect": "attack",
+    "effect_str": "effect_stoneskin",
+    "components": "spell_components_resilience_mountain",
+    "shape": "blast",
+    "difficulty": 5,
+    "base_casting_time": 3000,
+    "base_energy_cost": 400,
+    "max_level": 15,
+    "min_duration": 24000,
+    "max_duration": 360000,
+    "duration_increment": 24000
+  }
+]
