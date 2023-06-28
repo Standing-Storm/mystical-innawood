@@ -34,6 +34,7 @@
 		"effect": "attack",
 		"effect_str": "effect_thorn_skin",
 		"extra_effects": [ { "id": "channeling_fatigue_spell", "hit_self": true, "max_level": 3 } ],
+		"components": "spell_components_forest_skin_thorns",
 		"shape": "blast",
 		"energy_source": "MANA",
 		"spell_class": "FOREST",
