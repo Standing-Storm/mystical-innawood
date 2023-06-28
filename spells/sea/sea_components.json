@@ -1,0 +1,10 @@
+[
+   {
+     "id": "spell_components_purify_water",
+     "type": "requirement",
+     "//": "Clean water for the Rite of Pure Water spell",
+     "components": [
+       [ [ "water_clean", 2 ] ]
+    ]
+   }
+]
