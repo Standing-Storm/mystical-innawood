@@ -7,7 +7,7 @@
     "description": "There are creatures out there that have innate magic, without any need for the laborious study you had to perform.  Spirits are made of magic itself.  Is there a way to infuse that magic into a human body?",
     "category": "CC_*",
     "subcategory": "CSC_*_NESTED",
-    "difficulty": 4,
+    "difficulty": 5,
     "time": "8 h",
     "components": [ [ [ "magical_creature_materials", 3 ] ], [ [ "paper", 20 ] ] ],
     "using": [ [ "writing_standard", 1 ] ],
