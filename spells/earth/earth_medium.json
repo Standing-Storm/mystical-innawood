@@ -10,6 +10,7 @@
     "energy_source": "MANA",
     "effect": "spawn_item",
     "effect_str": "item_resilience_mountain",
+    "extra_effects": [ { "id": "channeling_fatigue_spell", "hit_self": true, "max_level": 3 } ],
     "components": "spell_components_resilience_mountain",
     "shape": "blast",
     "difficulty": 5,
