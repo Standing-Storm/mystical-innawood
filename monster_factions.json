@@ -6,5 +6,13 @@
     "neutral": [ "small_animal", "herbivore", "mega_herbivore", "canidae", "fish", "mega_bird" ],
     "hate": [ "zombie", "triffid", "fungus" ],
     "by_mood": [ "human" ]
+  },
+  {
+    "type": "MONSTER_FACTION",
+    "name": "earth_elemental_faction",
+    "base_faction": "animal",
+    "neutral": [ "small_animal", "herbivore" ],
+    "hate": [ "zombie" ],
+    "by_mood": [ "human" ]
   }
 ]
