@@ -24,7 +24,7 @@
     "vision_night": 5,
     "material": [ "veggy" ],
     "flags": [ "SEES", "HEARS", "WARM", "HARDTOSHOOT", "PATH_AVOID_DANGER_1", "HIT_AND_RUN", "PATH_AVOID_FIRE" ],
-    "death_function": { "message": "%s collapses into a pile of moss." }
+    "death_function": { "message": "%s collapses into a pile of moss." },
     "death_drops": "mossling_drops"
   },
   {
