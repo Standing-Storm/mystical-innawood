@@ -102,7 +102,7 @@
     "id": "used_research_materials",
     "copy-from": "research_tome_abstract",
     "name": { "str": "old research materials", "str_pl": "sets of old research materials"  },
-    "description": "A set of documents, scribbed notes, and other esoterica you used for your research into magic.  Unfortunately it was a dead end, but it might be useful for kindling.",
+    "description": "A set of documents, scribbed notes, and other esoterica you used for your research into magic.  Unfortunately it was a dead end, but it might be useful for kindling."
   },
   {
     "type": "BOOK",
