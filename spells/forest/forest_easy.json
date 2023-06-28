@@ -60,6 +60,7 @@
     "valid_targets": [ "self" ],
 		"effect": "effect_on_condition",
     "effect_str": "EOC_FOREST_NATURE_UNITY",
+		"extra_effects": [ { "id": "channeling_fatigue_spell", "hit_self": true, "max_level": 1 } ],
     "shape": "blast",
     "flags": [ "CONCENTRATE", "SOMATIC", "VERBAL" ],
     "energy_source": "MANA",
