@@ -5,6 +5,7 @@
     "name": "Call Down the Storm's Fury",
     "description": "By calling out to the sky, you can summon a bolt of lightning to crash into your enemies.  Does not work at all under a cloudless sky, and has increasing effect as the weather gets stormier.",
     "valid_targets": [ "self" ],
+		"flags": [ "CONCENTRATE", "SOMATIC", "VERBAL", "NO_EXPLOSION_SFX" ],
 	  "skill": "occult",
 		"spell_class": "SKY",
     "effect": "effect_on_condition",
@@ -47,7 +48,7 @@
         "u_is_outside"
       }
     },
-    "effect": { "u_cast_spell": { "id": "sky_call_lightning_real", "min_level": 10 } },
+    "effect": { "u_cast_spell": { "id": "sky_call_lightning_real", "min_level": 10, "max_level": 10 } },
     "false_effect": [ { "run_eocs": "EOC_SKY_CALL_LIGHTNING_3" } ]
   },
   {
@@ -62,7 +63,7 @@
         "u_is_outside"
       }
     },
-    "effect": { "u_cast_spell": { "id": "sky_call_lightning_real", "min_level": 5 } },
+    "effect": { "u_cast_spell": { "id": "sky_call_lightning_real", "min_level": 5,  "max_level": 5 } },
     "false_effect": [ { "run_eocs": "EOC_SKY_CALL_LIGHTNING_4" } ]
   },
   {    
@@ -75,7 +76,7 @@
       }
     },
     "effect": [
-      { "u_cast_spell": { "id": "sky_call_lightning_real", "min_level": 7, "trigger_message": "Though the weather conditions are wrong, you draw on the power in the crystallized mana to call the lightning". } },
+      { "u_cast_spell": { "id": "sky_call_lightning_real", "min_level": 7,  "max_level": 7, "trigger_message": "Though the weather conditions are wrong, you draw on the power in the crystallized mana to call the lightning". } },
       { "u_consume_item": "crystallized_mana_sky" }
     ],
     "false_effect": [ { "run_eocs": "EOC_SKY_CALL_LIGHTNING_5" } ]
@@ -93,17 +94,17 @@
     "name": "Call Lightning",
     "description": "This is the actual lightning bolt.  It's a bug if you can see it.",
     "valid_targets": [ "hostile" ],
-    "flags": [ "LOUD", "RANDOM_DAMAGE" ],
+    "flags": [ "LOUD", "RANDOM_DAMAGE", "NON_MAGICAL" ],
     "max_level": 15,
     "min_damage": 80,
     "max_damage": 200,
     "damage_increment": 4,
-    "min_range": 20,
+    "min_range": 30,
     "max_range": 40,
-    "range_increment": 1.5,
+    "range_increment": 0.75,
     "min_aoe": 1,
     "max_aoe": 1,
-    "field_id": "fd_electricity",
+    "field_id": "fd_fire",
     "min_field_intensity": 1,
     "max_field_intensity": 1,
     "field_chance": 1,
