@@ -25,7 +25,7 @@
   {
     "type": "AMMO",
     "id": "crystallized_mana_sky",
-    "copy-from": "crystallized_mana"
+    "copy-from": "crystallized_mana",
     "name": { "str_sp": "crystallized mana, sky" },
     "description": "Mystical energy condensed into physical form that has absorbed some aspect of the sky.  It glows faintly.",
     "color": "light_blue"
