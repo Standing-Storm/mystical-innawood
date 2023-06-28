@@ -43,7 +43,7 @@
      "autolearn": true,
      "components": [ [ [ "occult_research_minor", 1 ] ] ],
       "skill_used": "occult",
-     "flags": [ "SECRET", "BLIND_HARD" ],
+     "flags": [ "BLIND_HARD" ],
      "proficiencies": [ 
         { "proficiency": "prof_occult_exploration", "required": false },
         { "proficiency": "prof_thaumatology", "required": false }
@@ -82,7 +82,7 @@
       "using": [ [ "writing_standard", 1 ] ],
      "components": [ [ [ "paper", 10 ] ], [ [ "enchanted_components_minor", 1 ] ] ],
       "skill_used": "occult",
-     "flags": [ "SECRET", "BLIND_HARD" ],
+     "flags": [ "BLIND_HARD" ],
      "proficiencies": [ 
        { "proficiency": "prof_occult_exploration", "required": false },
        { "proficiency": "prof_thaumatology", "required": false },
