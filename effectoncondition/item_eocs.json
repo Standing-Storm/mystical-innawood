@@ -1,0 +1,23 @@
+[
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_BASIC_GRIMOIRE_RECIPES",
+    "condition": {
+      "and": [
+        { "u_has_effect": "effect_detect_magic" },
+        { "math": [ "var_read_basic_grimoire", "!=", "1" ] }
+      ]
+    },
+    "effect": [
+      { "math": [ "var_read_basic_grimoire", "=", "1" ] },
+      { "u_message": "As you peruse the grimoire, watching the faint swirl of magic in the ink, thoughts take form.  You've learned so much, but you still have so far to go.  There are so many avenues of research open to you now that you're aware of the Unseen World.  The work continues." },
+      { "u_learn_recipe": "beginning_research_mutation" },
+      { "u_learn_recipe": "beginning_research_spells" },
+      { "u_learn_recipe": "beginning_research_botanical" },
+      { "u_learn_recipe": "beginning_research_items" }
+    ],
+    "false-effect": [    
+      { "u_message": "" }
+    ]
+  }
+]
