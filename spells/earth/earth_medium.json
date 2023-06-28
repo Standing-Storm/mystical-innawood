@@ -6,6 +6,7 @@
     "description": "Envelops your entire body in armor formed from living rock, encumbering yet protective.",
     "flags": [ "SOMATIC", "LOUD" ],
     "valid_targets": [ "self" ],
+    "skill": "occult",
     "spell_class": "EARTH",
     "energy_source": "MANA",
     "effect": "spawn_item",
