@@ -18,7 +18,7 @@
     "melee_skill": 2,
     "melee_dice": 1,
     "melee_dice_sides": 5,
-    "dodge": 5
+    "dodge": 5,
     "armor": { "bash": 6, "stab": 8, "bullet": 12, "heat": -30 },
     "vision_day": 30,
     "vision_night": 5,
