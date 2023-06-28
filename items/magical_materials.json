@@ -1,0 +1,15 @@
+[
+  {
+    "type": "GENERIC",
+    "id": "material_elf_shot",
+    "name": { "str": "elf-shot" },
+    "symbol": ",",
+    "color": "light_gray",
+    "category": "spare_parts",
+    "description": "A small rock shaped like an arrowhead.  Its edge is surprisingly sharp.",
+    "material": [ "stone" ],
+    "volume": "250 ml",
+    "weight": "66 g",
+    "flags": [ "TRADER_AVOID" ]
+  }
+]
