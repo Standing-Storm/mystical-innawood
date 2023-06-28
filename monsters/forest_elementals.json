@@ -69,7 +69,7 @@
     "volume": "339500 ml",
     "weight": "385 kg",
     "bodytype": "human",
-    "hp": 400,
+    "hp": 250,
     "speed": 45,
     "symbol": "M",
     "color": "green",
@@ -91,7 +91,7 @@
        }
     ],
     "anger_triggers": [ "FRIEND_DIED", "FRIEND_ATTACKED", "HURT", "FIRE" ],
-    "flags": [ "SEES", "HEARS", "WARM", "HARDTOSHOOT", "BASHES", "DESTROYS", "ATTACKMON", "PUSH_MON", "PUSH_VEH", "PATH_AVOID_FIRE" ],
+    "flags": [ "SEES", "HEARS", "WARM", "BASHES", "DESTROYS", "ATTACKMON", "PUSH_MON", "PUSH_VEH", "PATH_AVOID_FIRE", "PLASTIC" ],
     "harvest": "harvest_brackenwight",
     "biosignature": { "biosig_item": "withered", "biosig_timer": 12 },
     "death_function": { "message": "%s collapses into a massive pile of leaves and sticks." }
