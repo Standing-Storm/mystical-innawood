@@ -8,5 +8,15 @@
     "id": "enchanted_components_major",
     "type": "requirement",
     "components": [ [ [ "dryad_bark", 3 ], [ "witchwood_bark", 1 ], [ "bracken_eye", 1 ] ] ]
+  },
+  {
+    "id": "magical_creature_materials",
+    "type": "requirement",
+    "components": [ [ [ "mossling_fur", 1 ], [ "dryad_bark", 1  ], [ "bracken_eye", 1 ] ] ]
+  },
+  {
+    "id": "magical_materials",
+    "type": "requirement",
+    "components": [ [ [ "witchwood_bark", 1 ] ] ]
   }
 ]
