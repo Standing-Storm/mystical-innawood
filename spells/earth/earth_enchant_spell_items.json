@@ -1,0 +1,42 @@
+[
+  {
+    "id": "item_resilience_mountain",
+    "type": "ARMOR",
+    "category": "armor",
+    "name": { "str_sp": "skin of stone" },
+    "description": "A rocky coating, covering your entire body, encumbering but protective.",
+    "weight": "100 g",
+    "volume": "25 L",
+    "material": [ "stone" ],
+    "symbol": "[",
+    "color": "light_gray",
+    "warmth": 5,
+    "material_thickness": 2.8,
+    "environmental_protection": 2,
+    "flags": [ "ONLY_ONE", "OVERSIZE", "NO_TAKEOFF", "PERSONAL", "STURDY", "PADDED" ],
+    "relic_data": {
+      "passive_effects": [
+        { 
+          "has": "WORN", 
+          "condition": "ALWAYS", 
+          "values": [ 
+            { "value": "STRENGTH", "add": { "math": [ "( u_val('spell_level', 'spell: earth_resilience_mountain') * 0.2 )" ] } },
+            { "value": "PAIN", "multiply": -0.15 },
+            { "value": "MOVE_COST", "multiply": 0.2 },
+            { "value": "ATTACK_SPEED", "multiply": 0.2 },
+            { "value": "FORCEFIELD", "add": 0.15 },
+            { "value": "KNOCKDOWN_RESIST", "add": { "math": [ "( u_val('spell_level', 'spell: earth_resilience_mountain') * 0.02 )" ] } },
+            { "value": "KNOCKBACK_RESIST", "add": { "math": [ "( u_val('spell_level', 'spell: earth_resilience_mountain') * 0.02 )" ] } },
+          ] 
+        } 
+      ]
+    },
+     "armor": [
+      {
+        "encumbrance": 16,
+        "coverage": 100,
+        "covers": [ "head", "mouth", "eyes", "torso", "arm_l", "arm_r", "hand_l", "hand_r", "leg_l", "leg_r", "foot_l", "foot_r" ]
+      }
+    ]
+  }
+]
