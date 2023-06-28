@@ -16,13 +16,13 @@
 		"max_level": 20,
 		"base_energy_cost": 600,
     "final_energy_cost": 100,
-    "energy_increment": -25
+    "energy_increment": -25,
 		"min_duration": 3000,
 		"max_duration": 300000,
     "duration_increment": 30000,
 		"base_casting_time": 60000,
     "final_casting_time": 500,
-    "casting_time_increment": -2975,
+    "casting_time_increment": -2975
   },
   {
     "id": "crystallize_mana_innawood",
