@@ -1,0 +1,52 @@
+[
+  {
+    "id": "earth_draw_on_earth_power",
+    "type": "SPELL",
+    "name": "Drawing on the Vitality of the Earth",
+    "description": "In a place with a powerful connection to rock and stone, you can absorb some of the earth's health and vitality into yourself, improving your health and washing away fatigue.",
+    "valid_targets": [ "self" ],
+		"effect": "effect_on_condition",
+    "effect_str": "EOC_EARTH_DRAW_ON_POWER",
+    "extra_effects": [ { "id": "channeling_fatigue_spell", "hit_self": true, "max_level": 5 } ],
+    "components": "spell_components_draw_on_earth_power",
+    "shape": "blast",
+    "flags": [ "CONCENTRATE", "SOMATIC", "VERBAL" ],
+    "energy_source": "MANA",
+    "spell_class": "EARTH",
+    "difficulty": 8,
+    "base_casting_time": 180000,
+    "base_energy_cost": 1200,
+    "final_energy_cost": 800,
+    "energy_increment": -20,
+    "max_level": 20,
+    "min_duration": 360000
+  },
+	{
+		"type": "effect_on_condition",
+		"id": "EOC_EARTH_DRAW_ON_POWER",
+		"condition": {
+      "or": [
+        { "u_is_on_terrain": "t_rock_floor_no_roof" },
+        { "u_is_on_terrain": "t_dirtfloor_no_roof" },
+        { "u_is_on_terrain": "t_clay" },
+        { "u_is_on_terrain": "t_claymound" },
+        { "u_is_on_terrain": "t_sandmound" },
+        { "u_is_on_terrain": "t_dirtmoundfloor" },
+        { "u_is_on_terrain": "t_dirt_underground" },
+        { "u_is_on_terrain": "t_soil" },
+        { "u_is_on_terrain": "t_dirtmound" },
+        { "u_is_on_terrain": "t_rock_floor" },
+        { "u_is_on_terrain": "t_region_soil" },
+        { "u_is_on_terrain": "t_pit_shallow" },
+        { "u_is_on_terrain": "t_pit" }
+			]
+		},
+		"effect": [
+			{ "u_add_effect": "effect_draw_earth_power", "duration": "1 hours" },
+      { "math": [ "u_val('sleep_deprivation')" , "-=", "( u_val('spell_level', 'spell: earth_draw_on_earth_power') * 25 )" ] },
+      { "math": [ "u_val('fatigue')" , "-=", "( u_val('spell_level', 'spell: earth_draw_on_earth_power') * 5 )" ] }
+		],
+		"false_effect": { "u_message": "Without a connection to the living earth, the ritual fails." }
+	}
+]
+]
