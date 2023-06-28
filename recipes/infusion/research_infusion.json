@@ -2,7 +2,7 @@
   {
     "type": "recipe",
     "activity_level": "LIGHT_EXERCISE",
-    "name": "magical infusion brainstorming",
+    "name": "introductory infusion research",
     "id": "infusion_research_intro",
     "description": "There are creatures out there that have innate magic, without any need for the laborious study you had to perform.  Spirits are made of magic itself.  Is there a way to infuse that magic into a human body?",
     "category": "CC_*",
