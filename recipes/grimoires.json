@@ -13,8 +13,7 @@
     "components": [ 
       [ [ "paper", 100 ] ], 
       [ [ "detect_magic_research", 1 ] ],
-      [ [ "wood_panel", 1 ] ],
-      [ [ ] ]
+      [ [ "wood_panel", 1 ] ]
     ],
     "proficiencies": [
       { "proficiency": "prof_occult_exploration", "required": true },
