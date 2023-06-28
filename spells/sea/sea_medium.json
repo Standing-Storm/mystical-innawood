@@ -1,0 +1,28 @@
+[
+  {
+    "id": "sea_purify_water",
+    "type": "SPELL",
+    "name": "Rite of Pure Water",
+    "description": "By drawing on the essence of already-clean water, you can create tokens that will transfer that cleanliness to much larger volumes.",
+    "valid_targets": [ "self" ],
+		"skill": "occult",
+    "effect": "spawn_item",
+    "effect_str": "item_purify_water_token",
+	  "extra_effects": [ { "id": "channeling_fatigue_spell", "hit_self": true, "max_level": 2 } ],
+    "components": "spell_components_purify_water",
+    "shape": "blast",
+    "energy_source": "MANA",
+    "flags": [ "CONCENTRATE", "VERBAL", "SOMATIC" ],
+    "spell_class": "SEA",
+    "difficulty": 6,
+    "min_damage": 1,
+    "max_damage": 20,
+    "damage_increment": 1,
+    "max_level": 20,
+    "base_casting_time": 120000,
+    "base_energy_cost": 800,
+    "min_duration": 360000,
+    "max_duration": 4320000,
+    "duration_increment": 72000
+  }
+]
