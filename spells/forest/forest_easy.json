@@ -80,7 +80,7 @@
 		"condition": {
       "and": [
 				"u_is_outside",
-				"or" [
+				"or": [
 					{ "u_is_on_terrain": "t_grass" },
 					{ "u_is_on_terrain": "t_grass_white" },
 					{ "u_is_on_terrain": "t_moss" },
