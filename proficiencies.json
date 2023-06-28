@@ -46,8 +46,8 @@
   },
   {
     "type": "proficiency",
-    "id": "prof_spell_research",
-    "category": "prof_enchantment",
+    "id": "prof_infusion_basic",
+    "category": "prof_occult_research",
     "name": { "str": "Infusion Basics" },
     "description": "You understand how to use magic to affect the fundamental nature of the human body.",
     "can_learn": true,
