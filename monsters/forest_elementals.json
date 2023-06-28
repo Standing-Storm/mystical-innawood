@@ -20,10 +20,10 @@
     "melee_dice_sides": 5,
     "dodge": 5
     "armor": { "bash": 6, "stab": 8, "bullet": 12, "heat": -30 },
-    "vision_day": 45,
-    "vision_night": 6,
+    "vision_day": 30,
+    "vision_night": 5,
     "material": [ "veggy" ],
-    "flags": [ "SEES", "HEARS", "WARM", "HARDTOSHOOT", "PATH_AVOID_DANGER_1", "HIT_AND_RUN" ],
+    "flags": [ "SEES", "HEARS", "WARM", "HARDTOSHOOT", "PATH_AVOID_DANGER_1", "HIT_AND_RUN", "PATH_AVOID_FIRE" ],
     "death_function": { "message": "%s collapses into a pile of moss." }
     "death_drops": "mossling_drops"
   },
@@ -31,19 +31,32 @@
     "id": "mon_dryad",
     "type": "MONSTER",
     "name": "dryad",
-    "description": "You would have thought this was a tree until it moved.  It is human-shaped and human-sized, but with wood for skin and leaves for hair.  It regards you impassively.",
+    "description": "You would have thought this was a tree until it suddenly moved.  It is human-shaped and human-sized, but with wood for skin and leaves for hair.  It regards you impassively.",
     "default_faction": "forest_elemental_faction",
     "species": [ "FOREST_ELEMENTAL" ],
     "symbol": "d",
     "color": "green",
     "bodytype": "human",
-
+    "volume": "62500 ml",
+    "weight": "81500 g",
+    "hp": 80,
+    "speed": 105,
+    "aggression": 30,
+    "morale": 20,
+    "melee_skill": 3,
+    "melee_dice": 2,
+    "melee_dice_sides": 5,
+    "dodge": 3,
     "armor": { "bash": 25, "cut": 5, "stab": 30, "bullet": 40, "heat": -30  },
-
+    "vision_day": 35,
+    "vision_night": 5,
     "material": [ "wood" ],
     "special_attacks": [
       { "id": "scratch", "cooldown": 8 }
-     ]
+    ],
+    "anger_triggers": [ "FRIEND_DIED", "FRIEND_ATTACKED", "HURT", "FIRE" ],
+    "flags": [ "SEES", "HEARS", "BASHES", "GROUP_BASH", "CAMOUFLAGE", "PATH_AVOID_DANGER_1", "NO_BREATHE", "PATH_AVOID_FIRE" ],
+    "harvest": "harvest_dryad"
     
   },
   {
@@ -77,7 +90,8 @@
          "monster_message": "Roots explode out of %1$s and impale you!"
        }
     ],
-    "flags": [ "SEES", "HEARS", "WARM", "HARDTOSHOOT", "BASHES", "DESTROYS", "ATTACKMON", "PUSH_MON", "PUSH_VEH" ],
+    "anger_triggers": [ "FRIEND_DIED", "FRIEND_ATTACKED", "HURT", "FIRE" ],
+    "flags": [ "SEES", "HEARS", "WARM", "HARDTOSHOOT", "BASHES", "DESTROYS", "ATTACKMON", "PUSH_MON", "PUSH_VEH", "PATH_AVOID_FIRE" ],
     "harvest": "harvest_brackenwight",
     "biosignature": { "biosig_item": "withered", "biosig_timer": 12 },
     "death_function": { "message": "%s collapses into a massive pile of leaves and sticks." }
