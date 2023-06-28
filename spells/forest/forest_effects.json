@@ -9,5 +9,17 @@
 		"rating": "good",
 		"max_duration": "60 minutes", 
 		"enchantments": [ "enchant_thorn_skin" ]
+  },
+  {
+    "type": "effect_type",
+    "id": "effect_nature_unity",
+    "name": [ "Unity with Nature" ],
+    "desc": [ "Like the roots of a grove of trees, your soul is connected to the forest." ],
+    "apply_message": "You can feel the sun on the leaves and the wind through the grass like a warm embrace.",
+    "remove_message": "You no longer feel the connection with the forest.",
+    "rating": "good",
+    "max_duration": "3 h",
+    "//": "No morale_mod is currently possible in effects, but this effect should give +5/+10 morale whenever that it's implemented.",
+    "base_mods": { "health_min": [ 1 ], "health_chance": [ 40 ], "h_mod_min": [ 1 ], "h_mod_chance": [ 80 ] }
   }
 ]
