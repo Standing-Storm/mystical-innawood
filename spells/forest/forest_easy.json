@@ -51,5 +51,61 @@
     "min_duration": 180000,
     "max_duration": 1440000,
     "duration_increment": 84000
-  }
+  },
+	{
+    "id": "forest_unity_nature",
+    "type": "SPELL",
+    "name": "Unity with Nature",
+    "description": "Reaching out to the forest, you absorb some of its serenity and peace into yourself.",
+    "valid_targets": [ "self" ],
+		"effect": "effect_on_condition",
+    "effect_str": "EOC_FOREST_NATURE_UNITY",
+    "shape": "blast",
+    "flags": [ "CONCENTRATE", "SOMATIC", "VERBAL" ],
+    "energy_source": "MANA",
+    "spell_class": "FOREST",
+    "difficulty": 3,
+    "base_casting_time": 12000,
+    "base_energy_cost": 600,
+    "final_energy_cost": 400,
+    "energy_increment": -10,
+    "max_level": 20,
+    "min_duration": 1080000
+  },
+	{
+		"type": "effect_on_condition",
+		"id": "EOC_FOREST_NATURE_UNITY",
+		"condition": {
+      "and": [
+				"u_is_outside",
+				"or" [
+					{ "u_is_on_terrain": "t_grass" },
+					{ "u_is_on_terrain": "t_grass_white" },
+					{ "u_is_on_terrain": "t_moss" },
+					{ "u_is_on_terrain": "t_forestfloor" },
+					{ "u_is_on_terrain": "t_grass_tall" },
+					{ "u_is_on_terrain": "t_grass_long" },
+					{ "u_is_on_terrain": "t_bamboo" },
+					{ "u_is_on_terrain": "t_bamboo_harvested" },
+					{ "u_is_on_terrain": "t_underbrush_harvested_winter" },
+					{ "u_is_on_terrain_with_flag": "SHRUB" },
+					{ "u_is_on_terrain": "t_bamboo_long" },
+					{ "u_is_on_terrain": "t_bamboo_tall" },
+					{ "u_is_on_terrain": "t_tree_young" },
+					{ "u_is_on_terrain": "t_mega_fern" }
+				]
+			]
+		},
+		"effect": [
+			{
+				"u_add_morale": "morale_forest_unity", 
+				"bonus": 10, 
+				"max_bonus": 20,
+				"duration": "3 hours",
+				"decay_start": "2 hours"
+			},
+			{ "u_add_effect": "effect_nature_unity", "duration": "3 hours" }
+		],
+		"false_effect": { "u_message": "You need a stronger connection to nature for the magic to be effective" }
+	}
 ]
