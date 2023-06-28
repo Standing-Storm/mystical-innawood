@@ -9,7 +9,7 @@
     "material": [ "paper" ],
     "looks_like": "cookbook",
     "symbol": "?",
-    "color": "gray",
+    "color": "light_gray",
     "qualities": [ [ "MAGICAL_RESEARCH", 1 ] ],
     "skill": "occult",
     "required_level": 3,
