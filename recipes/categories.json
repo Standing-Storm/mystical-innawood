@@ -47,7 +47,7 @@
       "difficulty": 1
     },
     {
-      "id": "nested_magical_research",
+      "id": "nested_infusion_research",
       "type": "nested_category",
       "activity_level": "LIGHT_EXERCISE",
       "category": "CC_OCCULT",
@@ -57,7 +57,22 @@
       "skill_used": "occult",
       "nested_category_data":
       [ 
-        "mutation_research_intro"
+        "infusion_research_intro"
+      ],
+      "difficulty": 1
+    },
+        {
+      "id": "nested_enchantment_research",
+      "type": "nested_category",
+      "activity_level": "LIGHT_EXERCISE",
+      "category": "CC_OCCULT",
+      "subcategory": "CSC_OCCULT_RESEARCH",
+      "name": "enchantment research",
+      "description": "Recipes related to drawing magic out of or imbuing it into physical materials.",
+      "skill_used": "occult",
+      "nested_category_data":
+      [ 
+        "enchantment_research_intro"
       ],
       "difficulty": 1
     }
