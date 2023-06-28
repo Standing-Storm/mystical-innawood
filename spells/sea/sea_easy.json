@@ -1,6 +1,29 @@
  [
-   {
-     "id": "sea_breathing_water", 
+  {
+   "id": "sea_water_protection",
+   "type": "SPELL",
+   "name": "Like Water Off a Duck's Back",
+   "description": "Repel any water from your body, preventing yourself from getting wet.",
+   "valid_targets": [ "self" ],
+   "skill": "occult",
+     "flags": [ "CONCENTRATE", "LOUD", "VERBAL" ],
+     "min_damage": 1,
+     "max_damage": 1,
+     "effect": "spawn_item",
+     "effect_str": "item_water_protection",
+    "shape": "blast",
+     "energy_source": "MANA",
+     "spell_class": "SEA",
+     "difficulty": 2,
+   "max_level": 15,
+   "base_casting_time": 800,
+     "base_energy_cost": 350,
+     "min_duration": 72000,
+     "max_duration": 432000,
+     "duration_increment": 24000
+  },
+  {
+   "id": "sea_breathing_water", 
      "type": "SPELL", 
      "name": "Rite of Traversing the Depths",
      "description": "Take a deep breath and fill your lungs with air, allowing you to travel through water without needing to breath.  THis will also protect you from toxic gases or other .",
