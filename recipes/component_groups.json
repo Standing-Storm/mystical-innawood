@@ -17,6 +17,6 @@
   {
     "id": "magical_materials",
     "type": "requirement",
-    "components": [ [ [ "witchwood_bark", 1 ] ] ]
+    "components": [ [ [ "witchwood_bark", 1 ], [ "elf_shot", 1 ] ] ]
   }
 ]
