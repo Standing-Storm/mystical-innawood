@@ -85,7 +85,7 @@
     "description": "Turning paper, leather, wood, and thread into a book.",
     "can_learn": true,
     "default_time_multiplier": 2.5,
-    "default_skill_penalty": 0.5
+    "default_skill_penalty": 0.5,
     "time_to_learn": "20 h"
   }
 ]
