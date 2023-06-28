@@ -5,6 +5,7 @@
     "name": "Vegetative Poultice",
     "description": "This spell turns a mixture of bark and leaves into a powerful salve capable of stopping even grievous wounds from bleeding.",
     "valid_targets": [ "none" ],
+		"skill": "occult",
     "flags": [ "CONCENTRATE", "SOMATIC", "VERBAL", "NO_LEGS" ],
 		"max_level": 15,
     "spell_class": "FOREST",
