@@ -23,5 +23,13 @@
       [ [ "young_leaves", 2 ], [ "leaves", 2], [ "grape_leaves", 2 ], ["fiddlehead_raw", 2], ["cattail_rhizome", 2], ["raw_dandelion", 2], ["juniper", 2 ] ],
       [ [ "alder_bark", 1 ], [ "tanbark", 1 ], [ "birchbark", 1 ], [ "willowbark", 1 ] ]
     ]
-   }
+  },
+  {
+    "id": "spell_components_forest_skin_thorns",
+    "type": "requirement",
+    "//": "Bark for the Skin of Thorns spell.  Currently no rose or gorsebush or other thorny plant in the game.",
+    "components": [
+      [ [ "alder_bark", 1 ], [ "tanbark", 1 ], [ "birchbark", 1 ], [ "willowbark", 1 ] ]
+    ]
+  }
 ]
