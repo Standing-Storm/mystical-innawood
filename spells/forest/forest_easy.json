@@ -35,7 +35,7 @@
     "difficulty": 4,
     "max_level": 15,
     "spell_class": "FOREST",
-    "energy_source": "MANA"
+    "energy_source": "MANA",
     "min_damage": 3,
     "max_damage": 40,
     "damage_increment": 2.5,
