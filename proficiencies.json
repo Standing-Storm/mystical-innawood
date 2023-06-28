@@ -42,7 +42,18 @@
     "can_learn": true,
     "default_time_multiplier": 6,
     "default_skill_penalty": 0.3,
-    "time_to_learn": "200 h"
+    "time_to_learn": "168 h"
+  },
+  {
+    "type": "proficiency",
+    "id": "prof_spell_research",
+    "category": "prof_enchantment",
+    "name": { "str": "Infusion Basics" },
+    "description": "You understand how to use magic to affect the fundamental nature of the human body.",
+    "can_learn": true,
+    "default_time_multiplier": 3,
+    "default_skill_penalty": 0.5,
+    "time_to_learn": "30 h"
   },
   {
     "type": "proficiency",
@@ -51,9 +62,9 @@
     "name": { "str": "Botanical Enchantment" },
     "description": "The art of instilling mystical energy into fruit.",
     "can_learn": true,
-    "time_to_learn": "48 h",
     "default_time_multiplier": 4,
-    "default_skill_penalty": 0.5
+    "default_skill_penalty": 0.5,
+    "time_to_learn": "48 h"
   },
   {
     "type": "proficiency",
