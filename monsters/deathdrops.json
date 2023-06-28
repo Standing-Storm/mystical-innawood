@@ -8,5 +8,5 @@
       { "item": "stick", "prob": 90, "count": [ 1, 2 ] },
       { "item": "leaves", "prob": 100, "count": [2, 4] }
     ]
-  },
+  }
 ]
