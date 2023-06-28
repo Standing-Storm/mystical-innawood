@@ -3,7 +3,7 @@
     "type": "recipe",
     "activity_level": "LIGHT_EXERCISE",
     "name": "magical infusion brainstorming",
-    "id": "mutation_research_intro",
+    "id": "infusion_research_intro",
     "description": "There are creatures out there that have innate magic, without any need for the laborious study you had to perform.  Spirits are made of magic itself.  Is there a way to infuse that magic into a human body?",
     "category": "CC_*",
     "subcategory": "CSC_*_NESTED",
@@ -13,7 +13,7 @@
     "using": [ [ "writing_standard", 1 ] ],
     "tools": [ [ [ "magical_grimoire_basic", -1 ] ] ],
     "skill_used": "occult",
-    "flags": [ "SECRET", "BLIND_HARD" ],
+    "flags": [ "BLIND_HARD" ],
     "proficiencies": [ 
       { "proficiency": "prof_occult_exploration", "required": true},
       { "proficiency": "prof_thaumatology", "required": true },
@@ -24,7 +24,7 @@
          "id": "EOC_MUTATION_RESEARCH_INTRO", 
           "condition": { "roll_contested": { "math": [ "rng( u_val('intelligence'), u_skill('occult') )"] }, "difficulty": 16 },
          "effect": [
-           { "u_message": "There's power in the samples you've tested but you're going to need to determine how to access it.", "type": "good" },
+           { "u_message": "There's power in the samples you've tested, you're sure of it, but you're going to need to determine how to access it.", "type": "good" },
            { "u_spawn_item": "used_occult_notes", "suppress_message": true },
            { "u_roll_remainder": 
              [
