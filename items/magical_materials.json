@@ -10,6 +10,8 @@
     "material": [ "stone" ],
     "volume": "250 ml",
     "weight": "66 g",
+    "to_hit": -2,
+    "melee_damage": { "cut": 1 },
     "flags": [ "TRADER_AVOID" ]
   }
 ]
