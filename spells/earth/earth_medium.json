@@ -38,7 +38,7 @@
     "effect": "ter_transform",
     "effect_str": "earth_manipulate_earthbones",
     "extra_effects": [ { "id": "channeling_fatigue_spell", "hit_self": true, "max_level": 2 } ],
-    "base_casting_time": 1500,
+    "base_casting_time": 4500,
     "final_casting_time": 500,
     "casting_time_increment": -67,
     "base_energy_cost": 400,
