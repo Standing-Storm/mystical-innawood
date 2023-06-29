@@ -40,9 +40,30 @@
     "effect_str": "effect_tremorsense",
 		"shape": "blast",
 		"max_level": 10,
-		"min_duration": 30000,
-		"max_duration": 300000,
-    "duration_increment": 30000,
-		"base_casting_time": 1000
+		"min_duration": { "math": [ "(u_val('spell_level', 'spell: earth_danger_sense') * 30000)" ] }
+  },
+	{
+    "id": "earth_turning_of_earth",
+    "type": "SPELL",
+    "name": "The Turning of the Earth",
+    "description": "Ask the earth spirits to prepare the earth for growth and planting.",
+    "flags": [ "SOMATIC", "VERBAL", "LOUD" ],
+    "valid_targets": [ "ground" ],
+		"max_level": 12,
+    "skill": "occult",
+    "spell_class": "EARTH",
+    "energy_source": "MANA",
+    "shape": "line",
+    "difficulty": 3,
+    "effect": "ter_transform",
+    "effect_str": "earth_turning_earth",
+    "extra_effects": [ { "id": "channeling_fatigue_spell", "hit_self": true, "max_level": 1 } ],
+    "base_casting_time": 1500,
+    "base_energy_cost": 800,
+		"final_energy_cost": 350,
+		"energy_increment": -37.5,
+    "min_range": 3,
+    "max_range": 20,
+    "range_increment": 1.1
   }
 ]
