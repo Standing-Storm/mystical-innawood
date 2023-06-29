@@ -1,0 +1,10 @@
+[
+   {
+     "id": "spell_components_sky_wind_speed",
+     "type": "requirement",
+     "//": "Components for Carried By the Wind",
+     "components": [
+       [ ]
+    ]
+  }
+]
