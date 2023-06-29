@@ -85,9 +85,11 @@
     "false_effect": [ { "run_eocs": "EOC_SKY_CALL_LIGHTNING_5" } ]
   },
   {
-    "type": "effect_on_condition",
+	  "type": "effect_on_condition",
     "id": "EOC_SKY_CALL_LIGHTNING_5",
-    "effect": [ { "u_message": "The weather conditions aren't right, and your incantations have no effect." } ]
+    "effect": [ 
+			{ "u_message": "The weather conditions aren't right, and your incantations have no effect." } 
+		]
   },
   {
     "id": "sky_call_lightning_real",
