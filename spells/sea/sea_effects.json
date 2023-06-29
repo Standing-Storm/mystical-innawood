@@ -1,0 +1,19 @@
+[
+  {
+		"type": "effect_type",
+		"id": "effect_cooling_touch",
+		"name": [ "Sea's Cooling Touch" ],
+		"desc": [ "Your skin is as cool as if you had just taken a dip in the sea." ],
+		"apply_message": "",
+		"remove_message": "Your skin is no longer cool.",
+		"rating": "good",
+		"max_duration": "3 hours", 
+		"enchantments": [
+			{
+				"values": [
+					{ "value": "CLIMATE_CONTROL_CHILL", "add": { "math": [ "( 20 + ( u_val('spell_level', 'spell: sea_cooling_touch') * 10) )" ] } }
+				] 
+			} 
+		] 
+	}
+]
