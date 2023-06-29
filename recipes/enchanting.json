@@ -12,7 +12,7 @@
   "batch_time_factors": [ 80, 4 ],
   "qualities": [ { "id": "COOK", "level": 2 } ],
   "tools": [ [ [ "surface_heat", 2, "LIST" ] ] ],
-  "using": [ [ [ "enchanted_components_minor", 1 ] ] ],
+  "using": [ [ "enchanted_components_minor", 1 ] ],
   "components": 
     [
       [ [ "sweet_fruit", 1, "LIST" ] ],
