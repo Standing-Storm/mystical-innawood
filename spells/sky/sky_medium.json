@@ -82,13 +82,17 @@
       { "u_cast_spell": { "id": "sky_call_lightning_real", "min_level": 7,  "max_level": 7, "message": "Though the weather conditions are wrong, you draw on the power in the crystallized mana to call the lightning." } },
       { "u_consume_item": "crystallized_mana_sky" }
     ],
-    "false_effect": [ { "run_eocs": "EOC_SKY_CALL_LIGHTNING_5" } ]
-  },
-  {
-	  "type": "effect_on_condition",
-    "id": "EOC_SKY_CALL_LIGHTNING_5",
-    "effect": [ 
-			{ "u_message": "The weather conditions aren't right, and your incantations have no effect." } 
+    "false_effect": [ 
+			{ 
+				"run_eocs": [
+					{
+						"id": "EOC_SKY_CALL_LIGHTNING_5",
+						"effect": [ 
+							{ "u_message": "The weather conditions aren't right, and your incantations have no effect." } 
+						]
+					}
+				]
+			} 
 		]
   },
   {
