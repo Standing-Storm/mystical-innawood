@@ -64,6 +64,8 @@
 						{ "u_is_on_terrain": "t_bamboo_harvested" },
 						{ "u_is_on_terrain": "t_underbrush_harvested_winter" },
 						{ "u_is_on_terrain_with_flag": "SHRUB" },
+						{ "u_is_on_terrain_with_flag": "TREE" },
+						{ "u_is_on_terrain_with_flag": "YOUNG" },
 						{ "u_is_on_terrain": "t_bamboo_long" },
 						{ "u_is_on_terrain": "t_bamboo_tall" },
 						{ "u_is_on_terrain": "t_tree_young" },
