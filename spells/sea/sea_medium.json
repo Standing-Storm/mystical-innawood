@@ -24,5 +24,73 @@
     "min_duration": 360000,
     "max_duration": 4320000,
     "duration_increment": 72000
+  },
+  {
+    "id": "sea_summon_elemental",
+    "type": "SPELL",
+    "name": "Call the Spirit of the Waters",
+    "description": "This spell summons a water spirit to defend you from your enemies.  The spirit is fickle, and may not stay for long.  You must be standing in water to perform the ritual.",
+    "valid_targets": [ "self" ],
+		"skill": "occult",
+		"flags": [ "CONCENTRATE", "VERBAL", "SOMATIC", "RANDOM_DURATION" ],
+		"shape": "blast",
+		"effect": "effect_on_condition",
+	  "effect_str": "EOC_SEA_SUMMON_ELEMENTAL",
+		"extra_effects": [ { "id": "channeling_fatigue_spell", "hit_self": true, "max_level": 3 } ],
+    "spell_class": "SEA",
+    "energy_source": "MANA",
+    "max_level": 20,
+    "difficulty": 5,
+		"base_casting_time": 300,
+		"final_casting_time": 150,
+		"casting_increment": -8,
+    "min_duration": { "math": [ "( 1800 + (u_val('spell_level', 'spell: sea_summon_elemental') * 600) )" ] },
+    "max_duration": { "math": [ "( 9600 + (u_val('spell_level', 'spell: sea_summon_elemental') * 800) )" ] },
+    "base_energy_cost": 450
+  },
+	{
+		"type": "effect_on_condition",
+		"id": "EOC_SEA_SUMMON_ELEMENTAL",
+		"condition": {
+      "or": [
+				{ "u_is_on_terrain": "t_water_sh_underground" },
+				{ "u_is_on_terrain": "t_swater_sh_underground" },
+				{ "u_is_on_terrain": "t_swater_sh" },
+				{ "u_is_on_terrain": "t_water_sh" },
+				{ "u_is_on_terrain": "t_water_pool_shallow_outdoors" },
+				{ "u_is_on_terrain": "t_water_pool_shallow" },
+				{ "u_is_on_terrain": "t_water_murky" },
+				{ "u_is_on_terrain": "t_water_sh_murky_underground" },
+				{ "u_is_on_terrain": "t_water_moving_sh_underground" },
+				{ "u_is_on_terrain": "t_water_moving_sh" },
+				{ "u_is_on_terrain": "t_water_pool_shallow_outdoors" },
+				{ "u_is_on_terrain": "t_water_pool_shallow" }
+			]
+		}
+		},
+		"effect": { "u_cast_spell": { "id": "sea_summon_elemental_real" } },
+    "false_effect": [ { "u_message": "Without at least one foot in the water, the ritual fails." } ]
+	},
+	{
+    "id": "sea_summon_elemental_real",
+    "type": "SPELL",
+    "name": "Call Nature's Guardian Actual",
+    "description": "This is the actual spell that summons the nature's guardian.  It's a bug if you have it.",
+    "valid_targets": [ "ground" ],
+		"skill": "occult",
+		"flags": [ "RANDOM_AOE", "RANDOM_DURATION" ],
+		"shape": "blast",
+		"effect": "summon",
+	  "effect_str": "mon_spell_spell_elemental",
+    "min_damage": 1,
+    "max_damage": 1,
+    "min_range": 3,
+    "max_range": 5,
+    "range_increment": 0.1,
+		"min_aoe": 2,
+		"max_aoe": 4,
+    "max_level": 20,
+		"min_duration": { "math": [ "( 1800 + (u_val('spell_level', 'spell: sea_summon_elemental') * 600) )" ] },
+    "max_duration": { "math": [ "( 9600 + (u_val('spell_level', 'spell: sea_summon_elemental') * 800) )" ] },
   }
 ]
