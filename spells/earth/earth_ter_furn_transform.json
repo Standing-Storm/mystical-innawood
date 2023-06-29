@@ -85,7 +85,7 @@
    "type": "ter_furn_transform",
     "id": "earth_turning_earth",
     "terrain": [
-      { "result": "t_rock_smooth",
+      { "result": "t_dirtmound",
         "valid_terrain": [ 
           "t_dirt", 
           "t_dirtfloor", 
@@ -96,7 +96,7 @@
           "t_grass_white",
           "t_pit_shallow"
         ], 
-        "message": "The ground churns as a long straight furrow appears in it." }
+        "message": "The ground churns as a long straight furrow suitable for planting appears." }
     ]
   }
 ]
