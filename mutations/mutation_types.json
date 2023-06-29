@@ -1,0 +1,42 @@
+[
+  {
+    "type": "mutation_category",
+    "id": "MANA",
+    "name": "Attuned to the Unseen",
+    "wip": true,
+    "threshold_mut": "THRESH_MANA",
+    "mutagen_message": "You are .",
+    "memorial_message": "Transcended to the Otherworld.",
+    "vitamin": "mutagen_mana"
+  },
+  {
+    "type": "mutation_category",
+    "id": "MANA_BAD",
+    "name": "Cut Off From to the Unseen",
+    "wip": true,
+    "threshold_mut": "THRESH_MANA_BAD",
+    "mutagen_message": "You are .",
+    "memorial_message": "Was severed from their flesh.",
+    "vitamin": "mutagen_mana_bad"
+  },
+  {
+    "type": "mutation",
+    "id": "THRESH_MANA",
+    "name": { "str": "Mana Threshold" },
+    "points": 1,
+    "description": "This is unused but the game requires that it exist.",
+    "valid": false,
+    "purifiable": false,
+    "threshold": true
+  },
+  {
+    "type": "mutation",
+    "id": "THRESH_MANA_BAD",
+    "name": { "str": "Mana Bad Threshold" },
+    "points": 1,
+    "description": "This is unused but the game requires that it exist.",
+    "valid": false,
+    "purifiable": false,
+    "threshold": true
+  }
+]
