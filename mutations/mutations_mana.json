@@ -196,7 +196,7 @@
     "cancels": [ "BAD_UNSEEN_TOUCH1", "BAD_UNSEEN_TOUCH2", "BAD_UNSEEN_TOUCH3" ],
     "changes_to": [ "UNSEEN_TOUCH3" ],
     "types": [ "MANA_MULT" ],
-    "category": [ "BIRD", "SLIME", "CATTLE", "PLANT", "CEPHALOPOD", "ELFA", "MANATOUCHED", "DRAGON_BLACK" ],
+    "category": [ "MANA" ],
     "prereqs": [ "UNSEEN_TOUCH1" ],
     "starting_trait": true,
     "flags": [ "NON_THRESH" ],
