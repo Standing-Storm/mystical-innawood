@@ -45,7 +45,7 @@
     "price": 7777,
     "symbol": "g",
     "color": "green",
-    "material": [ "concentrated_mana" ],
+    "material": [ "wind" ],
     "flags": [ "AURA", "SEMITANGIBLE", "ONLY_ONE", "ZERO_WEIGHT", "TRADER_AVOID", "NO_REPAIR", "NO_TAKEOFF", "NONCONDUCTIVE" ],
     "relic_data": { "passive_effects": [ 
       {
