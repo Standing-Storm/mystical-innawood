@@ -134,7 +134,7 @@
   {
     "type": "mutation",
     "id": "BAD_MANA_RIVER1",
-    "name": "Mana Trickle",
+    "name": "Mana Rivulet",
     "points": -1,
     "description": "It takes you slightly longer to recover from performing magical rituals.",
     "cancels": [ "MANA_RIVER1", "MANA_RIVER2", "MANA_RIVER3", "MANA_RIVER4" ],
@@ -148,7 +148,7 @@
 	{
     "type": "mutation",
     "id": "BAD_MANA_RIVER2",
-    "name": "Mana Drip",
+    "name": "Mana Trickle",
     "points": -3,
     "description": "It takes you longer to recover from performing magical rituals.",
     "prereqs": [ "BAD_MANA_RIVER1" ],
