@@ -54,7 +54,7 @@
 		"player_display": true,
 		"purifiable": false, 
 		"cost": 0,
-		"transform": { "target": "WITCHSIGHT_INFUSED_A", "msg_transform": "The air around you starts glowing softly.", "active": true, "moves": 10 }
+		"transform": { "target": "WITCHSIGHT_INFUSED_A", "msg_transform": "You open your senses to the Unseen World.", "active": true, "moves": 10 }
 	},
 	{
 		"type": "mutation",
@@ -63,7 +63,7 @@
 		"description": "Your senses are open to the Unseen World.",
 		"copy-from": "WITCHSIGHT_INFUSED",
 		"valid": false,
-		"transform": { "target": "WITCHSIGHT_INFUSED", "msg_transform": "The air around you loses its radiance.", "active": false, "moves": 10 },
+		"transform": { "target": "WITCHSIGHT_INFUSED", "msg_transform": "You close off your senses from the Unseen World.", "active": false, "moves": 10 },
     "metabolism_modifier": 0.1,   
     "thirst_modifier": 0.1,
 		"enchantments": [
