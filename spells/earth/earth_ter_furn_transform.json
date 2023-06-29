@@ -3,7 +3,7 @@
    "type": "ter_furn_transform",
     "id": "earth_manipulate_earthbones",
     "terrain": [
-      { "result": "t_rock_smooth", "valid_terrain": "t_hole", "message": "The hole shakes as a section of unnaturally smooth stone rises up from it." },
+      { "result": "t_rock_smooth", "valid_terrain": "t_hole", "message": "The hole shakes as a section of unnaturally smooth stone rises out of it." },
       { "result": "t_hole", "valid_terrain": [ "t_pit", "t_slope_down" ], "message": "The pit has deepened further." },
       {
         "result": "t_pit",
@@ -27,6 +27,8 @@
           "t_sand",
           "t_clay",
           "t_dirtmound",
+          "t_sandmound",
+          "t_forestfloor",
           "t_grass",
           "t_grass_long",
           "t_grass_tall",
@@ -77,6 +79,24 @@
         "message": "All the dust in the air here falls to the ground.",
         "message_good": false
       }
+    ]
+  },
+  {
+   "type": "ter_furn_transform",
+    "id": "earth_turning_earth",
+    "terrain": [
+      { "result": "t_rock_smooth",
+        "valid_terrain": [ 
+          "t_dirt", 
+          "t_dirtfloor", 
+          "t_grass",
+          "t_grass_long",
+          "t_grass_tall",
+          "t_grass_dead",
+          "t_grass_white",
+          "t_pit_shallow"
+        ], 
+        "message": "The ground churns as a long straight furrow appears in it." }
     ]
   }
 ]
