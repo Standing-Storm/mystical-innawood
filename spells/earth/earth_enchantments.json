@@ -1,0 +1,16 @@
+[
+  {
+    "type": "enchantment",
+    "id": "enchant_stone_skin",
+    "condition": "ALWAYS",
+    "has": "WORN",
+    "values": [ 
+      { "value": "STRENGTH", "add": { "math": [ "( u_val('spell_level', 'spell: earth_resilience_mountain') * 0.2 )" ] } },
+      { "value": "MOVE_COST", "multiply": 0.2 },
+      { "value": "ATTACK_SPEED", "multiply": 0.2 },
+      { "value": "FORCEFIELD", "add": 0.15 },
+      { "value": "KNOCKDOWN_RESIST", "add": { "math": [ "( u_val('spell_level', 'spell: earth_resilience_mountain') * 0.02 )" ] } },
+      { "value": "KNOCKBACK_RESIST", "add": { "math": [ "( u_val('spell_level', 'spell: earth_resilience_mountain') * 0.02 )" ] } }
+    ]
+  }
+]
