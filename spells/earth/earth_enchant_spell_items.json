@@ -16,7 +16,7 @@
     "flags": [ "ONLY_ONE", "OVERSIZE", "NO_TAKEOFF", "PERSONAL", "STURDY", "PADDED", "ALLOWS_NATURAL_ATTACKS" ],
     "relic_data": {
       "passive_effects": [ 
-        { "id": "ENCHANT_EARTH_SKIN_ARMOR" } 
+        { "id": "enchant_stone_skin" } 
       ]
     },
     "armor": [
