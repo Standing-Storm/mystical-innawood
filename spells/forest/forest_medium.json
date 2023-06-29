@@ -9,7 +9,7 @@
     "flags": [ "CONCENTRATE", "SOMATIC", "VERBAL", "NO_LEGS" ],
 		"max_level": 15,
     "spell_class": "FOREST",
-    "energy_source": "MANA"
+    "energy_source": "MANA",
 		"difficulty": 5,
     "min_damage": 1,
     "max_damage": 1,
