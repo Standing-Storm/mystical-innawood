@@ -21,5 +21,29 @@
     "min_duration": 24000,
     "max_duration": 360000,
     "duration_increment": 24000
+  },
+  {
+    "id": "earth_raising_earthbones",
+    "type": "SPELL",
+    "name": "Raising the Earthbones",
+    "description": "Transforms earth and stone, first moving it out of the way to create a pit and then creating a mighty rock wall with repeated use of the ritual.",
+    "flags": [ "SOMATIC", "VERBAL", "LOUD" ],
+    "valid_targets": [ "ground" ],
+     "max_level": 15,
+    "skill": "occult",
+    "spell_class": "EARTH",
+    "energy_source": "MANA",
+    "shape": "blast",
+    "difficulty": 6,
+    "effect": "ter_transform",
+    "effect_str": "earth_manipulate_earthbones",
+    "extra_effects": [ { "id": "channeling_fatigue_spell", "hit_self": true, "max_level": 2 } ],
+    "base_casting_time": 1500,
+    "final_casting_time": 500,
+    "casting_time_increment": -67,
+    "base_energy_cost": 400,
+    "min_range": 10,
+    "max_range": 25,
+    "range_increment": 1
   }
 ]
