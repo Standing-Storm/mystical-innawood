@@ -23,14 +23,16 @@
   {
     "type": "effect_on_condition",
     "id": "EOC_SKY_CALL_LIGHTNING",
-    "condition": {
-      "and": {
-        "or": [
-          { "is_weather": "thunder" },
-          { "is_weather": "lightning" }
-        ],
-        "u_is_outside"
-      }
+		"condition": {
+			"and": [
+				"u_is_outside",
+				{ 
+					"or": [
+						{ "is_weather": "thunder" },
+						{ "is_weather": "lightning" }
+					]
+				}
+			]
     },
     "effect": { "u_cast_spell": { "id": "sky_call_lightning_real", "min_level": 15 } },
     "false_effect": [ { "run_eocs": "EOC_SKY_CALL_LIGHTNING_2" } ]
@@ -41,11 +43,12 @@
 		"condition": {
 			"and": [
 				"u_is_outside",
-				{ "or": [
-					{ "is_weather": "rainstorm" },
-					{ "is_weather": "rain" },
-					{ "is_weather": "drizzle" }
-				]
+				{ 
+					"or": [
+						{ "is_weather": "rainstorm" },
+						{ "is_weather": "rain" },
+						{ "is_weather": "drizzle" }
+					]
 				}
 			]
     },
@@ -58,11 +61,12 @@
 		"condition": {
 			"and": [
 				"u_is_outside",
-				{ "or": [
-          { "is_weather": "light_drizzle" },
-          { "is_weather": "Cloudy" }
-        ]
-      }
+				{ 
+					"or": [
+						{ "is_weather": "light_drizzle" },
+						{ "is_weather": "Cloudy" }
+					]
+				}
 			]
     },
     "effect": { "u_cast_spell": { "id": "sky_call_lightning_real", "min_level": 5,  "max_level": 5 } },
