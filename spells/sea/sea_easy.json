@@ -26,7 +26,7 @@
    "id": "sea_breathing_water", 
      "type": "SPELL", 
      "name": "Rite of Traversing the Depths",
-     "description": "Take a deep breath and fill your lungs with air, allowing you to travel through water without needing to breath.  THis will also protect you from toxic gases or other .",
+     "description": "Take a deep breath and fill your lungs with air, allowing you to travel through water without needing to breath.  THis will also protect you from toxic gases.",
      "valid_targets": [ "self" ],
     "skill": "occult",
      "flags": [ "CONCENTRATE", "LOUD", "VERBAL", "NO_LEGS" ],
