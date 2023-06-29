@@ -31,6 +31,7 @@
     "initial_charges": 15,
     "max_charges": 15,  
       "material": [ "powder" ],
-    "use_action": [ "WATER_PURIFIER", "LIGHT_5" ]
+      "flags": [ "LIGHT_5" ],
+    "use_action": [ "WATER_PURIFIER" ]
   }
 ]
