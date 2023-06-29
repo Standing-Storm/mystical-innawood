@@ -12,5 +12,9 @@
     "morale": 200,
     "anger_triggers": [ "HOSTILE_SEEN", "HURT", "STALK", "PLAYER_CLOSE" ], 
     "flags": [ "SEES", "HEARS", "SMELLS", "ANIMAL", "WARM", "BASHES", "PUSH_MON", "PATH_AVOID_FIRE", "PRIORITIZE_TARGETS" ]
+  },
+  {
+    "id": "mon_spell_sea_elemental",
+    
   }
 ]
