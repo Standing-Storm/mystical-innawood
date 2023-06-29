@@ -40,7 +40,7 @@
       "subcategory": "CSC_OCCULT_RESEARCH",
       "name": "spell research",
       "description": "Recipes related to directly applying magical theory to determine a spell formula.",
-      "skill_used": "spellcraft",
+      "skill_used": "occult",
       "nested_category_data":
       [ 
       ],
