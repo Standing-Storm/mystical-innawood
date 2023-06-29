@@ -76,10 +76,10 @@
     "type": "effect_on_condition",
     "id": "EOC_SKY_CALL_LIGHTNING_4",
     "condition": {
-      "and": {
+      "and": [
         { "u_has_item": "crystallized_mana_sky" },
         "u_is_outside"
-      }
+			]
     },
     "effect": [
       { "u_cast_spell": { "id": "sky_call_lightning_real", "min_level": 7,  "max_level": 7, "trigger_message": "Though the weather conditions are wrong, you draw on the power in the crystallized mana to call the lightning". } },
