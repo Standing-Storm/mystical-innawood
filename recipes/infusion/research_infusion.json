@@ -11,7 +11,7 @@
     "time": "8 h",
     "components": [ [ [ "paper", 20 ] ] ],
     "using": [ [ "writing_standard", 1 ], [ "magical_creature_materials", 3 ] ],
-    "tools": [ [ [ "magical_grimoire_basic", -1 ] ] ],
+    "qualities": [ { "id": "MAGICAL_RESEARCH", "level": 1 } ],
     "skill_used": "occult",
     "flags": [ "BLIND_HARD" ],
     "proficiencies": [ 
