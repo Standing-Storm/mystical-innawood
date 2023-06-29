@@ -101,8 +101,8 @@
     "description": "This is the actual lightning bolt.  It's a bug if you can see it.",
     "valid_targets": [ "hostile" ],
     "flags": [ "LOUD", "RANDOM_DAMAGE", "NON_MAGICAL" ],
-		"effect": "attack" 
-		"shape": "blast":,
+		"effect": "attack",
+		"shape": "blast",
     "max_level": 15,
     "min_damage": 80,
     "max_damage": 200,
