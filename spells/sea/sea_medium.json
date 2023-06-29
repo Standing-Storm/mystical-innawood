@@ -80,7 +80,7 @@
 		"flags": [ "RANDOM_AOE", "RANDOM_DURATION" ],
 		"shape": "blast",
 		"effect": "summon",
-	  "effect_str": "mon_spell_spell_elemental",
+	  "effect_str": "mon_spell_sea_elemental",
     "min_damage": 1,
     "max_damage": 1,
     "min_range": 3,
