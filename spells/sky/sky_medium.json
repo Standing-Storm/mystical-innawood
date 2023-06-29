@@ -87,7 +87,7 @@
   {
     "type": "effect_on_condition",
     "id": "EOC_SKY_CALL_LIGHTNING_5",
-    "effect": { { "u_message": "The weather conditions aren't right, and your incantations have no effect." } }
+    "effect": [ { "u_message": "The weather conditions aren't right, and your incantations have no effect." } ]
   },
   {
     "id": "sky_call_lightning_real",
@@ -148,7 +148,7 @@
         { "case": 14, "effect": { "u_cast_spell": { "id": "sky_bird_map_8" } } }
       ]
     },
-    "false_effect": [ { "u_message": "Without a direct connection to the living earth, the spell fails." } ]
+    "false_effect": [ { "u_message": "Without a clear view of the sky, the ritual fails." } ]
   },
   {
     "id": "sky_bird_map_1",
