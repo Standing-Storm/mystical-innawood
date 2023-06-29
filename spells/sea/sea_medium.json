@@ -73,8 +73,8 @@
 	{
     "id": "sea_summon_elemental_real",
     "type": "SPELL",
-    "name": "Call Nature's Guardian Actual",
-    "description": "This is the actual spell that summons the nature's guardian.  It's a bug if you have it.",
+    "name": "Call Spirit of the Waters Actual",
+    "description": "This is the actual spell that summons the water spirit.  It's a bug if you have it.",
     "valid_targets": [ "ground" ],
 		"skill": "occult",
 		"flags": [ "RANDOM_AOE", "RANDOM_DURATION" ],
