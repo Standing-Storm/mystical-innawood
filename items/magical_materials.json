@@ -8,6 +8,8 @@
     "category": "spare_parts",
     "description": "A small rock shaped like an arrowhead.  Its edge is surprisingly sharp.",
     "material": [ "stone" ],
+    "price": 2000,
+    "price_postapoc": 250,
     "volume": "250 ml",
     "weight": "66 g",
     "to_hit": -2,
