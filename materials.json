@@ -1,0 +1,14 @@
+[
+  {
+    "type": "material",
+    "id": "solid_mana",
+    "name": "Solidified MAna",
+    "density": 2,
+    "soft": true,
+    "chip_resist": 15,
+    "dmg_adj": [ "rippled", "deformed", "warped", "collapsed" ],
+    "bash_dmg_verb": "ripped",
+    "cut_dmg_verb": "sliced",
+    "resist": { "bash": 8, "cut": 13, "acid": 12, "heat": 20, "bullet": 7, "electric": 20 }
+  }
+]
