@@ -3,7 +3,7 @@
 		"id": "earth_danger_sense",
 		"type": "SPELL",
 		"name": "Tremorsense",
-		"description": "By sending their movements upon the earth, you can detect nearby sources of danger.",
+		"description": "By sensing their movements upon the earth, you can detect nearby sources of danger.",
 		"valid_targets": [ "self" ],
 	  "skill": "occult",
 		"spell_class": "EARTH",
