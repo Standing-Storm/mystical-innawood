@@ -2,8 +2,14 @@
   {
     "type": "SPECIES",
     "id": "FOREST_ELEMENTAL",
-    "description": "a magical being of the forest",
+    "description": "A magical being of the forest",
     "anger_triggers": [ "FRIEND_ATTACKED" ],
     "fear_triggers": [ "FIRE" ]
-  }
+  },
+  {
+    "type": "SPECIES",
+    "id": "EARTH_ELEMENTAL",
+    "description": "a magical being of rock and stone",
+    "anger_triggers": [ "FRIEND_ATTACKED" ]
+  }  
 ]
