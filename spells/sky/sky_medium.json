@@ -23,15 +23,14 @@
   {
     "type": "effect_on_condition",
     "id": "EOC_SKY_CALL_LIGHTNING",
-		"condition": {
-			"and": [
-				"u_is_outside",
-				{ "or": [
-					{ "is_weather": "thunder" },
-					{ "is_weather": "lightning" }
-				]
-				}
-			]
+    "condition": {
+      "and": {
+        "or": [
+          { "is_weather": "thunder" },
+          { "is_weather": "lightning" }
+        ],
+        "u_is_outside"
+      }
     },
     "effect": { "u_cast_spell": { "id": "sky_call_lightning_real", "min_level": 15 } },
     "false_effect": [ { "run_eocs": "EOC_SKY_CALL_LIGHTNING_2" } ]
@@ -73,27 +72,23 @@
     "type": "effect_on_condition",
     "id": "EOC_SKY_CALL_LIGHTNING_4",
     "condition": {
-      "and": [
+      "and": {
         { "u_has_item": "crystallized_mana_sky" },
         "u_is_outside"
-			]
+      }
     },
     "effect": [
-      { "u_cast_spell": { "id": "sky_call_lightning_real", "min_level": 7,  "max_level": 7, "message": "Though the weather conditions are wrong, you draw on the power in the crystallized mana to call the lightning." } },
+      { "u_cast_spell": { "id": "sky_call_lightning_real", "min_level": 7,  "max_level": 7, "trigger_message": "Though the weather conditions are wrong, you draw on the power in the crystallized mana to call the lightning". } },
       { "u_consume_item": "crystallized_mana_sky" }
     ],
-    "false_effect": [ 
-			{ 
-				"run_eocs": [
-					{
-						"id": "EOC_SKY_CALL_LIGHTNING_5",
-						"effect": [ 
-							{ "u_message": "The weather conditions aren't right, and your incantations have no effect." } 
-						]
-					}
-				]
-			} 
-		]
+    "false_effect": [ { "run_eocs": "EOC_SKY_CALL_LIGHTNING_5" } ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_SKY_CALL_LIGHTNING_5",
+    "effect": [
+      { "u_message": "The weather conditions aren't right, and your incantations have no effect." }
+    ]
   },
   {
     "id": "sky_call_lightning_real",
@@ -122,7 +117,7 @@
     "id": "sky_reveal_world_map",
     "type": "SPELL",
     "name": "Like a Bird on the Wing",
-    "description": "Close your eyes and open yourself up to the sky, gazing down on the land below as though ffrom a great height.  The ritual will only work when you have an unobstructed view of the sky.",
+    "description": "Close your eyes and open yourself up to the sky, gazing down on the land below from a great height.  The ritual will only work when you have an unobstructed view of the sky.",
     "valid_targets": [ "self" ],
 		"skill": "occult",
     "flags": [ "SOMATIC", "VERBAL", "CONCENTRATE", "SILENT" ],
@@ -154,7 +149,7 @@
         { "case": 14, "effect": { "u_cast_spell": { "id": "sky_bird_map_8" } } }
       ]
     },
-    "false_effect": [ { "u_message": "Without a clear view of the sky, the ritual fails." } ]
+    "false_effect": [ { "u_message": "Without a direct connection to the living earth, the spell fails." } ]
   },
   {
     "id": "sky_bird_map_1",
