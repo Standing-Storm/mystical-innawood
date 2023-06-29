@@ -12,7 +12,8 @@
     "qualities": [ { "id": "CUT", "level": 2 }, { "id": "SEW", "level": 2 }, { "id": "SAW_W", "level": 1 } ],
     "components": [ 
       [ [ "paper", 100 ] ], 
-      [ [ "used_occult_notes", 5 ] ],
+      [ [ "used_occult_notes", 2 ] ],
+      [ [ "occult_research_minor", 5 ] ],
       [ [ "wood_panel", 1 ] ]
     ],
     "proficiencies": [
