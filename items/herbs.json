@@ -16,6 +16,22 @@
     "flags": [ "LIGHT_5", "SMOKABLE" ]
   },
   {
+    "type": "GENERIC",
+    "id": "morningflower_leaves_smoked",
+    "symbol": ",",
+    "color": "yellow",
+    "spoils_in": "150 days",
+    "name": { "str_sp": "dehydrated morningflower leaf", "str_pl": "dehydrated morningflower leaves" },
+    "description": "A large leaf from the morningflower plant.  It has been dehydrated in a smoker and its characteristic golden glow is much fainter now.",
+    "price": 0,
+    "price_postapoc": 5,
+    "material": [ "veggy" ],
+    "weight": "15 g",
+    "volume": "50 ml",
+    "melee_damage": { "bash": 4 },
+    "flags": [ "SMOKED", "LIGHT_1" ]
+  },
+  {
     "type": "COMESTIBLE",
     "id": "harfry_root",
     "name": { "str": "harfry root" },
