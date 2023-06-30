@@ -15,6 +15,33 @@
   },
   {
     "id": "mon_spell_sea_elemental",
-    
+    "type": "MONSTER",
+    "name": "Conjured Undine",
+    "description": "A swirling mass of animated water in the vague shape of a human form.  A suggestion of hair and eyes, four limbs, but no individual features are distinguishable.  When it moves, it simply flows and then reforms into its previous shape.",
+    "default_faction": "player",
+    "bodytype": "blob",
+    "species": [ "SEA_ELEMENTAL" ],
+    "volume": "62500 ml",
+    "weight": "62500 g",
+    "hp": 65,
+    "speed": 100,
+    "symbol": "W",
+    "color": "blue",
+    "aggression": 60,
+    "morale": 100,
+    "melee_skill": 3,
+    "melee_dice": 1,
+    "melee_dice_sides": 3,
+    "melee_damage": [ { "damage_type": "bash", "amount": 3 } ],
+    "armor": { "bash": 10, "stab": 5, "bullet": 50, "heat": -30 },
+    "dodge": 4,
+    "vision_day": 35,
+    "vision_night": 5,
+    "material": [ "water" ],
+    "special_attacks": [
+      
+    ],
+    "death_function": { "message": "The %s falls apart in a rush of water!", "corpse_type": "NO_CORPSE" },
+    "flags": [ "SEES", "HEARS", "BASHES", "PUSH_MON", "PATH_AVOID_FIRE", "PRIORITIZE_TARGETS", "HARDTOSHOOT", "PLASTIC", "NOGIB", "NOHEAD", "NO_BREATHE" ]
   }
 ]
