@@ -48,6 +48,6 @@
     ],
     "death_function": { "message": "The %s falls apart in a rush of water!", "corpse_type": "NO_CORPSE" },
     "death_drops": "undine_drops"
-    "flags": [ "SEES", "HEARS", "BASHES", "PUSH_MON", "PATH_AVOID_FIRE", "WATER_CAMOUFLAGE", "PLASTIC", "NOGIB", "NOHEAD", "NO_BREATHE" ]
+    "flags": [ "SEES", "HEARS", "BASHES", "PUSH_MON", "PATH_AVOID_FIRE", "WATER_CAMOUFLAGE", "SWIMS", "PLASTIC", "NOGIB", "NOHEAD", "NO_BREATHE" ]
   }
 ]
