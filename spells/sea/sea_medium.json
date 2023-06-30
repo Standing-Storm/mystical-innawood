@@ -43,7 +43,7 @@
     "difficulty": 5,
 		"base_casting_time": 300,
 		"final_casting_time": 150,
-		"casting_increment": -8,
+		"casting_time_increment": -8,
     "min_duration": { "math": [ "( 1800 + (u_val('spell_level', 'spell: sea_summon_elemental') * 600) )" ] },
     "max_duration": { "math": [ "( 9600 + (u_val('spell_level', 'spell: sea_summon_elemental') * 800) )" ] },
     "base_energy_cost": 450
