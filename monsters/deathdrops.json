@@ -10,11 +10,12 @@
     ]
   },
   {
-    "id": "undine_drops":
+    "id": "undine_drops",
     "type": "item_group",
     "subtype": "collection",
     "entries": [
-      { "item": "undine_heart", "prob": 50 }
+      { "item": "undine_heart", "prob": 50 },
+      { "item": "water", "prob": 100, "count": [ 30, 90 ] }
     ]
   }
 ]
