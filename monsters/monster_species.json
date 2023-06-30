@@ -4,14 +4,14 @@
     "id": "FOREST_ELEMENTAL",
     "description": "A magical being of the forest.",
     "flags": [ "NEVER_WANDER" ],
-    "anger_triggers": [ "FRIEND_ATTACKED", "NOGIB", "PATH_AVOID_FIRE" ],
+    "anger_triggers": [ "FRIEND_ATTACKED", "PATH_AVOID_FIRE" ],
     "fear_triggers": [ "FIRE" ]
   },
   {
     "type": "SPECIES",
     "id": "EARTH_ELEMENTAL",
     "description": "A magical being of rock and stone.",
-    "flags": [ "FIREPROOF", "LOUDMOVES", "NEVER_WANDER", "NOGIB", "NO_FUNG_DMG" ],
+    "flags": [ "FIREPROOF", "LOUDMOVES", "NEVER_WANDER", "NO_FUNG_DMG" ],
     "anger_triggers": [ "FRIEND_ATTACKED" ]
   },
   {
@@ -19,14 +19,14 @@
     "id": "SEA_ELEMENTAL",
     "description": "A magical being of the lakes and rivers.",
     "anger_triggers": [ "FRIEND_ATTACKED" ],
-    "flags": [ "ACIDPROOF", "NEVER_WANDER", "NOGIB", "NO_FUNG_DMG" ],
+    "flags": [ "ACIDPROOF", "NEVER_WANDER", "NO_FUNG_DMG" ],
     "fear_triggers": [ "FIRE" ]
   },
     {
     "type": "SPECIES",
     "id": "SKY_ELEMENTAL",
     "description": "A magical being of wind and rain.",
-    "flags": [ "FLIES", "HARDTOSHOOT", "NEVER_WANDER", "NOGIB", "NO_FUNG_DMG" ],
+    "flags": [ "FLIES", "HARDTOSHOOT", "NEVER_WANDER", "NO_FUNG_DMG" ],
     "anger_triggers": [ "FRIEND_ATTACKED" ]
   }
 ]
