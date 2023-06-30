@@ -27,7 +27,8 @@
         "CSC_ALL",
         "CSC_OCCULT_MATERIALS",
         "CSC_OCCULT_ENCHANTING",
-        "CSC_OCCULT_BOTANIC",
+        "CSC_OCCULT_HERBALSIM",
+        "CSC_OCCULT_INFUSION",
         "CSC_OCCULT_FORMULAE",
         "CSC_OCCULT_RESEARCH"
       ]
