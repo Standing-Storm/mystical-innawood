@@ -52,7 +52,7 @@
         "miss_msg_npc":  "%s gestures and a stream of water arcs up, but <npcname> moves out of the way!"
       },
       {
-        "id": "mon_summon_undine_water",
+        "id": "summon_undine_water_attack",
         "type": "spell",
         "spell_data": { "id": "monster_wave_of_water", "min_level": 4 },
         "cooldown": 10,
