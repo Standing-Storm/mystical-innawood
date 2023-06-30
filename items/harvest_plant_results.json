@@ -1,0 +1,7 @@
+[
+  {
+    "id": "harvest_morningflower",
+    "type": "harvest",
+    "entries": [ { "drop": "moonflowers", "base_num": [ 1, 2 ] } ]
+  }
+]
