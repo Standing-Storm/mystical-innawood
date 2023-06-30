@@ -1,0 +1,38 @@
+[
+  {
+    "result": "herbalism_harfry_paste",
+    "byproducts": [ [ "plant_fibre" ] ],
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "category": "CC_OCCULT",
+    "subcategory": "CSC_OCCULT_HERBALISM",
+    "skill_used": "survival",
+    "difficulty": 1,
+    "time": "15 m",
+    "tools": [ [ [ "mortar_pestle", -1 ] ] ], 
+    "qualities": [ { "id": "MAGICAL_RESEARCH", "level": 1 } ],
+    "components": [ [ [ "harfry_root", 2 ] ] ]
+  },
+  {
+    "result": "herbalism_morningroot_tonic",
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "category": "CC_OCCULT",
+    "subcategory": "CSC_OCCULT_HERBALISM",
+    "skill_used": "cooking",
+    "difficulty": 1,
+    "time": "20 m",
+    "batch_time_factors": [ 20, 1 ],
+    "tools": [ [ [ "water_boiling_heat", 1, "LIST" ] ], [ [ "mortar_pestle", -1 ] ] ], 
+    "qualities": [ { "id": "MAGICAL_RESEARCH", "level": 1 } ],
+    "components": [ 
+      [ [ "morningroot", 2 ] ],
+      [ [ "water_clean", 1 ], [ "water", 1 ] ]
+    ]
+  }
+]
+
+
+
+
+herbalism_morningroot_tonic
