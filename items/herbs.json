@@ -20,7 +20,7 @@
   {
     "type": "COMESTIBLE",
     "id": "harfry_root",
-    "name": { "str": "dahlia root" },
+    "name": { "str": "harfry root" },
     "weight": "168 g",
     "color": "green",
     "spoils_in": "30 days",
