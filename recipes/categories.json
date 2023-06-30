@@ -61,7 +61,7 @@
       ],
       "difficulty": 1
     },
-        {
+    {
       "id": "nested_enchantment_research",
       "type": "nested_category",
       "activity_level": "LIGHT_EXERCISE",
@@ -73,6 +73,21 @@
       "nested_category_data":
       [ 
         "enchantment_research_intro"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "nested_herbalism_research",
+      "type": "nested_category",
+      "activity_level": "LIGHT_EXERCISE",
+      "category": "CC_OCCULT",
+      "subcategory": "CSC_OCCULT_RESEARCH",
+      "name": "herbalism research",
+      "description": "Recipes related to studying magical plants and herbs.",
+      "skill_used": "occult",
+      "nested_category_data":
+      [ 
+        "herbalism_research_intro"
       ],
       "difficulty": 1
     }
