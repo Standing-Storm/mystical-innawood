@@ -46,7 +46,7 @@
     "max_damage": 8,
     "damage_type": "bash",
     "damage_increment": 0.75,
-    "min_range": 2
+    "min_range": 2,
     "max_range": 5,
     "min_aoe": 30,
     "max_aoe": 75,
