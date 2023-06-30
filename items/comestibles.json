@@ -1,0 +1,12 @@
+[
+  {
+    "id": "herbalism_morningroot_tonic",
+    "type": "COMESTIBLE",
+    "copy-from": "tea",
+    "name": { "str": "morningroot tonic" },
+    "description": "A tisane made from shaved morningroot and water, perfect to put a spring in your step on a cold morning.",
+    "fatigue_mod": 11,
+    "stim": 4,
+    "container": "jug_clay"
+  }
+]
