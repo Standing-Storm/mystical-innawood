@@ -97,6 +97,6 @@
 		"max_aoe": 4,
     "max_level": 25,
     "difficulty": 10,
-    "min_duration": { "math": [ "( 36000 + (u_val('spell_level', 'spell: forest_nature_guardian') * 3600) )" ] },
+    "min_duration": { "math": [ "( 36000 + (u_val('spell_level', 'spell: forest_nature_guardian') * 3600) )" ] }
   }
 ]
