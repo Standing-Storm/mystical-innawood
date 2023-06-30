@@ -30,6 +30,7 @@
         "throw_strength": 40, 
         "move_cost": 150,
         "cooldown": 8,
+        "range": 6,
         "blockable": false,
         "effects": [ { "id": "downed", "duration": [ 1, 2 ] } ],
         "hit_dmg_u": "%s gestures and a stream of water arcs up and crashes into you!",
