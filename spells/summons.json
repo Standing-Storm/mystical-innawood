@@ -49,7 +49,7 @@
         "hit_dmg_u": "%s gestures and a stream of water arcs up and crashes into you!",
         "hit_dmg_npc": "%s gestures and a stream of water arcs up and crashes into <npcname>!",
         "miss_msg_u": "%s gestures and a stream of water arcs up, but you move before it hits!",
-        "miss_msg_npc":  "%s gestures and a stream of water arcs up, but <npcname> moves out of the way!",
+        "miss_msg_npc":  "%s gestures and a stream of water arcs up, but <npcname> moves out of the way!"
       },
       {
         "id": "mon_summon_undine_water",
