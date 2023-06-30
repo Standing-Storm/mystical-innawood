@@ -30,7 +30,7 @@
     "tools": [ [ [ "water_boiling_heat", 1, "LIST" ] ], [ [ "mortar_pestle", -1 ] ] ], 
     "qualities": [ { "id": "MAGICAL_RESEARCH", "level": 1 } ],
     "components": [ 
-      [ [ "morningroot", 1 ] ],
+      [ [ "morningflower_leaves_smoked", 1 ] ],
       [ [ "water_clean", 1 ], [ "water", 1 ] ]
     ]
   }
