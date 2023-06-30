@@ -1,22 +1,19 @@
 [
   {
-    "type": "COMESTIBLE",
-    "id": "morningroot",
+    "type": "GENERIC",
+    "id": "morningflower_leaves",
     "symbol": ",",
     "color": "yellow",
     "spoils_in": "45 days",
-    "name": { "str_sp": "morningroot" },
-    "description": "The roots of the morningflower.  It has a faint golden glow in the dark.",
+    "name": { "str_sp": "morningflower leaf" },
+    "description": "A large leaf from the morningflower plant.  It has a faint golden glow in the dark.",
     "price": 0,
-     "calories": 10,
     "price_postapoc": 5,
     "material": [ "veggy" ],
-    "weight": "85 g",
-    "volume": "109 ml",
-    "fun": -4,
-    "to_hit": 1,
+    "weight": "15 g",
+    "volume": "50 ml",
     "melee_damage": { "bash": 4 },
-    "flags": [ "LIGHT_5" ]
+    "flags": [ "LIGHT_5", "SMOKABLE" ]
   },
   {
     "type": "COMESTIBLE",
