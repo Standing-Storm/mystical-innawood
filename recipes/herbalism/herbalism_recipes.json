@@ -13,7 +13,8 @@
     "qualities": [ { "id": "MAGICAL_RESEARCH", "level": 1 } ],
     "components": [ 
       [ [ "harfry_root", 1 ] ],
-      [ [ "alder_bark", 1 ], [ "tanbark", 1 ], [ "birchbark", 1 ], [ "willowbark", 1 ] ]
+      [ [ "alder_bark", 1 ], [ "tanbark", 1 ], [ "birchbark", 1 ], [ "willowbark", 1 ] ],
+      [ [ "water_clean", 2 ], [ "water", 2 ] ]
     ]
   },
   {
