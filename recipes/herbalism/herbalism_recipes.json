@@ -11,7 +11,10 @@
     "time": "15 m",
     "tools": [ [ [ "mortar_pestle", -1 ] ] ], 
     "qualities": [ { "id": "MAGICAL_RESEARCH", "level": 1 } ],
-    "components": [ [ [ "harfry_root", 2 ] ] ]
+    "components": [ 
+      [ [ "harfry_root", 2 ] ],
+      [ [ "alder_bark", 1 ], [ "tanbark", 1 ], [ "birchbark", 1 ], [ "willowbark", 1 ] ]
+    ]
   },
   {
     "result": "herbalism_morningroot_tonic",
@@ -26,7 +29,7 @@
     "tools": [ [ [ "water_boiling_heat", 1, "LIST" ] ], [ [ "mortar_pestle", -1 ] ] ], 
     "qualities": [ { "id": "MAGICAL_RESEARCH", "level": 1 } ],
     "components": [ 
-      [ [ "morningroot", 2 ] ],
+      [ [ "morningroot", 1 ] ],
       [ [ "water_clean", 1 ], [ "water", 1 ] ]
     ]
   }
