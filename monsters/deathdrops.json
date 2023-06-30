@@ -8,5 +8,13 @@
       { "item": "stick", "prob": 90, "count": [ 1, 2 ] },
       { "item": "leaves", "prob": 100, "count": [2, 4] }
     ]
+  },
+  {
+    "id": "undine_drops":
+    "type": "item_group",
+    "subtype": "collection",
+    "entries": [
+      { "item": "undine_heart", "prob": 50 }
+    ]
   }
 ]
