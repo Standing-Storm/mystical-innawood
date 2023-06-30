@@ -6,6 +6,6 @@
     "copy-from": "apple",
     "proportional": { "quench": 0.5, "calories": 0.5 },
     "spoils_in": "66 days 16 hours",
-    "use_action": { "type": "cast_spell", "spell_id": "herbalism_apple_heal", "no_fail": true, "level": 0 }
+    "use_action": { "type": "cast_spell", "spell_id": "herbalism_pfruit_apple_heal", "no_fail": true, "level": 0 }
   }
 ]
