@@ -1,0 +1,27 @@
+[
+  {
+    "id": "herbalism_harfry_paste",
+    "type": "COMESTIBLE",
+    "comestible_type": "MED",
+    "name": { "str": "glob of harfry paste jelly", "str_pl": "globs of harfry paste" },
+    "description": "Clear jelly harvested from cattails.  Can be used to protect a wound from contamination, and works as a painkiller.",
+    "container": "stomach_sealed",
+    "weight": "65 g",
+    "volume": "250 ml",
+    "charges": 8,
+    "price": 50,
+    "price_postapoc": 50,
+    "material": [ "oil" ],
+    "phase": "liquid",
+    "symbol": "~",
+    "color": "brown",
+    "flags": [ "NO_INGEST", "WATER_DISSOLVE" ],
+    "use_action": {
+      "type": "heal",
+      "disinfectant_power": 2,
+      "bite": 0.85,
+      "move_cost": 3000,
+      "effects": [ { "id": "pkill2", "duration": 720 } ]
+    }
+  }
+]
