@@ -11,7 +11,7 @@
     "type": "SPECIES",
     "id": "EARTH_ELEMENTAL",
     "description": "A magical being of rock and stone.",
-    "flags": [ "FIREPROOF", "LOUDMOVES", "NEVER_WANDER", "NO_FUNG_DMG" ],
+    "flags": [ "FIREPROOF", "NEVER_WANDER", "NO_FUNG_DMG" ],
     "anger_triggers": [ "FRIEND_ATTACKED" ]
   },
   {
