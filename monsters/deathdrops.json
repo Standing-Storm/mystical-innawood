@@ -17,5 +17,16 @@
       { "item": "undine_heart", "prob": 50 },
       { "item": "water", "prob": 100, "count": [ 30, 90 ] }
     ]
+  },
+  {
+    "id": "gnome_drops",
+    "type": "item_group",
+    "subtype": "collection",
+    "entries": [
+      { "item": "gnome_eye", "prob": 70, "count": [ 1, 2 ] },
+      { "item": "rock", "prob": 100, "count": [ 10, 30 ] },
+      { "item": "pebble", "prob": 100, "count": [ 40, 90 ] },
+      { "item": "rock_flaking", "prob": 70, "count": [ 3, 6 ] }
+    ]
   }
 ]
