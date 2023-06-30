@@ -90,6 +90,6 @@
 		"max_aoe": 4,
     "max_level": 20,
 		"min_duration": { "math": [ "( 1800 + (u_val('spell_level', 'spell: sea_summon_elemental') * 600) )" ] },
-    "max_duration": { "math": [ "( 9600 + (u_val('spell_level', 'spell: sea_summon_elemental') * 800) )" ] },
+    "max_duration": { "math": [ "( 9600 + (u_val('spell_level', 'spell: sea_summon_elemental') * 800) )" ] }
   }
 ]
