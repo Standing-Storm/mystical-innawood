@@ -2,17 +2,37 @@
   {
     "id": "enchanted_components_minor",
     "type": "requirement",
-    "components": [ [ [ "mossling_fur", 4 ], [ "dryad_bark", 1 ] ] ]
+    "components": [ [ 
+      [ "mossling_fur", 4 ], 
+      [ "dryad_bark", 1 ], 
+      [ "gnome_eye", 1 ]
+    ] ]
+  },
+  {
+    "id": "enchanted_components_medium",
+    "type": "requirement",
+    "components": [ [ 
+      [ "undine_heart", 1 ], 
+      [ "dryad_bark", 4 ], 
+      [ "witchwood_bark", 1 ], 
+      [ "gnome_eye", 3 ] 
+    ] ]
   },
   {
     "id": "enchanted_components_major",
     "type": "requirement",
-    "components": [ [ [ "dryad_bark", 3 ], [ "witchwood_bark", 1 ], [ "bracken_eye", 1 ] ] ]
+    "components": [ [ 
+      [ "dryad_bark", 10 ], 
+      [ "undine_heart", 3 ],
+      [ "gnome_eye", 6 ]
+      [ "witchwood_bark", 3 ], 
+      [ "bracken_eye", 1 ] 
+    ] ]
   },
   {
     "id": "magical_creature_materials",
     "type": "requirement",
-    "components": [ [ [ "mossling_fur", 1 ], [ "dryad_bark", 1  ], [ "bracken_eye", 1 ] ] ]
+    "components": [ [ [ "mossling_fur", 1 ], [ "dryad_bark", 1  ], [ "bracken_eye", 1 ], [ "gnome_eye", 1 ], [ "undine_heart", 1 ] ] ]
   },
   {
     "id": "magical_materials",
