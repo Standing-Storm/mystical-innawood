@@ -1,0 +1,47 @@
+[
+  {
+    "id": "mon_earth_gnome",
+    "type": "MONSTER",
+    "name": "gnome",
+    "description": "A small mass of animate stone in the rough shape of a human, with clay for joints.  Two gemstone eyes regard you impassively.",
+    "default_faction": "earth_elemental_faction",
+    "bodytype": "human",
+    "species": [ "EARTH_ELEMENTAL" ],
+    "volume": "40 L",
+    "weight": "54 kg",
+    "hp": 83,
+    "speed": 70,
+    "material": [ "stone" ],
+    "symbol": "E",
+    "color": "brown",
+    "aggression": 10,
+    "morale": 100,
+    "melee_skill": 4,
+    "melee_dice": 2,
+    "melee_dice_sides": 5,
+    "melee_damage": [ { "damage_type": "bash", "amount": 6 } ],
+    "armor": { "bash": 6, "stab": 30, "cut": 20, "bullet": 40 },
+    "dodge": 0,
+    "vision_day": 40,
+    "vision_night": 6,
+    "special_attacks": [ 
+      {
+        "id": "smash", 
+        "throw_strength": 60, 
+        "move_cost": 200,
+        "cooldown": 9,
+        "blockable": true
+      },
+      {
+        "id": "gnome_ground_stomp_spell",
+        "type": "spell",
+        "spell_data": { "id": "monster_downed_stomp", "min_level": 3 },
+        "cooldown": 8,
+        "monster_message": "%1$s stomps heavily and the ground shakes!"
+      }
+    ],
+    "death_function": { "message": "%s collapses into broken stone!", "corpse_type": "NO_CORPSE" },
+    "death_drops": "gnome_drops"
+    "flags": [ "SEES", "HEARS", "NO_BREATHE", "BASHES", "ACIDPROOF", "STUN_IMMUNE" ]
+  }
+]
