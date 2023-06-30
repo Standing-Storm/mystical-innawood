@@ -10,8 +10,8 @@
       "move_cost_mod": 1,
       "required_str": -1,
       "flags": [ "TRANSPARENT", "TINY", "FLAMMABLE_ASH", "NOCOLLIDE", "FLOWER", "LIGHT_5" ],
-      "examine_action": "harvest_furn_nectar",
-      "harvest_by_season": [ { "seasons": [ "spring", "summer", "autumn" ], "id": "moonflower_harv" } ],
+      "examine_action": "harvest_furn",
+      "harvest_by_season": [ { "seasons": [ "spring", "summer", "autumn" ], "id": "harvest_morningflower" } ],
       "bash": { "str_min": 2, "str_max": 6, "sound": "crunch.", "sound_fail": "whish." }
     }
   ]
