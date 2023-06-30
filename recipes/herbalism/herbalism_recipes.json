@@ -12,7 +12,7 @@
     "tools": [ [ [ "mortar_pestle", -1 ] ] ], 
     "qualities": [ { "id": "MAGICAL_RESEARCH", "level": 1 } ],
     "components": [ 
-      [ [ "harfry_root", 2 ] ],
+      [ [ "harfry_root", 1 ] ],
       [ [ "alder_bark", 1 ], [ "tanbark", 1 ], [ "birchbark", 1 ], [ "willowbark", 1 ] ]
     ]
   },
