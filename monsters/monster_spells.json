@@ -2,7 +2,7 @@
   {
     "id": "brackenstrike",
     "type": "SPELL",
-    "name": "Brackenwight Strike",
+    "name": "Monster Brackenwight Strike",
     "description": "Brackenwight's root attack.",
     "valid_targets": [ "hostile", "ground" ],
     "flags": [ "LOUD", "SOMATIC", "VERBAL", "NO_LEGS" ],
@@ -40,7 +40,6 @@
     "valid_targets": [ "hostile", "item", "ground" ],
     "effect": "directed_push",
     "shape": "cone",
-    "difficulty": 2,
     "max_level": 15,
     "min_damage": 1,
     "max_damage": 8,
@@ -51,8 +50,25 @@
     "min_aoe": 30,
     "max_aoe": 75,
     "aoe_increment": 3,
-    "base_casting_time": 50,
-    "final_casting_time": 10,
+    "base_casting_time": 150,
+    "final_casting_time": 100,
     "casting_time_increment": -4
+  },
+  {
+    "id": "monster_downed_stomp",
+     "type": "SPELL",
+    "name": "Monster Downed Stomp",
+    "description": "The monster stomps on the ground and knocks anyone nearby off their feet.",
+    "valid_targets": [ "hostile", "ground" ],
+    "effect": "attack",
+    "effect_str": "downed",
+    "shape": "blast",
+    "max_level": 5,
+    "min_aoe": 1,
+    "max_aoe": 6,
+    "aoe_increment": 1,
+    "min_duration": 100,
+    "max_duration": 300,
+    "duration_increment": 40
   }
 ]
