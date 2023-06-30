@@ -1,0 +1,38 @@
+[
+  {
+    "type": "COMESTIBLE",
+    "id": "morningroot",
+    "symbol": ",",
+    "color": "yellow",
+    "spoils_in": "45 days",
+    "name": { "str_sp": "morningroot" },
+    "description": "The roots of the morningflower.  It has a faint golden glow in the dark.",
+    "price": 0,
+    "price_postapoc": 5,
+    "material": [ "veggy" ],
+    "weight": "85 g",
+    "volume": "109 ml",
+    "fun": -4,
+    "to_hit": 1,
+    "melee_damage": { "bash": 4 },
+    "flags": [ "LIGHT_5" ]
+  },
+  {
+    "type": "COMESTIBLE",
+    "id": "harfry_root",
+    "name": { "str": "dahlia root" },
+    "weight": "168 g",
+    "color": "green",
+    "spoils_in": "30 days",
+    "comestible_type": "FOOD",
+    "symbol": "%",
+    "calories": 20,
+    "description": "The large, brilliant-green root of the harfry plant.  It's edible, if barely, and smells faintly sweet.",
+    "price": 100,
+    "price_postapoc": 25,
+    "material": [ "veggy" ],
+    "volume": "250 ml",
+    "fun": -6,
+    "flags": [ "RAW" ]
+  }
+]
