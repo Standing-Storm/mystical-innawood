@@ -87,7 +87,7 @@
     "type": "proficiency",
     "id": "prof_botanical_enchantment",
     "category": "prof_herbalism",
-    "name": { "str": "Botanical Enchantment" },
+    "name": { "str": "Mystic Horticulture" },
     "description": "The art of instilling mystical energy into fruit.",
     "can_learn": true,
     "default_time_multiplier": 4,
