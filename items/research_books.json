@@ -123,6 +123,6 @@
     "id": "used_occult_notes",
     "copy-from": "research_notes_abstract",
     "name": { "str": "old occult research notes", "str_pl": "sets of old occult research notes" },
-    "description": "A set of your notes about the occult.  You've already gotten most of the value you can out of these, but you never know when it might be useful in the future"
+    "description": "A set of your notes about the occult.  You've already gotten most of the value you can out of these, but you never know when it might be useful in the future."
   }
 ]
