@@ -41,7 +41,7 @@
     "effect": "directed_push",
     "shape": "cone",
     "difficulty": 2,
-    "max_level": 15
+    "max_level": 15,
     "min_damage": 1,
     "max_damage": 8,
     "damage_type": "bash",
