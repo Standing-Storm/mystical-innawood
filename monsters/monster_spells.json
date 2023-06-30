@@ -1,0 +1,24 @@
+[
+  {
+    "id": "monster_wave_of_water",
+    "type": "SPELL",
+    "name": "Monster Wave of Water",
+    "description": "The monster hurls something away with a wave of water.",
+    "valid_targets": [ "hostile", "item", "ground" ],
+    "effect": "directed_push",
+    "shape": "cone",
+    "difficulty": 2,
+    "max_level": 15
+    "min_damage": 1,
+    "max_damage": 8,
+    "damage_increment": 0.75,
+    "min_range": 2
+    "max_range": 5,
+    "min_aoe": 30,
+    "max_aoe": 75,
+    "aoe_increment": 3,
+    "base_casting_time": 50,
+    "final_casting_time": 10,
+    "casting_time_increment": -4
+  }
+]
