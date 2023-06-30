@@ -4,15 +4,26 @@
     "name": "forest_elemental_faction",
     "base_faction": "animal",
     "neutral": [ "small_animal", "herbivore", "mega_herbivore", "canidae", "fish", "mega_bird" ],
-    "hate": [ "zombie", "triffid", "fungus" ],
-    "by_mood": [ "human" ]
+    "friendly": [ "forest_elemental_faction" ],
+    "hate": [ "zombie", "triffid", "fungus", "nether_player_hate" ],
+    "by_mood": [ "human", "player" ]
   },
   {
     "type": "MONSTER_FACTION",
     "name": "earth_elemental_faction",
     "base_faction": "animal",
+    "friendly": [ "earth_elemental_faction" ],
     "neutral": [ "small_animal", "herbivore" ],
-    "hate": [ "zombie" ],
-    "by_mood": [ "human" ]
+    "hate": [ "zombie", "nether_player_hate" ],
+    "by_mood": [ "human", "player" ]
+  },
+  {
+    "type": "MONSTER_FACTION",
+    "name": "sea_elemental_faction",
+    "base_faction": "animal",
+    "friendly": [ "sea_elemental_faction" ],
+    "neutral": [ "small_animal", "herbivore" ],
+    "hate": [ "zombie", "nether_player_hate" ],
+    "by_mood": [ "human", "player" ]
   }
 ]
