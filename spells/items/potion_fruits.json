@@ -15,5 +15,17 @@
     "min_duration": 15000,
     "max_duration": 90000,
     "duration_increment": 3000
+  },
+  {
+    "id": "pfruit_regeneration_spell",
+    "type": "SPELL",
+    "name": "Apple Potion Healing Effect",
+    "description": "Heals the target.",
+    "valid_targets": [ "self" ],
+    "min_damage": -1,
+    "max_damage": -1,
+    "effect": "attack",
+    "shape": "blast",
+    "flags": [ "SILENT" ]
   }
 ]
