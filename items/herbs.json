@@ -5,7 +5,7 @@
     "symbol": ",",
     "color": "yellow",
     "spoils_in": "45 days",
-    "name": { "str_sp": "morningflower leaf" },
+    "name": { "str_sp": "morningflower leaf", "str_pl": "morningflower leaves" },
     "description": "A large leaf from the morningflower plant.  It has a faint golden glow in the dark.",
     "price": 0,
     "price_postapoc": 5,
