@@ -2,11 +2,16 @@
   {
     "id": "harvest_morningflower",
     "type": "harvest",
-    "entries": [ { "drop": "morningroot", "base_num": [ 1, 2 ] } ]
+    "entries": [ { "drop": "morningflower_leaves", "base_num": [ 1, 2 ] } ]
   },
   {
-    "id": "harvest_harfry_root",
+    "id": "harvest_harfry",
     "type": "harvest",
     "entries": [ { "drop": "harfry_root", "base_num": [ 1, 2 ] } ]
+  }, 
+  {
+    "id": "harvest_harfry_summer",
+    "type": "harvest",
+    "entries": [ { "drop": "harfry_root", "base_num": [ 2, 4 ] } ]
   }
 ]
