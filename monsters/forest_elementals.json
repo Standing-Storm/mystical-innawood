@@ -23,8 +23,8 @@
     "vision_day": 30,
     "vision_night": 5,
     "material": [ "veggy" ],
-    "fear_triggers": [ "PLAYER_CLOSE" ].
-    "flags": [ "SEES", "HEARS", "WARM", "HARDTOSHOOT", "PATH_AVOID_DANGER_1", "HIT_AND_RUN", "PATH_AVOID_FIRE" ],
+    "fear_triggers": [ "PLAYER_CLOSE" ],
+    "flags": [ "SEES", "HEARS", "WARM", "HARDTOSHOOT", "PATH_AVOID_DANGER_1", "HIT_AND_RUN", "PATH_AVOID_FIRE", "FLAMMABLE" ],
     "death_function": { "message": "%s collapses into a pile of moss." },
     "death_drops": "mossling_drops"
   },
@@ -56,7 +56,7 @@
       { "id": "scratch", "cooldown": 8 }
     ],
     "anger_triggers": [ "FRIEND_DIED", "FRIEND_ATTACKED", "HURT", "FIRE" ],
-    "flags": [ "SEES", "HEARS", "BASHES", "GROUP_BASH", "CAMOUFLAGE", "PATH_AVOID_DANGER_1", "NO_BREATHE", "PATH_AVOID_FIRE" ],
+    "flags": [ "SEES", "HEARS", "BASHES", "GROUP_BASH", "CAMOUFLAGE", "PATH_AVOID_DANGER_1", "NO_BREATHE", "PATH_AVOID_FIRE", "FLAMMABLE" ],
     "harvest": "harvest_dryad"
     
   },
