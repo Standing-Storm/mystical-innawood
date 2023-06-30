@@ -55,12 +55,7 @@
          "effect": [
            { "u_message": "You were right, there is something here!  It's a good thing you kept looking.", "type": "good" },
            { "u_spawn_item": "used_occult_notes", "suppress_message": true },
-           { "u_roll_remainder": 
-             [
-                "detect_magic_research"
-             ],
-             "type": "recipe"
-           }
+           { "u_learn_recipe": "detect_magic_research" }
          ],
          "false_effect": [
            { "u_message": "You really thought you had something here, but it's just a dead end.  You'll have to try again with a new approach.", "type": "bad" },
