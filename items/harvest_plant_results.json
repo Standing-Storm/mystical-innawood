@@ -7,6 +7,6 @@
   {
     "id": "harvest_harfry_root",
     "type": "harvest",
-    "entries": [ { "drop": "harfry_root", "base_num": [ 2, 4 ] } ]
+    "entries": [ { "drop": "harfry_root", "base_num": [ 1, 2 ] } ]
   }
 ]
