@@ -17,7 +17,7 @@
     "id": "mon_spell_sea_elemental",
     "type": "MONSTER",
     "name": "Conjured Undine",
-    "description": "A swirling mass of animated water in the vague shape of a human form.  A suggestion of hair and eyes, four limbs, but no individual features are distinguishable.  When it moves, it simply flows and then reforms into its previous shape.",
+    "description": "A swirling mass of animated water in the vague shape of a human form.  A suggestion of hair and eyes and four limbs, but no individual features are distinguishable.  When it moves, it simply flows and then reforms into its previous shape.",
     "default_faction": "player",
     "bodytype": "blob",
     "species": [ "SEA_ELEMENTAL" ],
@@ -39,7 +39,25 @@
     "vision_night": 5,
     "material": [ "water" ],
     "special_attacks": [
-      
+      { 
+        "id": "smash", 
+        "throw_strength": 40, 
+        "move_cost": 150,
+        "cooldown": 8,
+        "blockable": false,
+        "effects": [ { "id": "downed", "duration": [ 1, 2 ] } ],
+        "hit_dmg_u": "%s gestures and a stream of water arcs up and crashes into you!",
+        "hit_dmg_npc": "%s gestures and a stream of water arcs up and crashes into <npcname>!",
+        "miss_msg_u": "%s gestures and a stream of water arcs up, but you move before it hits!",
+        "miss_msg_npc":  "%s gestures and a stream of water arcs up, but <npcname> moves out of the way!",
+      },
+      {
+        "id": "mon_summon_undine_water",
+        "type": "spell",
+        "spell_data": { "id": "monster_wave_of_water", "min_level": 4 },
+        "cooldown": 10,
+        "monster_message": "%1$s gestures and a wall of water surges forth!"
+      }
     ],
     "death_function": { "message": "The %s falls apart in a rush of water!", "corpse_type": "NO_CORPSE" },
     "flags": [ "SEES", "HEARS", "BASHES", "PUSH_MON", "PATH_AVOID_FIRE", "PRIORITIZE_TARGETS", "HARDTOSHOOT", "PLASTIC", "NOGIB", "NOHEAD", "NO_BREATHE" ]
