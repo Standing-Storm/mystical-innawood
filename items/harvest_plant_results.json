@@ -2,6 +2,6 @@
   {
     "id": "harvest_morningflower",
     "type": "harvest",
-    "entries": [ { "drop": "moonflowers", "base_num": [ 1, 2 ] } ]
+    "entries": [ { "drop": "morningroot", "base_num": [ 1, 2 ] } ]
   }
 ]
