@@ -12,6 +12,12 @@
     "description": "Proficiencies for instilling magical energy into physical items."
   },
   {
+    "type": "proficiency_category",
+    "id": "prof_herbalism",
+    "name": "Herbalism",
+    "description": "Proficiencies for drawing out and manipulating the magic of herbs and plants."
+  },
+  {
     "type": "proficiency",
     "id": "prof_occult_exploration",
     "name": { "str": "Occult Exploration" },
@@ -68,8 +74,19 @@
   },
   {
     "type": "proficiency",
+    "id": "prof_herbalism_basic",
+    "category": "prof_occult_research",
+    "name": { "str": "Herbalism Basics" },
+    "description": "You understand how to determine which plants and magical and the basic properties of common magical herbs.",
+    "can_learn": true,
+    "default_time_multiplier": 1.5,
+    "default_skill_penalty": 0.3,
+    "time_to_learn": "14 h"
+  },
+  {
+    "type": "proficiency",
     "id": "prof_botanical_enchantment",
-    "category": "prof_enchantment",
+    "category": "prof_herbalism",
     "name": { "str": "Botanical Enchantment" },
     "description": "The art of instilling mystical energy into fruit.",
     "can_learn": true,
