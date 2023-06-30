@@ -23,6 +23,7 @@
     "vision_day": 30,
     "vision_night": 5,
     "material": [ "veggy" ],
+    "fear_triggers": [ "PLAYER_CLOSE" ].
     "flags": [ "SEES", "HEARS", "WARM", "HARDTOSHOOT", "PATH_AVOID_DANGER_1", "HIT_AND_RUN", "PATH_AVOID_FIRE" ],
     "death_function": { "message": "%s collapses into a pile of moss." },
     "death_drops": "mossling_drops"
@@ -90,7 +91,7 @@
          "monster_message": "Roots explode out of %1$s and impale you!"
        }
     ],
-    "anger_triggers": [ "FRIEND_DIED", "FRIEND_ATTACKED", "HURT", "FIRE" ],
+    "anger_triggers": [ "FRIEND_DIED", "PLAYER_CLOSE", "FRIEND_ATTACKED", "HURT", "FIRE" ],
     "flags": [ "SEES", "HEARS", "WARM", "BASHES", "DESTROYS", "ATTACKMON", "PUSH_MON", "PUSH_VEH", "PATH_AVOID_FIRE", "PLASTIC" ],
     "harvest": "harvest_brackenwight",
     "biosignature": { "biosig_item": "withered", "biosig_timer": 12 },
