@@ -24,7 +24,7 @@
     "components": [ [ 
       [ "dryad_bark", 10 ], 
       [ "undine_heart", 3 ],
-      [ "gnome_eye", 6 ]
+      [ "gnome_eye", 6 ],
       [ "witchwood_bark", 3 ], 
       [ "bracken_eye", 1 ] 
     ] ]
