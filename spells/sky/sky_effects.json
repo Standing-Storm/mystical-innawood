@@ -17,5 +17,16 @@
 			"remove_message": "The blowing wind dies down into stillness.",
       "show_intensity": false,
       "enchantments": [ { "values": [ { "value": "MOVE_COST", "multiply": { "math": [ "( -0.1 + ( u_val('spell_level', 'spell: sky_wind_speed') * -0.012 ) )" ] } } ] } ]
-    }
+    },
+		{
+			"type": "effect_type",
+			"id": "effect_sky_cloak_of_fog",
+			"name": [ "Cloak of Fog" ],
+			"desc": [ "The fog shields you from sight." ],
+			"apply_message": "",
+			"remove_message": "The fog begins to dissipate.",
+			"rating": "good",
+			"max_duration": "5 minutes", 
+			"enchantments": [ "enchant_sky_cloak_of_fog" ]
+		}
   ]
