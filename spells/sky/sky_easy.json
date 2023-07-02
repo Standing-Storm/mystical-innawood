@@ -70,7 +70,6 @@
     "min_field_intensity": 2,
     "max_field_intensity": 3,
     "field_chance": 2,
-    "energy_source": "MANA",
     "base_energy_cost": 450,
     "base_casting_time": 300,
     "final_casting_time": 100,
