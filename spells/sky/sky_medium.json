@@ -5,52 +5,33 @@
     "name": "Call Down the Storm's Fury",
     "description": "By calling out to the sky, you can summon a bolt of lightning to crash into your enemies.  Does not work at all under a cloudless sky, and has increasing effect as the weather gets stormier.",
     "valid_targets": [ "self" ],
-		"flags": [ "CONCENTRATE", "SOMATIC", "VERBAL", "NO_EXPLOSION_SFX" ],
-	  "skill": "occult",
-		"spell_class": "SKY",
+    "flags": [ "CONCENTRATE", "SOMATIC", "VERBAL", "NO_EXPLOSION_SFX" ],
+    "skill": "occult",
+    "spell_class": "SKY",
     "effect": "effect_on_condition",
     "effect_str": "EOC_SKY_CALL_LIGHTNING",
-		"extra_effects": [ { "id": "channeling_fatigue_spell", "hit_self": true, "max_level": 2 } ],
+    "extra_effects": [ { "id": "channeling_fatigue_spell", "hit_self": true, "max_level": 2 } ],
     "shape": "blast",
-		"energy_source": "MANA",
-		"difficulty": 5,
-		"max_level": 15,
+    "energy_source": "MANA",
+    "difficulty": 5,
+    "max_level": 15,
     "base_casting_time": 1500,
     "final_casting_time": 500,
     "casting_time_increment": -66.67,
-		"base_energy_cost": 800
+    "base_energy_cost": 800
   },
   {
     "type": "effect_on_condition",
     "id": "EOC_SKY_CALL_LIGHTNING",
-		"condition": {
-			"and": [
-				"u_is_outside",
-				{ 
-					"or": [
-						{ "is_weather": "thunder" },
-						{ "is_weather": "lightning" }
-					]
-				}
-			]
-    },
+    "condition": { "and": [ "u_is_outside", { "or": [ { "is_weather": "thunder" }, { "is_weather": "lightning" } ] } ] },
     "effect": { "u_cast_spell": { "id": "sky_call_lightning_real", "min_level": 15 } },
     "false_effect": [ { "run_eocs": "EOC_SKY_CALL_LIGHTNING_2" } ]
   },
   {
-		"type": "effect_on_condition",
-		"id": "EOC_SKY_CALL_LIGHTNING_2",
-		"condition": {
-			"and": [
-				"u_is_outside",
-				{ 
-					"or": [
-						{ "is_weather": "rainstorm" },
-						{ "is_weather": "rain" },
-						{ "is_weather": "drizzle" }
-					]
-				}
-			]
+    "type": "effect_on_condition",
+    "id": "EOC_SKY_CALL_LIGHTNING_2",
+    "condition": {
+      "and": [ "u_is_outside", { "or": [ { "is_weather": "rainstorm" }, { "is_weather": "rain" }, { "is_weather": "drizzle" } ] } ]
     },
     "effect": { "u_cast_spell": { "id": "sky_call_lightning_real", "min_level": 10, "max_level": 10 } },
     "false_effect": [ { "run_eocs": "EOC_SKY_CALL_LIGHTNING_3" } ]
@@ -58,31 +39,23 @@
   {
     "type": "effect_on_condition",
     "id": "EOC_SKY_CALL_LIGHTNING_3",
-		"condition": {
-			"and": [
-				"u_is_outside",
-				{ 
-					"or": [
-						{ "is_weather": "light_drizzle" },
-						{ "is_weather": "Cloudy" }
-					]
-				}
-			]
-    },
-    "effect": { "u_cast_spell": { "id": "sky_call_lightning_real", "min_level": 5,  "max_level": 5 } },
+    "condition": { "and": [ "u_is_outside", { "or": [ { "is_weather": "light_drizzle" }, { "is_weather": "Cloudy" } ] } ] },
+    "effect": { "u_cast_spell": { "id": "sky_call_lightning_real", "min_level": 5, "max_level": 5 } },
     "false_effect": [ { "run_eocs": "EOC_SKY_CALL_LIGHTNING_4" } ]
   },
-  {    
+  {
     "type": "effect_on_condition",
     "id": "EOC_SKY_CALL_LIGHTNING_4",
-    "condition": {
-      "and": [
-        { "u_has_item": "crystallized_mana_sky" },
-        "u_is_outside"
-			]
-    },
+    "condition": { "and": [ { "u_has_item": "crystallized_mana_sky" }, "u_is_outside" ] },
     "effect": [
-      { "u_cast_spell": { "id": "sky_call_lightning_real", "min_level": 7,  "max_level": 7, "message": "Though the weather conditions are wrong, you draw on the power in the crystallized mana to call the lightning." } },
+      {
+        "u_cast_spell": {
+          "id": "sky_call_lightning_real",
+          "min_level": 7,
+          "max_level": 7,
+          "message": "Though the weather conditions are wrong, you draw on the power in the crystallized mana to call the lightning."
+        }
+      },
       { "u_consume_item": "crystallized_mana_sky" }
     ],
     "false_effect": [ { "run_eocs": "EOC_SKY_CALL_LIGHTNING_5" } ]
@@ -90,9 +63,7 @@
   {
     "type": "effect_on_condition",
     "id": "EOC_SKY_CALL_LIGHTNING_5",
-    "effect": [
-      { "u_message": "The weather conditions aren't right, and your incantations have no effect." }
-    ]
+    "effect": [ { "u_message": "The weather conditions aren't right, and your incantations have no effect." } ]
   },
   {
     "id": "sky_call_lightning_real",
@@ -101,8 +72,8 @@
     "description": "This is the actual lightning bolt.  It's a bug if you can see it.",
     "valid_targets": [ "hostile" ],
     "flags": [ "LOUD", "RANDOM_DAMAGE", "NON_MAGICAL" ],
-		"effect": "attack",
-		"shape": "blast",
+    "effect": "attack",
+    "shape": "blast",
     "max_level": 15,
     "min_damage": 80,
     "max_damage": 200,
@@ -119,18 +90,18 @@
     "damage_type": "electric",
     "sound_description": "a crackle"
   },
-	{
+  {
     "id": "sky_reveal_world_map",
     "type": "SPELL",
     "name": "Like a Bird on the Wing",
     "description": "Close your eyes and open yourself up to the sky, gazing down on the land below from a great height.  The ritual will only work when you have an unobstructed view of the sky.",
     "valid_targets": [ "self" ],
-		"skill": "occult",
+    "skill": "occult",
     "flags": [ "SOMATIC", "VERBAL", "CONCENTRATE", "SILENT" ],
     "effect": "effect_on_condition",
     "effect_str": "EOC_SKY_BIRD_MAP",
-		"extra_effects": [ { "id": "channeling_fatigue_spell", "hit_self": true, "max_level": 2 } ],
-		"spell_class": "SKY",
+    "extra_effects": [ { "id": "channeling_fatigue_spell", "hit_self": true, "max_level": 2 } ],
+    "spell_class": "SKY",
     "shape": "blast",
     "max_level": 15,
     "base_casting_time": 30000,
@@ -261,27 +232,27 @@
     "max_level": 1,
     "min_aoe": 40
   },
-	{
-		"id": "sky_wind_speed",
-		"type": "SPELL",
-		"name": "Carried By the Winds",
-		"description": "Call on the winds to carry you away from (or toward) danger.  This ritual requires only a few whispered words to invoke.",
-		"valid_targets": [ "self" ],
-		"skill": "occult",
-		"flags": [ "CONCENTRATE", "VERBAL", "SOMATIC" ],
-		"effect": "attack",
-		"effect_str": "effect_wind_speed",
-		"extra_effects": [ { "id": "channeling_fatigue_spell", "hit_self": true, "max_level": 2 } ],
-		"components": "spell_components_sky_wind_speed",
-		"shape": "blast",
-		"energy_source": "MANA",
-		"spell_class": "FOREST",
-		"difficulty": 4,
-		"max_level": 20,
-		"base_casting_time": 100,
-		"base_energy_cost": 550,
-		"min_duration": 1500,
-		"max_duration": 36000,
-		"duration_increment": 1725
-	}
+  {
+    "id": "sky_wind_speed",
+    "type": "SPELL",
+    "name": "Carried By the Winds",
+    "description": "Call on the winds to carry you away from (or toward) danger.  This ritual requires only a few whispered words to invoke.",
+    "valid_targets": [ "self" ],
+    "skill": "occult",
+    "flags": [ "CONCENTRATE", "VERBAL", "SOMATIC" ],
+    "effect": "attack",
+    "effect_str": "effect_wind_speed",
+    "extra_effects": [ { "id": "channeling_fatigue_spell", "hit_self": true, "max_level": 2 } ],
+    "components": "spell_components_sky_wind_speed",
+    "shape": "blast",
+    "energy_source": "MANA",
+    "spell_class": "FOREST",
+    "difficulty": 4,
+    "max_level": 20,
+    "base_casting_time": 100,
+    "base_energy_cost": 550,
+    "min_duration": 1500,
+    "max_duration": 36000,
+    "duration_increment": 1725
+  }
 ]

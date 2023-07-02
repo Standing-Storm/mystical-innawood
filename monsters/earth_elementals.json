@@ -24,14 +24,8 @@
     "dodge": 0,
     "vision_day": 40,
     "vision_night": 6,
-    "special_attacks": [ 
-      {
-        "id": "smash", 
-        "throw_strength": 60, 
-        "move_cost": 200,
-        "cooldown": 9,
-        "blockable": true
-      },
+    "special_attacks": [
+      { "id": "smash", "throw_strength": 60, "move_cost": 200, "cooldown": 9, "blockable": true },
       {
         "id": "gnome_ground_stomp_spell",
         "type": "spell",

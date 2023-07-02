@@ -6,17 +6,14 @@
     "entries": [
       { "item": "mossling_fur", "prob": 70, "count": [ 1, 4 ] },
       { "item": "stick", "prob": 90, "count": [ 1, 2 ] },
-      { "item": "leaves", "prob": 100, "count": [2, 4] }
+      { "item": "leaves", "prob": 100, "count": [ 2, 4 ] }
     ]
   },
   {
     "id": "undine_drops",
     "type": "item_group",
     "subtype": "collection",
-    "entries": [
-      { "item": "undine_heart", "prob": 50 },
-      { "item": "water", "prob": 100, "count": [ 30, 90 ] }
-    ]
+    "entries": [ { "item": "undine_heart", "prob": 50 }, { "item": "water", "prob": 100, "count": [ 30, 90 ] } ]
   },
   {
     "id": "gnome_drops",

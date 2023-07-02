@@ -3,21 +3,21 @@
     "id": "harvest_dryad",
     "type": "harvest",
     "entries": [
-     { "drop": "splinter", "type": "flesh", "mass_ratio": 0.4 },
-     { "drop": "dryad_bark", "type": "skin", "mass_ratio": 0.005 },
-     { "drop": "stick", "type": "bone", "mass_ratio": 0.03 },
-     { "drop": "leaves", "type": "flesh", "mass_ratio": 0.05 }
+      { "drop": "splinter", "type": "flesh", "mass_ratio": 0.4 },
+      { "drop": "dryad_bark", "type": "skin", "mass_ratio": 0.005 },
+      { "drop": "stick", "type": "bone", "mass_ratio": 0.03 },
+      { "drop": "leaves", "type": "flesh", "mass_ratio": 0.05 }
     ]
   },
- {
+  {
     "id": "harvest_brackenwight",
     "type": "harvest",
     "entries": [
-     { "drop": "withered", "type": "flesh", "mass_ratio": 0.4 },
-     { "drop": "veggy", "type": "flesh", "mass_ratio": 0.08 },
-     { "drop": "leaves", "type": "flesh", "mass_ratio": 0.3 },
-     { "drop": "stick", "type": "bone", "mass_ratio": 0.03 },
-     { "drop": "bracken_eye", "scale_num": [ 1, 3 ], "max": 3, "type": "offal" }
+      { "drop": "withered", "type": "flesh", "mass_ratio": 0.4 },
+      { "drop": "veggy", "type": "flesh", "mass_ratio": 0.08 },
+      { "drop": "leaves", "type": "flesh", "mass_ratio": 0.3 },
+      { "drop": "stick", "type": "bone", "mass_ratio": 0.03 },
+      { "drop": "bracken_eye", "scale_num": [ 1, 3 ], "max": 3, "type": "offal" }
     ]
   }
 ]

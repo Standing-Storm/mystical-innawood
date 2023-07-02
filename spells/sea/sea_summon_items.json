@@ -1,5 +1,5 @@
 [
-{
+  {
     "type": "TOOL",
     "id": "item_purify_water_token",
     "name": { "str": "droplet of purification", "str_pl": "droplets of purification" },
@@ -29,9 +29,9 @@
     "symbol": "!",
     "color": "blue",
     "initial_charges": 15,
-    "max_charges": 15,  
-      "material": [ "powder" ],
-      "flags": [ "LIGHT_5" ],
+    "max_charges": 15,
+    "material": [ "powder" ],
+    "flags": [ "LIGHT_5" ],
     "use_action": [ "WATER_PURIFIER" ]
   }
 ]

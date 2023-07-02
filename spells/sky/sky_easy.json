@@ -29,7 +29,7 @@
     "valid_targets": [ "ally", "hostile", "item", "ground" ],
     "skill": "occult",
     "flags": [ "CONCENTRATE", "VERBAL", "SOMATIC" ],
-     "effect": "directed_push",
+    "effect": "directed_push",
     "shape": "blast",
     "difficulty": 2,
     "max_level": 20,
@@ -57,7 +57,10 @@
     "skill": "occult",
     "flags": [ "CONCENTRATE", "VERBAL", "SOMATIC", "NO_EXPLOSION_SFX" ],
     "effect": "attack",
-    "extra_effects": [ { "id": "channeling_fatigue_spell", "hit_self": true, "max_level": 2 }, { "id": "sky_cloak_fog_emitter", "hit_self": true, "max_level": 20 } ],
+    "extra_effects": [
+      { "id": "channeling_fatigue_spell", "hit_self": true, "max_level": 2 },
+      { "id": "sky_cloak_fog_emitter", "hit_self": true, "max_level": 20 }
+    ],
     "shape": "blast",
     "energy_source": "MANA",
     "spell_class": "SKY",

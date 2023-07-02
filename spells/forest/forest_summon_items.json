@@ -1,5 +1,5 @@
 [
-   {
+  {
     "id": "forest_bandages",
     "type": "GENERIC",
     "category": "drugs",
@@ -30,10 +30,7 @@
     "price_postapoc": 1,
     "weight": "25 g",
     "longest_side": "76 cm",
-    "melee_damage": {
-      "bash": 3,
-      "cut": 1
-    },
+    "melee_damage": { "bash": 3, "cut": 1 },
     "ammo_type": "arrow",
     "damage": { "damage_type": "stab", "armor_penetration": 2 },
     "dispersion": 100,
@@ -57,25 +54,12 @@
     "techniques": [ "WBLOCK_1", "IMPALE" ],
     "volume": "1350 ml",
     "longest_side": "170 cm",
-     "melee_damage": {
-       "bash": 4,
-       "stab": 25
-     },
+    "melee_damage": { "bash": 4, "stab": 25 },
     "to_hit": { "grip": "weapon", "length": "long", "surface": "point", "balance": "good" },
-    "flags": [
-      "SPEAR",
-      "REACH_ATTACK",
-      "NONCONDUCTIVE",
-      "SHEATH_SPEAR",
-      "NO_REPAIR",
-      "NO_SALVAGE"
-    ],
-    "weapon_category": [
-      "POLEARMS",
-      "SPEARS"
-    ],
+    "flags": [ "SPEAR", "REACH_ATTACK", "NONCONDUCTIVE", "SHEATH_SPEAR", "NO_REPAIR", "NO_SALVAGE" ],
+    "weapon_category": [ "POLEARMS", "SPEARS" ],
     "price": 1,
-    "qualities": [ [ "COOK", 1 ] ],  
-    "relic_data": { "passive_effects": [ { "has": "WIELD", "hit_you_effect": [ { "id": "bramble_spear_slow",  "hit_self": false } ] } ] }
+    "qualities": [ [ "COOK", 1 ] ],
+    "relic_data": { "passive_effects": [ { "has": "WIELD", "hit_you_effect": [ { "id": "bramble_spear_slow", "hit_self": false } ] } ] }
   }
 ]

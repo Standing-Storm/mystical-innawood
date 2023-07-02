@@ -1,32 +1,45 @@
-	[
-    {
-      "id": "effect_actinic_glare",
-      "type": "effect_type",
-      "name": [ "Actinic Glow" ],
-      "desc": [ "The air around you glows with a harsh blue light." ],
-      "rating": "good",
-      "show_intensity": false,
-      "enchantments": [ { "values": [ { "value": "LUMINATION", "add": { "math": [ "( u_val('spell_level', 'spell: air_actinic_glare') * 20 )" ] } } ] } ]
-    },
-		{
-      "id": "effect_wind_speed",
-      "type": "effect_type",
-      "name": [ "Speed of the Wind" ],
-      "desc": [ "Winds are carrying you away." ],
-      "rating": "good",
-			"remove_message": "The blowing wind dies down into stillness.",
-      "show_intensity": false,
-      "enchantments": [ { "values": [ { "value": "MOVE_COST", "multiply": { "math": [ "( -0.1 + ( u_val('spell_level', 'spell: sky_wind_speed') * -0.012 ) )" ] } } ] } ]
-    },
-		{
-			"type": "effect_type",
-			"id": "effect_sky_cloak_of_fog",
-			"name": [ "Cloak of Fog" ],
-			"desc": [ "The fog shields you from sight." ],
-			"apply_message": "",
-			"remove_message": "The fog begins to dissipate.",
-			"rating": "good",
-			"max_duration": "5 minutes", 
-			"enchantments": [ "enchant_sky_cloak_of_fog" ]
-		}
-  ]
+[
+  {
+    "id": "effect_actinic_glare",
+    "type": "effect_type",
+    "name": [ "Actinic Glow" ],
+    "desc": [ "The air around you glows with a harsh blue light." ],
+    "rating": "good",
+    "show_intensity": false,
+    "enchantments": [
+      {
+        "values": [ { "value": "LUMINATION", "add": { "math": [ "( u_val('spell_level', 'spell: air_actinic_glare') * 20 )" ] } } ]
+      }
+    ]
+  },
+  {
+    "id": "effect_wind_speed",
+    "type": "effect_type",
+    "name": [ "Speed of the Wind" ],
+    "desc": [ "Winds are carrying you away." ],
+    "rating": "good",
+    "remove_message": "The blowing wind dies down into stillness.",
+    "show_intensity": false,
+    "enchantments": [
+      {
+        "values": [
+          {
+            "value": "MOVE_COST",
+            "multiply": { "math": [ "( -0.1 + ( u_val('spell_level', 'spell: sky_wind_speed') * -0.012 ) )" ] }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "effect_type",
+    "id": "effect_sky_cloak_of_fog",
+    "name": [ "Cloak of Fog" ],
+    "desc": [ "The fog shields you from sight." ],
+    "apply_message": "",
+    "remove_message": "The fog begins to dissipate.",
+    "rating": "good",
+    "max_duration": "5 minutes",
+    "enchantments": [ "enchant_sky_cloak_of_fog" ]
+  }
+]

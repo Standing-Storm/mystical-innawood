@@ -25,9 +25,9 @@
     "vision_night": 5,
     "material": [ "water" ],
     "special_attacks": [
-      { 
-        "id": "smash", 
-        "throw_strength": 40, 
+      {
+        "id": "smash",
+        "throw_strength": 40,
         "move_cost": 150,
         "cooldown": 8,
         "range": 6,
@@ -36,7 +36,7 @@
         "hit_dmg_u": "%s gestures and a stream of water arcs up and crashes into you!",
         "hit_dmg_npc": "%s gestures and a stream of water arcs up and crashes into <npcname>!",
         "miss_msg_u": "%s gestures and a stream of water arcs up, but you move before it hits!",
-        "miss_msg_npc":  "%s gestures and a stream of water arcs up, but <npcname> moves out of the way!"
+        "miss_msg_npc": "%s gestures and a stream of water arcs up, but <npcname> moves out of the way!"
       },
       {
         "id": "undine_water_attack",
@@ -48,6 +48,18 @@
     ],
     "death_function": { "message": "The %s falls apart in a rush of water!", "corpse_type": "NO_CORPSE" },
     "death_drops": "undine_drops",
-    "flags": [ "SEES", "HEARS", "BASHES", "PUSH_MON", "PATH_AVOID_FIRE", "WATER_CAMOUFLAGE", "SWIMS", "PLASTIC", "NOGIB", "NOHEAD", "NO_BREATHE" ]
+    "flags": [
+      "SEES",
+      "HEARS",
+      "BASHES",
+      "PUSH_MON",
+      "PATH_AVOID_FIRE",
+      "WATER_CAMOUFLAGE",
+      "SWIMS",
+      "PLASTIC",
+      "NOGIB",
+      "NOHEAD",
+      "NO_BREATHE"
+    ]
   }
 ]

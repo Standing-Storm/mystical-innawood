@@ -31,7 +31,7 @@
     "type": "GENERIC",
     "id": "gnome_eye",
     "copy-from": "garnet",
-     "name": { "str": "gnome eye" },
+    "name": { "str": "gnome eye" },
     "description": "A glittering gemstone that once formed one of the eyes of a gnome.  You still feel like you're being watched when you look at it.",
     "category": "spare_parts",
     "symbol": "*",

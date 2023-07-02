@@ -56,7 +56,7 @@
   },
   {
     "id": "monster_downed_stomp",
-     "type": "SPELL",
+    "type": "SPELL",
     "name": "Monster Downed Stomp",
     "description": "The monster stomps on the ground and knocks anyone nearby off their feet.",
     "valid_targets": [ "hostile", "ground" ],

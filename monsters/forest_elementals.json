@@ -24,7 +24,17 @@
     "vision_night": 5,
     "material": [ "veggy" ],
     "fear_triggers": [ "PLAYER_CLOSE" ],
-    "flags": [ "SEES", "HEARS", "WARM", "HARDTOSHOOT", "PATH_AVOID_DANGER_1", "HIT_AND_RUN", "PATH_AVOID_FIRE", "FLAMMABLE", "NOHEAD" ],
+    "flags": [
+      "SEES",
+      "HEARS",
+      "WARM",
+      "HARDTOSHOOT",
+      "PATH_AVOID_DANGER_1",
+      "HIT_AND_RUN",
+      "PATH_AVOID_FIRE",
+      "FLAMMABLE",
+      "NOHEAD"
+    ],
     "death_function": { "message": "%s collapses into a pile of moss." },
     "death_drops": "mossling_drops"
   },
@@ -48,17 +58,24 @@
     "melee_dice": 2,
     "melee_dice_sides": 5,
     "dodge": 3,
-    "armor": { "bash": 15, "cut": 5, "stab": 30, "bullet": 40, "heat": -30  },
+    "armor": { "bash": 15, "cut": 5, "stab": 30, "bullet": 40, "heat": -30 },
     "vision_day": 35,
     "vision_night": 5,
     "material": [ "wood" ],
-    "special_attacks": [
-      { "id": "scratch", "cooldown": 8 }
-    ],
+    "special_attacks": [ { "id": "scratch", "cooldown": 8 } ],
     "anger_triggers": [ "FRIEND_DIED", "FRIEND_ATTACKED", "HURT", "FIRE" ],
-    "flags": [ "SEES", "HEARS", "BASHES", "GROUP_BASH", "CAMOUFLAGE", "PATH_AVOID_DANGER_1", "NO_BREATHE", "PATH_AVOID_FIRE", "FLAMMABLE" ],
+    "flags": [
+      "SEES",
+      "HEARS",
+      "BASHES",
+      "GROUP_BASH",
+      "CAMOUFLAGE",
+      "PATH_AVOID_DANGER_1",
+      "NO_BREATHE",
+      "PATH_AVOID_FIRE",
+      "FLAMMABLE"
+    ],
     "harvest": "harvest_dryad"
-    
   },
   {
     "id": "mon_brackenwight",
@@ -84,12 +101,14 @@
     "vision_day": 45,
     "vision_night": 6,
     "material": [ "veggy" ],
-     "special_attacks": [ 
-       { "id": "smash", "attack_upper": true, "throw_strength": 50, "cooldown": 10 },
-       { "type": "spell", "spell_data": { "id": "brackenstrike", "min_level": 5 },
-         "cooldown": 15,
-         "monster_message": "Roots explode out of %1$s and impale you!"
-       }
+    "special_attacks": [
+      { "id": "smash", "attack_upper": true, "throw_strength": 50, "cooldown": 10 },
+      {
+        "type": "spell",
+        "spell_data": { "id": "brackenstrike", "min_level": 5 },
+        "cooldown": 15,
+        "monster_message": "Roots explode out of %1$s and impale you!"
+      }
     ],
     "anger_triggers": [ "FRIEND_DIED", "PLAYER_CLOSE", "FRIEND_ATTACKED", "HURT", "FIRE" ],
     "flags": [ "SEES", "HEARS", "WARM", "BASHES", "DESTROYS", "ATTACKMON", "PUSH_MON", "PUSH_VEH", "PATH_AVOID_FIRE", "PLASTIC" ],

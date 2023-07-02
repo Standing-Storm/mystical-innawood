@@ -9,9 +9,9 @@
     "skill_used": "survival",
     "difficulty": 1,
     "time": "15 m",
-    "tools": [ [ [ "mortar_pestle", -1 ] ] ], 
+    "tools": [ [ [ "mortar_pestle", -1 ] ] ],
     "qualities": [ { "id": "MAGICAL_RESEARCH", "level": 1 } ],
-    "components": [ 
+    "components": [
       [ [ "harfry_root", 1 ] ],
       [ [ "alder_bark", 1 ], [ "tanbark", 1 ], [ "birchbark", 1 ], [ "willowbark", 1 ] ],
       [ [ "water_clean", 2 ], [ "water", 2 ] ]
@@ -27,11 +27,8 @@
     "difficulty": 1,
     "time": "20 m",
     "batch_time_factors": [ 20, 1 ],
-    "tools": [ [ [ "water_boiling_heat", 1, "LIST" ] ], [ [ "mortar_pestle", -1 ] ] ], 
+    "tools": [ [ [ "water_boiling_heat", 1, "LIST" ] ], [ [ "mortar_pestle", -1 ] ] ],
     "qualities": [ { "id": "MAGICAL_RESEARCH", "level": 1 } ],
-    "components": [ 
-      [ [ "morningflower_leaves_smoked", 1 ] ],
-      [ [ "water_clean", 1 ], [ "water", 1 ] ]
-    ]
+    "components": [ [ [ "morningflower_leaves_smoked", 1 ] ], [ [ "water_clean", 1 ], [ "water", 1 ] ] ]
   }
 ]

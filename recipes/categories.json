@@ -1,95 +1,84 @@
-  [
-    {
-      "type": "recipe_category",
-      "id": "CC_PRACTICE",
-      "recipe_subcategories": [
-        "CSC_ALL",
-        "CSC_PRACTICE_SCIENCE",
-        "CSC_PRACTICE_ELECTRONICS",
-        "CSC_PRACTICE_FABRICATION",
-        "CSC_PRACTICE_FOOD",
-        "CSC_PRACTICE_SURVIVAL",
-        "CSC_PRACTICE_TAILORING",
-        "CSC_PRACTICE_ATHLETICS",
-        "CSC_PRACTICE_COMPUTERS",
-        "CSC_PRACTICE_DEVICES",
-        "CSC_PRACTICE_HEALTH",
-        "CSC_PRACTICE_MECHANICS",
-        "CSC_PRACTICE_SOCIAL",
-        "CSC_PRACTICE_COMBAT",
-        "CSC_PRACTICE_OCCULT"
-      ]
-    },
-    {
-      "type": "recipe_category",
-      "id": "CC_OCCULT",
-      "recipe_subcategories": [
-        "CSC_ALL",
-        "CSC_OCCULT_MATERIALS",
-        "CSC_OCCULT_ENCHANTING",
-        "CSC_OCCULT_HERBALISM",
-        "CSC_OCCULT_INFUSION",
-        "CSC_OCCULT_FORMULAE",
-        "CSC_OCCULT_RESEARCH"
-      ]
-    },
-    {
-      "id": "nested_magical_research",
-      "type": "nested_category",
-      "activity_level": "LIGHT_EXERCISE",
-      "category": "CC_OCCULT",
-      "subcategory": "CSC_OCCULT_RESEARCH",
-      "name": "spell research",
-      "description": "Recipes related to directly applying magical theory to determine a spell formula.",
-      "skill_used": "occult",
-      "nested_category_data":
-      [ 
-      ],
-      "difficulty": 1
-    },
-    {
-      "id": "nested_infusion_research",
-      "type": "nested_category",
-      "activity_level": "LIGHT_EXERCISE",
-      "category": "CC_OCCULT",
-      "subcategory": "CSC_OCCULT_RESEARCH",
-      "name": "infusion research",
-      "description": "Recipes related to manipulating the balance of magical energies inherent in living beings.",
-      "skill_used": "occult",
-      "nested_category_data":
-      [ 
-        "infusion_research_intro"
-      ],
-      "difficulty": 1
-    },
-    {
-      "id": "nested_enchantment_research",
-      "type": "nested_category",
-      "activity_level": "LIGHT_EXERCISE",
-      "category": "CC_OCCULT",
-      "subcategory": "CSC_OCCULT_RESEARCH",
-      "name": "enchantment research",
-      "description": "Recipes related to drawing magic out of or imbuing it into physical materials.",
-      "skill_used": "occult",
-      "nested_category_data":
-      [ 
-        "enchantment_research_intro"
-      ],
-      "difficulty": 1
-    },
-    {
-      "id": "nested_herbalism_research",
-      "type": "nested_category",
-      "activity_level": "LIGHT_EXERCISE",
-      "category": "CC_OCCULT",
-      "subcategory": "CSC_OCCULT_RESEARCH",
-      "name": "herbalism research",
-      "description": "Recipes related to studying magical plants and herbs.",
-      "skill_used": "occult",
-      "nested_category_data":
-      [ 
-        "herbalism_research_intro"
-      ],
-      "difficulty": 1
-    }
-  ]
+[
+  {
+    "type": "recipe_category",
+    "id": "CC_PRACTICE",
+    "recipe_subcategories": [
+      "CSC_ALL",
+      "CSC_PRACTICE_SCIENCE",
+      "CSC_PRACTICE_ELECTRONICS",
+      "CSC_PRACTICE_FABRICATION",
+      "CSC_PRACTICE_FOOD",
+      "CSC_PRACTICE_SURVIVAL",
+      "CSC_PRACTICE_TAILORING",
+      "CSC_PRACTICE_ATHLETICS",
+      "CSC_PRACTICE_COMPUTERS",
+      "CSC_PRACTICE_DEVICES",
+      "CSC_PRACTICE_HEALTH",
+      "CSC_PRACTICE_MECHANICS",
+      "CSC_PRACTICE_SOCIAL",
+      "CSC_PRACTICE_COMBAT",
+      "CSC_PRACTICE_OCCULT"
+    ]
+  },
+  {
+    "type": "recipe_category",
+    "id": "CC_OCCULT",
+    "recipe_subcategories": [
+      "CSC_ALL",
+      "CSC_OCCULT_MATERIALS",
+      "CSC_OCCULT_ENCHANTING",
+      "CSC_OCCULT_HERBALISM",
+      "CSC_OCCULT_INFUSION",
+      "CSC_OCCULT_FORMULAE",
+      "CSC_OCCULT_RESEARCH"
+    ]
+  },
+  {
+    "id": "nested_magical_research",
+    "type": "nested_category",
+    "activity_level": "LIGHT_EXERCISE",
+    "category": "CC_OCCULT",
+    "subcategory": "CSC_OCCULT_RESEARCH",
+    "name": "spell research",
+    "description": "Recipes related to directly applying magical theory to determine a spell formula.",
+    "skill_used": "occult",
+    "nested_category_data": [  ],
+    "difficulty": 1
+  },
+  {
+    "id": "nested_infusion_research",
+    "type": "nested_category",
+    "activity_level": "LIGHT_EXERCISE",
+    "category": "CC_OCCULT",
+    "subcategory": "CSC_OCCULT_RESEARCH",
+    "name": "infusion research",
+    "description": "Recipes related to manipulating the balance of magical energies inherent in living beings.",
+    "skill_used": "occult",
+    "nested_category_data": [ "infusion_research_intro" ],
+    "difficulty": 1
+  },
+  {
+    "id": "nested_enchantment_research",
+    "type": "nested_category",
+    "activity_level": "LIGHT_EXERCISE",
+    "category": "CC_OCCULT",
+    "subcategory": "CSC_OCCULT_RESEARCH",
+    "name": "enchantment research",
+    "description": "Recipes related to drawing magic out of or imbuing it into physical materials.",
+    "skill_used": "occult",
+    "nested_category_data": [ "enchantment_research_intro" ],
+    "difficulty": 1
+  },
+  {
+    "id": "nested_herbalism_research",
+    "type": "nested_category",
+    "activity_level": "LIGHT_EXERCISE",
+    "category": "CC_OCCULT",
+    "subcategory": "CSC_OCCULT_RESEARCH",
+    "name": "herbalism research",
+    "description": "Recipes related to studying magical plants and herbs.",
+    "skill_used": "occult",
+    "nested_category_data": [ "herbalism_research_intro" ],
+    "difficulty": 1
+  }
+]

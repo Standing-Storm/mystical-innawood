@@ -7,7 +7,7 @@
     "subcategory": "CSC_OCCULT_FORMULAE",
     "difficulty": 4,
     "skill_used": "occult",
-    "time": "6 h", 
+    "time": "6 h",
     "using": [ [ "writing_formulae_simple_standard", 1 ] ],
     "components": [ [ [ "paper", 20 ] ] ],
     "qualities": [ { "id": "MAGICAL_RESEARCH", "level": 1 } ],

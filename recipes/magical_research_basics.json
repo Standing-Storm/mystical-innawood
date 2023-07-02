@@ -1,114 +1,122 @@
-  [
-    {
-      "type": "recipe",
-      "activity_level": "NO_EXERCISE",
-      "result": "occult_research_intro",
-      "category": "CC_OCCULT",
-      "subcategory": "CSC_OCCULT_RESEARCH",
-      "difficulty": 1,
-      "time": "2h",
-      "autolearn": true,
-      "using": [ [ "writing_standard", 1 ] ],
-      "components": [ [ [ "paper", 10 ] ] ],
-      "proficiencies": [
-        { "proficiency": "prof_occult_exploration", "skill_penalty": 1, "required": false }
-      ]
-    },
-    {
-      "type": "recipe",
-      "activity_level": "NO_EXERCISE",
-      "result": "occult_research_minor",
-      "category": "CC_OCCULT",
-      "subcategory": "CSC_OCCULT_RESEARCH",
-      "difficulty": 2,
-      "time": "4h",
-      "autolearn": true,
-      "using": [ [ "writing_standard", 1 ] ],
-      "components": [ [ [ "paper", 20 ] ] ],
-      "proficiencies": [
-        { "proficiency": "prof_occult_exploration", "skill_penalty": 1, "required": false },
-        { "proficiency": "prof_thaumatology", "time_multiplier": 10, "skill_penalty": 3, "required": false }
-      ]
-    },
-    {
-     "type": "recipe",
-     "activity_level": "LIGHT_EXERCISE",
-     "name": "study occult research notes",
-     "id": "study_occult_research",
-     "description": "There's more you could learn from those notes you took.  You just need to go over them again and separate the truth from the nonsense.",
-      "category": "CC_OCCULT",
-      "subcategory": "CSC_OCCULT_RESEARCH",
-     "difficulty": 3,
-     "time": "4 h",
-     "autolearn": true,
-     "components": [ [ [ "occult_research_minor", 1 ] ] ],
-      "skill_used": "occult",
-     "flags": [ "BLIND_HARD" ],
-     "proficiencies": [ 
-        { "proficiency": "prof_occult_exploration", "required": false },
-        { "proficiency": "prof_thaumatology", "required": false }
-     ],
-     "result_eocs": [ 
-       {
-         "id": "EOC_STUDY_OCCULT_RESEARCH_NOTES", 
-          "condition": { "roll_contested": { "math": [ "rng( u_val('intelligence'), u_skill('occult') )"] }, "difficulty": 14 },
-         "effect": [
-           { "u_message": "You were right, there is something here!  It's a good thing you kept looking.", "type": "good" },
-           { "u_spawn_item": "used_occult_notes", "suppress_message": true },
-           { "u_learn_recipe": "detect_magic_research" }
-         ],
-         "false_effect": [
-           { "u_message": "You really thought you had something here, but it's just a dead end.  You'll have to try again with a new approach.", "type": "bad" },
-           { "u_spawn_item": "used_occult_notes", "suppress_message": true }
-        ]
-      } 
+[
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "occult_research_intro",
+    "category": "CC_OCCULT",
+    "subcategory": "CSC_OCCULT_RESEARCH",
+    "difficulty": 1,
+    "time": "2h",
+    "autolearn": true,
+    "using": [ [ "writing_standard", 1 ] ],
+    "components": [ [ [ "paper", 10 ] ] ],
+    "proficiencies": [ { "proficiency": "prof_occult_exploration", "skill_penalty": 1, "required": false } ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "occult_research_minor",
+    "category": "CC_OCCULT",
+    "subcategory": "CSC_OCCULT_RESEARCH",
+    "difficulty": 2,
+    "time": "4h",
+    "autolearn": true,
+    "using": [ [ "writing_standard", 1 ] ],
+    "components": [ [ [ "paper", 20 ] ] ],
+    "proficiencies": [
+      { "proficiency": "prof_occult_exploration", "skill_penalty": 1, "required": false },
+      { "proficiency": "prof_thaumatology", "time_multiplier": 10, "skill_penalty": 3, "required": false }
     ]
-   },
-    {
-     "type": "recipe",
-     "activity_level": "LIGHT_EXERCISE",
-     "name": "methods of detecting magic",
-     "id": "detect_magic_research",
-     "description": "There's an unseen world all around you.  You just need a way to discover it.",
-      "category": "CC_OCCULT",
-      "subcategory": "CSC_OCCULT_RESEARCH",
-     "difficulty": 3,
-     "time": "6 h",
-      "using": [ [ "writing_standard", 1 ], [ "enchanted_components_minor", 1 ] ],
-     "components": [ [ [ "paper", 10 ] ] ],
-      "skill_used": "occult",
-     "flags": [ "BLIND_HARD" ],
-     "proficiencies": [ 
-       { "proficiency": "prof_occult_exploration", "required": false },
-       { "proficiency": "prof_thaumatology", "required": false },
-       { "proficiency": "prof_spell_research", "required": false }
-     ],
-      "result_eocs": [ 
-       {
-         "id": "EOC_METHODS_OF_DETECTING_MAGIC", 
-         "condition": { "roll_contested": { "math": [ "rng( u_val('intelligence'), u_skill('occult') )"] }, "difficulty": 15 },
-         "effect": [
-           { "run_eocs": "EOC_METHODS_OF_DETECTING_MAGIC_2" }
-         ],
-         "false_effect": [
-           { "u_message": "The ingredients you're using are inert, or at least you can't sense anything special about them.  You'll need to find new ones and try again.", "type": "bad" }
+  },
+  {
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "name": "study occult research notes",
+    "id": "study_occult_research",
+    "description": "There's more you could learn from those notes you took.  You just need to go over them again and separate the truth from the nonsense.",
+    "category": "CC_OCCULT",
+    "subcategory": "CSC_OCCULT_RESEARCH",
+    "difficulty": 3,
+    "time": "4 h",
+    "autolearn": true,
+    "components": [ [ [ "occult_research_minor", 1 ] ] ],
+    "skill_used": "occult",
+    "flags": [ "BLIND_HARD" ],
+    "proficiencies": [
+      { "proficiency": "prof_occult_exploration", "required": false },
+      { "proficiency": "prof_thaumatology", "required": false }
+    ],
+    "result_eocs": [
+      {
+        "id": "EOC_STUDY_OCCULT_RESEARCH_NOTES",
+        "condition": { "roll_contested": { "math": [ "rng( u_val('intelligence'), u_skill('occult') )" ] }, "difficulty": 14 },
+        "effect": [
+          { "u_message": "You were right, there is something here!  It's a good thing you kept looking.", "type": "good" },
+          { "u_spawn_item": "used_occult_notes", "suppress_message": true },
+          { "u_learn_recipe": "detect_magic_research" }
+        ],
+        "false_effect": [
+          {
+            "u_message": "You really thought you had something here, but it's just a dead end.  You'll have to try again with a new approach.",
+            "type": "bad"
+          },
+          { "u_spawn_item": "used_occult_notes", "suppress_message": true }
         ]
-      } 
+      }
     ]
-   },
-    {
-      "type": "effect_on_condition",
-      "id": "EOC_METHODS_OF_DETECTING_MAGIC_2", 
-      "condition": { "math": [ "u_val('vitamin', 'name:vitamin_magical_research_insight_basic')", "<", "5" ] },
-      "effect": [
-        { "u_message": "There's something here, you can tell.  You can feel it.  You just need a little more experimentation to confirm the sensations and you'll make an amazing discovery.", "type": "bad" },
-        { "math": [ "u_val('vitamin', 'name:vitamin_magical_research_insight_basic')", "+=", "1" ] }
-      ],
-      "false_effect": [
-        { "u_message": "You've done it.  You've systemized an approaching to sensing magical energies.  Now with the proper materials, you can transcribe the formulae necessary to learn your first real spell.", "type": "good" },
-        { "u_learn_recipe": "spell_formula_witchsight" },
-        { "u_learn_recipe": "magical_ink" },
-        { "u_learn_recipe": "magical_grimoire_basic" }
-      ]
-    }
-  ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "name": "methods of detecting magic",
+    "id": "detect_magic_research",
+    "description": "There's an unseen world all around you.  You just need a way to discover it.",
+    "category": "CC_OCCULT",
+    "subcategory": "CSC_OCCULT_RESEARCH",
+    "difficulty": 3,
+    "time": "6 h",
+    "using": [ [ "writing_standard", 1 ], [ "enchanted_components_minor", 1 ] ],
+    "components": [ [ [ "paper", 10 ] ] ],
+    "skill_used": "occult",
+    "flags": [ "BLIND_HARD" ],
+    "proficiencies": [
+      { "proficiency": "prof_occult_exploration", "required": false },
+      { "proficiency": "prof_thaumatology", "required": false },
+      { "proficiency": "prof_spell_research", "required": false }
+    ],
+    "result_eocs": [
+      {
+        "id": "EOC_METHODS_OF_DETECTING_MAGIC",
+        "condition": { "roll_contested": { "math": [ "rng( u_val('intelligence'), u_skill('occult') )" ] }, "difficulty": 15 },
+        "effect": [ { "run_eocs": "EOC_METHODS_OF_DETECTING_MAGIC_2" } ],
+        "false_effect": [
+          {
+            "u_message": "The ingredients you're using are inert, or at least you can't sense anything special about them.  You'll need to find new ones and try again.",
+            "type": "bad"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_METHODS_OF_DETECTING_MAGIC_2",
+    "condition": { "math": [ "u_val('vitamin', 'name:vitamin_magical_research_insight_basic')", "<", "5" ] },
+    "effect": [
+      {
+        "u_message": "There's something here, you can tell.  You can feel it.  You just need a little more experimentation to confirm the sensations and you'll make an amazing discovery.",
+        "type": "bad"
+      },
+      { "math": [ "u_val('vitamin', 'name:vitamin_magical_research_insight_basic')", "+=", "1" ] }
+    ],
+    "false_effect": [
+      {
+        "u_message": "You've done it.  You've systemized an approaching to sensing magical energies.  Now with the proper materials, you can transcribe the formulae necessary to learn your first real spell.",
+        "type": "good"
+      },
+      { "u_learn_recipe": "spell_formula_witchsight" },
+      { "u_learn_recipe": "magical_ink" },
+      { "u_learn_recipe": "magical_grimoire_basic" }
+    ]
+  }
+]

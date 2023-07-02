@@ -1,10 +1,18 @@
 [
   {
-     "id": "spell_components_resilience_mountain",
-     "type": "requirement",
-     "//": "Rocks for the for the Resilience of the Mountains",
-     "components": [
-       [ [ "rock", 1 ], [ "material_shrd_limestone", 3 ], ["material_limestone", 1], ["rock_flaking", 1], [ "flint", 2 ], [ "sharp_rock", 1 ], [ "pebble", 10 ] ]
+    "id": "spell_components_resilience_mountain",
+    "type": "requirement",
+    "//": "Rocks for the for the Resilience of the Mountains",
+    "components": [
+      [
+        [ "rock", 1 ],
+        [ "material_shrd_limestone", 3 ],
+        [ "material_limestone", 1 ],
+        [ "rock_flaking", 1 ],
+        [ "flint", 2 ],
+        [ "sharp_rock", 1 ],
+        [ "pebble", 10 ]
+      ]
     ]
   }
 ]

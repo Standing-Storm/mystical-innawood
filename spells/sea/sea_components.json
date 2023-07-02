@@ -1,19 +1,14 @@
 [
-	{
-		"id": "spell_components_cooling_touch",
-		"type": "requirement",
-		"//": "Water for the The Sea's Cooling Touch spell",
-		"components": [
-			[ [ "water_clean", 1 ], [ "water", 1 ], [ "salt_water", 1 ] ]
-		]
-	},
-   {
-		"id": "spell_components_purify_water",
-		"type": "requirement",
-		"//": "Clean water for the Rite of Pure Water spell",
-		"components": [
-			[ [ "water_clean", 2 ] ],
-			[ [ "pebble", 10 ] ]
-		]
-	}
+  {
+    "id": "spell_components_cooling_touch",
+    "type": "requirement",
+    "//": "Water for the The Sea's Cooling Touch spell",
+    "components": [ [ [ "water_clean", 1 ], [ "water", 1 ], [ "salt_water", 1 ] ] ]
+  },
+  {
+    "id": "spell_components_purify_water",
+    "type": "requirement",
+    "//": "Clean water for the Rite of Pure Water spell",
+    "components": [ [ [ "water_clean", 2 ] ], [ [ "pebble", 10 ] ] ]
+  }
 ]

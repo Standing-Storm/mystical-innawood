@@ -1,14 +1,14 @@
 [
   {
-		"type": "effect_type",
-		"id": "effect_thorn_skin",
-		"name": [ "Skin of Thorns" ],
-		"desc": [ "Your skin is woody and covered in sharp thorns." ],
-		"apply_message": "",
-		"remove_message": "Your skin loses its wood-like texture.",
-		"rating": "good",
-		"max_duration": "60 minutes", 
-		"enchantments": [ "enchant_thorn_skin" ]
+    "type": "effect_type",
+    "id": "effect_thorn_skin",
+    "name": [ "Skin of Thorns" ],
+    "desc": [ "Your skin is woody and covered in sharp thorns." ],
+    "apply_message": "",
+    "remove_message": "Your skin loses its wood-like texture.",
+    "rating": "good",
+    "max_duration": "60 minutes",
+    "enchantments": [ "enchant_thorn_skin" ]
   },
   {
     "type": "effect_type",

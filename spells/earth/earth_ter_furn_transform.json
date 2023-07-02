@@ -1,9 +1,13 @@
 [
   {
-   "type": "ter_furn_transform",
+    "type": "ter_furn_transform",
     "id": "earth_manipulate_earthbones",
     "terrain": [
-      { "result": "t_rock_smooth", "valid_terrain": [ "t_hole" ], "message": "The hole shakes as a section of unnaturally smooth stone rises out of it." },
+      {
+        "result": "t_rock_smooth",
+        "valid_terrain": [ "t_hole" ],
+        "message": "The hole shakes as a section of unnaturally smooth stone rises out of it."
+      },
       { "result": "t_hole", "valid_terrain": [ "t_pit", "t_slope_down" ], "message": "The pit has deepened further." },
       {
         "result": "t_pit",
@@ -72,7 +76,11 @@
         ],
         "message": "The rocks here are ground into sand."
       },
-      { "result": "t_rock_floor", "valid_terrain": [ "t_rock", "t_rock_smooth" ], "message": "The rock crumbles to dust." },
+      {
+        "result": "t_rock_floor",
+        "valid_terrain": [ "t_rock", "t_rock_smooth" ],
+        "message": "The rock crumbles to dust."
+      },
       {
         "result": "t_hole",
         "valid_terrain": [ "t_null" ],
@@ -82,21 +90,14 @@
     ]
   },
   {
-   "type": "ter_furn_transform",
+    "type": "ter_furn_transform",
     "id": "earth_turning_earth",
     "terrain": [
-      { "result": "t_dirtmound",
-        "valid_terrain": [ 
-          "t_dirt", 
-          "t_dirtfloor", 
-          "t_grass",
-          "t_grass_long",
-          "t_grass_tall",
-          "t_grass_dead",
-          "t_grass_white",
-          "t_pit_shallow"
-        ], 
-        "message": "The ground churns as a long straight furrow suitable for planting appears." }
+      {
+        "result": "t_dirtmound",
+        "valid_terrain": [ "t_dirt", "t_dirtfloor", "t_grass", "t_grass_long", "t_grass_tall", "t_grass_dead", "t_grass_white", "t_pit_shallow" ],
+        "message": "The ground churns as a long straight furrow suitable for planting appears."
+      }
     ]
   }
 ]

@@ -10,13 +10,8 @@
     "to_hit": -3,
     "color": "white",
     "symbol": ",",
-    "material": [
-      "paper"
-    ],
-    "flags": [
-      "TRADER_AVOID",
-      "TINDER"
-    ]
+    "material": [ "paper" ],
+    "flags": [ "TRADER_AVOID", "TINDER" ]
   },
   {
     "type": "BOOK",
@@ -29,13 +24,8 @@
     "to_hit": -3,
     "color": "white",
     "symbol": ",",
-    "material": [
-      "paper"
-    ],
-    "flags": [
-      "TRADER_AVOID",
-      "TINDER"
-    ]
+    "material": [ "paper" ],
+    "flags": [ "TRADER_AVOID", "TINDER" ]
   },
   {
     "type": "BOOK",
@@ -43,10 +33,7 @@
     "copy-from": "research_tome_abstract",
     "name": { "str": "forest magic research materials", "str_pl": "sets of forest magic research materials" },
     "description": "A set of documents, scribbed notes, musings, bits of pressed leaves and flowers, and other esoterica for research into magic.  Using this, you might be able to discover a magical formula related to the natural world.",
-    "material": [
-      "paper",
-      "wood"
-    ], 
+    "material": [ "paper", "wood" ],
     "skill": "occult",
     "required_level": 4,
     "max_level": 5,
@@ -58,12 +45,9 @@
     "type": "BOOK",
     "id": "earth_research_materials",
     "copy-from": "research_tome_abstract",
-    "name": { "str": "earth magic research materials", "str_pl": "sets of earth magic research materials"  },
+    "name": { "str": "earth magic research materials", "str_pl": "sets of earth magic research materials" },
     "description": "A set of documents, scribbed notes, musings, polished rocks and samples of soil, and other esoterica for research into magic.  Using this, you might be able to discover a magical formula related to the earth.",
-    "material": [
-      "paper",
-      "stone"
-    ],
+    "material": [ "paper", "stone" ],
     "skill": "occult",
     "required_level": 4,
     "max_level": 5,
@@ -75,7 +59,7 @@
     "type": "BOOK",
     "id": "sky_research_materials",
     "copy-from": "research_tome_abstract",
-    "name": { "str": "sky magic research materials", "str_pl": "sets of sky magic research materials"  },
+    "name": { "str": "sky magic research materials", "str_pl": "sets of sky magic research materials" },
     "description": "A set of documents, scribbed notes, musings, astrological observations, and other esoterica for research into magic.  Using this, you might be able to discover a magical formula related to the sky.",
     "skill": "occult",
     "required_level": 4,
@@ -88,7 +72,7 @@
     "type": "BOOK",
     "id": "sea_research_materials",
     "copy-from": "research_tome_abstract",
-    "name": { "str": "sea magic research materials", "str_pl": "sets of sea magic research materials"  },
+    "name": { "str": "sea magic research materials", "str_pl": "sets of sea magic research materials" },
     "description": "A set of documents, scribbed notes, musings, tidal records, and other esoterica for research into magic.  Using this, you might be able to discover a magical formula related to the sea.",
     "skill": "occult",
     "required_level": 4,
@@ -101,7 +85,7 @@
     "type": "BOOK",
     "id": "used_research_materials",
     "copy-from": "research_tome_abstract",
-    "name": { "str": "old research materials", "str_pl": "sets of old research materials"  },
+    "name": { "str": "old research materials", "str_pl": "sets of old research materials" },
     "description": "A set of documents, scribbed notes, and other esoterica you used for your research into magic.  Unfortunately it was a dead end, but you never know when it might be useful in the future."
   },
   {

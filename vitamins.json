@@ -1,23 +1,23 @@
-  [
-    {
-      "id": "vitamin_magical_research_insight_basic",
-      "type": "vitamin",
-      "//": "Tracker for elementary magical research.",
-      "vit_type": "counter",
-      "name": { "str": "Magical Research Insight" },
-      "min": 0,
-      "max": 5,
-      "rate": "0 m"
-    },
-    {
-      "id": "channeling_overload",
-      "type": "vitamin",
-      "vit_type": "counter",
-      "name": { "str": "Channeling Overload" },
-      "excess": "power_drain_shock",
-      "min": 0,
-      "max": 100,
-      "rate": "2 h",
-      "disease_excess": [ [ 10, 20 ], [ 21, 40 ], [ 41, 70 ],  [ 71, 100 ] ]
-    }
-  ]
+[
+  {
+    "id": "vitamin_magical_research_insight_basic",
+    "type": "vitamin",
+    "//": "Tracker for elementary magical research.",
+    "vit_type": "counter",
+    "name": { "str": "Magical Research Insight" },
+    "min": 0,
+    "max": 5,
+    "rate": "0 m"
+  },
+  {
+    "id": "channeling_overload",
+    "type": "vitamin",
+    "vit_type": "counter",
+    "name": { "str": "Channeling Overload" },
+    "excess": "power_drain_shock",
+    "min": 0,
+    "max": 100,
+    "rate": "2 h",
+    "disease_excess": [ [ 10, 20 ], [ 21, 40 ], [ 41, 70 ], [ 71, 100 ] ]
+  }
+]

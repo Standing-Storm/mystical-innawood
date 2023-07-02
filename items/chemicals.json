@@ -23,7 +23,7 @@
     "copy-from": "ink_abstract",
     "name": { "str_sp": "homemade ink" },
     "description": "A simple ink made by boiling fruit and vinegar together until it becomes thicker and darker.  It won't last through the ages but you can write with it.",
-    "color": "yellow" 
+    "color": "yellow"
   },
   {
     "type": "AMMO",
@@ -31,6 +31,6 @@
     "copy-from": "ink_abstract",
     "name": { "str_sp": "magical ink" },
     "description": "A simple ink made by boiling fruit and vinegar with magical components.  It won't hold anything more than a rudimentary enchantment.",
-    "color": "yellow" 
+    "color": "yellow"
   }
 ]

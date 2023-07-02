@@ -10,7 +10,7 @@
     "armor": { "bash": 10, "cut": 5 },
     "aggression": 30,
     "morale": 200,
-    "anger_triggers": [ "HOSTILE_SEEN", "HURT", "STALK", "PLAYER_CLOSE" ], 
+    "anger_triggers": [ "HOSTILE_SEEN", "HURT", "STALK", "PLAYER_CLOSE" ],
     "flags": [ "SEES", "HEARS", "SMELLS", "ANIMAL", "WARM", "BASHES", "PUSH_MON", "PATH_AVOID_FIRE", "PRIORITIZE_TARGETS" ]
   },
   {
@@ -39,9 +39,9 @@
     "vision_night": 5,
     "material": [ "water" ],
     "special_attacks": [
-      { 
-        "id": "smash", 
-        "throw_strength": 40, 
+      {
+        "id": "smash",
+        "throw_strength": 40,
         "move_cost": 150,
         "cooldown": 8,
         "blockable": false,
@@ -49,7 +49,7 @@
         "hit_dmg_u": "%s gestures and a stream of water arcs up and crashes into you!",
         "hit_dmg_npc": "%s gestures and a stream of water arcs up and crashes into <npcname>!",
         "miss_msg_u": "%s gestures and a stream of water arcs up, but you move before it hits!",
-        "miss_msg_npc":  "%s gestures and a stream of water arcs up, but <npcname> moves out of the way!"
+        "miss_msg_npc": "%s gestures and a stream of water arcs up, but <npcname> moves out of the way!"
       },
       {
         "id": "summon_undine_water_attack",
@@ -60,6 +60,18 @@
       }
     ],
     "death_function": { "message": "The %s falls apart in a rush of water!", "corpse_type": "NO_CORPSE" },
-    "flags": [ "SEES", "HEARS", "BASHES", "PUSH_MON", "PATH_AVOID_FIRE", "PRIORITIZE_TARGETS", "SWIMS", "PLASTIC", "NOGIB", "NOHEAD", "NO_BREATHE" ]
+    "flags": [
+      "SEES",
+      "HEARS",
+      "BASHES",
+      "PUSH_MON",
+      "PATH_AVOID_FIRE",
+      "PRIORITIZE_TARGETS",
+      "SWIMS",
+      "PLASTIC",
+      "NOGIB",
+      "NOHEAD",
+      "NO_BREATHE"
+    ]
   }
 ]

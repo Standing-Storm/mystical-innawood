@@ -21,12 +21,15 @@
     "description": "The gestures, incantations, and mental constructs necessary to open yourself up to the unseen world.",
     "use_action": { "type": "learn_spell", "spells": [ "witchsight" ] }
   },
-   {
+  {
     "type": "BOOK",
-     "category": "manuals",
+    "category": "manuals",
     "copy-from": "spell_formula_abstract",
     "id": "spell_formula_crystallize_mana_innawood",
-    "name": { "str": "Spell Formula for the Ritual of Arcane Coalescence", "str_pl": "Spell Formula for the Ritual of Arcane Coalescence" },
+    "name": {
+      "str": "Spell Formula for the Ritual of Arcane Coalescence",
+      "str_pl": "Spell Formula for the Ritual of Arcane Coalescence"
+    },
     "description": "The gestures, incantations, and mental constructs necessary to perform a length ritual that distills magical energy into a solid form, usable for futher experimentation.",
     "use_action": { "type": "learn_spell", "spells": [ "crystallize_mana_innawood" ] }
   }

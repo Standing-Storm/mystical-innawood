@@ -29,7 +29,7 @@
     "description": "Transforms earth and stone, first moving it out of the way to create a pit and then creating a mighty rock wall with repeated use of the ritual.",
     "flags": [ "SOMATIC", "VERBAL", "LOUD" ],
     "valid_targets": [ "ground" ],
-     "max_level": 15,
+    "max_level": 15,
     "skill": "occult",
     "spell_class": "EARTH",
     "energy_source": "MANA",

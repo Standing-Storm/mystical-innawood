@@ -1,35 +1,33 @@
 [
-	{
-		"type": "effect_type",
-		"id": "effect_detect_magic",
-		"name": [ "Witchsight" ],
-		"desc": [ "You can see magical energy as a faint glow and distinguish the auras of living things.  The range is mostly too short to be useful outside dedicated research, however." ],
-		"rating": "good",
-		"max_duration": "12 hours", 
-		"enchantments": [
-			{
-				"values": [
-					{ "value": "PERCEPTION", "add": { "math": [ "( u_val('spell_level', 'spell: witchsight') * 0.15 )" ] } },
-					{ "value": "MOTION_VISION_RANGE", "add": { "math": [ "( u_val('spell_level', 'spell: witchsight') * 0.3 )" ] } }
-				] 
-			} 
-		] 
-	},
-	{
+  {
+    "type": "effect_type",
+    "id": "effect_detect_magic",
+    "name": [ "Witchsight" ],
+    "desc": [
+      "You can see magical energy as a faint glow and distinguish the auras of living things.  The range is mostly too short to be useful outside dedicated research, however."
+    ],
+    "rating": "good",
+    "max_duration": "12 hours",
+    "enchantments": [
+      {
+        "values": [
+          { "value": "PERCEPTION", "add": { "math": [ "( u_val('spell_level', 'spell: witchsight') * 0.15 )" ] } },
+          {
+            "value": "MOTION_VISION_RANGE",
+            "add": { "math": [ "( u_val('spell_level', 'spell: witchsight') * 0.3 )" ] }
+          }
+        ]
+      }
+    ]
+  },
+  {
     "type": "effect_type",
     "id": "channeling_fatigue",
     "name": [ "Channeling Fatigue" ],
     "desc": [ "Performing such a powerful act of magic is taking its toll." ],
     "apply_message": "You feel a sudden fatigue as the magic is unleashed.",
     "rating": "bad",
-		"resist_traits": [ "CHANNELINGPROFICIENCY", "MANAOVERFLOW" ],
-		 "vitamins": [
-      {
-        "vitamin": "channeling_overload",
-        "rate": [ [ 1, 1 ] ],
-	      "resist_rate": [ [ 0, 1 ] ],
-        "tick": [ "1 s" ]
-      }
-    ]
+    "resist_traits": [ "CHANNELINGPROFICIENCY", "MANAOVERFLOW" ],
+    "vitamins": [ { "vitamin": "channeling_overload", "rate": [ [ 1, 1 ] ], "resist_rate": [ [ 0, 1 ] ], "tick": [ "1 s" ] } ]
   }
 ]

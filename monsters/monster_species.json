@@ -22,7 +22,7 @@
     "flags": [ "ACIDPROOF", "NEVER_WANDER", "NO_FUNG_DMG", "PATH_AVOID_FIRE" ],
     "fear_triggers": [ "FIRE" ]
   },
-    {
+  {
     "type": "SPECIES",
     "id": "SKY_ELEMENTAL",
     "description": "A magical being of wind and rain.",
@@ -30,4 +30,3 @@
     "anger_triggers": [ "FRIEND_ATTACKED" ]
   }
 ]
-

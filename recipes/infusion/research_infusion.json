@@ -14,30 +14,31 @@
     "qualities": [ { "id": "MAGICAL_RESEARCH", "level": 1 } ],
     "skill_used": "occult",
     "flags": [ "BLIND_HARD" ],
-    "proficiencies": [ 
-      { "proficiency": "prof_occult_exploration", "required": true},
+    "proficiencies": [
+      { "proficiency": "prof_occult_exploration", "required": true },
       { "proficiency": "prof_thaumatology", "required": true },
       { "proficiency": "prof_infusion_basic", "required": false }
-     ],
-     "result_eocs": [ 
-       {
-         "id": "EOC_MUTATION_RESEARCH_INTRO", 
-          "condition": { "roll_contested": { "math": [ "rng( u_val('intelligence'), u_skill('occult') )"] }, "difficulty": 16 },
-         "effect": [
-           { "u_message": "There's power in the samples you've tested, you're sure of it, but you're going to need to determine how to access it.", "type": "good" },
-           { "u_spawn_item": "used_occult_notes", "suppress_message": true },
-           { "u_roll_remainder": 
-             [
-                
-             ],
-             "type": "recipe"
-           }
-         ],
-         "false_effect": [
-           { "u_message": "You really thought you had something here, but it's just a dead end.  You'll have to try again with a new approach.", "type": "bad" },
-           { "u_spawn_item": "used_occult_notes", "suppress_message": true }
+    ],
+    "result_eocs": [
+      {
+        "id": "EOC_MUTATION_RESEARCH_INTRO",
+        "condition": { "roll_contested": { "math": [ "rng( u_val('intelligence'), u_skill('occult') )" ] }, "difficulty": 16 },
+        "effect": [
+          {
+            "u_message": "There's power in the samples you've tested, you're sure of it, but you're going to need to determine how to access it.",
+            "type": "good"
+          },
+          { "u_spawn_item": "used_occult_notes", "suppress_message": true },
+          { "u_roll_remainder": [  ], "type": "recipe" }
+        ],
+        "false_effect": [
+          {
+            "u_message": "You really thought you had something here, but it's just a dead end.  You'll have to try again with a new approach.",
+            "type": "bad"
+          },
+          { "u_spawn_item": "used_occult_notes", "suppress_message": true }
         ]
-      } 
+      }
     ]
-   }
+  }
 ]

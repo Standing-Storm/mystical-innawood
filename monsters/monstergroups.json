@@ -11,16 +11,12 @@
   {
     "type": "monstergroup",
     "name": "GROUP_CAVE",
-    "monsters": [
-      { "group": "GROUP_EARTH_ELEMENTAL_CAVE", "weight": 60 }
-    ]
+    "monsters": [ { "group": "GROUP_EARTH_ELEMENTAL_CAVE", "weight": 60 } ]
   },
   {
     "type": "monstergroup",
     "name": "GROUP_RIVER",
-    "monsters": [
-      { "group": "GROUP_SEA_ELEMENTAL", "weight": 10 }
-    ]
+    "monsters": [ { "group": "GROUP_SEA_ELEMENTAL", "weight": 10 } ]
   },
   {
     "type": "monstergroup",
@@ -52,9 +48,7 @@
   {
     "type": "monstergroup",
     "name": "GROUP_EARTH_ELEMENTAL_CAVE",
-    "monsters": [
-      { "monster": "mon_earth_gnome", "weight": 25, "cost_multiplier": 1 }
-    ]
+    "monsters": [ { "monster": "mon_earth_gnome", "weight": 25, "cost_multiplier": 1 } ]
   },
   {
     "type": "monstergroup",
@@ -75,8 +69,6 @@
   {
     "type": "monstergroup",
     "name": "GROUP_SEA_ELEMENTAL_SWAMP",
-    "monsters": [
-      { "monster": "mon_undine", "weight": 25, "cost_multiplier": 1 }
-    ]
+    "monsters": [ { "monster": "mon_undine", "weight": 25, "cost_multiplier": 1 } ]
   }
 ]
