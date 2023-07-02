@@ -62,8 +62,8 @@
     "energy_source": "MANA",
     "spell_class": "SKY",
     "difficulty": 4,
-    "max_level": 20
-    "min_aoe": 4
+    "max_level": 20,
+    "min_aoe": 4,
     "max_aoe": 20,
     "aoe_increment": 0.65,
     "field_id": "fd_fog",
