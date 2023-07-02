@@ -87,6 +87,5 @@
     "min_duration": 500,
     "max_duration": 30000,
     "duration_increment": 1475
-    
   }
 ]
