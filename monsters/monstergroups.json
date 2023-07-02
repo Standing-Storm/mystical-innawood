@@ -29,6 +29,7 @@
       { "group": "GROUP_SEA_ELEMENTAL_SWAMP", "weight": 10 },
       { "group": "GROUP_FOREST_ELEMENTAL_SWAMP", "weight": 25, "conditions": [ "SPRING", "SUMMER", "AUTUMN" ] }
     ]
+  },
   {
     "type": "monstergroup",
     "name": "GROUP_FOREST_ELEMENTAL",
