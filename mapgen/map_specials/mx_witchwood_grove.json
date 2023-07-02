@@ -31,7 +31,7 @@
         "                        "
       ],
       "flags": [ "ALLOW_TERRAIN_UNDER_OTHER_DATA" ],
-      "terrain": { "T": [ [ "t_witchwood", 25 ], [ "t_null", 75 ] ] },
+      "terrain": { "T": [ [ "t_tree_witchwood", 25 ], [ "t_null", 75 ] ] },
       "place_monster": [
         { "monster": "mon_dryad", "x": [ 0, 23 ], "y": [ 0, 23 ], "repeat": [ 2, 4 ], "chance": 75 },
         { "monster": "mon_mossling", "x": [ 0, 23 ], "y": [ 0, 23 ], "repeat": [ 5, 7 ], "chance": 75 }
