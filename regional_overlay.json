@@ -1,0 +1,30 @@
+[
+	{
+    "type": "region_overlay",
+    "regions": [ "all" ],
+    "region_terrain_and_furniture": {
+      "terrain"" {
+      "t_region_tree_forest_dense": {
+        "t_witchwood": 1
+      }
+      },
+      "furniture": {
+        "f_region_weed": {
+          "f_morningflower": 50,
+        },
+        "f_region_forest": {
+          "f_morningflower": 50,
+          "f_harfry": 75
+        },
+        "f_region_forest_dense": {
+          "f_morningflower": 80,
+          "f_harfry": 120
+        }
+      }
+		}
+	},
+  "map_extras": {
+    "forest_thick": { "chance": 30, "extras": { "mx_witchwood_grove": 30 } },
+    "forest": { "chance": 20, "extras": { "mx_witchwood_grove": 15 } }
+  }
+]
