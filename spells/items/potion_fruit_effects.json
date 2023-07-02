@@ -1,6 +1,6 @@
 [
   {
-    "id": "effect_pfruit_heal"
+    "id": "effect_pfruit_heal",
     "type": "effect_type",
     "name": [ "Regeneration" ],
     "desc": [ "Thanks to that apple, your wounds are slowly healing." ],
