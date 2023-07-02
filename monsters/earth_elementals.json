@@ -41,7 +41,7 @@
       }
     ],
     "death_function": { "message": "%s collapses into broken stone!", "corpse_type": "NO_CORPSE" },
-    "death_drops": "gnome_drops"
+    "death_drops": "gnome_drops",
     "flags": [ "SEES", "HEARS", "NO_BREATHE", "BASHES", "ACIDPROOF", "STUN_IMMUNE" ]
   }
 ]
