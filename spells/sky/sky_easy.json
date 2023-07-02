@@ -12,7 +12,7 @@
     "extra_effects": [ { "id": "channeling_fatigue_spell", "hit_self": true, "max_level": 1 } ],
     "shape": "blast",
     "energy_source": "MANA",
-    "spell_class": "AIR",
+    "spell_class": "SKY",
     "difficulty": 3,
     "max_level": 15,
     "base_casting_time": 1500,
@@ -34,7 +34,7 @@
     "difficulty": 2,
     "max_level": 20,
     "energy_source": "MANA",
-    "spell_class": "AIR",
+    "spell_class": "SKY",
     "min_damage": 1,
     "max_damage": 10,
     "damage_increment": 0.5,
@@ -47,5 +47,46 @@
     "base_energy_cost": 350,
     "final_energy_cost": 150,
     "energy_increment": -10
+  },
+  {
+    "id": "sky_cloak_of_fog",
+    "type": "SPELL",
+    "name": "Obscuring Cloak of Fog",
+    "description": "Call out to the sky spirits for aid and ask them to hide your passage from your enemies.",
+    "valid_targets": [ "self" ],
+    "skill": "occult",
+    "flags": [ "CONCENTRATE", "VERBAL", "SOMATIC", "NO_EXPLOSION_SFX" ],
+    "effect": "attack",
+    "extra_effects": [ { "id": "channeling_fatigue_spell", "hit_self": true, "max_level": 2 }, { "id": "sky_cloak_fog_emitter", "hit_self": true, "max_level": 20 } ],
+    "shape": "blast",
+    "energy_source": "MANA",
+    "spell_class": "SKY",
+    "difficulty": 4,
+    "max_level": 20
+    "min_aoe": 4
+    "max_aoe": 20,
+    "aoe_increment": 0.65,
+    "field_id": "fd_fog",
+    "min_field_intensity": 2,
+    "max_field_intensity": 3,
+    "field_chance": 2,
+    "energy_source": "MANA",
+    "base_energy_cost": 450,
+    "base_casting_time": 300,
+    "final_casting_time": 100,
+    "casting_time_increment": -7.5
+  },
+  {
+    "id": "sky_cloak_fog_emitter",
+    "type": "SPELL",
+    "name": "Obscuring Cloak of Fog Real",
+    "description": "The spell that puts the effect of Obscuring Cloak of Fog on you.  It's a bug if you can see it.",
+    "valid_targets": [ "self" ],
+    "effect": "attack",
+    "effect_str": "effect_sky_cloak_of_fog",
+    "min_duration": 500,
+    "max_duration": 30000,
+    "duration_increment": 1475
+    
   }
 ]
