@@ -3,7 +3,7 @@
     "type": "region_overlay",
     "regions": [ "all" ],
     "region_terrain_and_furniture": {
-      "terrain"" {
+      "terrain": {
       "t_region_tree_forest_dense": {
         "t_witchwood": 1
       }
