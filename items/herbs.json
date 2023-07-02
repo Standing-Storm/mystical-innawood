@@ -1,10 +1,11 @@
 [
   {
-    "type": "GENERIC",
+    "type": "COMESTIBLE",
     "id": "morningflower_leaves",
     "symbol": ",",
     "color": "yellow",
     "spoils_in": "45 days",
+    "comestible_type": "FOOD",
     "name": { "str": "morningflower leaf", "str_pl": "morningflower leaves" },
     "description": "A large leaf from the morningflower plant.  It has a faint golden glow in the dark.",
     "price": 0,
@@ -13,14 +14,15 @@
     "weight": "15 g",
     "volume": "50 ml",
     "melee_damage": { "bash": 4 },
-    "flags": [ "LIGHT_5", "SMOKABLE" ]
+    "flags": [ "LIGHT_5", "SMOKABLE", "INEDIBLE" ]
   },
   {
-    "type": "GENERIC",
+    "type": "COMESTIBLE",
     "id": "morningflower_leaves_smoked",
     "symbol": ",",
     "color": "yellow",
     "spoils_in": "150 days",
+    "comestible_type": "FOOD",
     "name": { "str": "dehydrated morningflower leaf", "str_pl": "dehydrated morningflower leaves" },
     "description": "A large leaf from the morningflower plant.  It has been dehydrated in a smoker and its characteristic golden glow is much fainter now.",
     "price": 0,
@@ -29,7 +31,7 @@
     "weight": "15 g",
     "volume": "50 ml",
     "melee_damage": { "bash": 4 },
-    "flags": [ "SMOKED", "LIGHT_1" ]
+    "flags": [ "SMOKED", "LIGHT_1", "INEDIBLE" ]
   },
   {
     "type": "COMESTIBLE",
