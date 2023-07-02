@@ -53,15 +53,15 @@
     "type": "monstergroup",
     "name": "GROUP_EARTH_ELEMENTAL_CAVE",
     "monsters": [
-      { "monster": "mon_gnome", "weight": 25, "cost_multiplier": 1 }
+      { "monster": "mon_earth_gnome", "weight": 25, "cost_multiplier": 1 }
     ]
   },
   {
     "type": "monstergroup",
     "name": "GROUP_EARTH_ELEMENTAL_CAVE",
     "monsters": [
-      { "monster": "mon_gnome", "weight": 25, "cost_multiplier": 1 },
-      { "monster": "mon_gnome", "weight": 8, "cost_multiplier": 3, "pack_size": [ 2, 4 ] }
+      { "monster": "mon_earth_gnome", "weight": 25, "cost_multiplier": 1 },
+      { "monster": "mon_earth_gnome", "weight": 8, "cost_multiplier": 3, "pack_size": [ 2, 4 ] }
     ]
   },
   {
