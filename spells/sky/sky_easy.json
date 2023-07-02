@@ -83,6 +83,7 @@
     "valid_targets": [ "self" ],
     "effect": "attack",
     "effect_str": "effect_sky_cloak_of_fog",
+    "shape": "blast",
     "min_duration": 500,
     "max_duration": 30000,
     "duration_increment": 1475
