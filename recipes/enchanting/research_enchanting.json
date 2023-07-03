@@ -29,7 +29,7 @@
             "type": "good"
           },
           { "u_spawn_item": "used_occult_notes", "suppress_message": true },
-          { "u_roll_remainder": [  ], "type": "recipe" }
+          { "u_learn_recipe": "enchanting_magical_sensor" }
         ],
         "false_effect": [
           {
