@@ -1,0 +1,19 @@
+[
+  {
+    "id": "enchanting_magical_sensor",
+    "type": "TOOL",
+    "name": { "str": "glimmerstone dweomereye" },
+    "description": "An set of copper wiring holding several crystals that glow when in the presence of magic.  The glow's intensity varies depending on proximity, making it easy to use as a measuring tool.",
+    "weight": "2500 g",
+    "volume": "1 L",
+    "longest_side": "25 cm",
+    "price": 2000,
+    "price_postapoc": 50,
+    "to_hit": -2,
+    "melee_damage": { "bash": 2 },
+    "material": [ "gemstone", "copper" ],
+    "symbol": "[",
+    "color": "white",
+    "qualities": [ [ "MAGICAL_SENSE", 1 ] ]
+  }
+]
