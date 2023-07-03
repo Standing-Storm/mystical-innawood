@@ -27,13 +27,5 @@
     "copy-from": "alder_bark",
     "name": { "str": "dryad bark" },
     "description": "A strip of bark taken from a fallen dryad.  It's still slightly supple, as though it were attached to a living tree."
-  },
-  {
-    "type": "GENERIC",
-    "id": "witchwood_bark",
-    "copy-from": "alder_bark",
-    "name": { "str": "witchwood bark" },
-    "weight": "234 g",
-    "description": "A thin strip of silvery-blue bark harvested from a witchwood tree.  Touching it makes your fingers tingle slightly."
   }
 ]
