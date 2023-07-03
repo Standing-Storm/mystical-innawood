@@ -6,8 +6,8 @@
   },
   {
     "type": "tool_quality",
-    "id": "CHANNELING",
-    "name": { "str": "vis channeling" }
+    "id": "MAGICAL_SENSE",
+    "name": { "str": "aetheric sensitivity" }
   },
   {
     "type": "tool_quality",
