@@ -3,7 +3,7 @@
     "type": "region_overlay",
     "regions": [ "all" ],
     "region_terrain_and_furniture": {
-      "terrain": { "t_region_tree_forest_dense": { "t_witchwood": 1 } },
+      "terrain": { "t_region_tree_forest_dense": { "t_tree_witchwood": 1 } },
       "furniture": {
         "f_region_weed": { "f_morningflower": 50 },
         "f_region_forest": { "f_morningflower": 50, "f_harfry": 75 },
