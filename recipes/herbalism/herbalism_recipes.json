@@ -11,6 +11,9 @@
     "time": "15 m",
     "tools": [ [ [ "mortar_pestle", -1 ] ] ],
     "qualities": [ { "id": "MAGICAL_RESEARCH", "level": 1 } ],
+     "proficiencies": [
+      { "proficiency": "prof_herbalism_basic", "required": false }
+    ],
     "components": [
       [ [ "harfry_root", 1 ] ],
       [ [ "alder_bark", 1 ], [ "tanbark", 1 ], [ "birchbark", 1 ], [ "willowbark", 1 ] ],
@@ -29,6 +32,10 @@
     "batch_time_factors": [ 20, 1 ],
     "tools": [ [ [ "water_boiling_heat", 1, "LIST" ] ], [ [ "mortar_pestle", -1 ] ] ],
     "qualities": [ { "id": "MAGICAL_RESEARCH", "level": 1 } ],
+    "proficiencies": [
+      { "proficiency": "prof_food_prep" },
+      { "proficiency": "prof_herbalism_basic", "required": false }
+    ],
     "components": [ [ [ "morningflower_leaves_smoked", 1 ] ], [ [ "water_clean", 1 ], [ "water", 1 ] ] ]
   }
 ]

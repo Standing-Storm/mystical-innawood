@@ -1,0 +1,33 @@
+[
+  {
+    "type": "GENERIC",
+    "id": "elf_shot",
+    "category": "spare_parts",
+    "symbol": ",",
+    "color": "light_gray",
+    "name": { "str": "elf-shot" },
+    "description": "A small rock shaped like an arrowhead.  Its edge is surprisingly sharp.",
+    "price": 2000,
+    "price_postapoc": 250,
+    "material": [ "stone" ],
+    "volume": "25 ml",
+    "weight": "66 g",
+    "to_hit": -2,
+    "melee_damage": { "cut": 1 }
+  },
+  {
+    "type": "GENERIC"
+    "id": "glimmerstone",
+    "category": "spare_parts",
+    "symbol": "*",
+    "color": "light_blue"
+    "name": { "str": "glimmerstone" },
+    "description": "This crystal glows with a faint, wavering blue light, just bright enough to read by.",
+    "price": 2000,
+    "price_postapoc": 250,
+    "material": [ "gemstone" ],
+    "volume": "50 ml",
+    "weight": "85 g",
+    "flags": [ "LIGHT_15" ]
+  }
+]

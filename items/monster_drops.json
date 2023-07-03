@@ -1,21 +1,5 @@
 [
-  {
-    "type": "GENERIC",
-    "id": "elf_shot",
-    "category": "spare_parts",
-    "symbol": ",",
-    "color": "light_gray",
-    "name": { "str": "elf-shot" },
-    "description": "A small rock shaped like an arrowhead.  Its edge is surprisingly sharp.",
-    "price": 2000,
-    "price_postapoc": 250,
-    "material": [ "stone" ],
-    "volume": "25 ml",
-    "weight": "66 g",
-    "to_hit": -2,
-    "melee_damage": { "cut": 1 }
-  },
-  {
+ {
     "type": "GENERIC",
     "id": "undine_heart",
     "name": { "str": "undine heart" },
