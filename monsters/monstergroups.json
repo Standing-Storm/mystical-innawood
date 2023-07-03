@@ -47,7 +47,7 @@
   },
   {
     "type": "monstergroup",
-    "name": "GROUP_EARTH_ELEMENTAL_CAVE",
+    "name": "GROUP_EARTH_ELEMENTAL",
     "monsters": [ { "monster": "mon_earth_gnome", "weight": 25, "cost_multiplier": 1 } ]
   },
   {

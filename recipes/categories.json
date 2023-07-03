@@ -26,6 +26,7 @@
     "recipe_subcategories": [
       "CSC_ALL",
       "CSC_OCCULT_MATERIALS",
+      "CSC_OCCULT_TOOLS",
       "CSC_OCCULT_ENCHANTING",
       "CSC_OCCULT_HERBALISM",
       "CSC_OCCULT_INFUSION",
