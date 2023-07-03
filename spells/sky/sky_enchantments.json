@@ -4,6 +4,6 @@
     "id": "enchant_sky_cloak_of_fog",
     "condition": "ALWAYS",
     "has": "HELD",
-    "emitter": "emit_fog_plume"
+    "emitter": "emit_obscuring_fog"
   }
 ]
