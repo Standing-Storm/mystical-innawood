@@ -7,7 +7,7 @@
     "description": "",
     "category": "CC_*",
     "subcategory": "CSC_*_NESTED",
-    "difficulty": 5,
+    "difficulty": 4,
     "time": "6 h",
     "components": [ [ [ "paper", 20 ] ] ],
     "using": [ [ "writing_standard", 1 ], [ "magical_herbs", 3 ] ],
