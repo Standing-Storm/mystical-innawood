@@ -28,7 +28,7 @@
     "id": "crystallize_mana_innawood",
     "type": "SPELL",
     "name": "The Ritual of Arcane Coalescence",
-    "description": "Crystallizes subtle energies into a solid form, allowing it to be used in magical research or enchanting.",
+    "description": "Crystallizes subtle energies into a solid form, allowing it to be used in rituals or enchanting.",
     "valid_targets": [ "self" ],
     "skill": "occult",
     "spell_class": "NONE",
@@ -76,8 +76,9 @@
     "effect": "attack",
     "effect_str": "effect_ritually_purified",
     "extra_effects": [ { "id": "channeling_fatigue_spell", "hit_self": true, "max_level": 3 } ],
+    "components": "spell_components_rite_of_purification",
     "shape": "blast",
     "base_casting_time": 90000,
-    "min_duration": 2160000
+    "min_duration": 4320000
   }
 ]

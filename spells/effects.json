@@ -36,6 +36,6 @@
     "name": [ "Ritually Purified" ],
     "desc": [ "You have ritually purified yourself." ],
     "rating": "good",
-    "max_duration": "6 hours"
+    "max_duration": "12 hours"
   }
 ]

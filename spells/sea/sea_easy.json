@@ -50,7 +50,7 @@
     "id": "sea_cooling_touch",
     "type": "SPELL",
     "name": "The Sea's Cooling Touch",
-    "description": "Like a plunge into the sea ",
+    "description": "Like a plunge into the sea, you remain cool even in hot weather.",
     "valid_targets": [ "self" ],
     "skill": "occult",
     "flags": [ "CONCENTRATE", "LOUD", "VERBAL" ],
