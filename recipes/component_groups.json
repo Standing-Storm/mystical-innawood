@@ -23,5 +23,10 @@
     "id": "magical_materials",
     "type": "requirement",
     "components": [ [ [ "witchwood_bark", 1 ], [ "elf_shot", 1 ] ] ]
+  },
+  {
+    "id": "magical_herbs",
+    "type": "requirement",
+    "components": [ [ [ "harfry_root", 1 ], [ "morningflower_leaves", 1 ] ] ]
   }
 ]

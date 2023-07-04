@@ -18,6 +18,12 @@
     "description": "Proficiencies for drawing out and manipulating the magic of herbs and plants."
   },
   {
+    "type": "proficiency_category",
+    "id": "prof_infusion",
+    "name": "Infusion",
+    "description": "Proficiencies for infusing magic directly into the human body."
+  },
+  {
     "type": "proficiency",
     "id": "prof_occult_exploration",
     "name": { "str": "Occult Exploration" },
@@ -56,6 +62,17 @@
     "category": "prof_occult_research",
     "name": { "str": "Infusion Basics" },
     "description": "You understand how to use magic to affect the fundamental nature of the human body.",
+    "can_learn": true,
+    "default_time_multiplier": 2,
+    "default_skill_penalty": 0.3,
+    "time_to_learn": "20 h"
+  },
+  {
+    "type": "proficiency",
+    "id": "prof_infusion_rituals",
+    "category": "prof_infusion",
+    "name": { "str": "Infusion Rituals" },
+    "description": "You have mastered the steps necessary to perform rituals to infuse magical power into yourself.",
     "can_learn": true,
     "default_time_multiplier": 3,
     "default_skill_penalty": 0.5,

@@ -81,5 +81,17 @@
     "skill_used": "occult",
     "nested_category_data": [ "herbalism_research_intro" ],
     "difficulty": 1
+  },
+  {
+    "id": "nested_herbalism_research",
+    "type": "nested_category",
+    "activity_level": "LIGHT_EXERCISE",
+    "category": "CC_OCCULT",
+    "subcategory": "CSC_OCCULT_INFUSION",
+    "name": "infusion rituals",
+    "description": "Rituals that infuse your own body with magical power, either temporarily or permanently.",
+    "skill_used": "occult",
+    "nested_category_data": [ "infusion_rite_of_moon_glow" ],
+    "difficulty": 1
   }
 ]

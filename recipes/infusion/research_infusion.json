@@ -29,7 +29,8 @@
             "type": "good"
           },
           { "u_spawn_item": "used_occult_notes", "suppress_message": true },
-          { "u_learn_recipe": "herbalism_harfry_paste" }
+          { "u_learn_recipe": "infusion_rite_of_moon" },
+          { "u_learn_recipe": "spell_formula_rite_of_purification" }
         ],
         "false_effect": [
           {

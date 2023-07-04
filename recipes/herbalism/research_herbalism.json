@@ -4,7 +4,7 @@
     "activity_level": "LIGHT_EXERCISE",
     "name": "introductory herbalism research",
     "id": "herbalism_research_intro",
-    "description": "",
+    "description": "Some plants have power; the glow of morningflower is evidence of that.  There has to be a way to extract it and make use of it.",
     "category": "CC_*",
     "subcategory": "CSC_*_NESTED",
     "difficulty": 4,

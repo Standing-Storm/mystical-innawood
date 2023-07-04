@@ -17,5 +17,42 @@
       { "proficiency": "prof_spell_research", "required": false },
       { "proficiency": "prof_infusion_basic", "required": false }
     ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "name": "Rite of the Moon's Cold Glow",
+    "id": "infusion_rite_of_moon_glow",
+    "description": "Under the light of the moon, draw on the moon's power and infuse yourself with its light for a time./n/nThis ritual must be completed at night under the open sky.",
+    "category": "CC_*",
+    "subcategory": "CSC_*_NESTED",
+    "difficulty": 4,
+    "time": "90 m",
+    "qualities": [ { "id": "MAGICAL_RESEARCH", "level": 1 } ],
+    "skill_used": "occult",
+    "flags": [ "BLIND_EASY" ],
+    "proficiencies": [ { "proficiency": "prof_infusion_rituals", "required": false } ],
+    "result_eocs": [
+      {
+        "id": "EOC_RITE_OF_MOON_COLD_GLOW",
+        "condition": { "and": [ { "not": [ "is_day" ] }, "u_is_outside", { "u_has_effect": "effect_ritually_purified" } ] },
+        "effect": [
+          { "u_message": "The moon's power fills you as a silvery glow springs forth from your skin!", "type": "good" },
+          { "queue_eocs": "EOC_RITE_OF_MOON_COLD_GLOW_END", "time_in_future": [ "9 hours", "9 hours" ] },
+          { "u_add_trait": "MOONGLOW" }
+        ],
+        "false_effect": [
+          { "u_message": "Without the moon in the sky, the ritual never had any hope of succeeding.", "type": "bad" },
+          { "u_add_effect": "channeling_fatigue_spell", "duration": "4 seconds" },
+          { "u_add_effect": "darkness", "duration": [ "10 minutes", "40 minutes" ] }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_RITE_OF_MOON_COLD_GLOW_END",
+    "condition": { "or": [ { "u_has_trait": "effect_detect_magic" }, { "u_has_trait": "effect_detect_magic" } ] },
+    "effect": [ { "u_lose_trait": "MOONGLOW" }, { "u_lose_trait": "MOONGLOW_A" } ]
   }
 ]

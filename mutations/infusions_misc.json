@@ -1,0 +1,24 @@
+[
+  {
+    "type": "mutation",
+    "id": "MOONGLOW",
+    "name": { "str": "Moon's Cold Glow" },
+    "points": 0,
+    "description": "You can channel the silvery light of the moon.",
+    "active": true,
+    "player_display": true,
+    "purifiable": false,
+    "cost": 0,
+    "transform": { "target": "MOONGLOW_A", "msg_transform": "The air around you starts glowing softly.", "active": true, "moves": 10 }
+  },
+  {
+    "type": "mutation",
+    "id": "MOONGLOW_A",
+    "name": { "str": "Moon's Cold Glow (active)" },
+    "description": "The air around you is emitting a silvery light.",
+    "copy-from": "MOONGLOW",
+    "valid": false,
+    "transform": { "target": "MOONGLOW", "msg_transform": "The air around you loses its radiance.", "active": false, "moves": 10 },
+    "enchantments": [ { "values": [ { "value": "LUMINATION", "add": 50 } ] } ]
+  }
+]
