@@ -18,5 +18,10 @@
     "id": "harvest_witchwood",
     "type": "harvest",
     "entries": [ { "drop": "witchwood_bark", "base_num": [ 3, 6 ] } ]
+  },
+  {
+    "id": "harvest_moonstears",
+    "type": "harvest",
+    "entries": [ { "drop": "moonstears_harvested", "base_num": [ 2, 4 ] } ]
   }
 ]

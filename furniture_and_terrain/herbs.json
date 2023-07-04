@@ -10,7 +10,7 @@
     "move_cost_mod": 1,
     "required_str": -1,
     "flags": [ "TRANSPARENT", "TINY", "FLAMMABLE_ASH", "NOCOLLIDE", "FLOWER", "LIGHT_5" ],
-    "examine_action": "harvest_furn",
+    "examine_action": "harvest_furn_nectar",
     "harvest_by_season": [ { "seasons": [ "spring", "summer", "autumn" ], "id": "harvest_morningflower" } ],
     "bash": { "str_min": 2, "str_max": 6, "sound": "crunch.", "sound_fail": "whish." }
   },
@@ -24,12 +24,27 @@
     "looks_like": "f_burdock",
     "move_cost_mod": 1,
     "required_str": -1,
-    "flags": [ "TRANSPARENT", "TINY", "FLAMMABLE_ASH", "NOCOLLIDE", "FLOWER", "LIGHT_5" ],
-    "examine_action": "harvest_furn",
+    "flags": [ "TRANSPARENT", "TINY", "FLAMMABLE_ASH", "NOCOLLIDE" ],
+    "examine_action": "harvest_furn_nectar",
     "harvest_by_season": [
       { "seasons": [ "spring", "autumn" ], "id": "harvest_harfry" },
       { "seasons": [ "summer" ], "id": "harvest_harfry_summer" }
     ],
+    "bash": { "str_min": 2, "str_max": 6, "sound": "crunch.", "sound_fail": "whish." }
+  },
+  {
+    "type": "furniture",
+    "id": "f_moonstears",
+    "name": "moon's tears",
+    "description": "A round, silvery-blue flower.  It often grows near witchwood trees, and only blooms under the light of the full moon.",
+    "symbol": "#",
+    "color": "green",
+    "looks_like": "f_burdock",
+    "move_cost_mod": 1,
+    "required_str": -1,
+    "flags": [ "TRANSPARENT", "TINY", "FLAMMABLE_ASH", "NOCOLLIDE", "FLOWER" ],
+    "examine_action": "harvest_furn_nectar",
+    "harvest_by_season": [ { "seasons": [ "summer", "autumn" ], "id": "harvest_moonstears" } ],
     "bash": { "str_min": 2, "str_max": 6, "sound": "crunch.", "sound_fail": "whish." }
   }
 ]

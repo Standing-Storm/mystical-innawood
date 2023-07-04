@@ -4,7 +4,7 @@
     "type": "COMESTIBLE",
     "comestible_type": "MED",
     "name": { "str": "glob of harfry paste", "str_pl": "globs of harfry paste" },
-    "description": "A paste made from harfry mixed with ground tree bark and water.  It's a verdant greenish color but it smells faintly sweet.",
+    "description": "A paste made from harfry mixed with ground tree bark and water.  It's a verdant greenish color, but it smells faintly sweet.",
     "container": "stomach_sealed",
     "weight": "65 g",
     "volume": "250 ml",

@@ -101,7 +101,7 @@
   {
     "type": "effect_on_condition",
     "id": "EOC_METHODS_OF_DETECTING_MAGIC_2",
-    "condition": { "math": [ "u_val('vitamin', 'name:vitamin_magical_research_insight_basic')", "<", "5" ] },
+    "condition": { "math": [ "u_val('vitamin', 'name:vitamin_magical_research_insight_basic')", "<", "3" ] },
     "effect": [
       {
         "u_message": "There's something here, you can tell.  You can feel it.  You just need a little more experimentation to confirm the sensations and you'll make an amazing discovery.",

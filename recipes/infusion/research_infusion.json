@@ -9,7 +9,7 @@
     "subcategory": "CSC_*_NESTED",
     "difficulty": 5,
     "time": "8 h",
-    "components": [ [ [ "paper", 20 ] ] ],
+    "components": [ [ [ "paper", 20 ] ], [ [ "used_occult_notes", 1 ] ] ],
     "using": [ [ "writing_standard", 1 ], [ "magical_creature_materials", 3 ] ],
     "qualities": [ { "id": "MAGICAL_RESEARCH", "level": 1 } ],
     "skill_used": "occult",
@@ -36,7 +36,7 @@
   },
   {
     "id": "EOC_INFUSION_RESEARCH_INTRO_2",
-    "condition": { "u_know_recipe": "magical_ink_intermediate" },
+    "condition": { "u_know_recipe": "magical_ink_apprentice" },
     "effect": [
       {
         "u_message": "There's power in the samples you've tested, you're sure of it, but it seems extremely delicate.  You're going to need multiple precautions if you don't want a disaster to occur.",

@@ -29,6 +29,7 @@
     "difficulty": 4,
     "time": "90 m",
     "qualities": [ { "id": "MAGICAL_RESEARCH", "level": 1 } ],
+    "component": [ [ [ "glimmerstone", 1 ], [ "glimmerstone_dust", 5 ], [ "herbalism_moonstears_extract", 2 ] ] ],
     "skill_used": "occult",
     "flags": [ "BLIND_EASY" ],
     "proficiencies": [ { "proficiency": "prof_infusion_rituals", "required": false } ],
@@ -52,7 +53,7 @@
   {
     "type": "effect_on_condition",
     "id": "EOC_RITE_OF_MOON_COLD_GLOW_END",
-    "condition": { "or": [ { "u_has_trait": "effect_detect_magic" }, { "u_has_trait": "effect_detect_magic" } ] },
+    "condition": { "or": [ { "u_has_trait": "MOONGLOW" }, { "u_has_trait": "MOONGLOW_A" } ] },
     "effect": [ { "u_lose_trait": "MOONGLOW" }, { "u_lose_trait": "MOONGLOW_A" } ]
   }
 ]

@@ -102,6 +102,17 @@
   },
   {
     "type": "proficiency",
+    "id": "prof_herbalism_extraction",
+    "category": "prof_occult_research",
+    "name": { "str": "Herbal Extracts" },
+    "description": "You can process herbs to extract their most efficacious parts .",
+    "can_learn": true,
+    "default_time_multiplier": 1.2,
+    "default_skill_penalty": 0.2,
+    "time_to_learn": "22 h"
+  },
+  {
+    "type": "proficiency",
     "id": "prof_botanical_enchantment",
     "category": "prof_herbalism",
     "name": { "str": "Mystic Horticulture" },

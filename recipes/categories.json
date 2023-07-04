@@ -43,7 +43,7 @@
     "name": "spell research",
     "description": "Recipes related to directly applying magical theory to determine a spell formula.",
     "skill_used": "occult",
-    "nested_category_data": [  ],
+    "nested_category_data": [ "spellcrafting_research_intro" ],
     "difficulty": 1
   },
   {
@@ -67,7 +67,7 @@
     "name": "enchantment research",
     "description": "Recipes related to drawing magic out of or imbuing it into physical materials.",
     "skill_used": "occult",
-    "nested_category_data": [ "enchantment_research_intro" ],
+    "nested_category_data": [ "enchantment_research_intro", "enchantment_research_beginner" ],
     "difficulty": 1
   },
   {
