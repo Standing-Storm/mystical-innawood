@@ -30,6 +30,6 @@
     "qualities": [ { "id": "COOK", "level": 1 } ],
     "tools": [ [ [ "smoking_heat", 10, "LIST" ] ] ],
     "proficiencies": [ { "proficiency": "prof_food_prep" }, { "proficiency": "prof_preservation" } ],
-    "components": [ [ [ "morningflower_leaves", 1, "LIST" ] ] ]
+    "components": [ [ [ "morningflower_leaves", 1 ] ] ]
   }
 ]

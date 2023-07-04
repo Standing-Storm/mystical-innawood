@@ -79,7 +79,7 @@
     "name": "herbalism research",
     "description": "Recipes related to studying magical plants and herbs.",
     "skill_used": "occult",
-    "nested_category_data": [ "herbalism_research_intro" ],
+    "nested_category_data": [ "herbalism_research_intro", "herbalism_research_beginner" ],
     "difficulty": 1
   },
   {

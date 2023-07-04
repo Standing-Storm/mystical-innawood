@@ -35,7 +35,7 @@
     "result_eocs": [
       {
         "id": "EOC_RITE_OF_MOON_COLD_GLOW",
-        "condition": { "and": [ { "not": [ "is_day" ] }, "u_is_outside", { "u_has_effect": "effect_ritually_purified" } ] },
+        "condition": { "and": [ { "not": "is_day" }, "u_is_outside", { "u_has_effect": "effect_ritually_purified" } ] },
         "effect": [
           { "u_message": "The moon's power fills you as a silvery glow springs forth from your skin!", "type": "good" },
           { "queue_eocs": "EOC_RITE_OF_MOON_COLD_GLOW_END", "time_in_future": [ "9 hours", "9 hours" ] },
