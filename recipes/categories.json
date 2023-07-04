@@ -83,7 +83,7 @@
     "difficulty": 1
   },
   {
-    "id": "nested_herbalism_research",
+    "id": "nested_infusion_rituals",
     "type": "nested_category",
     "activity_level": "LIGHT_EXERCISE",
     "category": "CC_OCCULT",
