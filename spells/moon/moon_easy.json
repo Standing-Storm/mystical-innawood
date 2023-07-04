@@ -1,0 +1,60 @@
+[
+  {
+    "id": "moon_lambent_glow",
+    "type": "SPELL",
+    "name": "Moon's Lambent Glow",
+    "description": "Summon the soft silver light of the moon from the air around you, illuminating your surroundings.  You need either a moons' tears flower or silver, or to be under moonlight, to cast the spell.",
+    "valid_targets": [ "self" ],
+    "flags": [ "CONCENTRATE", "VERBAL", "SOMATIC" ],
+    "skill": "occult",
+    "effect": "effect_on_condition",
+    "effect_str": "EOC_MOON_LAMBENT_GLOW",
+    "extra_effects": [ { "id": "channeling_fatigue_spell", "hit_self": true, "max_level": 1 } ],
+    "shape": "blast",
+    "energy_source": "MANA",
+    "spell_class": "MOON",
+    "difficulty": 3,
+    "max_level": 15,
+    "base_casting_time": 1500,
+    "base_energy_cost": 600,
+    "min_duration": 24000,
+    "max_duration": 360000,
+    "duration_increment": 24000
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_MOON_LAMBENT_GLOW",
+    "condition": { "and": [ { "not": "is_day" }, "u_is_outside" ] },
+    "effect": [ { "u_cast_spell": { "id": "moon_lambent_glow_real" } } ],
+    "false_effect": [ { "run_eocs": "EOC_MOON_LAMBENT_GLOW_2" } ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_MOON_LAMBENT_GLOW_2",
+    "condition": { "u_has_item": "moonstears_harvested" },
+    "effect": [ { "u_consume_item": "moonstears_harvested", "count": 1 }, { "u_cast_spell": { "id": "moon_lambent_glow_real" } } ],
+    "false_effect": [ { "run_eocs": "EOC_MOON_LAMBENT_GLOW_3" } ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_MOON_LAMBENT_GLOW_3",
+    "condition": { "u_has_item": "silver_small" },
+    "effect": [ { "u_consume_item": "silver_small", "count": 1 }, { "u_cast_spell": { "id": "moon_lambent_glow_real" } } ],
+    "false_effect": [ { "u_message": "Without the necessary conditions, the spell fails." } ]
+  },
+  {
+    "id": "moon_lambent_glow_real",
+    "type": "SPELL",
+    "name": "Moon's Lambent Glow Real",
+    "description": "The actual spell that summons the moon's glow.  It's a bug if you have it.",
+    "valid_targets": [ "self" ],
+    "flags": [ "SILENT" ],
+    "skill": "occult",
+    "effect": "attack",
+    "effect_str": "effect_moon_lambent_glow",
+    "shape": "blast",
+    "energy_source": "MANA",
+    "max_level": 15,
+    "min_duration": { "math": [ "( 24000 + (u_val('spell_level', 'spell: moon_lambent_glow') * 24000) )" ] }
+  }
+]

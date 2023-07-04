@@ -1,0 +1,15 @@
+[
+  {
+    "id": "effect_moon_lambent_glow",
+    "type": "effect_type",
+    "name": [ "Moon's Lambent Glow" ],
+    "desc": [ "The air around you glows with a soft silver light." ],
+    "rating": "good",
+    "show_intensity": false,
+    "enchantments": [
+      {
+        "values": [ { "value": "LUMINATION", "add": { "math": [ "( u_val('spell_level', 'spell: moon_lambent_glow') * 20 )" ] } } ]
+      }
+    ]
+  }
+]

@@ -1,27 +1,5 @@
 [
   {
-    "id": "air_actinic_glare",
-    "type": "SPELL",
-    "name": "Storm's Lambent Glow",
-    "description": "Summon the harsh blue light of the storm from the air around you, illuminating your surroundings.",
-    "valid_targets": [ "self" ],
-    "flags": [ "CONCENTRATE", "VERBAL", "SOMATIC", "NO_LEGS" ],
-    "skill": "occult",
-    "effect": "attack",
-    "effect_str": "effect_actinic_glare",
-    "extra_effects": [ { "id": "channeling_fatigue_spell", "hit_self": true, "max_level": 1 } ],
-    "shape": "blast",
-    "energy_source": "MANA",
-    "spell_class": "SKY",
-    "difficulty": 3,
-    "max_level": 15,
-    "base_casting_time": 1500,
-    "base_energy_cost": 600,
-    "min_duration": 24000,
-    "max_duration": 360000,
-    "duration_increment": 24000
-  },
-  {
     "id": "air_burst_of_wind",
     "type": "SPELL",
     "name": "Burst of Wind",
