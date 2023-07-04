@@ -22,7 +22,7 @@
     "result_eocs": [
       {
         "id": "EOC_ENCHANTING_RESEARCH_INTRO",
-        "condition": { "roll_contested": { "math": [ "rng( u_val('intelligence'), u_skill('occult') )" ] }, "difficulty": 14 },
+        "condition": { "roll_contested": { "math": [ "rng( u_val('intelligence'), u_skill('occult') )" ] }, "difficulty": 11 },
         "effect": [
           {
             "u_message": "Some of the samples you used reacted to each other.  Maybe you can use that to make a tool that's sensitive to the unseen world.",

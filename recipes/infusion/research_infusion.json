@@ -22,7 +22,7 @@
     "result_eocs": [
       {
         "id": "EOC_MUTATION_RESEARCH_INTRO",
-        "condition": { "roll_contested": { "math": [ "rng( u_val('intelligence'), u_skill('occult') )" ] }, "difficulty": 16 },
+        "condition": { "roll_contested": { "math": [ "rng( u_val('intelligence'), u_skill('occult') )" ] }, "difficulty": 12 },
         "effect": [
           {
             "u_message": "There's power in the samples you've tested, you're sure of it, but it seems extremely delicate.  You're going to need multiple precautions if you don't want a disaster to occur.",

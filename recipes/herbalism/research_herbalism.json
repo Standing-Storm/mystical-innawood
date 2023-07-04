@@ -22,7 +22,7 @@
     "result_eocs": [
       {
         "id": "EOC_HERBALISM_RESEARCH_INTRO",
-        "condition": { "roll_contested": { "math": [ "rng( u_val('intelligence'), u_skill('occult') )" ] }, "difficulty": 12 },
+        "condition": { "roll_contested": { "math": [ "rng( u_val('intelligence'), u_skill('occult') )" ] }, "difficulty": 10 },
         "effect": [
           {
             "u_message": "Even just tasting some of these plants, you can detect the power in them.  You should easily be able to extract it with some processing.  There must be other ways to draw out even more of their magic.",
