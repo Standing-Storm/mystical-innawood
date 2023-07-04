@@ -2,7 +2,7 @@
   {
     "type": "mutation",
     "id": "SKY",
-    "name": "Attuned to the Sky",
+    "name": "Initiate of the Sky",
     "points": 0,
     "description": "You learned the secret knowledge of the winds and rain, and can command the spirits of the sky.",
     "starting_trait": false,
@@ -12,7 +12,7 @@
   {
     "type": "mutation",
     "id": "EARTH",
-    "name": "Attuned to the Earth",
+    "name": "Initiate of the Earth",
     "points": 0,
     "description": "You learned the secret knowledge of rock and stone, and can command the spirits of the earth.",
     "starting_trait": false,
@@ -22,7 +22,7 @@
   {
     "type": "mutation",
     "id": "FOREST",
-    "name": "Attuned to the Forest",
+    "name": "Initiate of the Forest",
     "points": 0,
     "description": "You learned the secret knowledge of root and branch, and can command the spirits of the forest.",
     "starting_trait": false,
@@ -32,7 +32,7 @@
   {
     "type": "mutation",
     "id": "SEA",
-    "name": "Attuned to the SEA",
+    "name": "Initiate of the Sea",
     "points": 0,
     "description": "You learned the secret knowledge of the tides and depths, and can command the spirits of the sea.",
     "starting_trait": false,
