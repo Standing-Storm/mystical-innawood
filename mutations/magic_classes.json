@@ -1,16 +1,6 @@
 [
   {
     "type": "mutation",
-    "id": "SKY",
-    "name": "Initiate of the Sky",
-    "points": 0,
-    "description": "You learned the secret knowledge of the winds and rain, and can command the spirits of the sky.",
-    "starting_trait": false,
-    "purifiable": false,
-    "valid": false
-  },
-  {
-    "type": "mutation",
     "id": "EARTH",
     "name": "Initiate of the Earth",
     "points": 0,
@@ -31,10 +21,30 @@
   },
   {
     "type": "mutation",
+    "id": "MOON",
+    "name": "Initiate of the Moon",
+    "points": 0,
+    "description": "You learned the secret knowledge of the bright and dark of the moon, and can command the lunar spirits.",
+    "starting_trait": false,
+    "purifiable": false,
+    "valid": false
+  },
+  {
+    "type": "mutation",
     "id": "SEA",
     "name": "Initiate of the Sea",
     "points": 0,
     "description": "You learned the secret knowledge of the tides and depths, and can command the spirits of the sea.",
+    "starting_trait": false,
+    "purifiable": false,
+    "valid": false
+  },
+  {
+    "type": "mutation",
+    "id": "SKY",
+    "name": "Initiate of the Sky",
+    "points": 0,
+    "description": "You learned the secret knowledge of the winds and rain, and can command the spirits of the sky.",
     "starting_trait": false,
     "purifiable": false,
     "valid": false
