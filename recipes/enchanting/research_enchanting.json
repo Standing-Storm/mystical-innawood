@@ -33,7 +33,7 @@
         ],
         "false_effect": [
           {
-            "u_message": "You really thought you had something here, but it's just a dead end.  You'll have to try again with a new approach.",
+            "u_message": "You really thought you had something here, but it's just a dead end.  You'll have to try again.",
             "type": "bad"
           },
           { "u_spawn_item": "used_occult_notes", "suppress_message": true }

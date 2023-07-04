@@ -23,7 +23,7 @@
     "activity_level": "LIGHT_EXERCISE",
     "name": "Rite of the Moon's Cold Glow",
     "id": "infusion_rite_of_moon_glow",
-    "description": "Under the light of the moon, draw on the moon's power and infuse yourself with its light for a time.\n\nThis ritual must be completed at night under the open sky.",
+    "description": "Under the light of the moon, draw on the moon's power and infuse yourself with its light for a time.\n\nThis ritual must be completed while ritually purified, at night and under the open sky.",
     "category": "CC_*",
     "subcategory": "CSC_*_NESTED",
     "difficulty": 4,
