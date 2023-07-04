@@ -63,5 +63,21 @@
     "shape": "blast",
     "min_duration": 0,
     "max_duration": { "math": [ "(u_val('spell_level', 'spell: channeling_fatigue_spell') * 110)" ] }
+  },
+  {
+    "id": "rite_of_purification",
+    "type": "SPELL",
+    "name": { "str": "The Rite of Purification and Cleansing" },
+    "valid_targets": [ "self" ],
+    "description": "Ritually purify yourself in preparation for performing even greater magics.",
+    "flags": [ "VERBAL", "SOMATIC", "NO_FAIL" ],
+    "message": "",
+    "max_level": 1,
+    "effect": "attack",
+    "effect_str": "effect_ritually_purified",
+    "extra_effects": [ { "id": "channeling_fatigue_spell", "hit_self": true, "max_level": 3 } ],
+    "shape": "blast",
+    "base_casting_time": 90000,
+    "min_duration": 2160000
   }
 ]

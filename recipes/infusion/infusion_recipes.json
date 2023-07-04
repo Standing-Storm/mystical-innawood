@@ -1,0 +1,21 @@
+[
+  {
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "result": "spell_formula_rite_of_purification",
+    "category": "CC_OCCULT",
+    "subcategory": "CSC_OCCULT_FORMULAE",
+    "difficulty": 5,
+    "skill_used": "occult",
+    "time": "6 h",
+    "using": [ [ "writing_formulae_simple_standard", 1 ] ],
+    "components": [ [ [ "paper", 20 ] ] ],
+    "qualities": [ { "id": "MAGICAL_RESEARCH", "level": 1 } ],
+    "proficiencies": [
+      { "proficiency": "prof_occult_exploration", "required": true },
+      { "proficiency": "prof_thaumatology", "required": false },
+      { "proficiency": "prof_spell_research", "required": false },
+      { "proficiency": "prof_infusion_basic", "required": false }
+    ]
+  }
+]

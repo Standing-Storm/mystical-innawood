@@ -29,5 +29,13 @@
     "rating": "bad",
     "resist_traits": [ "CHANNELINGPROFICIENCY", "MANAOVERFLOW" ],
     "vitamins": [ { "vitamin": "channeling_overload", "rate": [ [ 1, 1 ] ], "resist_rate": [ [ 0, 1 ] ], "tick": [ "1 s" ] } ]
+  },
+  {
+    "type": "effect_type",
+    "id": "effect_ritually_purified",
+    "name": [ "Ritually Purified" ],
+    "desc": [ "You have ritually purified yourself." ],
+    "rating": "good",
+    "max_duration": "6 hours"
   }
 ]
