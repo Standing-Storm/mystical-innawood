@@ -16,7 +16,7 @@
     "flags": [ "BLIND_HARD" ],
     "proficiencies": [
       { "proficiency": "prof_occult_exploration", "required": true },
-      { "proficiency": "prof_thaumatology", "required": true },
+      { "proficiency": "prof_thaumatology", "required": false },
       { "proficiency": "prof_enchanting_basic", "required": false }
     ],
     "result_eocs": [

@@ -9,7 +9,7 @@
         "u_message": "As you peruse the grimoire, watching the faint swirl of magic in the ink, thoughts take form.  You've learned so much, but you still have so far to go.  There are so many avenues of research open to you now that you're aware of the Unseen World.  The work continues."
       },
       { "u_learn_recipe": "infusion_research_intro" },
-      { "u_learn_recipe": "spellmaking_research_intro" },
+      { "u_learn_recipe": "spellcrafting_research_intro" },
       { "u_learn_recipe": "herbalism_research_intro" },
       { "u_learn_recipe": "enchantment_research_intro" }
     ],

@@ -29,8 +29,24 @@
     "type": "AMMO",
     "id": "magical_ink_simple",
     "copy-from": "ink_abstract",
-    "name": { "str_sp": "magical ink" },
-    "description": "A simple ink made by boiling fruit and vinegar with magical components.  It won't hold anything more than a rudimentary enchantment.",
+    "name": { "str_sp": "magical ink, basic" },
+    "description": "A simple ink made by boiling fruit and vinegar with herbs.  It won't hold anything more than a rudimentary enchantment.",
     "color": "yellow"
+  },
+  {
+    "type": "AMMO",
+    "id": "magical_ink_apprentice",
+    "copy-from": "ink_abstract",
+    "name": { "str_sp": "magical ink, apprentice" },
+    "description": "An ink made by boiling fruit and vinegar with magical components and herbs.  The additional materials provide extra reservoir for magic, and it can hold a greater enchantment than herbs alone.",
+    "color": "light_red"
+  },
+  {
+    "type": "AMMO",
+    "id": "magical_ink_journeyman",
+    "copy-from": "ink_abstract",
+    "name": { "str_sp": "magical ink, journeyman" },
+    "description": "An ink made by boiling fruit and vinegar with magical components and herbs.  This ink is strong enough to use for more powerful rituals.",
+    "color": "red"
   }
 ]

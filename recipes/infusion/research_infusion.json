@@ -21,17 +21,9 @@
     ],
     "result_eocs": [
       {
-        "id": "EOC_MUTATION_RESEARCH_INTRO",
+        "id": "EOC_INFUSION_RESEARCH_INTRO",
         "condition": { "roll_contested": { "math": [ "rng( u_val('intelligence'), u_skill('occult') )" ] }, "difficulty": 12 },
-        "effect": [
-          {
-            "u_message": "There's power in the samples you've tested, you're sure of it, but it seems extremely delicate.  You're going to need multiple precautions if you don't want a disaster to occur.",
-            "type": "good"
-          },
-          { "u_spawn_item": "used_occult_notes", "suppress_message": true },
-          { "u_learn_recipe": "infusion_rite_of_moon" },
-          { "u_learn_recipe": "spell_formula_rite_of_purification" }
-        ],
+        "effect": [ { "run_eocs": "EOC_INFUSION_RESEARCH_INTRO_2" } ],
         "false_effect": [
           {
             "u_message": "You really thought you had something here, but it's just a dead end.  You'll have to try again.",
@@ -40,6 +32,26 @@
           { "u_spawn_item": "used_occult_notes", "suppress_message": true }
         ]
       }
+    ]
+  },
+  {
+    "id": "EOC_INFUSION_RESEARCH_INTRO_2",
+    "condition": { "u_know_recipe": "magical_ink_intermediate" },
+    "effect": [
+      {
+        "u_message": "There's power in the samples you've tested, you're sure of it, but it seems extremely delicate.  You're going to need multiple precautions if you don't want a disaster to occur.",
+        "type": "good"
+      },
+      { "u_spawn_item": "used_occult_notes", "suppress_message": true },
+      { "u_learn_recipe": "infusion_rite_of_moon" },
+      { "u_learn_recipe": "spell_formula_rite_of_purification" }
+    ],
+    "false_effect": [
+      {
+        "u_message": "Nothing you try can hold enough power to be useful.  You'll need more research to find a medium capable of holding more magic before you can get anywhere.",
+        "type": "bad"
+      },
+      { "u_spawn_item": "used_occult_notes", "suppress_message": true }
     ]
   }
 ]
