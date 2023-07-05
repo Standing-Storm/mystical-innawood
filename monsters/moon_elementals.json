@@ -47,7 +47,8 @@
       "HARDTOSHOOT",
       "NOGIB",
       "NOHEAD",
-      "NO_BREATHE"
+      "NO_BREATHE",
+      "STUMBLES"
     ]
   }
 ]
