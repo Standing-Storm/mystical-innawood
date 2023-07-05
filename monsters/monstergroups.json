@@ -24,14 +24,15 @@
   {
     "type": "monstergroup",
     "name": "GROUP_RIVER",
-    "monsters": [ { "group": "GROUP_SEA_ELEMENTAL", "weight": 10 } ]
+    "monsters": [ { "group": "GROUP_SEA_ELEMENTAL", "weight": 10 }, { "monster": "mon_ghost_lantern", "weight": 5, "conditions": [ "NIGHT" ] } ]
   },
   {
     "type": "monstergroup",
     "name": "GROUP_SWAMP",
     "monsters": [
       { "group": "GROUP_SEA_ELEMENTAL_SWAMP", "weight": 10 },
-      { "group": "GROUP_FOREST_ELEMENTAL_SWAMP", "weight": 25, "conditions": [ "SPRING", "SUMMER", "AUTUMN" ] }
+      { "group": "GROUP_FOREST_ELEMENTAL_SWAMP", "weight": 25, "conditions": [ "SPRING", "SUMMER", "AUTUMN" ] },
+      { "monster": "mon_ghost_lantern", "weight": 15, "conditions": [ "NIGHT" ] }
     ]
   },
   {
