@@ -4,7 +4,7 @@
     "type": "MONSTER",
     "name": "ghost lantern",
     "description": "A patch of luminous air, glowing green or silver or a soft blue.  It moves randomly, its lights changing colors in an indecipherable pattern.",
-    "default_faction": "magical_beast",
+    "default_faction": "moon_elemental_faction",
     "bodytype": "blob",
     "species": [ "MOON_ELEMENTAL" ],
     "looks_like": "mon_wisp",
