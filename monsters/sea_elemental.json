@@ -61,5 +61,45 @@
       "NOHEAD",
       "NO_BREATHE"
     ]
+  },
+  {
+    "id": "mon_undertow",
+    "type": "MONSTER",
+    "name": { "str": "undertow" },
+    "description": "A pair of frog eyes break the water, with a humanoid shadow below.  The water around it churns against the current.",
+    "default_faction": "sea_elemental_faction",
+    "bodytype": "blob",
+    "species": [ "SEA_ELEMENTAL" ],
+    "volume": "62500 ml",
+    "weight": "81500 g",
+    "hp": 70,
+    "speed": 110,
+    "material": [ "water" ],
+    "symbol": "U",
+    "color": "cyan",
+    "aggression": 0,
+    "morale": 105,
+    "melee_skill": 3,
+    "melee_dice": 2,
+    "melee_dice_sides": 6,
+    "melee_damage": [ { "damage_type": "bash", "amount": 2 } ],
+    "dodge": 5,
+    "vision_day": 35,
+    "vision_night": 5,
+    "special_attacks": [
+      {
+        "id": "ranged_pull",
+        "move_cost": 150,
+        "cooldown": 8,
+        "range": 6,
+        "blockable": false,
+        "effects": [ { "id": "downed", "duration": [ 1, 2 ] } ],
+        "hit_dmg_u": "The water around %s suddenly pulls you in!",
+        "hit_dmg_npc": "The water around %s suddenly pulls <npcname> in!",
+        "miss_msg_u": "The water churns around %s but you keep your distance!",
+        "miss_msg_npc": "The water churns around %s but <npcname> keeps their distance!"
+      },
+    "death_function": { "message": "The %s falls dissolves into foam!", "corpse_type": "NO_CORPSE" },
+    "flags": [ "SEES", "HEARS", "SMELLS", "SWIMS", "AQUATIC", "NO_BREATHE" ]
   }
 ]
