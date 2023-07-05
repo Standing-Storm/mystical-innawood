@@ -1,15 +1,23 @@
 [
   {
-    "id": "mon_bear_nature_guardian",
+    "id": "mon_bear_thorn",
     "type": "MONSTER",
     "copy-from": "mon_bear",
-    "name": "Nature's Guardian",
-    "description": "A bear changed by the power of the forest.  Its eyes are a brilliant green amd moss grows throughout its thick fur.",
+    "name": "Thorn-bear",
+    "description": "A bear changed by the power of the forest.  Its eyes are a brilliant green, moss grows throughout its thick fur, and foot-long woody thorns sprout from its body.",
     "default_faction": "forest_elemental_faction",
-    "melee_skill": 6,
-    "armor": { "bash": 10, "cut": 5 },
-    "aggression": 30,
+    "melee_skill": 7,
+    "armor": { "bash": 10, "cut": 8 },
+    "aggression": -10,
     "morale": 200,
+    "harvest": "harvest_thornbear",
+    "special_attacks": [
+      {
+        "type": "bite",
+        "cooldown": 10,
+        "damage_max_instance": [ { "damage_type": "stab", "amount": 12, "armor_penetration": 8 } ]
+      }
+    ],
     "anger_triggers": [ "HOSTILE_SEEN", "HURT", "STALK", "PLAYER_CLOSE" ],
     "flags": [ "SEES", "HEARS", "SMELLS", "ANIMAL", "WARM", "BASHES", "PUSH_MON", "PATH_AVOID_FIRE", "PRIORITIZE_TARGETS" ]
   }

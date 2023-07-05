@@ -27,5 +27,11 @@
     "copy-from": "alder_bark",
     "name": { "str": "dryad bark" },
     "description": "A strip of bark taken from a fallen dryad.  It's still slightly supple, as though it were attached to a living tree."
+  },
+  {
+    "id": "thornbear_fur"
+  },
+  {
+    "id": "thornbear_thorns"
   }
 ]

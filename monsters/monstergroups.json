@@ -7,8 +7,8 @@
       { "group": "GROUP_FOREST_ELEMENTAL", "weight": 50, "conditions": [ "SPRING", "SUMMER", "AUTUMN", "DAY" ] },
       { "group": "GROUP_EARTH_ELEMENTAL", "weight": 25 },
       { "group": "GROUP_WILDERNESS_FOREST_MAMMAL", "weight": 75, "starts": "28 days" },
-      { "monster": "mon_bear_nature_guardian", "weight": 50 },
-      { "monster": "mon_bear_nature_guardian", "weight": 50, "starts": "60 days" }
+      { "monster": "mon_bear_thorn", "weight": 50 },
+      { "monster": "mon_bear_thorn", "weight": 50, "starts": "60 days" }
     ]
   },
   {
@@ -16,7 +16,7 @@
     "name": "GROUP_WILDERNESS_FOREST_MAMMAL",
     "default": "mon_null",
     "is_animal": true,
-    "monsters": [ { "monster": "mon_bear_nature_guardian", "weight": 1, "cost-multiplier": 15 } ]
+    "monsters": [ { "monster": "mon_bear_thorn", "weight": 1, "cost-multiplier": 15 } ]
   },
   {
     "type": "monstergroup",
