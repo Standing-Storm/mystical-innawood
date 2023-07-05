@@ -22,5 +22,16 @@
     "color": "red",
     "weight": "2 g",
     "volume": "60 ml"
-  }
+  },
+ {
+  "type": "GENERIC",
+    "id": "earth_black_blood",
+  "description": "A thick, gel-like liquid.",
+  "category": "spare_parts",
+   "symbol": "=",
+    "color": "black",
+   "material": [ "alien_liquid" ],
+  "volume": "100 ml",
+    "weight": "174 g",
+ }
 ]
