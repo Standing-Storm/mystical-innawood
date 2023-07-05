@@ -176,6 +176,7 @@
       "NO_FUNG_DMG",
        "PATH_AVOID_FIRE",
       "PRIORITIZE_TARGETS"
-    ]
+    ],
+     "death_drops": "forest_defender_drops"
   }
 ]
