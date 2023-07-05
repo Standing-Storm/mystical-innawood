@@ -17,7 +17,7 @@
   {
     "id": "magical_creature_materials",
     "type": "requirement",
-    "components": [ [ [ "mossling_fur", 1 ], [ "dryad_bark", 1 ], [ "bracken_eye", 1 ], [ "gnome_eye", 1 ], [ "undine_heart", 1 ], [ "earth_black_blood", 1 ] ] ]
+    "components": [ [ [ "mossling_fur", 1 ], [ "dryad_bark", 1 ], [ "bracken_eye", 1 ], [ "gnome_eye", 1 ], [ "undine_heart", 1 ], [ "earth_black_blood", 1 ], [ "thornbear_thorns", 1] ] ]
   },
   {
     "id": "magical_materials",
