@@ -93,7 +93,7 @@
   {
     "type": "effect_on_condition",
     "id": "EOC_SKY_SUMMON_ELEMENTAL",
-    "condition": { "u_is_outside"  },
+    "condition": "u_is_outside",
     "effect": { "u_cast_spell": { "id": "sky_call_sylph_real" } },
     "false_effect": [ { "u_message": "Without the wind on your face, the ritual fails." } ]
   },
@@ -107,7 +107,7 @@
     "flags": [ "RANDOM_AOE" ],
     "shape": "blast",
     "effect": "summon",
-    "effect_str": "mon_spell_sylph",
+    "effect_str": "mon_summon_sylph",
     "min_damage": 1,
     "max_damage": 1,
     "min_range": 3,
