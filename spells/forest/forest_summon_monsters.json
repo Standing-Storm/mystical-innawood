@@ -43,6 +43,7 @@
         
       }
       ],
+    "anger_triggers": [ "FRIEND_ATTACKED" ],
     "flags": [
       "SEES",
       "HEARS",
@@ -51,7 +52,11 @@
       "BASHES",
       "DESTROYS",
       "PUSH_MON",
-      "PUSH_VEH"
+      "PUSH_VEH",
+      "ANIMAL",
+      "KEENNOSE",
+      "NO_FUNG_DMG",
+      "PRIORITIZE_TARGETS"
     ]
   }
 ]
