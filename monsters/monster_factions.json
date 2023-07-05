@@ -3,8 +3,8 @@
     "type": "MONSTER_FACTION",
     "name": "forest_elemental_faction",
     "base_faction": "animal",
-    "neutral": [ "small_animal", "herbivore", "mega_herbivore", "canidae", "fish", "mega_bird" ],
-    "friendly": [ "forest_elemental_faction" ],
+    "neutral": [ "canidae", "fish", "mega_bird" ],
+    "friendly": [ "small_animal", "herbivore", "mega_herbivore" ],
     "hate": [ "zombie", "triffid", "fungus", "nether_player_hate" ],
     "by_mood": [ "human", "player" ]
   },
@@ -12,7 +12,6 @@
     "type": "MONSTER_FACTION",
     "name": "earth_elemental_faction",
     "base_faction": "animal",
-    "friendly": [ "earth_elemental_faction" ],
     "neutral": [ "small_animal", "herbivore" ],
     "hate": [ "zombie", "nether_player_hate" ],
     "by_mood": [ "human", "player" ]
@@ -21,8 +20,16 @@
     "type": "MONSTER_FACTION",
     "name": "sea_elemental_faction",
     "base_faction": "animal",
-    "friendly": [ "sea_elemental_faction" ],
-    "neutral": [ "small_animal", "herbivore" ],
+    "neutral": [ "small_animal", "herbivore", "fish" ],
+    "hate": [ "zombie", "nether_player_hate" ],
+    "by_mood": [ "human", "player" ]
+  },
+  {
+    "type": "MONSTER_FACTION",
+    "name": "sky_elemental_faction",
+    "base_faction": "animal",
+    "friendly": [ "sky_elemental_faction" ],
+    "neutral": [ "mega_bird", "bird" ],
     "hate": [ "zombie", "nether_player_hate" ],
     "by_mood": [ "human", "player" ]
   }

@@ -1,0 +1,16 @@
+[
+  {
+    "id": "mon_bear_nature_guardian",
+    "type": "MONSTER",
+    "copy-from": "mon_bear",
+    "name": "Nature's Guardian",
+    "description": "A bear changed by the power of the forest.  Its eyes are a brilliant green amd moss grows throughout its thick fur.",
+    "default_faction": "forest_elemental_faction",
+    "melee_skill": 6,
+    "armor": { "bash": 10, "cut": 5 },
+    "aggression": 30,
+    "morale": 200,
+    "anger_triggers": [ "HOSTILE_SEEN", "HURT", "STALK", "PLAYER_CLOSE" ],
+    "flags": [ "SEES", "HEARS", "SMELLS", "ANIMAL", "WARM", "BASHES", "PUSH_MON", "PATH_AVOID_FIRE", "PRIORITIZE_TARGETS" ]
+  }
+]

@@ -24,16 +24,16 @@
     "duration_increment": 72000
   },
   {
-    "id": "forest_nature_guardian",
+    "id": "forest_summon_defender_of_wild",
     "type": "SPELL",
-    "name": "Call Nature's Guardian",
-    "description": "This spell summons a fierce bear that will defend you against your enemies.",
+    "name": "Call the Defender of the Wild",
+    "description": "This spell summons a spirit of the forest to defend you against your enemies.  You must be standing in a forest or on grasslands to perform it.",
     "valid_targets": [ "self" ],
     "skill": "occult",
     "flags": [ "CONCENTRATE", "VERBAL", "SOMATIC" ],
     "shape": "blast",
     "effect": "effect_on_condition",
-    "effect_str": "EOC_FOREST_NATURE_GUARDIAN",
+    "effect_str": "EOC_FOREST_DEFENDER_WILD",
     "extra_effects": [ { "id": "channeling_fatigue_spell", "hit_self": true, "max_level": 6 } ],
     "spell_class": "FOREST",
     "energy_source": "MANA",
@@ -49,7 +49,7 @@
   },
   {
     "type": "effect_on_condition",
-    "id": "EOC_FOREST_NATURE_GUARDIAN",
+    "id": "EOC_FOREST_DEFENDER_WILD",
     "condition": {
       "and": [
         "u_is_outside",
@@ -75,20 +75,24 @@
         }
       ]
     },
-    "effect": { "u_cast_spell": { "id": "forest_nature_guardian_real" } },
-    "false_effect": [ { "u_message": "Nature's Guardian can only be summoned when you are standing in the forest or on the grasslands." } ]
+    "effect": { "u_cast_spell": { "id": "forest_summon_defender_of_wild_real" } },
+    "false_effect": [
+      {
+        "u_message": "The Defender of the Wild can only be summoned when you are standing in the forest or on the grasslands."
+      }
+    ]
   },
   {
-    "id": "forest_nature_guardian_real",
+    "id": "forest_summon_defender_of_wild_real",
     "type": "SPELL",
-    "name": "Call Nature's Guardian Actual",
-    "description": "This is the actual spell that summons the nature's guardian.  It's a bug if you have it.",
+    "name": "Call the Defender of the Wild Real",
+    "description": "This is the actual spell that summons the forest spirit.  It's a bug if you have it.",
     "valid_targets": [ "ground" ],
     "skill": "occult",
     "flags": [ "RANDOM_AOE" ],
     "shape": "blast",
     "effect": "summon",
-    "effect_str": "mon_bear_nature_guardian",
+    "effect_str": "mon_summon_defender_wild",
     "min_damage": 1,
     "max_damage": 1,
     "min_range": 3,
@@ -98,6 +102,6 @@
     "max_aoe": 4,
     "max_level": 25,
     "difficulty": 10,
-    "min_duration": { "math": [ "( 36000 + (u_val('spell_level', 'spell: forest_nature_guardian') * 3600) )" ] }
+    "min_duration": { "math": [ "( 36000 + (u_val('spell_level', 'spell: forest_summon_defender_of_wild') * 3600) )" ] }
   }
 ]

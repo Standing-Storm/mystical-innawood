@@ -3,9 +3,10 @@
     "type": "SPECIES",
     "id": "FOREST_ELEMENTAL",
     "description": "A magical being of the forest.",
-    "flags": [ "NEVER_WANDER", "NOGIB", "PATH_AVOID_FIRE" ],
+    "flags": [ "NEVER_WANDER", "PATH_AVOID_FIRE" ],
     "anger_triggers": [ "FRIEND_ATTACKED" ],
-    "fear_triggers": [ "FIRE" ]
+    "fear_triggers": [ "FIRE" ],
+    "bleeds": "fd_blood_veggy"
   },
   {
     "type": "SPECIES",
@@ -20,13 +21,23 @@
     "description": "A magical being of the lakes and rivers.",
     "anger_triggers": [ "FRIEND_ATTACKED" ],
     "flags": [ "ACIDPROOF", "NEVER_WANDER", "NO_FUNG_DMG", "PATH_AVOID_FIRE" ],
-    "fear_triggers": [ "FIRE" ]
+    "fear_triggers": [ "FIRE" ],
+    "bleeds": "fd_fog"
   },
   {
     "type": "SPECIES",
     "id": "SKY_ELEMENTAL",
     "description": "A magical being of wind and rain.",
-    "flags": [ "FLIES", "HARDTOSHOOT", "NEVER_WANDER", "NO_FUNG_DMG" ],
-    "anger_triggers": [ "FRIEND_ATTACKED" ]
+    "flags": [ "FLIES", "NEVER_WANDER", "NO_FUNG_DMG" ],
+    "anger_triggers": [ "FRIEND_ATTACKED" ],
+    "bleeds": "fd_cold_air1"
+  },
+  {
+    "type": "SPECIES",
+    "id": "MOON_ELEMENTAL",
+    "description": "A magical being of the changeable moon.",
+    "flags": [ "NEVER_WANDER", "NO_FUNG_DMG" ],
+    "anger_triggers": [ "FRIEND_ATTACKED" ],
+    "bleeds": "fd_biolum"
   }
 ]

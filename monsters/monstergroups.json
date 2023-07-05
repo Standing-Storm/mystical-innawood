@@ -5,7 +5,8 @@
     "monsters": [
       { "group": "GROUP_FOREST_ELEMENTAL", "weight": 25, "conditions": [ "SPRING", "SUMMER", "AUTUMN" ] },
       { "group": "GROUP_FOREST_ELEMENTAL", "weight": 50, "conditions": [ "SPRING", "SUMMER", "AUTUMN", "DAY" ] },
-      { "group": "GROUP_EARTH_ELEMENTAL", "weight": 25 }
+      { "group": "GROUP_EARTH_ELEMENTAL", "weight": 25 },
+      { "monster": "mon_bear_nature_guardian", "weight": 50, "conditions": [ "SPRING", "SUMMER", "AUTUMN" ] }
     ]
   },
   {
@@ -42,7 +43,7 @@
     "monsters": [
       { "monster": "mon_mossling", "weight": 25, "cost_multiplier": 1 },
       { "monster": "mon_mossling", "weight": 10, "cost_multiplier": 2, "pack_size": [ 1, 3 ] },
-      { "monster": "mon_brackenwight", "weight": 4, "cost_multiplier": 5 }
+      { "monster": "mon_brackenwight", "weight": 8, "cost_multiplier": 5 }
     ]
   },
   {

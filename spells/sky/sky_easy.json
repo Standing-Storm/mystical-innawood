@@ -69,5 +69,53 @@
     "min_duration": 500,
     "max_duration": 30000,
     "duration_increment": 1475
+  },
+  {
+    "id": "sky_call_sylph",
+    "type": "SPELL",
+    "name": "Call the Dancer on the Winds",
+    "description": "This spell summons a spirit of the winds to defend you from your enemies.  You must have the breeze on your face to perform the ritual.",
+    "valid_targets": [ "self" ],
+    "skill": "occult",
+    "flags": [ "CONCENTRATE", "VERBAL", "SOMATIC" ],
+    "shape": "blast",
+    "effect": "effect_on_condition",
+    "effect_str": "EOC_SKY_SUMMON_ELEMENTAL",
+    "extra_effects": [ { "id": "channeling_fatigue_spell", "hit_self": true, "max_level": 1 } ],
+    "spell_class": "SKY",
+    "energy_source": "MANA",
+    "max_level": 20,
+    "difficulty": 3,
+    "base_casting_time": 3000,
+    "min_duration": { "math": [ "( 18000 + (u_val('spell_level', 'spell: sky_call_sylph') * 600) )" ] },
+    "base_energy_cost": 400
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_SKY_SUMMON_ELEMENTAL",
+    "condition": { "u_is_outside"  },
+    "effect": { "u_cast_spell": { "id": "sky_call_sylph_real" } },
+    "false_effect": [ { "u_message": "Without the wind on your face, the ritual fails." } ]
+  },
+  {
+    "id": "sky_call_sylph_real",
+    "type": "SPELL",
+    "name": "Call the Dancer on the Winds real",
+    "description": "This is the actual spell that summons the sylph.  It's a bug if you have it.",
+    "valid_targets": [ "ground" ],
+    "skill": "occult",
+    "flags": [ "RANDOM_AOE" ],
+    "shape": "blast",
+    "effect": "summon",
+    "effect_str": "mon_spell_sylph",
+    "min_damage": 1,
+    "max_damage": 1,
+    "min_range": 3,
+    "max_range": 5,
+    "range_increment": 0.1,
+    "min_aoe": 2,
+    "max_aoe": 4,
+    "max_level": 20,
+    "min_duration": { "math": [ "( 18000 + (u_val('spell_level', 'spell: sky_call_sylph') * 600) )" ] }
   }
 ]
