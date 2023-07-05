@@ -3,7 +3,7 @@
         "id": "mon_summon_sylph",
 "type": "MONSTER",
     "name": "sylph",
-    "description": "A translucent humanoid form, a shimmer in the air, wth long hair hair blowing in the wind.",
+    "description": "A translucent humanoid form, a shimmer in the air, wth long hair hair blowing in the wind.  It flits to and fro, never staying still.",
     "default_faction": "player",
     "species": [ "SKY_ELEMENTAL" ],
         "volume": "62500 ml",
