@@ -29,12 +29,37 @@
     "description": "A strip of bark taken from a fallen dryad.  It's still slightly supple, as though it were attached to a living tree."
   },
   {
-    "id": "thornbear_fur"
+    "type": "COMESTIBLE",
+    "id": "thornbear_fur",
+    "name": { "str": "tuft of thornbear fur", "str_pl": "tufts of thornbear fur" },
+    "description": "A tuft of thornbear fur, thick with moss.",
+    "weight": "55 g",
+    "volume": "125 ml",
+    "symbol": ",",
+    "color": "green",
+    "material": [ "fur", "veggy" ]
   },
   {
-    "id": "thornbear_thorns"
+     "type": "GENERIC",
+    "id": "thornbear_thorns",
+    "name": { "str": "thornbear thorn" },
+    "description": "A long, woody thorn removed from a thornbear.",
+    "weight": "162 g",
+    "volume": "125 ml",
+    "symbol": ",",
+    "color": "green",
+    "material": [ "dry_plant" ]
   },
   {
-    "id": "ghost_lantern_drops"
+    "id": "moon_lantern_dust"
+    "type": "GENERIC",
+    "symbol": "*",
+    "color": "white",
+    "name": "lantern dust",
+    "description": "The remnants of a ghost lantern, a thin grey powder that seems to glow under the light of the moon.",
+    "price": 3800,
+    "material": [ "powder" ],
+    "weight": "5 g",
+    "volume": "250 ml"
   }
 ]
