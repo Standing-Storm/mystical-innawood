@@ -1,0 +1,53 @@
+[
+  {
+    "id": "mon_ghost_lantern",
+    "type": "MONSTER",
+    "name": "ghost lantern",
+    "description": "A patch of luminous air, glowing green or silver or a soft blue.  It moves randomly, its lights changing colors in an indecipherable pattern.",
+    "default_faction": "magical_beast",
+    "bodytype": "blob",
+    "species": [ "MOON_ELEMENTAL" ],
+    "looks_like": "mon_wisp",
+    "volume": "1500 ml",
+    "weight": "136 g",
+    "hp": 20,
+    "speed": 110,
+    "luminance": 16,
+    "material": [ "powder" ],
+    "symbol": "o",
+    "color": "white",
+    "aggression": 5,
+    "morale": 40,
+    "melee_skill": 4,
+    "melee_dice": 1,
+    "melee_dice_sides": 1,
+    "melee_damage": [ { "damage_type": "cut", "amount": 8 } ],
+    "dodge": 6,
+     "armor": { "bash": 50, "cut": 50, "stab": 50, "bullet": 50 },
+    "vision_day": 6,
+    "vision_night": 30,
+    "tracking_distance": 20,
+    "luminance": 30,
+    "special_attacks": [ 
+            {
+                "type": "spell", "spell_data": { "id": "monster_noise_spell", "min_level": 3 },
+                "cooldown": 15,
+                "monster_message": "The ghost-light pulses in the strange, hypnotic pattern."
+            }
+        ],
+    "harvest": "exempt",
+    "death_drops": "ghost_lantern_drops",
+    "anger_triggers": [ "PLAYER_CLOSE" ],
+    "death_function": { "message": "The %s suddenly winks out!", "corpse_type": "NO_CORPSE" },
+    "flags": [
+      "SEES",
+      "HEARS",
+      "FLIES",
+      "PATH_AVOID_DANGER_1",
+      "HARDTOSHOOT",
+      "NOGIB",
+      "NOHEAD",
+      "NO_BREATHE"
+    ]
+  }
+]
