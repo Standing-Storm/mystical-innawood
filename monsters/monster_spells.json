@@ -70,5 +70,22 @@
     "min_duration": 100,
     "max_duration": 300,
     "duration_increment": 40
-  }
+  },
+  {
+		"id": "monster_noise_spell",
+		"type": "SPELL",
+		"name": "Monster Alert enemies",
+		"description": "Causes noise at target location.",
+		"valid_targets": [ "hostile" ],
+		"flags": [ "CONCENTRATE", "NO_PROJECTILE", "RANDOM_DAMAGE" ],
+		"difficulty": 1,
+		"max_level": 20,
+		"effect": "noise",
+		"shape": "blast",
+		"min_damage": 10,
+		"max_damage": 50,
+		"min_range": 25,
+		"sound_type": "activity",
+		"sound_description": "static"
+	},
 ]
