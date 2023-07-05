@@ -32,7 +32,7 @@
             {
                 "type": "spell", "spell_data": { "id": "monster_noise_spell", "min_level": 3 },
                 "cooldown": 15,
-                "monster_message": "The ghost-light pulses in the strange, hypnotic pattern."
+                "monster_message": "The ghost-light pulses in a strange, hypnotic pattern."
             }
         ],
     "harvest": "exempt",
