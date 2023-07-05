@@ -39,5 +39,12 @@
     "flags": [ "NEVER_WANDER", "NO_FUNG_DMG" ],
     "anger_triggers": [ "FRIEND_ATTACKED" ],
     "bleeds": "fd_biolum"
+  },
+  {
+    "type": "SPECIES",
+    "id": "SHADOW_ELEMENTAL",
+    "description": "A magical being of darkness and the night.",
+    "flags": [ "NEVER_WANDER", "NO_FUNG_DMG" ],
+    "anger_triggers": [ "FRIEND_ATTACKED" ]
   }
 ]
