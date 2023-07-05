@@ -71,7 +71,7 @@
     "monsters": [
       { "monster": "mon_earth_gnome", "weight": 25, "cost_multiplier": 1 },
       { "monster": "mon_earth_gnome", "weight": 8, "cost_multiplier": 3, "pack_size": [ 2, 4 ] },
-      { "monster": "mon_earth_black_blood", "weight": 8, "cost_multiplier": 2, "pack_size": [ 1, 4 ] }
+      { "monster": "mon_earth_black_blood", "weight": 15, "cost_multiplier": 2, "pack_size": [ 1, 4 ] }
     ]
   },
   {
