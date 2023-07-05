@@ -28,9 +28,15 @@
     "type": "MONSTER_FACTION",
     "name": "sky_elemental_faction",
     "base_faction": "animal",
-    "friendly": [ "sky_elemental_faction" ],
     "neutral": [ "mega_bird", "bird" ],
     "hate": [ "zombie", "nether_player_hate" ],
+    "by_mood": [ "human", "player" ]
+  },
+  {
+    "type": "MONSTER_FACTION",
+    "name": "moon_elemental_faction",
+    "base_faction": "animal",
+    "hate": [ "nether_player_hate" ],
     "by_mood": [ "human", "player" ]
   }
 ]
