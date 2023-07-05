@@ -7,6 +7,7 @@
       { "group": "GROUP_FOREST_ELEMENTAL", "weight": 50, "conditions": [ "SPRING", "SUMMER", "AUTUMN", "DAY" ] },
       { "group": "GROUP_EARTH_ELEMENTAL", "weight": 25 },
       { "group": "GROUP_WILDERNESS_FOREST_MAMMAL", "weight": 75, "starts": "28 days" },
+      { "group": "GROUP_MOON_ELEMENTAL", "weight": 80, "conditions": [ "NIGHT" ] },
       { "monster": "mon_bear_thorn", "weight": 50 },
       { "monster": "mon_bear_thorn", "weight": 50, "starts": "60 days" }
     ]
@@ -86,5 +87,10 @@
     "type": "monstergroup",
     "name": "GROUP_SEA_ELEMENTAL_SWAMP",
     "monsters": [ { "monster": "mon_undine", "weight": 25, "cost_multiplier": 1 } ]
+  },
+ {
+    "type": "monstergroup",
+    "name": "GROUP_MOON_ELEMENTAL",
+    "monsters": [ { "monster": "mon_ghost_lantern", "weight": 25 } ]
   }
 ]
