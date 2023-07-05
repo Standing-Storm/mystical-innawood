@@ -1,5 +1,29 @@
 [
     {
         "id": "mon_summon_sylph",
+"type": "MONSTER",
+    "name": "sylph",
+    "description": "A translucent humanoid form, a shimmer in the air, wth long hair hair blowing in the wind.",
+    "default_faction": "player",
+    "species": [ "SKY_ELEMENTAL" ],
+        "volume": "62500 ml",
+    "weight": "81500 g",
+    "hp": 30,
+    "speed": 120,
+    "symbol": "/",
+    "color": "white",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 5,
+    "melee_dice": 1,
+    "melee_dice_sides": 5,
+    "dodge": 6,
+        "armor": { "bash": 10, "cut": 10, "stab": 10, "bullet": 10 }
+    "vision_day": 30,
+    "vision_night": 6,
+    "material": [ "wind" ],
+    "harvest": "exempt",
+    "death_function": { "corpse_type": "NO_CORPSE", "message": "The %s blows away on the wind." },
+    "flags": [ "SEES", "HEARS", "NOHEAD", "HARDTOSHOOT", "FLIES", "PRIORITIZE_TARGETS", "NO_BREATHE", "NOGIB", "PLASTIC", "HIT_AND_RUN" ]
     }
 ]
