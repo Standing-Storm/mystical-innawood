@@ -33,6 +33,21 @@
       "entries": [
         { "item": "earth_black_blood", "prob": 70, "count": [ 1, 2 ] }
       ]
-    
+  },
+   {
+  "id": "forest_defender_drops",
+    "type": "item_group",
+    "subtype": "collection",
+      "entries": [
+        { "item": "earth_black_blood", "prob": 70, "count": [ 1, 2 ] }
+      ]
+  },
+   {
+  "id": "ghost_lantern_drops",
+    "type": "item_group",
+    "subtype": "collection",
+      "entries": [
+        { "item": "moon_lantern_dust", "prob": 50, "count": [ 3, 6 ] }
+      ]
   }
 ]
