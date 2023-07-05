@@ -25,5 +25,14 @@
       { "item": "pebble", "prob": 100, "count": [ 40, 90 ] },
       { "item": "rock_flaking", "prob": 70, "count": [ 3, 6 ] }
     ]
+  },
+  {
+  "id": "black_blood_drops",
+    "type": "item_group",
+    "subtype": "collection",
+      "entries": [
+        { "item": "earth_black_blood", "prob": 70, "count": [ 1, 2 ] }
+      ]
+    
   }
 ]
