@@ -3,7 +3,7 @@
     "id": "moon_travel_teleport",
     "type": "SPELL",
     "name": "Traversing the Moon-lit Bridge",
-    "description": "Travel along the moonbeams from standing stones to standing stones  You must perform this ritual in a stone circle under the moonlight.",
+    "description": "Travel along the moonbeams from standing stones to standing stones  You must perform this ritual in the center of a stone circle under the moonlight.",
     "valid_targets": [ "self" ],
     "skill": "occult",
     "flags": [ "CONCENTRATE", "VERBAL", "SOMATIC" ],
