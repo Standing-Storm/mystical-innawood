@@ -29,7 +29,7 @@
   {
     "id": "herbalism_pfruit_peach_heal",
     "type": "effect_type",
-    "name": [ "Regeneration" ],
+    "name": [ "Ward off Miasma" ],
     "desc": [ "No illness is going to get you down now." ],
     "apply_message": "You feel revitalized.",
     "remove_message": "You cough as the peach's magic fades.",
