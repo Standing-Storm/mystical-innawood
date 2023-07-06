@@ -16,7 +16,7 @@
   {
     "type": "monstergroup",
     "name": "GROUP_WILDERNESS_FOREST_MAMMAL",
-    "monsters": [ { "monster": "mon_bear_thorn", "weight": 1, "cost-multiplier": 15 } ]
+    "monsters": [ { "monster": "mon_bear_thorn", "weight": 1, "cost_multiplier": 15 } ]
   },
   {
     "type": "monstergroup",

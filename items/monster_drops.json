@@ -26,7 +26,8 @@
   {
     "type": "GENERIC",
     "id": "earth_black_blood",
-    "description": "A thick, gel-like liquid.",
+    "name": { "str": "black blood" },
+    "description": "A thick, gel-like liquid that seems to stick to itself more than to anything else.  You could swear it's moving slightly when you're not looking at it.",
     "category": "spare_parts",
     "symbol": "=",
     "color": "black",

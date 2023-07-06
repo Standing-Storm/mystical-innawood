@@ -12,7 +12,6 @@
     "weight": "136 g",
     "hp": 20,
     "speed": 110,
-    "luminance": 16,
     "material": [ "powder" ],
     "symbol": "o",
     "color": "white",

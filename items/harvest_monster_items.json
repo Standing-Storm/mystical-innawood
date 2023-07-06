@@ -55,7 +55,7 @@
     "id": "moon_lantern_dust",
     "symbol": "*",
     "color": "white",
-    "name": "lantern dust",
+    "name": { "str": "lantern dust" },
     "description": "The remnants of a ghost lantern, a thin grey powder that seems to glow under the light of the moon.",
     "price": 3800,
     "material": [ "powder" ],
