@@ -10,7 +10,7 @@
     "difficulty": 4,
     "time": "8 h",
     "components": [ [ [ "paper", 20 ] ] ],
-    "using": [ [ "writing_standard", 1 ], [ "magical_materials", 4 ] ],
+    "using": [ [ "writing_standard", 1 ], [ "magical_materials", 2 ], [ "magical_herbs", 2 ] ],
     "qualities": [ { "id": "MAGICAL_RESEARCH", "level": 1 } ],
     "skill_used": "occult",
     "flags": [ "BLIND_HARD" ],
@@ -31,6 +31,48 @@
           { "u_spawn_item": "used_occult_notes", "suppress_message": true },
           { "u_learn_recipe": "enchanting_magical_sensor" },
           { "u_learn_recipe": "enchantment_research_beginner" }
+        ],
+        "false_effect": [
+          {
+            "u_message": "You really thought you had something here, but it's just a dead end.  You'll have to try again.",
+            "type": "bad"
+          },
+          { "u_spawn_item": "used_occult_notes", "suppress_message": true }
+        ]
+      }
+    ]
+  },
+    {
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "name": "beginner enchantment research",
+    "id": "enchantment_research_beginner",
+    "description": "With your dweomereye, you can see exactly how much magic is present in your writing.  Will that magic transfer into other media if you write on them?",
+    "category": "CC_*",
+    "subcategory": "CSC_*_NESTED",
+    "difficulty": 5,
+    "time": "6 h",
+    "components": [ [ [ "paper", 20 ] ] ],
+    "using": [ [ "writing_formulae_apprentice_standard", 1 ], [ "fabric_standard_nostretch", 2, "LIST"], [ "bone_edible", 3, "LIST"], [ "rock_flaking_any", 3, "LIST" ] ],
+    "qualities": [ { "id": "MAGICAL_RESEARCH", "level": 1 }, { "id": "MAGICAL_SENSE", "level": 1 } ],
+    "skill_used": "occult",
+    "flags": [ "BLIND_HARD" ],
+    "proficiencies": [
+      { "proficiency": "prof_occult_exploration", "required": true },
+      { "proficiency": "prof_thaumatology", "required": false },
+      { "proficiency": "prof_enchanting_basic", "required": false }
+    ],
+    "result_eocs": [
+      {
+        "id": "EOC_ENCHANTING_RESEARCH_BEGINNER",
+        "condition": { "roll_contested": { "math": [ "rng( u_val('intelligence'), u_skill('occult') )" ] }, "difficulty": 13 },
+        "effect": [
+          {
+            "u_message": "Even the simple act of writing using enchanted ink can transfer that power to the medium, if the writing is done in the proper way.  You can definitely use that.  If the quill you were writing with were enchanted as well, how much more powerful would the result be?",
+            "type": "good"
+          },
+          { "u_spawn_item": "used_occult_notes", "suppress_message": true },
+          { "u_learn_recipe": "enchanting_magic_quill" }
         ],
         "false_effect": [
           {
