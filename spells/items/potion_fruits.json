@@ -14,5 +14,18 @@
     "min_duration": 15000,
     "max_duration": 90000,
     "duration_increment": 3000
+  },
+  {
+  "id": "herbalism_pfruit_peach_heal",
+    "type": "SPELL",
+    "name": "Eat the peach potion fruit",
+    "description": "The spell cast when you eat a peach potion fruit.  It's a bug if you see this.  Name is so it displays in the UI.",
+     "valid_targets": [ "self" ],
+    "effect": "attack",
+    "effect_str": "effect_pfruit_cure",
+     "shape": "blast",
+    "flags": [ "SILENT" ],
+    "max_level": 25
+    
   }
 ]
