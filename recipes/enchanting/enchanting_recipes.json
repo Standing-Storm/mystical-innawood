@@ -8,18 +8,19 @@
     "skill_used": "fabrication",
     "difficulty": 4,
     "time": "90 m",
-    "qualities": [ { "id": "MAGICAL_RESEARCH", "level": 1 }, { "id": "CUT", "level": 2 },  { "id": "HAMMER", "level": 2 }, { "id": "ANVIL", "level": 2 } ],
+    "qualities": [
+      { "id": "MAGICAL_RESEARCH", "level": 1 },
+      { "id": "CUT", "level": 2 },
+      { "id": "HAMMER", "level": 2 },
+      { "id": "ANVIL", "level": 2 }
+    ],
     "tools": [ [ [ "forge", 20 ], [ "oxy_torch", 20 ], [ "fake_arc_furnace", 10 ] ], [ [ "metalworking_tongs", -1 ] ] ],
-    "proficiencies": [ 
-      { "proficiency": "prof_metalworking" }, 
+    "proficiencies": [
+      { "proficiency": "prof_metalworking" },
       { "proficiency": "prof_redsmithing" },
       { "proficiency": "prof_occult_exploration", "required": true },
       { "proficiency": "prof_thaumatology" }
     ],
-    "components": [
-      [ [ "glimmerstone", 3 ] ],
-      [ [ "copper", 8 ] ],
-      [ [ "scrap", 2 ], [ "steel_lump", 1 ] ]
-    ]
+    "components": [ [ [ "glimmerstone", 3 ] ], [ [ "copper", 8 ] ], [ [ "scrap", 2 ], [ "steel_lump", 1 ] ] ]
   }
 ]

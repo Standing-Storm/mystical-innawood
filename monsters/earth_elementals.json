@@ -65,20 +65,24 @@
     "path_settings": { "avoid_traps": true, "avoid_sharp": true },
     "death_function": { "corpse_type": "NO_CORPSE", "message": "The %s loses form and sinks into the earth." },
     "special_attacks": [
-   { "id": "ranged_pull", 
-     "cooldown": 20,  
-    "miss_msg_u": "%s reaches for you with a liquid tentacle, but you dodge!",
-    "miss_msg_npc": "%s reaches for <npcname> with a liquid tentacle, but they dodge!", },
+      {
+        "id": "ranged_pull",
+        "cooldown": 20,
+        "miss_msg_u": "%s reaches for you with a liquid tentacle, but you dodge!",
+        "miss_msg_npc": "%s reaches for <npcname> with a liquid tentacle, but they dodge!"
+      },
       { "id": "grab_drag", "cooldown": 3 },
       { "id": "drag_followup" },
-      { "id": "tentacle",
+      {
+        "id": "tentacle",
         "damage_max_instance": [ { "damage_type": "bash", "amount": 10 } ],
-            "hit_dmg_u": "%1$s snaps a liquid tentacle at your %2$s!",
-    "hit_dmg_npc": "%1$s snaps a liquid tentacle at <npcname>!",
-    "no_dmg_msg_u": "%1$s's liquid tentacle lashes out at you without doing any damage.",
-    "no_dmg_msg_npc": "%1$s's liquid tentacle lashes out at <npcname> without doing any damage.",
-    "miss_msg_u": "%s's liquid tentacle snaps at you, but you dodge!",
-    "miss_msg_npc": "%s's liquid tentacle snaps at <npcname>, but they dodge!" }
+        "hit_dmg_u": "%1$s snaps a liquid tentacle at your %2$s!",
+        "hit_dmg_npc": "%1$s snaps a liquid tentacle at <npcname>!",
+        "no_dmg_msg_u": "%1$s's liquid tentacle lashes out at you without doing any damage.",
+        "no_dmg_msg_npc": "%1$s's liquid tentacle lashes out at <npcname> without doing any damage.",
+        "miss_msg_u": "%s's liquid tentacle snaps at you, but you dodge!",
+        "miss_msg_npc": "%s's liquid tentacle snaps at <npcname>, but they dodge!"
+      }
     ],
     "death_drops": "black_blood_drops",
     "flags": [ "HEARS", "GOODHEARING", "NOHEAD", "NO_BREATHE", "ACIDPROOF", "PATH_AVOID_DANGER_1", "STUN_IMMUNE", "GRABS" ]

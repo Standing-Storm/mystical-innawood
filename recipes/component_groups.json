@@ -2,22 +2,67 @@
   {
     "id": "enchanted_components_minor",
     "type": "requirement",
-    "components": [ [ [ "mossling_fur", 4 ], [ "dryad_bark", 1 ], [ "undine_heart", 1 ], [ "earth_black_blood", 1 ],  [ "bracken_eye", 1 ], [ "gnome_eye", 1 ], [ "earth_black_blood", 1 ], [ "thornbear_fur", 4], ["moon_lantern_dust", 2] ] ]
+    "components": [
+      [
+        [ "mossling_fur", 4 ],
+        [ "dryad_bark", 1 ],
+        [ "undine_heart", 1 ],
+        [ "earth_black_blood", 1 ],
+        [ "bracken_eye", 1 ],
+        [ "gnome_eye", 1 ],
+        [ "earth_black_blood", 1 ],
+        [ "thornbear_fur", 4 ],
+        [ "moon_lantern_dust", 2 ]
+      ]
+    ]
   },
   {
     "id": "enchanted_components_medium",
     "type": "requirement",
-    "components": [ [ [ "thornbear_fur", 10], [ "undine_heart", 1 ], [ "dryad_bark", 4 ], [ "witchwood_bark", 1 ],  [ "bracken_eye", 1 ], [ "gnome_eye", 3 ], [ "earth_black_blood", 1 ], ["moon_lantern_dust", 8] ] ]
+    "components": [
+      [
+        [ "thornbear_fur", 10 ],
+        [ "undine_heart", 1 ],
+        [ "dryad_bark", 4 ],
+        [ "witchwood_bark", 1 ],
+        [ "bracken_eye", 1 ],
+        [ "gnome_eye", 3 ],
+        [ "earth_black_blood", 1 ],
+        [ "moon_lantern_dust", 8 ]
+      ]
+    ]
   },
   {
     "id": "enchanted_components_major",
     "type": "requirement",
-    "components": [ [ [ "dryad_bark", 10 ], [ "undine_heart", 3 ], [ "thornbear_fur", 25 ], [ "gnome_eye", 8 ], [ "earth_black_blood", 4 ], [ "witchwood_bark", 3 ], [ "bracken_eye", 1 ], ["moon_lantern_dust", 25 ] ] ]
+    "components": [
+      [
+        [ "dryad_bark", 10 ],
+        [ "undine_heart", 3 ],
+        [ "thornbear_fur", 25 ],
+        [ "gnome_eye", 8 ],
+        [ "earth_black_blood", 4 ],
+        [ "witchwood_bark", 3 ],
+        [ "bracken_eye", 1 ],
+        [ "moon_lantern_dust", 25 ]
+      ]
+    ]
   },
   {
     "id": "magical_creature_materials",
     "type": "requirement",
-    "components": [ [ [ "mossling_fur", 1 ], [ "dryad_bark", 1 ], [ "bracken_eye", 1 ], [ "gnome_eye", 1 ], [ "undine_heart", 1 ], [ "earth_black_blood", 1 ], [ "thornbear_fur", 1], ["moon_lantern_dust", 1] ] ]
+    "components": [
+      [
+        [ "mossling_fur", 1 ],
+        [ "dryad_bark", 1 ],
+        [ "bracken_eye", 1 ],
+        [ "gnome_eye", 1 ],
+        [ "undine_heart", 1 ],
+        [ "earth_black_blood", 1 ],
+        [ "thornbear_fur", 1 ],
+        [ "moon_lantern_dust", 1 ]
+      ]
+    ]
   },
   {
     "id": "magical_materials",
@@ -27,6 +72,6 @@
   {
     "id": "magical_herbs",
     "type": "requirement",
-    "components": [ [ [ "harfry_root", 1 ], [ "morningflower_leaves", 1 ], [ "moonstears_harvested", 1] ] ]
+    "components": [ [ [ "harfry_root", 1 ], [ "morningflower_leaves", 1 ], [ "moonstears_harvested", 1 ] ] ]
   }
 ]

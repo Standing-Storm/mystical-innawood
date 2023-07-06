@@ -117,7 +117,7 @@
     "biosignature": { "biosig_item": "withered", "biosig_timer": 12 },
     "death_function": { "message": "%s collapses into a massive pile of leaves and sticks." }
   },
-   {
+  {
     "id": "mon_defender_wild",
     "type": "MONSTER",
     "name": { "str": "defender of the wild" },
@@ -146,21 +146,7 @@
     "vision_day": 40,
     "vision_night": 10,
     "grab_strength": 50,
-    "special_attacks": [
-      {
-        "id": "impale",
-        "cooldown": 12,
-        "range": 2
-      },
-      {
-         "id": "stag_smash",
-        "cooldown": 15
-      },
-      {
-        "id": "mutant_antler",
-        
-      }
-      ],
+    "special_attacks": [ { "id": "impale", "cooldown": 12, "range": 2 }, { "id": "stag_smash", "cooldown": 15 }, { "id": "mutant_antler" } ],
     "anger_triggers": [ "FRIEND_DIED", "PLAYER_CLOSE", "FRIEND_ATTACKED", "HURT", "FIRE" ],
     "flags": [
       "SEES",
@@ -174,9 +160,9 @@
       "ANIMAL",
       "KEENNOSE",
       "NO_FUNG_DMG",
-       "PATH_AVOID_FIRE",
+      "PATH_AVOID_FIRE",
       "PRIORITIZE_TARGETS"
     ],
-     "death_drops": "forest_defender_drops"
+    "death_drops": "forest_defender_drops"
   }
 ]

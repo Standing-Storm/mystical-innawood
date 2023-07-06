@@ -28,21 +28,7 @@
     "vision_day": 40,
     "vision_night": 10,
     "grab_strength": 50,
-    "special_attacks": [
-      {
-        "id": "impale",
-        "cooldown": 12,
-        "range": 2
-      },
-      {
-         "id": "stag_smash",
-        "cooldown": 15
-      },
-      {
-        "id": "mutant_antler",
-        
-      }
-      ],
+    "special_attacks": [ { "id": "impale", "cooldown": 12, "range": 2 }, { "id": "stag_smash", "cooldown": 15 }, { "id": "mutant_antler" } ],
     "anger_triggers": [ "FRIEND_ATTACKED" ],
     "flags": [
       "SEES",

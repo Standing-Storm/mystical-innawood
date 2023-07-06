@@ -1,12 +1,12 @@
 [
-    {
-        "id": "mon_sky_sylph",
-"type": "MONSTER",
+  {
+    "id": "mon_sky_sylph",
+    "type": "MONSTER",
     "name": "sylph",
     "description": "A translucent humanoid form, a shimmer in the air, wth long hair hair blowing in the wind.  It flits to and fro, never staying still.",
     "default_faction": "sky_elemental_faction",
     "species": [ "SKY_ELEMENTAL" ],
-        "volume": "62500 ml",
+    "volume": "62500 ml",
     "weight": "81500 g",
     "hp": 30,
     "speed": 120,
@@ -18,12 +18,12 @@
     "melee_dice": 1,
     "melee_dice_sides": 5,
     "dodge": 6,
-        "armor": { "bash": 10, "cut": 10, "stab": 10, "bullet": 10 }
+    "armor": { "bash": 10, "cut": 10, "stab": 10, "bullet": 10 },
     "vision_day": 30,
     "vision_night": 6,
     "material": [ "wind" ],
     "harvest": "exempt",
     "death_function": { "corpse_type": "NO_CORPSE", "message": "The %s blows away on the wind." },
     "flags": [ "SEES", "HEARS", "NOHEAD", "HARDTOSHOOT", "FLIES", "SWARMS", "NO_BREATHE", "NOGIB", "PLASTIC", "HIT_AND_RUN" ]
-    }
+  }
 ]

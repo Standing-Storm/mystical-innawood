@@ -98,7 +98,8 @@
         "hit_dmg_npc": "The water around %s suddenly pulls <npcname> in!",
         "miss_msg_u": "The water churns around %s but you keep your distance!",
         "miss_msg_npc": "The water churns around %s but <npcname> keeps their distance!"
-      },
+      }
+    ],
     "death_function": { "message": "The %s falls dissolves into foam!", "corpse_type": "NO_CORPSE" },
     "flags": [ "SEES", "HEARS", "SMELLS", "SWIMS", "AQUATIC", "NO_BREATHE" ]
   }

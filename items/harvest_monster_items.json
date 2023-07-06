@@ -40,7 +40,7 @@
     "material": [ "fur", "veggy" ]
   },
   {
-     "type": "GENERIC",
+    "type": "GENERIC",
     "id": "thornbear_thorns",
     "name": { "str": "thornbear thorn" },
     "description": "A long, woody thorn removed from a thornbear.",
@@ -51,7 +51,7 @@
     "material": [ "dry_plant" ]
   },
   {
-    "id": "moon_lantern_dust"
+    "id": "moon_lantern_dust",
     "type": "GENERIC",
     "symbol": "*",
     "color": "white",

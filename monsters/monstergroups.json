@@ -26,7 +26,11 @@
   {
     "type": "monstergroup",
     "name": "GROUP_RIVER",
-    "monsters": [ { "group": "GROUP_SEA_ELEMENTAL", "weight": 10 }, { "monster": "mon_ghost_lantern", "weight": 5, "conditions": [ "NIGHT" ] }, { "group": "GROUP_SKY_ELEMENTAL", "weight": 1 } ]
+    "monsters": [
+      { "group": "GROUP_SEA_ELEMENTAL", "weight": 10 },
+      { "monster": "mon_ghost_lantern", "weight": 5, "conditions": [ "NIGHT" ] },
+      { "group": "GROUP_SKY_ELEMENTAL", "weight": 1 }
+    ]
   },
   {
     "type": "monstergroup",
@@ -48,7 +52,7 @@
       { "monster": "mon_dryad", "weight": 3, "cost_multiplier": 2, "pack_size": [ 2, 4 ] },
       { "monster": "mon_brackenwight", "weight": 2, "cost_multiplier": 5 },
       { "monster": "mon_defender_wild", "weight": 3, "cost_multiplier": 10 },
-      { "monster": "mon_defender_wild", "weight": 1, "cost_multiplier": 10,  "pack_size": [ 2, 2 ] }
+      { "monster": "mon_defender_wild", "weight": 1, "cost_multiplier": 10, "pack_size": [ 2, 2 ] }
     ]
   },
   {
@@ -63,9 +67,11 @@
   {
     "type": "monstergroup",
     "name": "GROUP_EARTH_ELEMENTAL",
-    "monsters": [ { "monster": "mon_earth_gnome", "weight": 25, "cost_multiplier": 1 },
-    { "monster": "mon_earth_black_blood", "weight": 25, "cost_multiplier": 2 },
-    { "monster": "mon_earth_black_blood", "weight": 8, "cost_multiplier": 2, "pack_size": [ 2, 4 ] } ]
+    "monsters": [
+      { "monster": "mon_earth_gnome", "weight": 25, "cost_multiplier": 1 },
+      { "monster": "mon_earth_black_blood", "weight": 25, "cost_multiplier": 2 },
+      { "monster": "mon_earth_black_blood", "weight": 8, "cost_multiplier": 2, "pack_size": [ 2, 4 ] }
+    ]
   },
   {
     "type": "monstergroup",
@@ -82,7 +88,7 @@
     "monsters": [
       { "monster": "mon_undine", "weight": 10 },
       { "monster": "mon_undine", "weight": 3, "cost_multiplier": 2, "pack_size": [ 2, 3 ] },
-      { "monster": "mon_undertow", "weight": 6 },
+      { "monster": "mon_undertow", "weight": 6 }
     ]
   },
   {
@@ -90,13 +96,15 @@
     "name": "GROUP_SEA_ELEMENTAL_SWAMP",
     "monsters": [ { "monster": "mon_undine", "weight": 25, "cost_multiplier": 1 } ]
   },
- {
+  {
     "type": "monstergroup",
     "name": "GROUP_SKY_ELEMENTAL",
-    "monsters": [ { "monster": "mon_sky_sylph", "weight": 25 },
-    { "monster": "mon_sky_sylph", "weight": 6, "cost_multiplier": 2, "pack_size": [ 2, 3 ] },]
+    "monsters": [
+      { "monster": "mon_sky_sylph", "weight": 25 },
+      { "monster": "mon_sky_sylph", "weight": 6, "cost_multiplier": 2, "pack_size": [ 2, 3 ] }
+    ]
   },
- {
+  {
     "type": "monstergroup",
     "name": "GROUP_MOON_ELEMENTAL",
     "monsters": [ { "monster": "mon_ghost_lantern", "weight": 25 } ]

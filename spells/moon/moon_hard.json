@@ -1,23 +1,23 @@
 [
-  	{  
-		"id": "moon_travel_teleport",
-		"type": "SPELL",
-		"name": "Traversing the Moon-lit Bridge",
-		"description": "Teleport to an attuned location [use the Construct menu to attune].",
-		"valid_targets": [ "self" ],
-		"skill": "occult",
-		"flags": [ "CONCENTRATE", "VERBAL", "SOMATIC" ],
-		"effect": "effect_on_condition",
-      "effect_str": "EOC_MOON_TRANSLOCATE",
-		"extra_effects": [ { "id": "channeling_fatigue_spell", "hit_self": true, "max_level": 8 } ],
-		"shape": "blast",
-		"difficulty": 10,
-		"max_level": 20,
-      "spell_class": "MOON",
-		"energy_source": "MANA",
-		"base_energy_cost": 1500,
-		"base_casting_time": 180000,
-		"final_casting_time": 60000,
-		"casting_time_increment": -6000
-	}
+  {
+    "id": "moon_travel_teleport",
+    "type": "SPELL",
+    "name": "Traversing the Moon-lit Bridge",
+    "description": "Teleport to an attuned location [use the Construct menu to attune].",
+    "valid_targets": [ "self" ],
+    "skill": "occult",
+    "flags": [ "CONCENTRATE", "VERBAL", "SOMATIC" ],
+    "effect": "effect_on_condition",
+    "effect_str": "EOC_MOON_TRANSLOCATE",
+    "extra_effects": [ { "id": "channeling_fatigue_spell", "hit_self": true, "max_level": 8 } ],
+    "shape": "blast",
+    "difficulty": 10,
+    "max_level": 20,
+    "spell_class": "MOON",
+    "energy_source": "MANA",
+    "base_energy_cost": 1500,
+    "base_casting_time": 180000,
+    "final_casting_time": 60000,
+    "casting_time_increment": -6000
+  }
 ]
