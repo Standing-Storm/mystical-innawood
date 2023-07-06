@@ -2,9 +2,9 @@
   {
     "id": "effect_pfruit_heal",
     "type": "effect_type",
-    "name": [ "Regeneration" ],
+    "name": [ "Restore Flesh and Bone" ],
     "desc": [ "Thanks to that apple, your wounds are slowly healing." ],
-    "apply_message": "Your flesh and bones start to regenerate before your eyes.",
+    "apply_message": "Your flesh and bones start to knit together before your eyes.",
     "remove_message": "Your regeneration slows down.",
     "rating": "good",
     "show_intensity": false,
@@ -25,5 +25,16 @@
     "effect": "attack",
     "shape": "blast",
     "flags": [ "SILENT" ]
+  },
+  {
+    "id": "herbalism_pfruit_peach_heal",
+    "type": "effect_type",
+    "name": [ "Regeneration" ],
+    "desc": [ "No illness is going to get you down now." ],
+    "apply_message": "You feel revitalized.",
+    "remove_message": "You cough as the peach's magic fades.",
+    "rating": "good",
+    "show_intensity": false,
+    "removes_effects": [ "scurvy", "redcells_anemia", "anemia", "toxin_buildup", "common_cold", "flu" ]
   }
 ]
