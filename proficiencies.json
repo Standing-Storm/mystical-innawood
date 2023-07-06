@@ -32,7 +32,7 @@
     "can_learn": true,
     "default_time_multiplier": 1.5,
     "default_skill_penalty": 0.25,
-    "time_to_learn": "32 h"
+    "time_to_learn": "18 h"
   },
   {
     "type": "proficiency",
@@ -43,18 +43,18 @@
     "can_learn": true,
     "default_time_multiplier": 3,
     "default_skill_penalty": 0.2,
-    "time_to_learn": "72 h"
+    "time_to_learn": "36 h"
   },
   {
     "type": "proficiency",
     "id": "prof_spellcrafting_basic",
-    "name": { "str": "Spellcrafting Basics" },
+    "name": { "str": "Spellcrafting" },
     "category": "prof_occult_research",
     "description": "You have enough occult knowledge to develop new magical rituals, with the proper research.",
     "can_learn": true,
-    "default_time_multiplier": 4,
+    "default_time_multiplier": 3,
     "default_skill_penalty": 0.3,
-    "time_to_learn": "168 h"
+    "time_to_learn": "72 h"
   },
   {
     "type": "proficiency",
