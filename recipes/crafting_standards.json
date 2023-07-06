@@ -21,12 +21,12 @@
     "id": "writing_formulae_journeyman_standard",
     "type": "requirement",
     "//": "Tools and components for writing intermediate spells.",
-    "tools": [ [ [ "feather", -1 ], [ "magical_ink_journeyman", 5 ] ] ]
+    "tools": [ [ [ "enchanting_magic_quill", -1 ], [ "magical_ink_journeyman", 5 ] ] ]
   },
       {
     "id": "writing_formulae_mage_standard",
     "type": "requirement",
     "//": "Tools and components for writing complex spells.",
-    "tools": [ [ [ "feather", -1 ], [ "magical_ink_mage", 5 ] ] ]
+    "tools": [ [ [ "enchanting_magic_quill", -1 ], [ "magical_ink_mage", 5 ] ] ]
   }
 ]
