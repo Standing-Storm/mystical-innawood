@@ -11,7 +11,7 @@
   },
   {
     "type": "tool_quality",
-    "id": "SPELLCRAFTING",
-    "name": { "str": "spellcrafting" }
+    "id": "MAGICAL_WRITING",
+    "name": { "str": "Spellcrafting" }
   }
 ]
