@@ -34,7 +34,7 @@
   {
     "type": "AMMO",
     "id": "herbalism_morningflower_extract",
-    "name": { "str_sp": "morningroot extract" },
+    "name": { "str_sp": "morningflower leaf extract" },
     "copy-from": "herbalism_extract_abstract",
     "description": "The processed extract of morningflower leaves, ready to be used for further rituals."
   },
