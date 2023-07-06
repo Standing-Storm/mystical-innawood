@@ -40,7 +40,8 @@
       "terrain": {
         ",": [ [ "t_moss", 50 ], [ "t_grass", 25 ], [ "t_dirt", 25 ] ],
         ".": [ [ "t_grass", 25 ], [ "t_dirt", 25 ] ],
-        "m": [ [ "t_moon_ground", 1 ] ]
+        "m": [ [ "t_moon_ground" ] ],
+        "A": [ [ "t_moon_ground" ] ] 
       }
     }
   }
