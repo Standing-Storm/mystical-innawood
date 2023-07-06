@@ -25,7 +25,8 @@
     "effect_str": "effect_pfruit_cure",
      "shape": "blast",
     "flags": [ "SILENT" ],
-    "max_level": 25
+    "max_level": 25,
+    "min_duration": 8640000
     
   }
 ]
