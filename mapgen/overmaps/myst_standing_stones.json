@@ -1,10 +1,5 @@
 [
   {
-    "type": "palette",
-    "id": "myst_standing_stones_palette",
-    "furniture": { "S": "f_myst_standing_stone", "A": "f_moon_altar" }
-  },
-  {
     "type": "mapgen",
     "method": "json",
     "om_terrain": "myst_standing_stones",
@@ -36,13 +31,13 @@
         "........................",
         "........................"
       ],
-      "palettes": [ "myst_standing_stones_palette" ],
       "terrain": {
         ",": [ [ "t_moss", 50 ], [ "t_grass", 25 ], [ "t_dirt", 25 ] ],
         ".": [ [ "t_grass", 25 ], [ "t_dirt", 25 ] ],
         "m": [ [ "t_moon_ground" ] ],
         "A": [ [ "t_moon_ground" ] ] 
-      }
+      },
+      "furniture": { "S": [ ["f_myst_standing_stone", 50 ], [ "f_myst_broken_stone", 50 ] ], "A": "f_moon_altar" }
     }
   }
 ]
