@@ -1,0 +1,13 @@
+[
+  {
+    "type": "ter_furn_transform",
+    "id": "altar_to_moon_altar",
+    "terrain": [
+      {
+        "result": "f_moon_altar_active",
+        "valid_terrain": [ "f_moon_altar" ],
+        "message": "The moon's power fills you, and as you direct it into the altar, it begins glowing with a soft light!"
+      }
+    ]
+  }
+]

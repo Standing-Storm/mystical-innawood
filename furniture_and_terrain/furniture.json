@@ -1,0 +1,42 @@
+[
+  {
+    "type": "furniture",
+    "id": "f_moon_altar",
+    "name": "stone altar",
+    "move_cost_mod": 10,
+    "symbol": "H",
+    "color": "light_gray",
+    "looks_like": "f_altar",
+    "coverage": 40,
+    "required_str": 30,
+    "description": "An ancient stone altar, moss-grown and weather-worn.  Whatever purpose it was once used for has long been erased by time.",
+    "bash": {
+      "str_min": 30,
+      "str_max": 160,
+      "sound": "smash!",
+      "sound_fail": "thump.",
+      "items": [ { "item": "rock", "count": [ 5, 15 ] }, { "item": "sharp_rock", "count": [ 3, 5 ] } ]
+    }
+  },
+  {
+    "type": "furniture",
+    "id": "f_moon_altar_active",
+    "name": "glowing stone altar",
+    "move_cost_mod": 10,
+    "symbol": "H",
+    "color": "white",
+    "looks_like": "f_altar",
+    "light_emitted": 40,
+    "coverage": 40,
+    "required_str": 30,
+    "description": "An ancient stone altar, moss-grown and weather-worn.  The soft silvery light that emanates from it after the ritual you performed gives you a good idea what its purpose is.",
+    "bash": {
+      "str_min": 30,
+      "str_max": 160,
+      "sound": "smash!",
+      "sound_fail": "thump.",
+      "items": [ { "item": "rock", "count": [ 5, 15 ] }, { "item": "sharp_rock", "count": [ 3, 5 ] } ]
+    },
+    "flags": [ "TRANSLOCATOR" ]
+  }
+]

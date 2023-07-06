@@ -29,5 +29,22 @@
     "volume": "50 ml",
     "weight": "85 g",
     "flags": [ "LIGHT_15" ]
+  },
+  {
+    "type": "AMMO",
+    "id": "glimmerstone_dust",
+    "category": "chems",
+    "price": 3000,
+    "price_postapoc": 500,
+    "name": { "str_sp": "glimmerstone dust" },
+    "symbol": ",",
+    "color": "light_blue",
+    "description": "Crushed and powdered glimmerstone.  Even the fragments still sparkle slightly.",
+    "material": [ "gemstone" ],
+    "volume": "50 ml",
+    "weight": "85 g",
+    "ammo_type": "components",
+    "count": 10,
+    "flags": [ "LIGHT_5" ]
   }
 ]

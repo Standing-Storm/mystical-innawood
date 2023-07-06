@@ -3,7 +3,7 @@
     "id": "moon_travel_teleport",
     "type": "SPELL",
     "name": "Traversing the Moon-lit Bridge",
-    "description": "Teleport to an attuned location [use the Construct menu to attune].",
+    "description": "Travel along the moonbeams from standing stones to standing stones  You must perform this ritual in a stone circle under the moonlight.",
     "valid_targets": [ "self" ],
     "skill": "occult",
     "flags": [ "CONCENTRATE", "VERBAL", "SOMATIC" ],
@@ -19,5 +19,25 @@
     "base_casting_time": 180000,
     "final_casting_time": 60000,
     "casting_time_increment": -6000
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_MOON_TRANSLOCATE",
+    "condition": { "and": [ { "not": "is_day" }, { "u_is_on_terrain": "t_moon_ground" } ] },
+    "effect": { "u_cast_spell": { "id": "moon_travel_teleport_real" } },
+    "false_effect": [
+      {
+        "u_message": "Without being performed within the bounds of a circle of standing stones under the moonlight, the ritual fails."
+      }
+    ]
+  },
+  {
+    "id": "moon_travel_teleport",
+    "type": "SPELL",
+    "name": "Traversing the Moon-lit Bridge real",
+    "description": "The actual spell that teleports you.  It's a bug if you have it.",
+    "valid_targets": [ "self" ],
+    "effect": "translocate",
+    "shape": "blast"
   }
 ]

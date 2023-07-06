@@ -80,5 +80,43 @@
     "shape": "blast",
     "base_casting_time": 90000,
     "min_duration": 4320000
+  },
+  {
+    "id": "moon_altar_awaken",
+    "type": "SPELL",
+    "name": { "str": "Awakening the Altar of Moonlight" },
+    "valid_targets": [ "ground" ],
+    "description": "Peform the ritual to awaken a moonbridge altar.  You must be ritually purified and next to the altar or the ritual will fail.",
+    "flags": [ "CONCENTRATION", "VERBAL", "SOMATIC", "NO_FAIL" ],
+    "max_level": 1,
+    "max_level": 1,
+    "effect": "attack",
+    "extra_effects": [ { "id": "channeling_fatigue_spell", "hit_self": true, "max_level": 3 } ],
+    "components": "spell_components_altar_awaken",
+    "shape": "blast",
+    "base_casting_time": 180000
+  },
+  {
+    "id": "EOC_AWAKEN_ALTAR_OF_MOONLIGHT",
+    "condition": { "u_has_effect": "effect_ritually_purified" },
+    "effect": [ { "u_cast_spell": "moon_altar_awaken_real" } ],
+    "false_effect": [
+      { "u_message": "Without the proper preparations, the ritual fails.", "type": "bad" },
+      { "u_add_effect": "channeling_fatigue_spell", "duration": "5 seconds" },
+      { "u_add_effect": "visuals", "duration": [ "5 minutes", "10 minutes" ] }
+    ]
+  },
+  {
+    "id": "moon_altar_awaken_real",
+    "type": "SPELL",
+    "name": { "str": "Awakening the Altar of Moonlight" },
+    "valid_targets": [ "ground" ],
+    "description": "The actual spell spell that awakens the altar.  It's a bug if you have it.",
+    "flags": [ "CONCENTRATION", "VERBAL", "SOMATIC", "NO_FAIL" ],
+    "max_level": 1,
+    "max_level": 1,
+    "effect": "ter_transform",
+    "effect_str": "altar_to_moon_altar",
+    "min_aoe": 5
   }
 ]
