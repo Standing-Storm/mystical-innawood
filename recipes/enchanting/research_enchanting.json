@@ -42,7 +42,7 @@
       }
     ]
   },
-    {
+  {
     "type": "recipe",
     "activity_level": "LIGHT_EXERCISE",
     "name": "beginner enchantment research",
@@ -53,7 +53,12 @@
     "difficulty": 5,
     "time": "6 h",
     "components": [ [ [ "paper", 20 ] ] ],
-    "using": [ [ "writing_formulae_apprentice_standard", 1 ], [ "fabric_standard_nostretch", 2, "LIST"], [ "bone_edible", 3, "LIST"], [ "rock_flaking_any", 3, "LIST" ] ],
+    "using": [
+      [ "writing_formulae_apprentice_standard", 1 ],
+      [ "fabric_standard_nostretch", 2, "LIST" ],
+      [ "bone_edible", 3, "LIST" ],
+      [ "rock_flaking_any", 3, "LIST" ]
+    ],
     "qualities": [ { "id": "MAGICAL_RESEARCH", "level": 1 }, { "id": "MAGICAL_SENSE", "level": 1 } ],
     "skill_used": "occult",
     "flags": [ "BLIND_HARD" ],

@@ -54,7 +54,11 @@
     "time": "8 h",
     "components": [ [ [ "paper", 40 ] ] ],
     "using": [ [ "writing_formulae_apprentice_standard", 1 ] ],
-    "qualities": [ { "id": "MAGICAL_RESEARCH", "level": 1 }, { "id": "MAGICAL_SENSE", "level": 1 }, { "id": "MAGICAL_WRITING", "level": 1 } ],
+    "qualities": [
+      { "id": "MAGICAL_RESEARCH", "level": 1 },
+      { "id": "MAGICAL_SENSE", "level": 1 },
+      { "id": "MAGICAL_WRITING", "level": 1 }
+    ],
     "skill_used": "occult",
     "flags": [ "BLIND_HARD" ],
     "proficiencies": [
@@ -66,41 +70,36 @@
       {
         "id": "EOC_SPELLCRAFTING_CRYSTALLIZE_MANA",
         "condition": { "and": [ { "u_has_effect": "effect_detect_magic" }, { "u_has_effect": "effect_ritually_purified" } ] },
-        "effect": [
-          { "run_eocs": [ "EOC_SPELLCRAFTING_CRYSTALLIZE_MANA_2" ] } 
-        ],
+        "effect": [ { "run_eocs": [ "EOC_SPELLCRAFTING_CRYSTALLIZE_MANA_2" ] } ],
         "false_effect": [
-          {
-            "u_message": "Without the proper preparations, your research never had any hope of succeeding.",
-            "type": "bad"
-          },
+          { "u_message": "Without the proper preparations, your research never had any hope of succeeding.", "type": "bad" },
           { "u_spawn_item": "used_occult_notes", "suppress_message": true },
           { "u_add_effect": "channeling_fatigue_spell", "duration": "20 seconds" }
         ]
       }
     ]
   },
-   {
-     "type": "effect_on_condition",
-        "id": "EOC_SPELLCRAFTING_CRYSTALLIZE_MANA_2",
-        "condition": { "roll_contested": { "math": [ "rng( u_val('intelligence'), u_skill('occult') )" ] }, "difficulty": 14 },
-        "effect": [
-          {
-            "u_message": "You've done it.  After many false starts and grueling hours of chanting the rites, you have a chunk of faintly-glowing crystal in your hands.  Now you just need to record the steps and you can reproduce the ritual at any time.",
-            "type": "good"
-          },
-          { "u_learn_recipe": "spell_formula_crystallize_mana" },
-          { "u_spawn_item": "used_occult_notes", "suppress_message": true },
-          { "u_spawn_item": "crystallized_mana", "count": 1, "suppress_message": true },
-          { "u_add_effect": "channeling_fatigue_spell", "duration": "20 seconds" }
-        ],
-        "false_effect": [
-          {
-            "u_message": "Despite exhausting yourself with the effort, you never managed to produce any material substance.  You'll have to try again.",
-            "type": "bad"
-          },
-          { "u_spawn_item": "used_occult_notes", "suppress_message": true },
-          { "u_add_effect": "channeling_fatigue_spell", "duration": "20 seconds" }
-        ]
-      }
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_SPELLCRAFTING_CRYSTALLIZE_MANA_2",
+    "condition": { "roll_contested": { "math": [ "rng( u_val('intelligence'), u_skill('occult') )" ] }, "difficulty": 14 },
+    "effect": [
+      {
+        "u_message": "You've done it.  After many false starts and grueling hours of chanting the rites, you have a chunk of faintly-glowing crystal in your hands.  Now you just need to record the steps and you can reproduce the ritual at any time.",
+        "type": "good"
+      },
+      { "u_learn_recipe": "spell_formula_crystallize_mana" },
+      { "u_spawn_item": "used_occult_notes", "suppress_message": true },
+      { "u_spawn_item": "crystallized_mana", "count": 1, "suppress_message": true },
+      { "u_add_effect": "channeling_fatigue_spell", "duration": "20 seconds" }
+    ],
+    "false_effect": [
+      {
+        "u_message": "Despite exhausting yourself with the effort, you never managed to produce any material substance.  You'll have to try again.",
+        "type": "bad"
+      },
+      { "u_spawn_item": "used_occult_notes", "suppress_message": true },
+      { "u_add_effect": "channeling_fatigue_spell", "duration": "20 seconds" }
+    ]
+  }
 ]

@@ -18,7 +18,7 @@
   },
   {
     "id": "enchanting_magic_quill",
-     "type": "TOOL",
+    "type": "TOOL",
     "name": { "str": "enchanted quill" },
     "copy-from": "feather",
     "description": "A feather that has been specially prepared for writing.  Small runes have been carved along its length.",
