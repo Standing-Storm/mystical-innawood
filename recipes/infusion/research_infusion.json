@@ -35,6 +35,7 @@
     ]
   },
   {
+    "type": "effect_on_condition",
     "id": "EOC_INFUSION_RESEARCH_INTRO_2",
     "condition": { "u_know_recipe": "magical_ink_apprentice" },
     "effect": [
