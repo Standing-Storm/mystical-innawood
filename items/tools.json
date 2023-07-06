@@ -15,5 +15,13 @@
     "symbol": "[",
     "color": "white",
     "qualities": [ [ "MAGICAL_SENSE", 1 ] ]
+  },
+  {
+    "id": "enchanting_magic_quill",
+     "type": "TOOL",
+    "name": { "str": "enchanted quill" },
+    "copy-from": "feather",
+    "description": "A feather that has been specially prepared for writing.  Small runes have been carved along its length.",
+    "qualities": [ [ "MAGICAL_WRITING", 1 ] ]
   }
 ]
