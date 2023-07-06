@@ -10,5 +10,23 @@
     "type": "requirement",
     "//": "Tools and components for writing very basic spells.",
     "tools": [ [ [ "feather", -1 ], [ "magical_ink_simple", 5 ] ] ]
+  },
+    {
+    "id": "writing_formulae_apprentice_standard",
+    "type": "requirement",
+    "//": "Tools and components for writing beginner spells.",
+    "tools": [ [ [ "feather", -1 ], [ "magical_ink_apprentice", 5 ] ] ]
+  },
+  {
+    "id": "writing_formulae_journeyman_standard",
+    "type": "requirement",
+    "//": "Tools and components for writing intermediate spells.",
+    "tools": [ [ [ "feather", -1 ], [ "magical_ink_journeyman", 5 ] ] ]
+  },
+      {
+    "id": "writing_formulae_mage_standard",
+    "type": "requirement",
+    "//": "Tools and components for writing complex spells.",
+    "tools": [ [ [ "feather", -1 ], [ "magical_ink_mage", 5 ] ] ]
   }
 ]
