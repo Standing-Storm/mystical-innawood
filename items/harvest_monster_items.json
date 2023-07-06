@@ -29,7 +29,7 @@
     "description": "A strip of bark taken from a fallen dryad.  It's still slightly supple, as though it were attached to a living tree."
   },
   {
-    "type": "COMESTIBLE",
+    "type": "GENERIC",
     "id": "thornbear_fur",
     "name": { "str": "tuft of thornbear fur", "str_pl": "tufts of thornbear fur" },
     "description": "A tuft of thornbear fur, thick with moss.",
@@ -51,8 +51,8 @@
     "material": [ "dry_plant" ]
   },
   {
-    "id": "moon_lantern_dust",
     "type": "GENERIC",
+    "id": "moon_lantern_dust",
     "symbol": "*",
     "color": "white",
     "name": "lantern dust",
