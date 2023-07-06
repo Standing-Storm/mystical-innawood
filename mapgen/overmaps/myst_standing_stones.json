@@ -37,7 +37,7 @@
         "m": [ [ "t_moon_ground" ] ],
         "A": [ [ "t_moon_ground" ] ] 
       },
-      "furniture": { "S": [ ["f_myst_standing_stone", 50 ], [ "f_myst_broken_stone", 50 ] ], "A": "f_moon_altar" }
+      "furniture": { "S": [ ["f_myst_standing_stone", 65 ], [ "f_rubble", 35 ] ], "A": "f_moon_altar" }
     }
   }
 ]
