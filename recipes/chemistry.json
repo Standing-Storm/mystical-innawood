@@ -30,5 +30,21 @@
     "tools": [ [ [ "surface_heat", 2, "LIST" ] ] ],
     "using": [ [ "enchanted_components_minor", 2 ], [ "magical_herbs", 4 ] ],
     "components": [ [ [ "sweet_fruit", 1, "LIST" ] ], [ [ "salt", 2 ] ], [ [ "vinegar", 2 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "result": "magical_ink_journeyman",
+    "category": "CC_OCCULT",
+    "subcategory": "CSC_OCCULT_MATERIALS",
+    "skill_used": "chemistry",
+    "difficulty": 5,
+    "time": "90 m",
+    "charges": 10,
+    "batch_time_factors": [ 80, 4 ],
+    "qualities": [ { "id": "COOK", "level": 2 }, { "id": "FINE_GRIND", "level": 1 } ],
+    "tools": [ [ [ "surface_heat", 2, "LIST" ] ] ],
+    "using": [ [ "enchanted_components_medium", 2 ], [ "magical_herbs", 8 ], [ "crystallized_mana_base", 1 ] ],
+    "components": [ [ [ "sweet_fruit", 1, "LIST" ] ], [ [ "salt", 2 ] ], [ [ "vinegar", 2 ] ] ]
   }
 ]

@@ -14,5 +14,21 @@
       { "u_learn_recipe": "enchantment_research_intro" }
     ],
     "false_effect": [ { "u_message": "" } ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_JOURNEYMAN_GRIMOIRE_RECIPES",
+    "condition": { "and": [ { "u_has_effect": "effect_detect_magic" }, { "math": [ "var_read_journeyman_grimoire", "!=", "1" ] } ] },
+    "effect": [
+      { "math": [ "var_read_journeyman_grimoire", "=", "1" ] },
+      {
+        "u_message": "As you peruse the grimoire, watching the faint swirl of magic in the ink, thoughts take form.  You can cast multiple spells now, and perform rituals you once would have never dreamed of.  But there's still more power if you can just discover it."
+      },
+      { "u_learn_recipe": "infusion_research_journeyman" },
+      { "u_learn_recipe": "spellcrafting_research_journeyman" },
+      { "u_learn_recipe": "herbalism_research_journeyman" },
+      { "u_learn_recipe": "enchantment_research_journeyman" }
+    ],
+    "false_effect": [ { "u_message": "" } ]
   }
 ]

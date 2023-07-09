@@ -35,7 +35,7 @@
     ]
   },
   {
-    "id": "nested_magical_research",
+    "id": "nested_spellcrafting_research",
     "type": "nested_category",
     "activity_level": "LIGHT_EXERCISE",
     "category": "CC_OCCULT",
@@ -55,7 +55,7 @@
     "name": "infusion research",
     "description": "Recipes related to manipulating the balance of magical energies inherent in living beings.",
     "skill_used": "occult",
-    "nested_category_data": [ "infusion_research_intro" ],
+    "nested_category_data": [ "infusion_research_intro", "infusion_research_mana_pool_1" ],
     "difficulty": 1
   },
   {
@@ -67,7 +67,7 @@
     "name": "enchantment research",
     "description": "Recipes related to drawing magic out of or imbuing it into physical materials.",
     "skill_used": "occult",
-    "nested_category_data": [ "enchantment_research_intro", "enchantment_research_beginner" ],
+    "nested_category_data": [ "enchantment_research_intro", "enchantment_research_beginner", "enchantment_analyze_mana" ],
     "difficulty": 1
   },
   {
@@ -79,19 +79,7 @@
     "name": "herbalism research",
     "description": "Recipes related to studying magical plants and herbs.",
     "skill_used": "occult",
-    "nested_category_data": [ "herbalism_research_intro", "herbalism_research_beginner" ],
-    "difficulty": 1
-  },
-  {
-    "id": "nested_infusion_rituals",
-    "type": "nested_category",
-    "activity_level": "LIGHT_EXERCISE",
-    "category": "CC_OCCULT",
-    "subcategory": "CSC_OCCULT_INFUSION",
-    "name": "infusion rituals",
-    "description": "Rituals that infuse your own body with magical power, either temporarily or permanently.",
-    "skill_used": "occult",
-    "nested_category_data": [ "infusion_rite_of_moon_glow" ],
+    "nested_category_data": [ "herbalism_research_intro", "herbalism_research_beginner", "herbalism_analyze_mana" ],
     "difficulty": 1
   }
 ]

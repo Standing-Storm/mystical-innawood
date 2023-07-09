@@ -1,18 +1,5 @@
 [
   {
-    "id": "effect_actinic_glare",
-    "type": "effect_type",
-    "name": [ "Actinic Glow" ],
-    "desc": [ "The air around you glows with a harsh blue light." ],
-    "rating": "good",
-    "show_intensity": false,
-    "enchantments": [
-      {
-        "values": [ { "value": "LUMINATION", "add": { "math": [ "( u_val('spell_level', 'spell: air_actinic_glare') * 20 )" ] } } ]
-      }
-    ]
-  },
-  {
     "id": "effect_wind_speed",
     "type": "effect_type",
     "name": [ "Speed of the Wind" ],

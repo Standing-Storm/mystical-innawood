@@ -20,7 +20,7 @@
     "damage_increment": 1,
     "max_level": 20,
     "base_casting_time": 120000,
-    "base_energy_cost": 800,
+    "base_energy_cost": 1000,
     "min_duration": 360000,
     "max_duration": 4320000,
     "duration_increment": 72000
@@ -46,7 +46,7 @@
     "casting_time_increment": -8,
     "min_duration": { "math": [ "( 1800 + (u_val('spell_level', 'spell: sea_summon_elemental') * 600) )" ] },
     "max_duration": { "math": [ "( 9600 + (u_val('spell_level', 'spell: sea_summon_elemental') * 800) )" ] },
-    "base_energy_cost": 600
+    "base_energy_cost": 1200
   },
   {
     "type": "effect_on_condition",

@@ -39,7 +39,7 @@
     "max_damage": 5,
     "damage_increment": 0.5,
     "effect": "spawn_item",
-    "effect_str": "crystallized_mana",
+    "effect_str": "crystallized_mana_base",
     "extra_effects": [ { "id": "channeling_fatigue_spell", "hit_self": true, "max_level": 10 } ],
     "shape": "blast",
     "energy_source": "MANA",
@@ -87,8 +87,7 @@
     "name": { "str": "Awakening the Altar of Moonlight" },
     "valid_targets": [ "ground" ],
     "description": "Peform the ritual to awaken a moonbridge altar.  You must be ritually purified and next to the altar or the ritual will fail.",
-    "flags": [ "CONCENTRATION", "VERBAL", "SOMATIC", "NO_FAIL" ],
-    "max_level": 1,
+    "flags": [ "CONCENTRATE", "VERBAL", "SOMATIC", "NO_FAIL" ],
     "max_level": 1,
     "effect": "attack",
     "extra_effects": [ { "id": "channeling_fatigue_spell", "hit_self": true, "max_level": 3 } ],
@@ -97,9 +96,10 @@
     "base_casting_time": 180000
   },
   {
+    "type": "effect_on_condition",
     "id": "EOC_AWAKEN_ALTAR_OF_MOONLIGHT",
     "condition": { "u_has_effect": "effect_ritually_purified" },
-    "effect": [ { "u_cast_spell": "moon_altar_awaken_real" } ],
+    "effect": [ { "u_cast_spell": { "id": "moon_altar_awaken_real" } } ],
     "false_effect": [
       { "u_message": "Without the proper preparations, the ritual fails.", "type": "bad" },
       { "u_add_effect": "channeling_fatigue_spell", "duration": "5 seconds" },
@@ -112,9 +112,9 @@
     "name": { "str": "Awakening the Altar of Moonlight" },
     "valid_targets": [ "ground" ],
     "description": "The actual spell spell that awakens the altar.  It's a bug if you have it.",
-    "flags": [ "CONCENTRATION", "VERBAL", "SOMATIC", "NO_FAIL" ],
+    "flags": [ "CONCENTRATE", "VERBAL", "SOMATIC", "NO_FAIL" ],
     "max_level": 1,
-    "max_level": 1,
+    "shape": "blast",
     "effect": "ter_transform",
     "effect_str": "altar_to_moon_altar",
     "min_aoe": 5

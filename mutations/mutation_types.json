@@ -5,7 +5,7 @@
     "name": "Attuned to the Unseen",
     "wip": true,
     "threshold_mut": "THRESH_MANA",
-    "mutagen_message": "You are .",
+    "mutagen_message": "You are one with the unseen currents that surround and embrace the earth and sky.",
     "memorial_message": "Transcended to the Otherworld.",
     "vitamin": "mutagen_mana"
   },
@@ -15,7 +15,7 @@
     "name": "Cut Off From to the Unseen",
     "wip": true,
     "threshold_mut": "THRESH_MANA_BAD",
-    "mutagen_message": "You are .",
+    "mutagen_message": "You are hated by the spirits.",
     "memorial_message": "Was severed from their flesh.",
     "vitamin": "mutagen_mana_bad"
   },

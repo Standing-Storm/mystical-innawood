@@ -14,12 +14,12 @@
     "min_damage": 1,
     "max_damage": 1,
     "effect": "spawn_item",
-    "effect_str": "magic_bandages",
+    "effect_str": "forest_bandages",
     "extra_effects": [ { "id": "channeling_fatigue_spell", "hit_self": true, "max_level": 2 } ],
     "components": "spell_components_forest_bandage",
     "shape": "blast",
     "base_casting_time": 6000,
-    "base_energy_cost": 450,
+    "base_energy_cost": 750,
     "min_duration": 24000,
     "max_duration": 720000,
     "duration_increment": 46400
@@ -44,7 +44,7 @@
     "max_damage": 1,
     "max_level": 15,
     "base_casting_time": 1500,
-    "base_energy_cost": 500,
+    "base_energy_cost": 1250,
     "min_duration": 24000,
     "max_duration": 360000,
     "duration_increment": 24000
@@ -68,7 +68,7 @@
     "max_damage": 1,
     "max_level": 15,
     "base_casting_time": 6000,
-    "base_energy_cost": 300,
+    "base_energy_cost": 650,
     "min_duration": 100000,
     "max_duration": 400000,
     "duration_increment": 20000

@@ -7,7 +7,7 @@
   },
   {
     "type": "AMMO",
-    "id": "crystallized_mana",
+    "id": "crystallized_mana_base",
     "category": "spare_parts",
     "price": 1000,
     "name": { "str_sp": "crystallized mana" },
@@ -25,7 +25,7 @@
   {
     "type": "AMMO",
     "id": "crystallized_mana_sky",
-    "copy-from": "crystallized_mana",
+    "copy-from": "crystallized_mana_base",
     "name": { "str_sp": "crystallized mana, sky" },
     "description": "Mystical energy condensed into physical form that has absorbed some aspect of the sky.  It glows faintly.",
     "color": "light_blue"

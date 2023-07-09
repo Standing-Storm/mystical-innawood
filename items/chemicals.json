@@ -48,5 +48,13 @@
     "name": { "str_sp": "magical ink, journeyman" },
     "description": "An ink made by boiling fruit and vinegar with magical components and herbs.  This ink is strong enough to use for more powerful rituals.",
     "color": "red"
+  },
+  {
+    "type": "AMMO",
+    "id": "magical_ink_master",
+    "copy-from": "ink_abstract",
+    "name": { "str_sp": "magical ink, master" },
+    "description": "An ink made by boiling fruit and vinegar with magical components and herbs.  This ink can transcribe the most powerful enchantments.",
+    "color": "red"
   }
 ]

@@ -1,0 +1,123 @@
+[
+  {
+    "type": "COMESTIBLE",
+    "id": "herbalism_witchwood_mana_regen",
+    "name": { "str": "witchwood elixir" },
+    "description": "A mixture of ground witchwood bark, eggs, water, alcohol, and concentrated mana.  It tastes disgusting but it increases your mana regen.",
+    "weight": "265 g",
+    "quench": 1,
+    "calories": 0,
+    "volume": "250ml",
+    "charges": 1,
+    "fun": -3,
+    "symbol": "~",
+    "container": "flask_glass",
+    "color": "light_blue",
+    "flags": [ "EATEN_COLD", "NO_AUTO_CONSUME", "NUTRIENT_OVERRIDE" ],
+    "use_action": {
+      "type": "effect_on_conditions",
+      "description": "Drink the elixir.",
+      "effect_on_conditions": [ "EOC_WITCHWOOD_MANA_REGEN" ]
+    }
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_WITCHWOOD_MANA_REGEN",
+    "effect": [
+      { "u_message": "You drink the elixir and feel more in tune with the world.", "type": "good" },
+      { "u_add_effect": "effect_potion_witchwood_elixir", "duration": "4 hours" },
+      { "math": [ "u_val('vitamin', 'name:potion_overload')", "+=", "1" ] }
+    ]
+  },
+  {
+    "type": "COMESTIBLE",
+    "id": "herbalism_harfry_curative",
+    "name": { "str": "harfry elixir" },
+    "description": "A mixture of ground harfry root, willowbark, water, alcohol, and concentrated mana.  It increases your body's healing rate.",
+    "weight": "255 g",
+    "quench": 1,
+    "calories": 0,
+    "volume": "250ml",
+    "charges": 1,
+    "fun": -1,
+    "symbol": "~",
+    "container": "flask_glass",
+    "color": "green",
+    "flags": [ "EATEN_COLD", "NO_AUTO_CONSUME", "NUTRIENT_OVERRIDE" ],
+    "use_action": {
+      "type": "effect_on_conditions",
+      "description": "Drink the elixir.",
+      "effect_on_conditions": [ "EOC_HARFRY_CURATIVE" ]
+    }
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_HARFRY_CURATIVE",
+    "effect": [
+      { "u_message": "You drink the elixir and your skin itches slightly.", "type": "good" },
+      { "u_add_effect": "effect_potion_harfry_elixir", "duration": "12 hours" },
+      { "math": [ "u_val('vitamin', 'name:potion_overload')", "+=", "1" ] }
+    ]
+  },
+  {
+    "type": "COMESTIBLE",
+    "id": "herbalism_morningflower_no_sleep",
+    "name": { "str": "morningflower elixir" },
+    "description": "A mixture of powdered morningflower leaves, bark tea, water, alcohol, and concentrated mana.  It makes the tiredness just melt away.",
+    "weight": "300 g",
+    "quench": 1,
+    "calories": 0,
+    "volume": "250ml",
+    "charges": 1,
+    "fun": -1,
+    "symbol": "~",
+    "container": "flask_glass",
+    "color": "red",
+    "flags": [ "EATEN_COLD", "NO_AUTO_CONSUME", "NUTRIENT_OVERRIDE" ],
+    "use_action": {
+      "type": "effect_on_conditions",
+      "description": "Drink the elixir.",
+      "effect_on_conditions": [ "EOC_MORNINGFLOWER_NOSLEEP" ]
+    }
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_MORNINGFLOWER_NOSLEEP",
+    "effect": [
+      { "u_message": "You drink the elixir and you feel a burst of energy.", "type": "good" },
+      { "math": [ "u_val('fatigue')", "-=", "rng(20,40)" ] },
+      { "math": [ "u_val('sleep_deprivation')", "-=", "rng(200,400)" ] },
+      { "math": [ "u_val('vitamin', 'name:potion_overload')", "+=", "1" ] }
+    ]
+  },
+  {
+    "type": "COMESTIBLE",
+    "id": "herbalism_moonstears_tonic",
+    "name": { "str": "moons tears elixir" },
+    "description": "A mixture of powdered moon's tears, wild vegetables, water, alcohol, and concentrated mana.  It makes the tiredness just melt away.",
+    "weight": "300 g",
+    "quench": 1,
+    "calories": 0,
+    "volume": "250ml",
+    "charges": 1,
+    "fun": -1,
+    "symbol": "~",
+    "container": "flask_glass",
+    "color": "red",
+    "flags": [ "EATEN_COLD", "NO_AUTO_CONSUME", "NUTRIENT_OVERRIDE" ],
+    "use_action": {
+      "type": "effect_on_conditions",
+      "description": "Drink the elixir.",
+      "effect_on_conditions": [ "EOC_MORNINGFLOWER_NOSLEEP" ]
+    }
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_MOONSTEARS_NIGHTVISION",
+    "effect": [
+      { "u_message": "You drink the elixir and the darkness brightens.", "type": "good" },
+      { "u_add_effect": "effect_potion_moonstears_elixir", "duration": "3 hours" },
+      { "math": [ "u_val('vitamin', 'name:potion_overload')", "+=", "1" ] }
+    ]
+  }
+]

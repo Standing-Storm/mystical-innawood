@@ -16,7 +16,7 @@
     "spell_class": "EARTH",
     "difficulty": 8,
     "base_casting_time": 180000,
-    "base_energy_cost": 1200,
+    "base_energy_cost": 4500,
     "final_energy_cost": 800,
     "energy_increment": -20,
     "max_level": 20,

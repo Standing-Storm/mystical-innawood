@@ -24,9 +24,9 @@
     "tools": [ [ [ "enchanting_magic_quill", -1 ], [ "magical_ink_journeyman", 5 ] ] ]
   },
   {
-    "id": "writing_formulae_mage_standard",
+    "id": "writing_formulae_master_standard",
     "type": "requirement",
     "//": "Tools and components for writing complex spells.",
-    "tools": [ [ [ "enchanting_magic_quill", -1 ], [ "magical_ink_mage", 5 ] ] ]
+    "tools": [ [ [ "enchanting_magic_quill", -1 ], [ "magical_ink_master", 5 ] ] ]
   }
 ]

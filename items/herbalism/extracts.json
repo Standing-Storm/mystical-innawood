@@ -20,9 +20,9 @@
   {
     "type": "AMMO",
     "id": "herbalism_moonstears_extract",
-    "name": { "str_sp": "moons' tears extract" },
+    "name": { "str_sp": "moon's tears extract" },
     "copy-from": "lye_powder",
-    "description": "The processed extract of moons' tears, ready to be used for further rituals."
+    "description": "The processed extract of moon's tears, ready to be used for further rituals."
   },
   {
     "type": "AMMO",

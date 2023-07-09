@@ -14,7 +14,7 @@
     "proficiencies": [
       { "proficiency": "prof_occult_exploration", "required": true },
       { "proficiency": "prof_thaumatology", "required": false },
-      { "proficiency": "prof_spell_research", "required": false },
+      { "proficiency": "prof_spellcrafting_basic", "required": false },
       { "proficiency": "prof_infusion_basic", "required": false }
     ]
   },
@@ -43,7 +43,7 @@
           { "u_add_trait": "MOONGLOW" }
         ],
         "false_effect": [
-          { "u_message": "Without the moon in the sky, the ritual never had any hope of succeeding.", "type": "bad" },
+          { "u_message": "Without the proper conditions, the ritual never had any hope of succeeding.", "type": "bad" },
           { "u_add_effect": "channeling_fatigue_spell", "duration": "4 seconds" },
           { "u_add_effect": "darkness", "duration": [ "10 minutes", "40 minutes" ] }
         ]

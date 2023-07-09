@@ -82,7 +82,7 @@
     "proficiencies": [
       { "proficiency": "prof_occult_exploration", "required": false },
       { "proficiency": "prof_thaumatology", "required": false },
-      { "proficiency": "prof_spell_research", "required": false }
+      { "proficiency": "prof_spellcrafting_basic", "required": false }
     ],
     "result_eocs": [
       {
@@ -116,7 +116,7 @@
       },
       { "u_learn_recipe": "spell_formula_witchsight" },
       { "u_learn_recipe": "magical_ink" },
-      { "u_learn_recipe": "magical_grimoire_basic" }
+      { "u_learn_recipe": "magical_grimoire_apprentice" }
     ]
   }
 ]

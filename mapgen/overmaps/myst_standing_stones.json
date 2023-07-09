@@ -35,8 +35,8 @@
         ",": [ [ "t_moss", 50 ], [ "t_grass", 25 ], [ "t_dirt", 25 ] ],
         "S": [ [ "t_moss", 50 ], [ "t_grass", 25 ], [ "t_dirt", 25 ] ],
         ".": [ [ "t_grass", 25 ], [ "t_dirt", 25 ] ],
-        "m": [ [ "t_moon_ground" ] ],
-        "A": [ [ "t_moon_ground" ] ]
+        "m": [ [ "t_moon_ground", 100 ] ],
+        "A": [ [ "t_moon_ground", 100 ] ]
       },
       "furniture": { "S": [ [ "f_myst_standing_stone", 65 ], [ "f_rubble", 35 ] ], "A": "f_moon_altar" }
     }

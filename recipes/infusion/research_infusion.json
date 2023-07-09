@@ -54,5 +54,49 @@
       },
       { "u_spawn_item": "used_occult_notes", "suppress_message": true }
     ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "name": "research: the rite of subtle connection",
+    "id": "infusion_research_mana_pool_1",
+    "description": "The distillation of mana into a solid form took so much of your energy.  That can't be the limit.  There must be a way to increase your capacity to channel mana.",
+    "category": "CC_*",
+    "subcategory": "CSC_*_NESTED",
+    "difficulty": 6,
+    "time": "10 h",
+    "components": [ [ [ "paper", 20 ] ], [ [ "used_occult_notes", 1 ] ], [ [ "crystallized_mana_base", 3 ] ] ],
+    "using": [ [ "writing_standard", 1 ] ],
+    "qualities": [ { "id": "MAGICAL_RESEARCH", "level": 1 }, { "id": "MAGICAL_SENSE", "level": 1 } ],
+    "skill_used": "occult",
+    "flags": [ "BLIND_HARD" ],
+    "proficiencies": [
+      { "proficiency": "prof_occult_exploration", "required": true },
+      { "proficiency": "prof_thaumatology", "required": true },
+      { "proficiency": "prof_infusion_basic", "required": false },
+      { "proficiency": "prof_infusion_mana", "required": false }
+    ],
+    "result_eocs": [
+      {
+        "id": "EOC_ENCHANTING_RESEARCH_SUBTLE_CONNECTION",
+        "condition": { "roll_contested": { "math": [ "rng( u_val('intelligence'), u_skill('occult') )" ] }, "difficulty": 14 },
+        "effect": [
+          {
+            "u_message": "There is a way to use a large quantity of mana all at once to enhance your ability to channel it in the future.  It requires specific circumstances, but that won't be a problem now that you know them.",
+            "type": "good"
+          },
+          { "u_spawn_item": "used_occult_notes", "suppress_message": true },
+          { "u_learn_recipe": "infusion_mana_pool_1" },
+          { "u_learn_recipe": "magical_grimoire_journeyman" }
+        ],
+        "false_effect": [
+          {
+            "u_message": "You really thought you had something here, but it's just a dead end.  You'll have to try again.",
+            "type": "bad"
+          },
+          { "u_spawn_item": "used_occult_notes", "suppress_message": true }
+        ]
+      }
+    ]
   }
 ]

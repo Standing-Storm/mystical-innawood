@@ -24,6 +24,12 @@
     "description": "Proficiencies for infusing magic directly into the human body."
   },
   {
+    "type": "proficiency_category",
+    "id": "prof_spellcrafting",
+    "name": "Spellcrafting",
+    "description": "Proficiencies for inventing spells and rituals and transcribing them."
+  },
+  {
     "type": "proficiency",
     "id": "prof_occult_exploration",
     "name": { "str": "Occult Exploration" },
@@ -32,7 +38,7 @@
     "can_learn": true,
     "default_time_multiplier": 1.5,
     "default_skill_penalty": 0.25,
-    "time_to_learn": "18 h"
+    "time_to_learn": "10 h"
   },
   {
     "type": "proficiency",
@@ -43,7 +49,7 @@
     "can_learn": true,
     "default_time_multiplier": 3,
     "default_skill_penalty": 0.2,
-    "time_to_learn": "36 h"
+    "time_to_learn": "20 h"
   },
   {
     "type": "proficiency",
@@ -54,7 +60,7 @@
     "can_learn": true,
     "default_time_multiplier": 3,
     "default_skill_penalty": 0.3,
-    "time_to_learn": "72 h"
+    "time_to_learn": "25 h"
   },
   {
     "type": "proficiency",
@@ -77,6 +83,17 @@
     "default_time_multiplier": 3,
     "default_skill_penalty": 0.5,
     "time_to_learn": "30 h"
+  },
+  {
+    "type": "proficiency",
+    "id": "prof_infusion_mana",
+    "category": "prof_infusion",
+    "name": { "str": "Mana Infusion" },
+    "description": "You have mastered the rituals for enhancing your ability to channel and direct magic.",
+    "can_learn": true,
+    "default_time_multiplier": 1.5,
+    "default_skill_penalty": 0.5,
+    "time_to_learn": "35 h"
   },
   {
     "type": "proficiency",
@@ -120,7 +137,19 @@
     "can_learn": true,
     "default_time_multiplier": 3,
     "default_skill_penalty": 0.5,
-    "time_to_learn": "48 h"
+    "time_to_learn": "48 h",
+    "required_proficiencies": [ "prof_herbalism_basic" ]
+  },
+  {
+    "type": "proficiency",
+    "id": "prof_potion_making",
+    "category": "prof_herbalism",
+    "name": { "str": "Elixir Crafting" },
+    "description": "The art of mixing herbs and raw mana together to make potions and elixirs.",
+    "can_learn": true,
+    "default_time_multiplier": 3,
+    "default_skill_penalty": 0.5,
+    "time_to_learn": "25 h"
   },
   {
     "type": "proficiency",

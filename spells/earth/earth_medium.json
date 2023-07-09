@@ -16,7 +16,7 @@
     "shape": "blast",
     "difficulty": 5,
     "base_casting_time": 3000,
-    "base_energy_cost": 400,
+    "base_energy_cost": 800,
     "max_level": 15,
     "min_duration": 24000,
     "max_duration": 360000,
@@ -41,7 +41,7 @@
     "base_casting_time": 4500,
     "final_casting_time": 500,
     "casting_time_increment": -67,
-    "base_energy_cost": 400,
+    "base_energy_cost": 1500,
     "min_range": 10,
     "max_range": 25,
     "range_increment": 1

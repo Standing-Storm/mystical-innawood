@@ -48,8 +48,8 @@
     "name": "spell formula: the ritual of arcane coalescence",
     "id": "spellcrafting_formula_crystallize_mana",
     "description": "Now that you know more about the manipulation of the Unseen World, you think you can create a ritual to give physical form to ethereal energy.  You will need absolutely controlled conditions for your experimentation, though.  Make sure you have Witchsight active and have been ritually purified.",
-    "category": "CC_*",
-    "subcategory": "CSC_*_NESTED",
+    "category": "CC_OCCULT",
+    "subcategory": "CSC_OCCULT_FORMULAE",
     "difficulty": 5,
     "time": "8 h",
     "components": [ [ [ "paper", 40 ] ] ],
@@ -88,9 +88,10 @@
         "u_message": "You've done it.  After many false starts and grueling hours of chanting the rites, you have a chunk of faintly-glowing crystal in your hands.  Now you just need to record the steps and you can reproduce the ritual at any time.",
         "type": "good"
       },
-      { "u_learn_recipe": "spell_formula_crystallize_mana" },
+      { "u_learn_recipe": "spell_formula_crystallize_mana_innawood" },
+      { "u_learn_recipe": "enchantment_analyze_mana" },
       { "u_spawn_item": "used_occult_notes", "suppress_message": true },
-      { "u_spawn_item": "crystallized_mana", "count": 1, "suppress_message": true },
+      { "u_spawn_item": "crystallized_mana_base", "count": 1, "suppress_message": true },
       { "u_add_effect": "channeling_fatigue_spell", "duration": "20 seconds" }
     ],
     "false_effect": [

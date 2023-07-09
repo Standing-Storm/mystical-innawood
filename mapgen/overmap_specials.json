@@ -2,12 +2,20 @@
   {
     "type": "overmap_special",
     "id": "myst_standing_stones",
-    "overmaps": [ { "point": [ 0, 0, 0 ], "overmap": "myst_standing_stones" } ],
+    "overmaps": [ { "point": [ 0, 0, 0 ], "overmap": "myst_standing_stones_north" } ],
     "locations": [ "wilderness" ],
     "city_distance": [ 20, -1 ],
     "city_sizes": [ 0, 20 ],
     "occurrences": [ 66, 100 ],
     "flags": [ "UNIQUE" ],
     "rotate": true
+  },
+  {
+    "type": "overmap_terrain",
+    "id": [ "myst_standing_stones" ],
+    "name": "standing stones",
+    "sym": "O",
+    "color": "dark_gray",
+    "see_cost": 6
   }
 ]

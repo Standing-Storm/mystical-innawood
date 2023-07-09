@@ -3,7 +3,7 @@
     "id": "moon_lambent_glow",
     "type": "SPELL",
     "name": "Moon's Lambent Glow",
-    "description": "Summon the soft silver light of the moon from the air around you, illuminating your surroundings.  You need either a moons' tears flower or silver, or to be under moonlight, to cast the spell.",
+    "description": "Summon the soft silver light of the moon from the air around you, illuminating your surroundings.  You need either a moon's tears flower or silver, or to be under moonlight, to cast the spell.",
     "valid_targets": [ "self" ],
     "flags": [ "CONCENTRATE", "VERBAL", "SOMATIC" ],
     "skill": "occult",
@@ -16,7 +16,7 @@
     "difficulty": 3,
     "max_level": 15,
     "base_casting_time": 1500,
-    "base_energy_cost": 600,
+    "base_energy_cost": 500,
     "min_duration": 24000,
     "max_duration": 360000,
     "duration_increment": 24000
