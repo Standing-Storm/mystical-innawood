@@ -16,7 +16,8 @@
       "sound": "smash!",
       "sound_fail": "thump.",
       "items": [ { "item": "rock", "count": [ 5, 15 ] }, { "item": "sharp_rock", "count": [ 3, 5 ] } ]
-    }
+    },
+    "flags": [ "TRANSPARENT", "FLAT_SURF", "SHORT" ]
   },
   {
     "type": "furniture",
@@ -37,6 +38,6 @@
       "sound_fail": "thump.",
       "items": [ { "item": "rock", "count": [ 5, 15 ] }, { "item": "sharp_rock", "count": [ 3, 5 ] } ]
     },
-    "flags": [ "TRANSLOCATOR" ]
+    "flags": [ "TRANSPARENT", "SHORT", "FLAT_SURF", "TRANSLOCATOR" ]
   }
 ]

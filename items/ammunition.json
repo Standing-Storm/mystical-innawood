@@ -7,8 +7,14 @@
   },
   {
     "type": "ammunition_type",
-    "id": "crystallized_mana",
+    "id": "crystallized_mana_base",
     "name": "crystallized mana",
     "default": "crystallized_mana_base"
+  },
+  {
+    "type": "ammunition_type",
+    "id": "crystallized_mana_sky",
+    "name": "crystallized mana",
+    "default": "crystallized_mana_sky"
   }
 ]
