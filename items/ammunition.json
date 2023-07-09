@@ -4,5 +4,11 @@
     "id": "glimmerstone_dust",
     "name": "glimmerdust",
     "default": "glimmerstone_dust"
+  },
+  {
+    "type": "ammunition_type",
+    "id": "crystallized_mana",
+    "name": "crystallized mana",
+    "default": "crystallized_mana_base"
   }
 ]

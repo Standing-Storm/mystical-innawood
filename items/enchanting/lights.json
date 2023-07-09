@@ -31,7 +31,7 @@
     "name": { "str": "glimmerdust lamp (off)", "str_pl": "glimmerdust lamp (off)" },
     "description": "A specialized small lamp powered by glimmerdust.  It's not particularly bright, but it glows for a very long time.  It's currently glowing.",
     "copy-from": "glimmerdust_lamp",
-    "ammo": [ "glimmerdust" ],
+    "ammo": [ "glimmerstone_dust" ],
     "pocket_data": [ { "pocket_type": "MAGAZINE", "watertight": true, "ammo_restriction": { "glimmerdust": 250 } } ],
     "charges_per_use": 1,
     "use_action": [

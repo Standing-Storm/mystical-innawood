@@ -44,7 +44,7 @@
     "batch_time_factors": [ 80, 4 ],
     "qualities": [ { "id": "COOK", "level": 2 }, { "id": "FINE_GRIND", "level": 1 } ],
     "tools": [ [ [ "surface_heat", 2, "LIST" ] ] ],
-    "using": [ [ "enchanted_components_medium", 2 ], [ "magical_herbs", 8 ], [ "crystallized_mana_base", 1 ] ],
-    "components": [ [ [ "sweet_fruit", 1, "LIST" ] ], [ [ "salt", 2 ] ], [ [ "vinegar", 2 ] ] ]
+    "using": [ [ "enchanted_components_medium", 2 ], [ "magical_herbs", 8 ] ],
+    "components": [ [ [ "sweet_fruit", 1, "LIST" ] ], [ [ "salt", 2 ] ], [ [ "vinegar", 2 ] ], [ [ "crystallized_mana_base", 1 ] ] ]
   }
 ]

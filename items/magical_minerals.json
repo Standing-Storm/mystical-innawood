@@ -45,7 +45,7 @@
     "weight": "1 g",
     "ammo_type": "glimmerstone_dust",
     "count": 250,
-    "stack_size": 250,
+    "stack_size": 200,
     "flags": [ "LIGHT_5" ]
   }
 ]
