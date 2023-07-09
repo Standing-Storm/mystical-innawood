@@ -120,7 +120,9 @@
           },
           { "u_spawn_item": "used_occult_notes", "suppress_message": true },
           { "u_learn_recipe": "infusion_research_mana_pool_1" },
-          { "u_learn_recipe": "herbalism_analyze_mana" }
+          { "u_learn_recipe": "herbalism_analyze_mana" },
+          { "u_learn_recipe": "enchant_glimmerdust_lamp" },
+          { "u_learn_recipe": "glimmerstone_dust" }
         ],
         "false_effect": [
           {

@@ -1,0 +1,8 @@
+[
+  {
+    "type": "ammunition_type",
+    "id": "glimmerstone_dust",
+    "name": "glimmerdust",
+    "default": "glimmerstone_dust"
+  }
+]

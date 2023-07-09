@@ -27,24 +27,25 @@
     "price_postapoc": 250,
     "material": [ "gemstone" ],
     "volume": "50 ml",
-    "weight": "85 g",
+    "weight": "50 g",
     "flags": [ "LIGHT_15" ]
   },
   {
     "type": "AMMO",
     "id": "glimmerstone_dust",
-    "category": "chems",
+    "category": "fuel",
     "price": 3000,
     "price_postapoc": 500,
     "name": { "str_sp": "glimmerstone dust" },
     "symbol": ",",
     "color": "light_blue",
-    "description": "Crushed and powdered glimmerstone.  Even the fragments still sparkle slightly.",
+    "description": "Crushed and powdered glimmerstone mixed with raw crystallized mana.  Even the fragments still sparkle slightly.",
     "material": [ "gemstone" ],
-    "volume": "50 ml",
-    "weight": "85 g",
-    "ammo_type": "components",
-    "count": 10,
+    "volume": "1 ml",
+    "weight": "1 g",
+    "ammo_type": "glimmerstone_dust",
+    "count": 250,
+    "stack_size": 250,
     "flags": [ "LIGHT_5" ]
   }
 ]

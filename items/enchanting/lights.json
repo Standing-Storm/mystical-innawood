@@ -1,0 +1,48 @@
+[
+  {
+    "id": "glimmerdust_lamp",
+    "type": "TOOL",
+    "name": { "str": "glimmerdust lamp (off)", "str_pl": "glimmerdust lamp (off)" },
+    "description": "A specialized small lamp powered by glimmerstone dust.  It's not particularly bright, but it glows for a very long time.",
+    "weight": "800 g",
+    "volume": "350 ml",
+    "price": 8000,
+    "price_postapoc": 1000,
+    "material": [ "clay" ],
+    "symbol": ";",
+    "color": "yellow",
+    "ammo": [ "glimmerstone_dust" ],
+    "pocket_data": [ { "pocket_type": "MAGAZINE", "watertight": true, "ammo_restriction": { "glimmerstone_dust": 250 } } ],
+    "charges_per_use": 1,
+    "use_action": {
+      "target": "glimmerdust_lamp_on",
+      "msg": "With a whispered charm, you kindle the lamp.",
+      "active": true,
+      "need_charges": 1,
+      "need_charges_msg": "The lamp is empty.",
+      "type": "transform"
+    },
+    "flags": [ "ALLOWS_REMOTE_USE" ],
+    "melee_damage": { "bash": 1 }
+  },
+  {
+    "id": "glimmerdust_lamp_on",
+    "type": "TOOL",
+    "name": { "str": "glimmerdust lamp (off)", "str_pl": "glimmerdust lamp (off)" },
+    "description": "A specialized small lamp powered by glimmerdust.  It's not particularly bright, but it glows for a very long time.  It's currently glowing.",
+    "copy-from": "glimmerdust_lamp",
+    "ammo": [ "glimmerdust" ],
+    "pocket_data": [ { "pocket_type": "MAGAZINE", "watertight": true, "ammo_restriction": { "glimmerdust": 250 } } ],
+    "charges_per_use": 1,
+    "use_action": [
+      {
+        "ammo_scale": 0,
+        "target": "glimmerdust_lamp",
+        "msg": "With a whispered charm, you extinguish the lamp.",
+        "menu_text": "Turn off",
+        "type": "transform"
+      }
+    ],
+    "flags": [ "LIGHT_10", "TRADER_AVOID", "ALLOWS_REMOTE_USE" ]
+  }
+]
