@@ -69,7 +69,12 @@
     "result_eocs": [
       {
         "id": "EOC_SPELLCRAFTING_CRYSTALLIZE_MANA",
-        "condition": { "and": [ { "u_has_effect": "effect_detect_magic" }, { "u_has_effect": "effect_ritually_purified" } ] },
+        "condition": {
+          "and": [
+            { "or": [ { "u_has_effect": "effect_detect_magic" }, { "u_has_trait": "WITCHSIGHT_INFUSED_A" } ] },
+            { "u_has_effect": "effect_ritually_purified" }
+          ]
+        },
         "effect": [ { "run_eocs": [ "EOC_SPELLCRAFTING_CRYSTALLIZE_MANA_2" ] } ],
         "false_effect": [
           { "u_message": "Without the proper preparations, your research never had any hope of succeeding.", "type": "bad" },
