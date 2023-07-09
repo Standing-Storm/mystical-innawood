@@ -13,13 +13,13 @@
     "name": { "str_sp": "crystallized mana" },
     "symbol": "=",
     "color": "white",
-    "description": "Mystical energy condensed into physical form.  It glows faintly.",
+    "description": "Mystical energy condensed into physical form.  It glows faintly and is surprisingly heavy.",
     "flags": [ "TRADER_AVOID", "LIGHT_5" ],
-    "weight": "1 mg",
+    "weight": "200 g",
     "volume": "100 ml",
     "ammo_type": "crystallized_mana",
     "material": [ "solid_mana" ],
-    "count": 100,
+    "count": 10,
     "looks_like": "battery"
   },
   {
