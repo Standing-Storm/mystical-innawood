@@ -1,0 +1,132 @@
+[
+  {
+    "//": "walls of cave that can shift from side to side to make the tunnel wind",
+    "type": "mapgen",
+    "method": "json",
+    "nested_mapgen_id": "cave_underground_bounds_h",
+    "object": {
+      "mapgensize": [ 14, 14 ],
+      "rows": [
+        "####      ####",
+        "              ",
+        "              ",
+        "              ",
+        "              ",
+        "              ",
+        "              ",
+        "              ",
+        "              ",
+        "              ",
+        "              ",
+        "              ",
+        "              ",
+        "              "
+      ],
+      "terrain": { "#": "t_rock", "№": [ [ "t_pillar", 10 ], [ "t_rock", 90 ] ] }
+    }
+  },
+  {
+    "//": "walls of river_cave that can shift from side to side to make the tunnel wind",
+    "type": "mapgen",
+    "method": "json",
+    "nested_mapgen_id": "cave_underground_bounds_h1",
+    "object": {
+      "mapgensize": [ 14, 14 ],
+      "rows": [
+        "####          ",
+        "              ",
+        "              ",
+        "              ",
+        "              ",
+        "              ",
+        "              ",
+        "              ",
+        "              ",
+        "              ",
+        "              ",
+        "              ",
+        "              ",
+        "              "
+      ],
+      "terrain": { "#": "t_rock", "№": [ [ "t_pillar", 10 ], [ "t_rock", 90 ] ] }
+    }
+  },
+  {
+    "//": "walls of river_cave that can shift from side to side to make the tunnel wind",
+    "type": "mapgen",
+    "method": "json",
+    "nested_mapgen_id": "cave_underground_bounds_v",
+    "object": {
+      "mapgensize": [ 14, 14 ],
+      "rows": [
+        "#             ",
+        "#             ",
+        "#             ",
+        "#             ",
+        "              ",
+        "              ",
+        "              ",
+        "              ",
+        "              ",
+        "              ",
+        "#             ",
+        "#             ",
+        "#             ",
+        "#             "
+      ],
+      "terrain": { "#": "t_soil" }
+    }
+  },
+  {
+    "//": "walls of river_cave that can shift from side to side to make the tunnel wind",
+    "type": "mapgen",
+    "method": "json",
+    "nested_mapgen_id": "cave_underground_bounds_v1",
+    "object": {
+      "mapgensize": [ 14, 14 ],
+      "rows": [
+        "#             ",
+        "#             ",
+        "#             ",
+        "#             ",
+        "              ",
+        "              ",
+        "              ",
+        "              ",
+        "              ",
+        "              ",
+        "              ",
+        "              ",
+        "              ",
+        "              "
+      ],
+      "terrain": { "#": "t_rock", "№": [ [ "t_pillar", 10 ], [ "t_rock", 90 ] ] }
+    }
+  },
+  {
+    "//": "walls of cave underground that can shift from side to side to make the tunnel wind",
+    "type": "mapgen",
+    "method": "json",
+    "nested_mapgen_id": "cave_underground_bounds_v2",
+    "object": {
+      "mapgensize": [ 14, 14 ],
+      "rows": [
+        "              ",
+        "              ",
+        "              ",
+        "              ",
+        "              ",
+        "              ",
+        "              ",
+        "              ",
+        "              ",
+        "              ",
+        "#             ",
+        "#             ",
+        "#             ",
+        "#             "
+      ],
+      "terrain": { "#": "t_rock", "№": [ [ "t_pillar", 10 ], [ "t_rock", 90 ] ] }
+    }
+  }
+]

@@ -17,5 +17,45 @@
     "sym": "O",
     "color": "dark_gray",
     "see_cost": 6
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "cave_underground_entrance",
+    "name": "cave",
+    "sym": "O",
+    "looks_like": "cave_innawood",
+    "color": "brown",
+    "see_cost": 2,
+    "flags": [ "KNOWN_DOWN", "REQUIRES_PREDECESSOR" ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "cave_underground_food",
+    "name": "kraken food storage",
+    "sym": "O",
+    "color": "cyan_green",
+    "see_cost": 5
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "cave_underground_nest",
+    "copy-from": "cave_underground_food",
+    "name": "cave nest",
+    "color": "white"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "cave_underground_kraken",
+    "copy-from": "cave_underground_food",
+    "name": "kraken chamber",
+    "color": "red"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "cave_underground",
+    "name": "cave tunnel",
+    "color": "brown",
+    "see_cost": 5,
+    "flags": [ "LINEAR" ]
   }
 ]
