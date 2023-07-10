@@ -43,11 +43,12 @@
     "melee_dice_sides": 6,
     "//": "low damage because it doesn't have talons",
     "dodge": 5,
-    "armor": { "bash": 5, "cut": 5, "stab": 5, "bullet": 5, "electricity": 15 },
+    "armor": { "bash": 5, "cut": 5, "stab": 5, "electricity": 15 },
     "vision_day": 15,
     "vision_night": 25,
     "families": [ "prof_intro_biology", "prof_wp_basic_bird" ],
     "weakpoint_sets": [ "wps_bird_body" ],
+    "harvest": "harvest_lilitu",
     "special_attacks": [
       {
         "type": "bite",

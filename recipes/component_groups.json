@@ -22,6 +22,7 @@
     "components": [
       [
         [ "thornbear_fur", 10 ],
+        [ "feather_lilitu", 2 ],
         [ "undine_heart", 1 ],
         [ "dryad_bark", 4 ],
         [ "witchwood_bark", 1 ],
@@ -39,6 +40,7 @@
       [
         [ "dryad_bark", 10 ],
         [ "undine_heart", 3 ],
+        [ "feather_lilitu", 7 ],
         [ "thornbear_fur", 25 ],
         [ "gnome_eye", 8 ],
         [ "earth_black_blood", 4 ],
@@ -60,7 +62,8 @@
         [ "undine_heart", 1 ],
         [ "earth_black_blood", 1 ],
         [ "thornbear_fur", 1 ],
-        [ "moon_lantern_dust", 1 ]
+        [ "moon_lantern_dust", 1 ],
+        [ "feather_lilitu", 1 ]
       ]
     ]
   },

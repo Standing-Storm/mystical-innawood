@@ -61,5 +61,19 @@
     "material": [ "powder" ],
     "weight": "5 g",
     "volume": "250 ml"
+  },
+  {
+    "type": "GENERIC",
+    "id": "feather_lilitu",
+    "price": 3000,
+    "price_postapoc": 250,
+    "name": { "str": "lilitu feather" },
+    "symbol": "=",
+    "color": "black",
+    "description": "A long, undamaged feather from a lilitu.  It's so dark it looks more like a feather-shaped hole in the air than something that used to be part of an animal.",
+    "material": [ "cotton" ],
+    "flags": [ "NO_SALVAGE" ],
+    "volume": "250 ml",
+    "weight": "3 g"
   }
 ]
