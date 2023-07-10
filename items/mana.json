@@ -1,11 +1,5 @@
 [
   {
-    "type": "ammunition_type",
-    "id": "crystallized_mana",
-    "name": "crystallized mana",
-    "default": "crystallized_mana"
-  },
-  {
     "type": "AMMO",
     "id": "crystallized_mana_base",
     "category": "spare_parts",
@@ -17,7 +11,7 @@
     "flags": [ "TRADER_AVOID", "LIGHT_5" ],
     "weight": "200 g",
     "volume": "100 ml",
-    "ammo_type": "crystallized_mana",
+    "ammo_type": "crystallized_mana_base",
     "material": [ "solid_mana" ],
     "count": 10,
     "looks_like": "battery"

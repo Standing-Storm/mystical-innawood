@@ -1,5 +1,25 @@
 [
   {
+    "type": "mapgen",
+    "method": "json",
+    "nested_mapgen_id": "mine_tunnel_entrance",
+    "object": {
+      "mapgensize": [ 8, 8 ],
+      "rows": [
+        "     ## ",
+        "      ##",
+        "        ",
+        "        ",
+        "#       ",
+        "##  &***",
+        "###     ",
+        "###     "
+      ],
+      "terrain": { " ": "t_rock_floor", "#": "t_rock", "*": "t_railroad_track_small", "&": "t_buffer_stop" },
+      "flags": [ "ERASE_ALL_BEFORE_PLACING_TERRAIN" ]
+    }
+  },
+  {
     "//": "walls of mine tunnel that can shift from side to side to make the tunnel wind",
     "type": "mapgen",
     "method": "json",
