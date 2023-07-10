@@ -22,6 +22,7 @@
     "dmg_adj": [ "rippled", "scattered", "blown away", "vanished" ],
     "bash_dmg_verb": "scattered",
     "cut_dmg_verb": "separated",
+    "resist": { "bash": 20, "cut": 13, "acid": 2, "heat": 10, "bullet": 7, "electric": 10 },
     "fuel_data": { "energy": "31200  kJ" },
     "//": "energy the same as coal"
   }

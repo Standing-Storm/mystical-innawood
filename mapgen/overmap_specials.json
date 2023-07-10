@@ -20,42 +20,46 @@
   },
   {
     "type": "overmap_terrain",
-    "id": "cave_underground_entrance",
+    "id": [ "mine_entrance" ],
     "name": "cave",
-    "sym": "O",
-    "looks_like": "cave_innawood",
-    "color": "brown",
-    "see_cost": 2,
-    "flags": [ "KNOWN_DOWN", "REQUIRES_PREDECESSOR" ]
-  },
-  {
-    "type": "overmap_terrain",
-    "id": "cave_underground_food",
-    "name": "kraken food storage",
-    "sym": "O",
-    "color": "cyan_green",
-    "see_cost": 5
-  },
-  {
-    "type": "overmap_terrain",
-    "id": "cave_underground_nest",
-    "copy-from": "cave_underground_food",
-    "name": "cave nest",
-    "color": "white"
-  },
-  {
-    "type": "overmap_terrain",
-    "id": "cave_underground_kraken",
-    "copy-from": "cave_underground_food",
-    "name": "kraken chamber",
-    "color": "red"
-  },
-  {
-    "type": "overmap_terrain",
-    "id": "cave_underground",
-    "name": "cave tunnel",
-    "color": "brown",
+    "sym": "M",
+    "color": "magenta",
     "see_cost": 5,
+    "flags": [ "KNOWN_DOWN" ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": [ "mine_shaft_middle", "mine_shaft_middle_east" ],
+    "name": "mine shaft",
+    "sym": "O",
+    "color": "dark_gray",
+    "see_cost": 5,
+    "flags": [ "KNOWN_UP", "KNOWN_DOWN" ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": [ "mine_shaft_lower", "mine_shaft_lower_east" ],
+    "name": "mine shaft",
+    "sym": "O",
+    "color": "dark_gray",
+    "see_cost": 5,
+    "flags": [ "KNOWN_UP" ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "mine_tunnel",
+    "name": "mine tunnels",
+    "color": "dark_gray",
+    "see_cost": 5,
+    "spawns": { "group": "GROUP_MINERS", "population": [ 1, 2 ], "chance": 100 },
     "flags": [ "LINEAR" ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "mine_finale",
+    "name": "mine",
+    "sym": "M",
+    "color": "brown",
+    "see_cost": 5
   }
 ]

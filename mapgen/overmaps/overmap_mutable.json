@@ -1,72 +1,164 @@
 [
   {
     "type": "overmap_special",
-    "id": "cave_underground",
+    "id": "underground_cave_network",
     "subtype": "mutable",
-    "locations": [ "subterranean_empty", "land" ],
-    "occurrences": [ 0, 3 ],
+    "locations": [ "subterranean_empty", "land", "open_air" ],
+    "city_distance": [ 10, 40 ],
     "flags": [ "WILDERNESS" ],
+    "occurrences": [ 0, 2 ],
     "check_for_locations": [
-      [ [ 0, 0, 0 ], [ "lake_shore" ] ],
-      [ [ 0, 0, -1 ], [ "subterranean_empty" ] ],
-      [ [ 1, 0, -1 ], [ "subterranean_empty" ] ],
+      [ [ 0, 0, 0 ], [ "land" ] ],
+      [ [ 1, 0, 0 ], [ "land" ] ],
+      [ [ 0, 1, 0 ], [ "land" ] ],
+      [ [ 1, 1, 0 ], [ "land" ] ],
       [ [ 0, 1, -1 ], [ "subterranean_empty" ] ],
-      [ [ -1, 0, -1 ], [ "subterranean_empty" ] ],
-      [ [ 0, -1, -1 ], [ "subterranean_empty" ] ]
+      [ [ 1, 1, -1 ], [ "subterranean_empty" ] ],
+      [ [ 0, 1, -2 ], [ "subterranean_empty" ] ],
+      [ [ 1, 1, -2 ], [ "subterranean_empty" ] ],
+      [ [ -1, 1, -2 ], [ "subterranean_empty" ] ],
+      [ [ -2, 1, -2 ], [ "subterranean_empty" ] ]
     ],
     "joins": [
-      { "id": "surface_to_tunnel", "opposite": "tunnel_to_surface" },
-      { "id": "tunnel_to_surface", "opposite": "surface_to_tunnel", "into_locations": [ "lake_shore" ] },
-      "tunnel_to_tunnel"
+      "surface_to_shaft",
+      "shaft_lower_to_shaft_middle",
+      "tunnel_entrance_to_tunnels",
+      "tunnel_to_tunnel",
+      "-2_to_-3",
+      "-3_tunnel_to_-3_tunnel",
+      "-3_to_-4",
+      "-4_tunnel_to_-4_tunnel",
+      "-4_tunnel_to_finale"
     ],
     "overmaps": {
-      "surface": { "overmap": "cave_underground_entrance_north", "below": "surface_to_tunnel", "locations": [ "lake_shore" ] },
-      "below_entrance": {
-        "overmap": "cave_underground_nesw",
-        "above": "tunnel_to_surface",
+      "cave_underground_entrance": { "overmap": "cave_underground_entrance_north", "below": "surface_to_shaft" },
+      "shaft_west": { "overmap": "mine_shaft_middle_north", "above": "surface_to_shaft", "below": "shaft_lower_to_shaft_middle" },
+      "shaft_east": { "overmap": "mine_shaft_middle_east_north", "above": "surface_to_shaft", "below": "shaft_lower_to_shaft_middle" },
+      "tunnels_west": { "overmap": "mine_shaft_lower_north", "above": "shaft_lower_to_shaft_middle", "west": "tunnel_entrance_to_tunnels" },
+      "tunnels_east": { "overmap": "mine_shaft_lower_east_north", "above": "shaft_lower_to_shaft_middle" },
+      "tunnel_entrance": { "overmap": "mine_tunnel_ew", "east": "tunnel_entrance_to_tunnels", "west": "tunnel_to_tunnel" },
+      "tee": { "overmap": "mine_tunnel_nes", "north": "tunnel_to_tunnel", "east": "tunnel_to_tunnel", "south": "tunnel_to_tunnel" },
+      "cross": {
+        "overmap": "mine_tunnel_nesw",
         "north": "tunnel_to_tunnel",
         "east": "tunnel_to_tunnel",
         "south": "tunnel_to_tunnel",
         "west": "tunnel_to_tunnel"
       },
-      "crossroads": {
-        "overmap": "cave_underground_nesw",
-        "north": "tunnel_to_tunnel",
-        "east": "tunnel_to_tunnel",
-        "south": "tunnel_to_tunnel",
-        "west": "tunnel_to_tunnel"
+      "straight_tunnel": { "overmap": "mine_tunnel_ns", "north": "tunnel_to_tunnel", "south": "tunnel_to_tunnel" },
+      "corner": { "overmap": "mine_tunnel_ne", "north": "tunnel_to_tunnel", "east": "tunnel_to_tunnel" },
+      "dead_end": { "overmap": "mine_tunnel_end_south", "north": "tunnel_to_tunnel" },
+      "slope_down_to_-3": { "overmap": "mine_tunnel_end_south", "north": "tunnel_to_tunnel", "below": "-2_to_-3" },
+      "-3_tee": {
+        "overmap": "mine_tunnel_nes",
+        "north": "-3_tunnel_to_-3_tunnel",
+        "east": "-3_tunnel_to_-3_tunnel",
+        "south": "-3_tunnel_to_-3_tunnel"
       },
-      "tee": {
-        "overmap": "cave_underground_nes",
-        "north": "tunnel_to_tunnel",
-        "east": "tunnel_to_tunnel",
-        "south": "tunnel_to_tunnel"
+      "-3_cross": {
+        "overmap": "mine_tunnel_nesw",
+        "north": "-3_tunnel_to_-3_tunnel",
+        "east": "-3_tunnel_to_-3_tunnel",
+        "south": "-3_tunnel_to_-3_tunnel",
+        "west": "-3_tunnel_to_-3_tunnel"
       },
-      "straight_tunnel": { "overmap": "cave_underground_ns", "north": "tunnel_to_tunnel", "south": "tunnel_to_tunnel" },
-      "corner": { "overmap": "cave_underground_ne", "north": "tunnel_to_tunnel", "east": "tunnel_to_tunnel" },
-      "dead_end": { "overmap": "cave_underground_end_south", "north": "tunnel_to_tunnel" },
-      "queen": { "overmap": "cave_underground_kraken_north", "north": "tunnel_to_tunnel" },
-      "nest": { "overmap": "cave_underground_nest_north", "north": "tunnel_to_tunnel" },
-      "food": { "overmap": "cave_underground_food_north", "north": "tunnel_to_tunnel" }
+      "-3_straight_tunnel": { "overmap": "mine_tunnel_ns", "north": "-3_tunnel_to_-3_tunnel", "south": "-3_tunnel_to_-3_tunnel" },
+      "-3_corner": { "overmap": "mine_tunnel_ne", "north": "-3_tunnel_to_-3_tunnel", "east": "-3_tunnel_to_-3_tunnel" },
+      "-3_dead_end": { "overmap": "mine_tunnel_end_south", "north": "-3_tunnel_to_-3_tunnel" },
+      "slope_up_to_-2": { "overmap": "mine_tunnel_end_south", "north": "-3_tunnel_to_-3_tunnel", "above": "-2_to_-3" },
+      "slope_down_to_-4": { "overmap": "mine_tunnel_end_south", "north": "-3_tunnel_to_-3_tunnel", "below": "-3_to_-4" },
+      "-4_tee": {
+        "overmap": "mine_tunnel_nes",
+        "north": "-4_tunnel_to_-4_tunnel",
+        "east": "-4_tunnel_to_-4_tunnel",
+        "south": "-4_tunnel_to_-4_tunnel"
+      },
+      "-4_cross": {
+        "overmap": "mine_tunnel_nesw",
+        "north": "-4_tunnel_to_-4_tunnel",
+        "east": "-4_tunnel_to_-4_tunnel",
+        "south": "-4_tunnel_to_-4_tunnel",
+        "west": "-4_tunnel_to_-4_tunnel"
+      },
+      "-4_straight_tunnel": { "overmap": "mine_tunnel_ns", "north": "-4_tunnel_to_-4_tunnel", "south": "-4_tunnel_to_-4_tunnel" },
+      "-4_corner": { "overmap": "mine_tunnel_ne", "north": "-4_tunnel_to_-4_tunnel", "east": "-4_tunnel_to_-4_tunnel" },
+      "-4_dead_end": { "overmap": "mine_tunnel_end_south", "north": "-4_tunnel_to_-4_tunnel" },
+      "slope_up_to_-3": { "overmap": "mine_tunnel_end_south", "north": "-4_tunnel_to_-4_tunnel", "above": "-3_to_-4" },
+      "tunnel_to_finale": { "overmap": "mine_tunnel_ns", "north": "-4_tunnel_to_finale", "south": "-4_tunnel_to_-4_tunnel" },
+      "finale": { "overmap": "mine_finale_north", "south": "-4_tunnel_to_finale" }
     },
-    "root": "surface",
+    "root": "cave_underground_entrance",
     "phases": [
-      [ { "overmap": "below_entrance", "max": 1 } ],
+      [
+        {
+          "name": "entrance_shaft_tunnels_start",
+          "chunk": [
+            { "overmap": "cave_underground_entrance", "pos": [ 0, 0, 0 ] },
+            { "overmap": "shaft_west", "pos": [ 1, 0, -1 ] },
+            { "overmap": "shaft_east", "pos": [ 0, 0, -1 ] },
+            { "overmap": "tunnels_west", "pos": [ 0, 0, -2 ] },
+            { "overmap": "tunnels_east", "pos": [ 1, 0, -2 ] },
+            { "overmap": "tunnel_entrance", "pos": [ -1, 0, -2 ] }
+          ],
+          "max": 1
+        }
+      ],
       [
         { "overmap": "straight_tunnel", "max": { "poisson": 20 } },
         { "overmap": "corner", "max": { "poisson": 5 } },
-        { "overmap": "tee", "max": { "poisson": 10 } },
-        { "overmap": "below_entrance", "max": { "poisson": 0.7 } }
+        { "overmap": "tee", "max": { "poisson": 10 } }
       ],
-      [ { "overmap": "queen", "max": 1 } ],
-      [ { "overmap": "food", "max": { "poisson": 5 } }, { "overmap": "nest", "max": { "poisson": 5 } } ],
       [
-        { "overmap": "dead_end", "weight": 100 },
+        {
+          "name": "-2_to_-3",
+          "chunk": [ { "overmap": "slope_down_to_-3", "pos": [ 0, 0, -2 ] }, { "overmap": "slope_up_to_-2", "pos": [ 0, 0, -3 ] } ],
+          "max": 1
+        }
+      ],
+      [
+        { "overmap": "dead_end", "weight": 2000 },
         { "overmap": "straight_tunnel", "weight": 100 },
         { "overmap": "corner", "weight": 100 },
         { "overmap": "tee", "weight": 10 },
-        { "overmap": "crossroads", "weight": 1 },
-        { "overmap": "surface", "weight": 1 }
+        { "overmap": "cross", "weight": 1 }
+      ],
+      [
+        { "overmap": "-3_straight_tunnel", "max": { "poisson": 20 } },
+        { "overmap": "-3_corner", "max": { "poisson": 5 } },
+        { "overmap": "-3_tee", "max": { "poisson": 10 } }
+      ],
+      [
+        {
+          "name": "-3_to_-4",
+          "chunk": [ { "overmap": "slope_down_to_-4", "pos": [ 0, 0, -3 ] }, { "overmap": "slope_up_to_-3", "pos": [ 0, 0, -4 ] } ],
+          "max": 1
+        }
+      ],
+      [
+        { "overmap": "-3_dead_end", "weight": 2000 },
+        { "overmap": "-3_straight_tunnel", "weight": 100 },
+        { "overmap": "-3_corner", "weight": 100 },
+        { "overmap": "-3_tee", "weight": 10 },
+        { "overmap": "-3_cross", "weight": 1 }
+      ],
+      [
+        { "overmap": "-4_straight_tunnel", "max": { "poisson": 20 } },
+        { "overmap": "-4_corner", "max": { "poisson": 5 } },
+        { "overmap": "-4_tee", "max": { "poisson": 10 } }
+      ],
+      [
+        {
+          "name": "finale",
+          "chunk": [ { "overmap": "tunnel_to_finale", "pos": [ 0, 0, -4 ] }, { "overmap": "finale", "pos": [ 0, -1, -4 ] } ],
+          "max": 1
+        }
+      ],
+      [
+        { "overmap": "-4_dead_end", "weight": 2000 },
+        { "overmap": "-4_straight_tunnel", "weight": 100 },
+        { "overmap": "-4_corner", "weight": 100 },
+        { "overmap": "-4_tee", "weight": 10 },
+        { "overmap": "-4_cross", "weight": 1 }
       ]
     ]
   }
