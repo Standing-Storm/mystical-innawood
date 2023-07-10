@@ -20,7 +20,6 @@
     "melee_skill": 4,
     "melee_dice": 1,
     "melee_dice_sides": 1,
-    "melee_damage": [ { "damage_type": "cut", "amount": 8 } ],
     "dodge": 6,
     "armor": { "bash": 50, "cut": 50, "stab": 50, "bullet": 50 },
     "vision_day": 6,
@@ -39,6 +38,17 @@
     "death_drops": "ghost_lantern_drops",
     "anger_triggers": [ "PLAYER_CLOSE" ],
     "death_function": { "message": "The %s suddenly winks out!", "corpse_type": "NO_CORPSE" },
-    "flags": [ "SEES", "HEARS", "FLIES", "PATH_AVOID_DANGER_1", "HARDTOSHOOT", "NOGIB", "NOHEAD", "NO_BREATHE", "STUMBLES" ]
+    "flags": [
+      "SEES",
+      "HEARS",
+      "FLIES",
+      "PATH_AVOID_DANGER_1",
+      "HARDTOSHOOT",
+      "PACIFIST",
+      "NOGIB",
+      "NOHEAD",
+      "NO_BREATHE",
+      "STUMBLES"
+    ]
   }
 ]

@@ -87,5 +87,33 @@
     "min_range": 25,
     "sound_type": "activity",
     "sound_description": "static"
+  },
+  {
+    "id": "lilitu_disease_spell",
+    "type": "SPELL",
+    "name": "Lilitu disease spell",
+    "description": "The spell that inflicts you with sickness if a lilitu gets angry at you.",
+    "valid_targets": [ "hostile" ],
+    "flags": [ "CONCENTRATE", "NO_PROJECTILE" ],
+    "max_level": 20,
+    "effect": "effect_on_condition",
+    "effect_str": "EOC_LILITU_DISEASE",
+    "shape": "blast",
+    "min_range": 8,
+    "sound_type": "activity",
+    "sound_description": "gust of wind"
+  },
+  {
+    "type": "effect",
+    "id": "EOC_LILITU_DISEASE",
+    "effect": [
+      {
+        "switch": { "rand": 5 },
+        "cases": [
+          { "case": 0, "effect": [ { "u_add_effect": "common_cold", "intensity": 1, "duration": "72 hours" } ] },
+          { "case": 4, "effect": [ { "u_add_effect": "flu", "intensity": 1, "duration": "30 hours" } ] }
+        ]
+      }
+    ]
   }
 ]

@@ -1,6 +1,14 @@
 [
   {
     "type": "MONSTER_FACTION",
+    "name": "earth_elemental_faction",
+    "base_faction": "animal",
+    "neutral": [ "small_animal", "herbivore" ],
+    "hate": [ "zombie", "nether_player_hate" ],
+    "by_mood": [ "human", "player" ]
+  },
+  {
+    "type": "MONSTER_FACTION",
     "name": "forest_elemental_faction",
     "base_faction": "animal",
     "neutral": [ "canidae", "fish", "mega_bird" ],
@@ -10,10 +18,9 @@
   },
   {
     "type": "MONSTER_FACTION",
-    "name": "earth_elemental_faction",
+    "name": "moon_elemental_faction",
     "base_faction": "animal",
-    "neutral": [ "small_animal", "herbivore" ],
-    "hate": [ "zombie", "nether_player_hate" ],
+    "hate": [ "nether_player_hate" ],
     "by_mood": [ "human", "player" ]
   },
   {
@@ -34,9 +41,8 @@
   },
   {
     "type": "MONSTER_FACTION",
-    "name": "moon_elemental_faction",
+    "name": "shadow_elemental_faction",
     "base_faction": "animal",
-    "hate": [ "nether_player_hate" ],
     "by_mood": [ "human", "player" ]
   }
 ]

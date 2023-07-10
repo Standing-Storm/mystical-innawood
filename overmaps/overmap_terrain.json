@@ -6,57 +6,5 @@
     "sym": "O",
     "color": "dark_gray",
     "see_cost": 6
-  },
-  {
-    "type": "overmap_terrain",
-    "id": [ "mine_entrance", "mine_entrance_loading_zone" ],
-    "name": "mine entrance",
-    "sym": "M",
-    "color": "magenta",
-    "see_cost": 5,
-    "flags": [ "KNOWN_DOWN" ]
-  },
-  {
-    "type": "overmap_terrain",
-    "id": [ "mine_entrance_roof", "mine_entrance_loading_zone_roof" ],
-    "name": "mine entrance roof",
-    "sym": "M",
-    "color": "magenta",
-    "see_cost": 5
-  },
-  {
-    "type": "overmap_terrain",
-    "id": [ "mine_shaft_middle", "mine_shaft_middle_east" ],
-    "name": "mine shaft",
-    "sym": "O",
-    "color": "dark_gray",
-    "see_cost": 5,
-    "flags": [ "KNOWN_UP", "KNOWN_DOWN" ]
-  },
-  {
-    "type": "overmap_terrain",
-    "id": [ "mine_shaft_lower", "mine_shaft_lower_east" ],
-    "name": "mine shaft",
-    "sym": "O",
-    "color": "dark_gray",
-    "see_cost": 5,
-    "flags": [ "KNOWN_UP" ]
-  },
-  {
-    "type": "overmap_terrain",
-    "id": "mine_tunnel",
-    "name": "mine tunnels",
-    "color": "dark_gray",
-    "see_cost": 5,
-    "spawns": { "group": "GROUP_MINERS", "population": [ 1, 2 ], "chance": 100 },
-    "flags": [ "LINEAR" ]
-  },
-  {
-    "type": "overmap_terrain",
-    "id": "mine_finale",
-    "name": "mine",
-    "sym": "M",
-    "color": "brown",
-    "see_cost": 5
   }
 ]
