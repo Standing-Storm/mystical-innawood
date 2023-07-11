@@ -36,7 +36,7 @@
     "valid_targets": [ "self" ],
     "skill": "occult",
     "effect": "attack",
-    "effect_str": "effect_selene_embrace",
+    "effect_str": "effect_moon_selene_embrace",
     "shape": "blast",
     "min_duration": 200
   }
