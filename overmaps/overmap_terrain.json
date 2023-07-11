@@ -7,5 +7,14 @@
     "sym": "O",
     "color": "dark_gray",
     "see_cost": 6
+  },
+  {
+    "type": "overmap_terrain",
+    "id": [ "cave_tunnels_aboveground" ],
+    "name": "cave",
+    "looks-like": "cave",
+    "sym": "C",
+    "color": "brown",
+    "see_cost": 2
   }
 ]
