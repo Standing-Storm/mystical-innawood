@@ -12,7 +12,8 @@
         [ "gnome_eye", 1 ],
         [ "earth_black_blood", 1 ],
         [ "thornbear_fur", 4 ],
-        [ "moon_lantern_dust", 2 ]
+        [ "moon_lantern_dust", 2 ],
+        [ "corpsefire_cap", 1 ]
       ]
     ]
   },
@@ -29,7 +30,8 @@
         [ "bracken_eye", 1 ],
         [ "gnome_eye", 3 ],
         [ "earth_black_blood", 1 ],
-        [ "moon_lantern_dust", 8 ]
+        [ "moon_lantern_dust", 8 ],
+        [ "corpsefire_cap", 9 ]
       ]
     ]
   },
@@ -38,15 +40,16 @@
     "type": "requirement",
     "components": [
       [
-        [ "dryad_bark", 10 ],
-        [ "undine_heart", 3 ],
-        [ "feather_lilitu", 7 ],
+        [ "dryad_bark", 15 ],
+        [ "undine_heart", 5 ],
+        [ "feather_lilitu", 12 ],
         [ "thornbear_fur", 25 ],
-        [ "gnome_eye", 8 ],
-        [ "earth_black_blood", 4 ],
-        [ "witchwood_bark", 3 ],
+        [ "gnome_eye", 10 ],
+        [ "earth_black_blood", 5 ],
+        [ "witchwood_bark", 5 ],
         [ "bracken_eye", 1 ],
-        [ "moon_lantern_dust", 25 ]
+        [ "moon_lantern_dust", 25 ],
+        [ "corpsefire_cap", 22 ]
       ]
     ]
   },
@@ -75,6 +78,6 @@
   {
     "id": "magical_herbs",
     "type": "requirement",
-    "components": [ [ [ "harfry_root", 1 ], [ "morningflower_leaves", 1 ], [ "moonstears_harvested", 1 ] ] ]
+    "components": [ [ [ "harfry_root", 1 ], [ "morningflower_leaves", 1 ], [ "moonstears_harvested", 1 ], [ "corpsefire_cap", 1 ] ] ]
   }
 ]

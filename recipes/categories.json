@@ -56,7 +56,19 @@
     "name": "infusion research",
     "description": "Recipes related to manipulating the balance of magical energies inherent in living beings.",
     "skill_used": "occult",
-    "nested_category_data": [ "infusion_research_intro", "infusion_research_mana_pool_1" ],
+    "nested_category_data": [ "infusion_research_intro", "infusion_research_mana_pool_1", "infusion_research_mana_river_1" ],
+    "difficulty": 1
+  },
+  {
+    "id": "nested_infusion_mana_rituals",
+    "type": "nested_category",
+    "activity_level": "LIGHT_EXERCISE",
+    "category": "CC_OCCULT",
+    "subcategory": "CSC_OCCULT_RITUALS",
+    "name": "infusion mana rituals",
+    "description": "Recipes related to enhancing your ability to channel mana.",
+    "skill_used": "occult",
+    "nested_category_data": [ "infusion_mana_pool_1", "infusion_mana_river_1" ],
     "difficulty": 1
   },
   {
