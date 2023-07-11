@@ -10,13 +10,21 @@
       { "group": "GROUP_MOON_ELEMENTAL", "weight": 80, "conditions": [ "NIGHT" ] },
       { "group": "GROUP_SKY_ELEMENTAL", "weight": 25 },
       { "monster": "mon_bear_thorn", "weight": 50 },
-      { "monster": "mon_bear_thorn", "weight": 50, "starts": "60 days" }
+      { "monster": "mon_bear_thorn", "weight": 50, "starts": "60 days" },
+      { "monster": "mon_owl_shadow_lilitu", "weight": 10 },
+      { "monster": "mon_owl_shadow_lilitu", "weight": 20, "starts": "60 days" },
+      { "monster": "mon_owl_shadow_lilitu", "weight": 30 "conditions": [ "NIGHT" ] } 
     ]
   },
   {
     "type": "monstergroup",
     "name": "GROUP_WILDERNESS_FOREST_MAMMAL",
     "monsters": [ { "monster": "mon_bear_thorn", "weight": 1, "cost_multiplier": 15 } ]
+  },
+  {
+    "type": "monstergroup",
+    "name": "GROUP_WILDERNESS_FOREST_BIRD",
+    { "monster": "mon_owl_shadow_lilitu", "weight": 1, "cost_multiplier": 15 }
   },
   {
     "type": "monstergroup",
