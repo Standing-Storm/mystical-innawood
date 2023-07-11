@@ -9,11 +9,11 @@
       { "group": "GROUP_WILDERNESS_FOREST_MAMMAL", "weight": 75, "starts": "28 days" },
       { "group": "GROUP_MOON_ELEMENTAL", "weight": 80, "conditions": [ "NIGHT" ] },
       { "group": "GROUP_SKY_ELEMENTAL", "weight": 25 },
-      { "monster": "mon_bear_thorn", "weight": 50 },
-      { "monster": "mon_bear_thorn", "weight": 50, "starts": "60 days" },
-      { "monster": "mon_owl_shadow_lilitu", "weight": 10 },
-      { "monster": "mon_owl_shadow_lilitu", "weight": 20, "starts": "60 days" },
-      { "monster": "mon_owl_shadow_lilitu", "weight": 30 "conditions": [ "NIGHT" ] } 
+      { "monster": "mon_bear_thorn", "weight": 50, "cost_multiplier": 5 },
+      { "monster": "mon_bear_thorn", "weight": 50, "cost_multiplier": 5, "starts": "60 days" },
+      { "monster": "mon_owl_shadow_lilitu", "weight": 10, "cost_multiplier": 3 },
+      { "monster": "mon_owl_shadow_lilitu", "weight": 20, "cost_multiplier": 3, "starts": "60 days" },
+      { "monster": "mon_owl_shadow_lilitu", "weight": 30, "cost_multiplier": 3, "conditions": [ "NIGHT" ] } 
     ]
   },
   {
@@ -29,7 +29,9 @@
   {
     "type": "monstergroup",
     "name": "GROUP_CAVE",
-    "monsters": [ { "group": "GROUP_EARTH_ELEMENTAL_CAVE", "weight": 60 } ]
+    "monsters": [ { "group": "GROUP_EARTH_ELEMENTAL_CAVE", "weight": 60 },
+    { "monster": "mon_earth_rockbat", "weight": 20, "cost_multiplier": 3 }, 
+    { "monster": "mon_earth_rockbat", "weight": 4, "cost_multiplier": 3, "pack_size": [ 2, 4 ] } ]
   },
   {
     "type": "monstergroup",
