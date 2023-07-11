@@ -3,6 +3,7 @@
     "type": "overmap_terrain",
     "id": [ "myst_standing_stones" ],
     "name": "standing stones",
+    "looks-like": "standing stones",
     "sym": "O",
     "color": "dark_gray",
     "see_cost": 6

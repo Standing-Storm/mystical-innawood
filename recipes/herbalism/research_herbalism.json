@@ -77,7 +77,8 @@
           { "u_learn_recipe": "herbalism_harfry_extract" },
           { "u_learn_recipe": "herbalism_morningflower_extract" },
           { "u_learn_recipe": "herbalism_witchwood_extract" },
-          { "u_learn_recipe": "herbalism_moonstears_extract" }
+          { "u_learn_recipe": "herbalism_moonstears_extract" },
+          { "u_learn_recipe": "herbalism_corpsefire_extract" }
         ],
         "false_effect": [
           {
@@ -125,7 +126,8 @@
           { "u_learn_recipe": "herbalism_witchwood_mana_regen" },
           { "u_learn_recipe": "herbalism_harfry_curative" },
           { "u_learn_recipe": "herbalism_morningflower_no_sleep" },
-          { "u_learn_recipe": "herbalism_moonstears_tonic" }
+          { "u_learn_recipe": "herbalism_moonstears_nightvision" },
+          { "u_learn_recipe": "herbalism_corpsefire_low_metabolism" }
         ],
         "false_effect": [
           {

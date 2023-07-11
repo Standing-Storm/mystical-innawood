@@ -4,7 +4,7 @@
     "id": "t_moon_ground",
     "name": "silvery moss",
     "looks_like": "t_moss",
-    "description": "A patch of moist, spongy moss, a shining silver in color.",
+    "description": "A patch of moist, spongy moss, shining silver in color.",
     "symbol": ".",
     "color": "white",
     "move_cost": 2,

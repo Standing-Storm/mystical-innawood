@@ -1,5 +1,23 @@
 [
   {
+    "type": "effect_type",
+    "id": "effect_potion_corpsefire_powder",
+    "name": [ "Corpsefire Cap Powder" ],
+    "desc": [ "Your metabolism has slowed, but your limbs feel stiff and sluggish." ],
+    "remove_message": "The powder's effects fade.",
+    "rating": "good",
+    "enchantments": [
+      {
+        "values": [
+          { "value": "HUNGER", "multiply": 0.85 },
+          { "value": "THIRST", "multiply": 0.85 },
+          { "value": "METABOLISM", "multiply": 0.85 },
+          { "value": "MOVE_COST", "multiply": 1.5 }
+        ]
+      }
+    ]
+  },
+  {
     "id": "effect_potion_witchwood_elixir",
     "type": "effect_type",
     "name": [ "Witchwood Elixir" ],
@@ -28,5 +46,25 @@
     "rating": "good",
     "limb_score_mods": [ { "limb_score": "night_vis", "modifier": 8 } ],
     "flags": [ "EFFECT_LIMB_SCORE_MOD" ]
+  },
+  {
+    "type": "effect_type",
+    "id": "effect_potion_corpsefire_elixir",
+    "name": [ "Corpse Metabolism" ],
+    "desc": [
+      "Your breathing, heartrate, and digestion have all slowed to a crawl.  You need much less food and water, but you heal more slowly."
+    ],
+    "remove_message": "The elixir's effects fade.",
+    "rating": "good",
+    "base_mods": { "healing_rate": [ 0.5 ] },
+    "enchantments": [
+      {
+        "values": [
+          { "value": "HUNGER", "multiply": 0.6 },
+          { "value": "THIRST", "multiply": 0.6 },
+          { "value": "METABOLISM", "multiply": 0.6 }
+        ]
+      }
+    ]
   }
 ]

@@ -23,5 +23,10 @@
     "id": "harvest_moonstears",
     "type": "harvest",
     "entries": [ { "drop": "moonstears_harvested", "base_num": [ 2, 4 ] } ]
+  },
+  {
+    "id": "harvest_corpsefire",
+    "type": "harvest",
+    "entries": [ { "drop": "corpsefire_cap", "base_num": [ 1, 3 ] } ]
   }
 ]

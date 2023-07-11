@@ -9,7 +9,8 @@
     "looks_like": "f_datura",
     "move_cost_mod": 1,
     "required_str": -1,
-    "flags": [ "TRANSPARENT", "TINY", "FLAMMABLE_ASH", "NOCOLLIDE", "FLOWER", "LIGHT_5" ],
+    "light_emitted": 5,
+    "flags": [ "TRANSPARENT", "TINY", "FLAMMABLE_ASH", "NOCOLLIDE", "FLOWER" ],
     "examine_action": "harvest_furn_nectar",
     "harvest_by_season": [ { "seasons": [ "spring", "summer", "autumn" ], "id": "harvest_morningflower" } ],
     "bash": { "str_min": 2, "str_max": 6, "sound": "crunch.", "sound_fail": "whish." }
@@ -45,6 +46,21 @@
     "flags": [ "TRANSPARENT", "TINY", "FLAMMABLE_ASH", "NOCOLLIDE", "FLOWER" ],
     "examine_action": "harvest_furn_nectar",
     "harvest_by_season": [ { "seasons": [ "summer", "autumn" ], "id": "harvest_moonstears" } ],
+    "bash": { "str_min": 2, "str_max": 6, "sound": "crunch.", "sound_fail": "whish." }
+  },
+  {
+    "type": "furniture",
+    "id": "f_corpsefire_mushroom",
+    "name": "corpsefire_mushroom",
+    "description": "A cluster of blue-white mushrooms growing from the ground, faintly glowing with a ghastly light.",
+    "symbol": "#",
+    "color": "dark_gray",
+    "move_cost_mod": 0,
+    "required_str": -1,
+    "light_emitted": 5,
+    "flags": [ "TRANSPARENT", "TINY", "FLAMMABLE_ASH", "NOCOLLIDE", "LIGHT_5" ],
+    "examine_action": "harvest_furn",
+    "harvest_by_season": [ { "seasons": [ "spring", "summer", "autumn", "winter" ], "id": "harvest_corpsefire" } ],
     "bash": { "str_min": 2, "str_max": 6, "sound": "crunch.", "sound_fail": "whish." }
   }
 ]

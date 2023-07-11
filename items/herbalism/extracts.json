@@ -44,5 +44,12 @@
     "name": { "str_sp": "harfry extract" },
     "copy-from": "herbalism_extract_abstract",
     "description": "The processed extract of harfry root, ready to be used for further rituals."
+  },
+  {
+    "type": "AMMO",
+    "id": "herbalism_corpsefire_extract",
+    "name": { "str_sp": "corpsefire extract" },
+    "copy-from": "herbalism_extract_abstract",
+    "description": "The processed extract of a corpsefire mushroom, ready to be used for further rituals."
   }
 ]
