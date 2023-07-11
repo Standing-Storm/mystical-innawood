@@ -1,0 +1,43 @@
+[
+  {
+    "id": "moon_selene_embrace",
+    "type": "SPELL",
+    "name": "Embrace of Selene",
+    "description": "With a few whispered words, you can transform yourself into lambent moonlight, allowing you to escape from danger.  The spell only works when the moon is in the sky.",
+    "valid_targets": [ "self" ],
+    "flags": [ "CONCENTRATE", "VERBAL", "SOMATIC" ],
+    "skill": "occult",
+    "effect": "effect_on_condition",
+    "effect_str": "EOC_MOON_SELENE_EMBRACE",
+    "extra_effects": [ { "id": "channeling_fatigue_spell", "hit_self": true, "max_level": 3 } ],
+    "shape": "blast",
+    "energy_source": "MANA",
+    "spell_class": "MOON",
+    "difficulty": 5,
+    "max_level": 15,
+    "base_casting_time": 110,
+    "base_energy_cost": 1200,
+    "final_energy_cost": 600,
+    "energy_increment": -40,
+    "min_duration": 200
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_MOON_SELENE_EMBRACE",
+    "condition": { "not": "is_day" },
+    "effect": [ { "u_cast_spell": { "id": "moon_selene_embrace_real" } } ],
+    "false_effect": [ { "u_message": "Without the moon in the sky, the ritual does nothing" } ]
+  },
+  {
+    "id": "moon_selene_embrace_real",
+    "type": "SPELL",
+    "name": "Embrace of Selene Real",
+    "description": "The actual spell that causes the Embrace of Selene effect.  It's a bug if you have it.",
+    "valid_targets": [ "self" ],
+    "skill": "occult",
+    "effect": "attack",
+    "effect_str": "effect_selene_embrace",
+    "shape": "blast",
+    "min_duration": 200
+  }
+]
