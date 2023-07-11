@@ -1,0 +1,74 @@
+[
+  {
+    "id": "forest_land_renewal",
+    "type": "SPELL",
+    "name": "The Rebirth and Renewal of the Land",
+    "description": "While standing in a place where a forest can grow, draw out the energy of the land to raise fully grown trees in moments.  You cannot directly control what sort of trees will grow.",
+    "flags": [ "SOMATIC", "VERBAL", "CONCENTRATE" ],
+    "valid_targets": [ "ground" ],
+    "max_level": 15,
+    "skill": "occult",
+    "spell_class": "FOREST",
+    "energy_source": "MANA",
+    "shape": "blast",
+    "difficulty": 12,
+    "effect": "effect_on_condition",
+    "effect_str": "EOC_FOREST_LAND_RENEWAL",
+    "extra_effects": [ { "id": "channeling_fatigue_spell", "hit_self": true, "max_level": 8 } ],
+    "base_casting_time": 180000,
+    "base_energy_cost": 6000,
+    "min_aoe": 0.5,
+    "max_aoe": 25,
+    "aoe_increment": 1.5
+    
+  },
+   {
+    "type": "effect_on_condition",
+    "id": "EOC_FOREST_LAND_RENEWAL",
+    "condition": {
+      "and": [
+        "u_is_outside",
+        {
+          "or": [
+            { "u_is_on_terrain": "t_dirt" },
+            { "u_is_on_terrain": "t_grass" },
+            { "u_is_on_terrain": "t_grass_white" },
+            { "u_is_on_terrain": "t_moss" },
+            { "u_is_on_terrain": "t_forestfloor" },
+            { "u_is_on_terrain": "t_grass_tall" },
+            { "u_is_on_terrain": "t_grass_long" },
+            { "u_is_on_terrain": "t_bamboo" },
+            { "u_is_on_terrain": "t_bamboo_harvested" },
+            { "u_is_on_terrain": "t_underbrush_harvested_winter" },
+            { "u_is_on_terrain_with_flag": "SHRUB" },
+            { "u_is_on_terrain_with_flag": "TREE" },
+            { "u_is_on_terrain_with_flag": "YOUNG" },
+            { "u_is_on_terrain": "t_bamboo_long" },
+            { "u_is_on_terrain": "t_bamboo_tall" },
+            { "u_is_on_terrain": "t_tree_young" },
+            { "u_is_on_terrain": "t_mega_fern" }
+          ]
+        }
+      ]
+    },
+    "effect": { "u_cast_spell": { "id": "forest_land_renewal_real" } },
+    "false_effect": [
+      {
+        "u_message": "You must be on fertile land for the forest to take root."
+      }
+    ]
+  },
+  {
+    "id": "forest_land_renewal_real",
+    "type": "SPELL",
+    "name": "The Rebirth and Renewal of the Land Real",
+    "description": "The actual Rebirth and Renewal of the Land spell.  It's a bug if you have it.",
+    "valid_targets": [ "ground" ],
+    "max_level": 15,
+    "skill": "occult",
+    "spell_class": "FOREST",
+    "effect": "ter_transform",
+    "effect_str": "forest_ter_land_renewal",
+     "min_aoe": { "math": [ "( (u_val('spell_level', 'spell: forest_land_renewal') * 1.5) + 0.5)" ]} 
+  }
+]
