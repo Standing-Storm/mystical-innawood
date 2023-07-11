@@ -47,7 +47,7 @@
     "type": "SPELL",
     "name": "The Turning of the Earth",
     "description": "Ask the earth spirits to prepare the earth for growth and planting.",
-    "flags": [ "SOMATIC", "VERBAL", "LOUD" ],
+    "flags": [ "CONCENTRATE", "SOMATIC", "VERBAL", "LOUD" ],
     "valid_targets": [ "ground" ],
     "max_level": 12,
     "skill": "occult",
