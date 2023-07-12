@@ -107,5 +107,55 @@
       { "u_spawn_item": "used_occult_notes", "suppress_message": true },
       { "u_add_effect": "channeling_fatigue_spell", "duration": "20 seconds" }
     ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "name": "journeyman spellcrafting research",
+    "id": "spellcrafting_research_journeyman",
+    "description": "In your studies you've seen spirits of the land and sea and sky, of the forest and the shining moon, and the power they wield.  You know a few simple spells and rituals, but there is so much more out there to discover.",
+    "category": "CC_*",
+    "subcategory": "CSC_*_NESTED",
+    "difficulty": 6,
+    "time": "12 h",
+    "components": [ [ [ "paper", 40 ] ] ],
+    "using": [ [ "writing_formulae_journeyman_standard", 1 ] ],
+    "qualities": [
+      { "id": "MAGICAL_RESEARCH", "level": 1 },
+      { "id": "MAGICAL_SENSE", "level": 1 },
+      { "id": "MAGICAL_WRITING", "level": 1 }
+    ],
+    "skill_used": "occult",
+    "flags": [ "BLIND_HARD" ],
+    "proficiencies": [
+      { "proficiency": "prof_occult_exploration", "required": true },
+      { "proficiency": "prof_thaumatology", "required": false },
+      { "proficiency": "prof_spellcrafting_basic", "required": false }
+    ],
+    "result_eocs": [  
+      {
+        "id": "EOC_SPELLCRAFTING_JOURNEYMAN_RESEARCH",
+        "condition": { "roll_contested": { "math": [ "rng( u_val('intelligence'), u_skill('occult') )" ] }, "difficulty": 15 },
+        "effect": [
+          {
+            "u_message": "You can see the energies, you can extract them from natural components, and you can manipulate them.  Putting all that knowledge together, you're ready to begin your research into sorcery.",
+            "type": "good"
+          },
+          { "u_spawn_item": "used_occult_notes", "suppress_message": true },
+          { "u_learn_recipe": "forest_research_materials" },
+          { "u_learn_recipe": "earth_research_materials" },
+          { "u_learn_recipe": "moon_research_materials" },
+          { "u_learn_recipe": "sky_research_materials" },
+          { "u_learn_recipe": "sea_research_materials" }
+        ],
+        "false_effect": [
+          {
+            "u_message": "You really thought you had something here, but it's just a dead end.  You'll have to try again.",
+            "type": "bad"
+          },
+          { "u_spawn_item": "used_occult_notes", "suppress_message": true }
+        ]
+      }
+    ]
   }
 ]
