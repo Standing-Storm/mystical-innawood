@@ -49,7 +49,7 @@
     "result_eocs": [
       {
         "id": "EOC_STUDY_OCCULT_RESEARCH_NOTES",
-        "condition": { "roll_contested": { "math": [ "rng( u_val('intelligence'), u_skill('occult') )" ] }, "difficulty": 14 },
+        "condition": { "roll_contested": { "math": [ "rng( u_val('intelligence'), u_skill('occult') )" ] }, "difficulty": 10 },
         "effect": [
           { "u_message": "You were right, there is something here!  It's a good thing you kept looking.", "type": "good" },
           { "u_spawn_item": "used_occult_notes", "suppress_message": true },
@@ -87,7 +87,7 @@
     "result_eocs": [
       {
         "id": "EOC_METHODS_OF_DETECTING_MAGIC",
-        "condition": { "roll_contested": { "math": [ "rng( u_val('intelligence'), u_skill('occult') )" ] }, "difficulty": 15 },
+        "condition": { "roll_contested": { "math": [ "rng( u_val('intelligence'), u_skill('occult') )" ] }, "difficulty": 13 },
         "effect": [ { "run_eocs": "EOC_METHODS_OF_DETECTING_MAGIC_2" } ],
         "false_effect": [
           {
