@@ -73,7 +73,7 @@
     "id": "sky_research_materials",
     "copy-from": "research_tome_abstract",
     "name": { "str": "sky magic research materials", "str_pl": "sets of sky magic research materials" },
-    "description": "A set of documents, scribbed notes, musings, astrological observations, and other esoterica for research into magic.  Using this, you might be able to discover a magical formula related to the sky.",
+    "description": "A set of documents, scribbed notes, musings, weather observations, and other esoterica for research into magic.  Using this, you might be able to discover a magical formula related to the sky.",
     "skill": "occult",
     "required_level": 4,
     "max_level": 5,
