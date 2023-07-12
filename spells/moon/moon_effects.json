@@ -13,7 +13,7 @@
     ]
   },
   {
-    "id": "effect_moon_selene_embrace"
+    "id": "effect_moon_selene_embrace",
     "type": "effect_type",
     "name": [ "Embrace of Selene" ],
     "desc": [ "You have been transformed into pure moonlight." ],
@@ -22,10 +22,12 @@
     "removes_effects": [ "grabbed" ],
     "enchantments": [
       {
-        "values": [ { "value": "EVASION", "add": 1.0 },
-        {"value": "FALL_DAMAGE", "multiply": 0.2 },
-        { "value": "LUMINATION", "add": 60 },
-        { "value": "MOVE_COST", "multiply": 0.5 } ]
+        "values": [
+          { "value": "EVASION", "add": 1.0 },
+          { "value": "FALL_DAMAGE", "multiply": 0.2 },
+          { "value": "LUMINATION", "add": 60 },
+          { "value": "MOVE_COST", "multiply": 0.5 }
+        ]
       }
     ]
   }
