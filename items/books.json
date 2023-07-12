@@ -122,7 +122,15 @@
     "name": { "str": "old occult research notes", "str_pl": "sets of old occult research notes" },
     "description": "A set of your notes about the occult.  You've already gotten most of the value you can out of these, but you never know when it might be useful in the future."
   },
-   {
+  {
+    "type": "BOOK",
+    "id": "item_astrological_observations",
+     "copy-from": "research_notes_abstract",
+    "name": { "str": "astrological observations", "str_pl": "sets of astrological observations" },
+    "description": "A study of the movements of the stars and planets and of their relation to each other."
+    
+  },
+  {
     "type": "BOOK",
     "id": "magical_grimoire_apprentice",
     "name": { "str": "apprentice's grimoire", "str_pl": "copies of apprentice's grimoire" },
