@@ -20,9 +20,8 @@
     "min_aoe": 0.5,
     "max_aoe": 25,
     "aoe_increment": 1.5
-    
   },
-   {
+  {
     "type": "effect_on_condition",
     "id": "EOC_FOREST_LAND_RENEWAL",
     "condition": {
@@ -52,11 +51,7 @@
       ]
     },
     "effect": { "u_cast_spell": { "id": "forest_land_renewal_real" } },
-    "false_effect": [
-      {
-        "u_message": "You must be on fertile land for the forest to take root."
-      }
-    ]
+    "false_effect": [ { "u_message": "You must be on fertile land for the forest to take root." } ]
   },
   {
     "id": "forest_land_renewal_real",
@@ -69,6 +64,6 @@
     "spell_class": "FOREST",
     "effect": "ter_transform",
     "effect_str": "forest_ter_land_renewal",
-     "min_aoe": { "math": [ "( (u_val('spell_level', 'spell: forest_land_renewal') * 1.5) + 0.5)" ]} 
+    "min_aoe": { "math": [ "( (u_val('spell_level', 'spell: forest_land_renewal') * 1.5) + 0.5)" ] }
   }
 ]

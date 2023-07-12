@@ -1,6 +1,6 @@
 [
   {
-  "type": "mapgen",
+    "type": "mapgen",
     "method": "json",
     "om_terrain": [ "cave_tunnels_aboveground" ],
     "weight": 1000,
@@ -36,8 +36,8 @@
       "flags": [ "ERASE_ALL_BEFORE_PLACING_TERRAIN" ],
       "terrain": {
         "|": "t_rock",
-        "%": [ [ "t_rock", 2] , ["t_region_groundcover_forest", 2], [ "f_rubble_rock", 1 ] ],
-        ";": [ [ "t_rock", 2] , ["t_rock_floor", 2], [ "f_rubble_rock", 1 ] ],
+        "%": [ [ "t_rock", 2 ], [ "t_region_groundcover_forest", 2 ], [ "f_rubble_rock", 1 ] ],
+        ";": [ [ "t_rock", 2 ], [ "t_rock_floor", 2 ], [ "f_rubble_rock", 1 ] ],
         ",": "t_rock_floor",
         "B": "t_rock_floor",
         "W": "t_rock_floor",
