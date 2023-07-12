@@ -124,7 +124,7 @@
     "activity_level": "LIGHT_EXERCISE",
     "name": "astrological observations",
     "id": "astrological_observations",
-    "description": "Conduct observation of the moon, the stars, and the planets.  This recipe may only be conducted outside at night.",
+    "description": "Conduct observation of the moon, the stars, and the planets.  You may only perform these observations outside at night.",
     "category": "CC_OCCULT",
     "subcategory": "CSC_OCCULT_RESEARCH",
     "difficulty": 3,
