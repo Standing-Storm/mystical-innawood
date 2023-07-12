@@ -1,1 +1,36 @@
-[]
+[
+{
+  "type": "ter_furn_transform",
+    "id": "forest_ter_land_renewal",
+    "terrain": [
+      {
+        "result": [ [ "t_null", 250 ],
+          [ "t_tree_birch", 16 ], 
+          [ "t_tree_elm", 16 ],
+          [ "t_tree_cottonwood", 16 ],
+          [ "t_tree_basswood", 16 ],
+          [ "t_tree_alder", 16 ], 
+          [ "t_tree_pine", 32 ],
+          [ "t_tree_maple", 32 ],
+          [ "t_tree_willow", 32 ],
+          [ "t_tree_hickory", 16 ],
+          [ "t_tree_walnut", 8 ],
+          [ "t_tree_butternut", 4 ],
+          [ "t_tree_chestnut", 8 ], 
+          [ "t_tree_hazelnut", 2 ],
+          [ "t_tree_beech", 2 ],
+          [ "t_tree_blackjack", 8 ],
+          [ "t_tree_apple", 2 ],
+          [ "t_tree_cherry", 2 ],
+          [ "t_tree_juniper", 2 ],
+          [ "t_tree_pear", 2 ],
+          [ "t_tree_plum", 2 ],
+          [ "t_tree_elderberry", 2 ],
+          [ "t_tree_mulberry", 2 ],
+          [ "t_tree_sassafras", 3] 
+        ],
+        "valid_terrain": [ "t_dirt", "t_grass", "t_grass_white", "t_moss", "t_forestfloor", "t_grass_tall", "t_grass_long", "t_bamboo", "t_bamboo_harvested", "t_underbrush_harvested_winter", "t_bamboo_long", "t_bamboo_tall", "t_tree_young", "t_mega_fern" ]
+        "message": "Shoots burst forth from the ground, becoming seeds and then saplings before growing in moments into trees that could have stood for a hundred years."
+      }
+      }
+]
