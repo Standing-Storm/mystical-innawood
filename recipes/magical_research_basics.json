@@ -118,5 +118,39 @@
       { "u_learn_recipe": "magical_ink" },
       { "u_learn_recipe": "magical_grimoire_apprentice" }
     ]
+  },
+  {
+     "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "name": "astrological observations",
+    "id": "astrological_observations",
+    "description": "Conduct observation of the moon, the stars, and the planets.  This recipe may only be conducted outside at night.",
+    "category": "CC_OCCULT",
+    "subcategory": "CSC_OCCULT_RESEARCH",
+    "difficulty": 3,
+    "autolearn": true,
+    "time": "30 m",
+    "using": [ [ "writing_standard", 1 ] ],
+    "components": [ [ [ "paper", 10 ] ] ],
+    "skill_used": "occult",
+    "flags": [ "BLIND_HARD" ],
+    "proficiencies": [
+      { "proficiency": "prof_occult_exploration", "required": false },
+      { "proficiency": "prof_thaumatology", "required": false },
+      { "proficiency": "prof_spellcrafting_basic", "required": false }
+    ],
+    "result_eocs": [
+       {
+        "id": "EOC_CONDUCT_ASTROLOGICAL_OBSERVATIONS",
+        "condition": { "and": [ { "not": "is_day" }, "u_is_outside" ] },
+        "effect": [
+          { "u_message": "You write down you observations for later", "type": "good" },
+         { "u_spawn_item": "item_astrological_observations", "suppress_message": true }
+        ],
+        "false_effect": [
+          { "u_message": "You need to be outside at night to take proper astrological observations.", "type": "bad" }
+        ]
+      }
+    ]
   }
 ]
