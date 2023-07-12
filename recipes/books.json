@@ -58,5 +58,25 @@
       { "proficiency": "prof_spellcrafting_basic", "required": false },
       { "proficiency": "prof_spellcrafting_forest", "required": false }
     ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "result": "earth_research_materials",
+    "category": "CC_OCCULT",
+    "subcategory": "CSC_OCCULT_MATERIALS",
+    "difficulty": 5,
+    "skill_used": "occult",
+    "time": "4 h",
+    "using": [ [ "writing_formulae_journeyman_standard", 1 ], [ "sewing_standard", 5 ], [ "tailoring_leather", 1 ] ],
+    "qualities": [ { "id": "CUT", "level": 2 }, { "id": "SEW", "level": 2 }, { "id": "SAW_W", "level": 1 } ],
+    "components": [ [ [ "paper", 50 ] ], [ [ "used_occult_notes", 2 ] ], [ [ "wood_panel", 1 ] ], [ [ "elf_shot", 10 ], [ "glimmerstone", 5 ] ] ],
+    "proficiencies": [
+      { "proficiency": "prof_occult_exploration", "required": true },
+      { "proficiency": "prof_thaumatology", "required": false },
+      { "proficiency": "prof_bookbinding", "required": false },
+      { "proficiency": "prof_spellcrafting_basic", "required": false },
+      { "proficiency": "prof_spellcrafting_forest", "required": false }
+    ]
   }
 ]
