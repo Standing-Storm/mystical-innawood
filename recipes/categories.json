@@ -44,7 +44,7 @@
     "name": "spell research",
     "description": "Recipes related to directly applying magical theory to determine a spell formula.",
     "skill_used": "occult",
-    "nested_category_data": [ "spellcrafting_research_intro" ],
+    "nested_category_data": [ "spellcrafting_research_intro", "spellcrafting_research_journeyman" ],
     "difficulty": 1
   },
   {
