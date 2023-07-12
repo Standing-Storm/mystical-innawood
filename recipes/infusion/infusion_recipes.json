@@ -133,7 +133,15 @@
             { "u_has_effect": "effect_ritually_purified" }
           ]
         },
-        "effect": {  }
+        "effect": [
+          { "u_message": "With your feet in the water, you feel a sense of deeper connection to the Unseen World.", "type": "good" },
+          { "u_add_trait": "MANA_RIVER1" }
+        ],
+        "false_effect": [
+          { "u_message": "Without the proper conditions, the ritual never had any hope of succeeding.", "type": "bad" },
+          { "u_add_effect": "channeling_fatigue_spell", "duration": "6 seconds" },
+          { "u_mutate_category": "MANA_BAD", "use_vitamins": false }
+        ]
       }
     ]
   }
