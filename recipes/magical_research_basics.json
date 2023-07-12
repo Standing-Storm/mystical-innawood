@@ -144,7 +144,7 @@
         "id": "EOC_CONDUCT_ASTROLOGICAL_OBSERVATIONS",
         "condition": { "and": [ { "not": "is_day" }, "u_is_outside" ] },
         "effect": [
-          { "u_message": "You write down you observations for later", "type": "good" },
+          { "u_message": "You write down your observations for later", "type": "good" },
          { "u_spawn_item": "item_astrological_observations", "suppress_message": true }
         ],
         "false_effect": [
