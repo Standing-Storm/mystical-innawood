@@ -39,7 +39,7 @@
       { "proficiency": "prof_herbalism_basic", "required": false }
     ]
   },
-    {
+  {
     "type": "recipe",
     "activity_level": "LIGHT_EXERCISE",
     "result": "forest_research_materials",
@@ -48,7 +48,12 @@
     "difficulty": 5,
     "skill_used": "occult",
     "time": "4 h",
-    "using": [ [ "writing_formulae_journeyman_standard", 1 ], [ "sewing_standard", 5 ], [ "tailoring_leather", 1 ], [ "magical_herbs", 3, "LIST" ] ],
+    "using": [
+      [ "writing_formulae_journeyman_standard", 1 ],
+      [ "sewing_standard", 5 ],
+      [ "tailoring_leather", 1 ],
+      [ "magical_herbs", 3, "LIST" ]
+    ],
     "qualities": [ { "id": "CUT", "level": 2 }, { "id": "SEW", "level": 2 }, { "id": "SAW_W", "level": 1 } ],
     "components": [ [ [ "paper", 50 ] ], [ [ "used_occult_notes", 2 ] ], [ [ "wood_panel", 1 ] ], [ [ "mossling_fur", 4 ] ] ],
     "proficiencies": [
@@ -70,7 +75,12 @@
     "time": "4 h",
     "using": [ [ "writing_formulae_journeyman_standard", 1 ], [ "sewing_standard", 5 ], [ "tailoring_leather", 1 ] ],
     "qualities": [ { "id": "CUT", "level": 2 }, { "id": "SEW", "level": 2 }, { "id": "SAW_W", "level": 1 } ],
-    "components": [ [ [ "paper", 50 ] ], [ [ "used_occult_notes", 2 ] ], [ [ "wood_panel", 1 ] ], [ [ "elf_shot", 10 ], [ "glimmerstone", 5 ] ] ],
+    "components": [
+      [ [ "paper", 50 ] ],
+      [ [ "used_occult_notes", 2 ] ],
+      [ [ "wood_panel", 1 ] ],
+      [ [ "elf_shot", 10 ], [ "glimmerstone", 5 ] ]
+    ],
     "proficiencies": [
       { "proficiency": "prof_occult_exploration", "required": true },
       { "proficiency": "prof_thaumatology", "required": false },
@@ -90,7 +100,12 @@
     "time": "4 h",
     "using": [ [ "writing_formulae_journeyman_standard", 1 ], [ "sewing_standard", 5 ], [ "tailoring_leather", 1 ] ],
     "qualities": [ { "id": "CUT", "level": 2 }, { "id": "SEW", "level": 2 }, { "id": "SAW_W", "level": 1 } ],
-    "components": [ [ [ "paper", 50 ] ], [ [ "used_occult_notes", 2 ] ], [ [ "wood_panel", 1 ] ], [ [ "item_astrological_observations", 3 ] ] ],
+    "components": [
+      [ [ "paper", 50 ] ],
+      [ [ "used_occult_notes", 2 ] ],
+      [ [ "wood_panel", 1 ] ],
+      [ [ "item_astrological_observations", 3 ] ]
+    ],
     "proficiencies": [
       { "proficiency": "prof_occult_exploration", "required": true },
       { "proficiency": "prof_thaumatology", "required": false },

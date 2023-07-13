@@ -125,10 +125,9 @@
   {
     "type": "BOOK",
     "id": "item_astrological_observations",
-     "copy-from": "research_notes_abstract",
+    "copy-from": "research_notes_abstract",
     "name": { "str": "astrological observations", "str_pl": "sets of astrological observations" },
     "description": "A study of the movements of the stars and planets and of their relation to each other."
-    
   },
   {
     "type": "BOOK",

@@ -120,7 +120,7 @@
     ]
   },
   {
-     "type": "recipe",
+    "type": "recipe",
     "activity_level": "LIGHT_EXERCISE",
     "name": "astrological observations",
     "id": "astrological_observations",
@@ -140,16 +140,14 @@
       { "proficiency": "prof_spellcrafting_basic", "required": false }
     ],
     "result_eocs": [
-       {
+      {
         "id": "EOC_CONDUCT_ASTROLOGICAL_OBSERVATIONS",
         "condition": { "and": [ { "not": "is_day" }, "u_is_outside" ] },
         "effect": [
           { "u_message": "You write down your observations for later", "type": "good" },
-         { "u_spawn_item": "item_astrological_observations", "suppress_message": true }
+          { "u_spawn_item": "item_astrological_observations", "suppress_message": true }
         ],
-        "false_effect": [
-          { "u_message": "You need to be outside at night to take proper astrological observations.", "type": "bad" }
-        ]
+        "false_effect": [ { "u_message": "You need to be outside at night to take proper astrological observations.", "type": "bad" } ]
       }
     ]
   }

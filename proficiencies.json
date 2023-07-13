@@ -165,7 +165,7 @@
   {
     "type": "proficiency",
     "id": "prof_spellcrafting_forest",
-    "category": "prof_spellcrafting":,
+    "category": "prof_spellcrafting",
     "name": { "str": "Spellcrafting: Forest" },
     "description": "Developing new spells related to the forest and the wilds.",
     "can_learn": true,
@@ -173,10 +173,10 @@
     "default_skill_penalty": 0.5,
     "time_to_learn": "30 h"
   },
-    {
+  {
     "type": "proficiency",
     "id": "prof_spellcrafting_earth",
-    "category": "prof_spellcrafting":,
+    "category": "prof_spellcrafting",
     "name": { "str": "Spellcrafting: Earth" },
     "description": "Developing new spells related to soil and stone.",
     "can_learn": true,
@@ -184,10 +184,10 @@
     "default_skill_penalty": 0.5,
     "time_to_learn": "30 h"
   },
-    {
+  {
     "type": "proficiency",
     "id": "prof_spellcrafting_moon",
-    "category": "prof_spellcrafting":,
+    "category": "prof_spellcrafting",
     "name": { "str": "Spellcrafting: Moon" },
     "description": "Developing new spells related to the moon and the night.",
     "can_learn": true,
