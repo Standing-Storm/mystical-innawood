@@ -38,5 +38,25 @@
     "valid": false,
     "purifiable": false,
     "threshold": true
+  },
+  {
+    "type": "mutation_category",
+    "id": "MUTATION_FOREST",
+    "name": "Attuned to the Wood",
+    "wip": true,
+    "threshold_mut": "THRESH_FOREST",
+    "mutagen_message": "You are one with the unseen currents that surround and embrace the earth and sky.",
+    "memorial_message": "Transcended to the Otherworld.",
+    "vitamin": "mutagen_forest"
+  },
+  {
+    "type": "mutation",
+    "id": "THRESH_FOREST",
+    "name": { "str": "Greenheart" },
+    "points": 1,
+    "description": "Sap flows in your veins and in your dreams you hear the rustle of the leaves.",
+    "valid": false,
+    "purifiable": false,
+    "threshold": true
   }
 ]

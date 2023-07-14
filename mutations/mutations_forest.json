@@ -1,0 +1,28 @@
+[
+  {
+    "id": "MOSS",
+    "type": "mutation",
+    "name": { "str": "Mossy" },
+    "points": 1,
+    "visibility": 6,
+    "ugliness": 3,
+    "bodytemp_modifiers": [ 250, 600 ],
+    "bodytemp_sleep": 250,
+    "description": "A deep viridian moss has sprouted in thick, patterned patches over large areas of your body, providing some protection from the cold and the wet. Also protects you against fire.",
+    "wet_protection": [
+      { "part": "head", "neutral": 4, "good": 5 },
+      { "part": "leg_l", "neutral": 8, "good": 15 },
+      { "part": "leg_r", "neutral": 8, "good": 15 },
+      { "part": "foot_l", "neutral": 3, "good": 5 },
+      { "part": "foot_r", "neutral": 3, "good": 5 },
+      { "part": "arm_l", "neutral": 8, "good": 14 },
+      { "part": "arm_r", "neutral": 8, "good": 14 },
+      { "part": "hand_l", "neutral": 3, "good": 4 },
+      { "part": "hand_r", "neutral": 3, "good": 4 },
+      { "part": "torso", "neutral": 15, "good": 27 }
+    ],
+    "armor": [ { "part_types": [ "ALL" ], "acid": 1, "heat": 4 } ],
+    "prereqs": [ "PLANTSKIN" ],
+    "category": [ "MUTATION_FOREST" ]
+  }
+]

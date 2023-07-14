@@ -132,7 +132,7 @@
       { "proficiency": "prof_thaumatology", "required": false },
       { "proficiency": "prof_spellcrafting_basic", "required": false }
     ],
-    "result_eocs": [  
+    "result_eocs": [
       {
         "id": "EOC_SPELLCRAFTING_JOURNEYMAN_RESEARCH",
         "condition": { "roll_contested": { "math": [ "rng( u_val('intelligence'), u_skill('occult') )" ] }, "difficulty": 15 },
@@ -142,11 +142,11 @@
             "type": "good"
           },
           { "u_spawn_item": "used_occult_notes", "suppress_message": true },
-          { "u_learn_recipe": "forest_research_materials" },
-          { "u_learn_recipe": "earth_research_materials" },
-          { "u_learn_recipe": "moon_research_materials" },
-          { "u_learn_recipe": "sky_research_materials" },
-          { "u_learn_recipe": "sea_research_materials" }
+          { "u_learn_recipe": "assemble_forest_research_materials" },
+          { "u_learn_recipe": "assemble_earth_research_materials" },
+          { "u_learn_recipe": "assemble_moon_research_materials" },
+          { "u_learn_recipe": "assemble_sky_research_materials" },
+          { "u_learn_recipe": "assemble_sea_research_materials" }
         ],
         "false_effect": [
           {

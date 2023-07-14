@@ -39,7 +39,7 @@
   {
     "type": "effect_on_condition",
     "id": "EOC_SKY_CALL_LIGHTNING_3",
-    "condition": { "and": [ "u_is_outside", { "or": [ { "is_weather": "light_drizzle" }, { "is_weather": "Cloudy" } ] } ] },
+    "condition": { "and": [ "u_is_outside", { "or": [ { "is_weather": "light_drizzle" }, { "is_weather": "cloudy" } ] } ] },
     "effect": { "u_cast_spell": { "id": "sky_call_lightning_real", "min_level": 5, "max_level": 5 } },
     "false_effect": [ { "run_eocs": "EOC_SKY_CALL_LIGHTNING_4" } ]
   },
