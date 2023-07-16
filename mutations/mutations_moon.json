@@ -1,0 +1,51 @@
+[
+  {
+    "type": "mutation",
+    "id": "TROGLO2",
+    "name": { "str": "Night-Dweller" },
+    "points": 3,
+    "description": "Your body is one with the night.  You are much better at combat during the dark, but sunlight is uncomfortable for you.",
+    "types": [ "SUNLIGHT" ],
+    "threshreq": [ "THRESH_MOON" ],
+    "category": [ "MUTATION_MOON" ],
+    "enchantments": [
+      {
+        "condition": { "not": "is_day" },
+        "values": [
+          { "value": "FOOTSTEP_NOISE", "multiply": -0.5 },
+          { "value": "ATTACK_NOISE", "multiply": -0.3 },
+          { "value": "MOVE_COST", "multiply": 0.95 },
+          { "value": "EVASION", "add": 0.15 },
+          { "value": "PAIN", "multiply": -0.15 }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "mutation",
+    "id": "WAKEFUL3",
+    "name": { "str": "Tireless" },
+    "points": 5,
+    "description": "The moonlight sustains you.  You rarely need to sleep, and when you do, it's not for long.",
+    "purifiable": false,
+    "types": [ "SLEEP" ],
+    "prereqs": [  ],
+    "threshreq": [ "THRESH_MOON" ],
+    "category": [ "MUTATION_MOON" ],
+    "fatigue_modifier": -0.5,
+    "fatigue_regen_modifier": 0.5
+  },
+  {
+    "type": "mutation",
+    "id": "ELFA_FNV",
+    "name": { "str": "Sight of Selene" },
+    "points": 5,
+    "description": "The darkness is no barrier to your sight, though you still can't read or craft.  Activate to toggle NV-visible areas on or off.",
+    "types": [ "VISION" ],
+    "prereqs": [  ],
+    "threshreq": [ "THRESH_MOON" ],
+    "category": [ "MUTATION_MOON" ],
+    "active": true,
+    "starts_active": true
+  }
+]

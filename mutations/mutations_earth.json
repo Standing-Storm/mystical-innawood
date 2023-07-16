@@ -1,0 +1,98 @@
+[
+  {
+    "type": "mutation",
+    "id": "DENSE_BONES",
+    "name": { "str": "Dense Bones" },
+    "points": 1,
+    "mixed_effect": true,
+    "description": "Your bones are particularly dense and durable, infused with the strength of the rock.  Your tougher frame grants 5% more HP and 15% more carry capacity plus bashing attacks injure you less, but your higher weight makes attacking and moving 5% slower.  Also, dodging and swimming are harder.",
+    "types": [ "BONES" ],
+    "category": [ "MUTATION_EARTH" ],
+    "movecost_modifier": 1.05,
+    "movecost_swim_modifier": 1.2,
+    "attackcost_modifier": 1.05,
+    "weight_capacity_modifier": 1.15,
+    "hp_modifier": 0.05,
+    "dodge_modifier": -1,
+    "armor": [ { "part_types": [ "torso", "head", "arm", "hand", "leg", "foot", "mouth", "tail" ], "bash": 2 } ]
+  },
+  {
+    "type": "mutation",
+    "id": "TUNNEL_FIGHTER",
+    "name": { "str": "Dweller in the Depths" },
+    "points": 3,
+    "description": "You are at home in the depths of the earth.  While underground, you avoid danger better and sleep easier.",
+    "leads_to": [ "NIGHT_RAIDER" ],
+    "category": [ "MUTATION_EARTH" ],
+    "enchantments": [
+      {
+        "condition": { "compare_num": [ { "u_val": "pos_z" }, "<", { "const": 0 } ] },
+        "values": [ { "value": "BONUS_BLOCK", "add": 1 }, { "value": "BONUS_DODGE", "add": 1 }, { "value": "SLEEPY", "add": 20 } ]
+      }
+    ]
+  },
+  {
+    "type": "mutation",
+    "id": "PAINREC2",
+    "name": { "str": "Earthen Recovery" },
+    "points": 5,
+    "types": [ "PAIN_RECOVERY" ],
+    "description": "You recover from pain faster than normal.",
+    "prereqs": [  ],
+    "changes_to": [ "PAINREC3" ],
+    "threshreq": [ "THRESH_EARTH" ],
+    "category": [ "MUTATION_EARTH" ]
+  },
+  {
+    "type": "mutation",
+    "id": "BURROW",
+    "name": { "str": "Burrowing" },
+    "points": 10,
+    "purifiable": false,
+    "description": "The earth parts at your touch, allowing you to move through it with ease.",
+    "prereqs": [  ],
+    "prereqs2": [  ],
+    "threshreq": [ "THRESH_EARTH" ],
+    "category": [ "MUTATION_EARTH" ],
+    "active": true
+  },
+  {
+    "type": "mutation",
+    "id": "GOODCARDIO2",
+    "name": { "str": "Vitality of the Soil" },
+    "points": 4,
+    "description": "Like the solid earth, your reserves of stamina are boundless and you require less food.  However, like the earth drinks the falling rain, you require more water.",
+    "types": [ "CARDIO" ],
+    "prereqs": [  ],
+    "threshreq": [ "THRESH_EARTH" ],
+    "category": [ "MUTATION_EARTH" ],
+    "cardio_multiplier": 1.6,
+    "metabolism_modifier": -0.3333,
+    "thirst_modifier": 0.5
+  },
+  {
+    "type": "mutation",
+    "id": "EARTH_ARMOR",
+    "name": { "str": "Rockskin" },
+    "points": 2,
+    "visibility": 10,
+    "ugliness": 2,
+    "description": "You skin is fused with the earth, appearing more like a flexible layer of rock.  Reduces wet effects and is very protective, but moving takes more effort.",
+    "types": [ "SKIN" ],
+    "threshreq": [ "THRESH_EARTH" ],
+    "category": [ "MUTATION_EARTH" ],
+    "wet_protection": [
+      { "part": "head", "ignored": 2 },
+      { "part": "leg_l", "ignored": 5 },
+      { "part": "leg_r", "ignored": 5 },
+      { "part": "foot_l", "ignored": 2 },
+      { "part": "foot_r", "ignored": 2 },
+      { "part": "arm_l", "ignored": 4 },
+      { "part": "arm_r", "ignored": 4 },
+      { "part": "hand_l", "ignored": 1 },
+      { "part": "hand_r", "ignored": 1 },
+      { "part": "torso", "ignored": 10 }
+    ],
+    "integrated_armor": [ "integrated_earth_armor" ]
+  }
+]

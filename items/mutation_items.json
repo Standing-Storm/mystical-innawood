@@ -1,0 +1,36 @@
+[
+  {
+    "id": "integrated_earth_armor",
+    "type": "ARMOR",
+    "category": "armor",
+    "name": { "str_sp": "rockskin" },
+    "description": "Your skin is fused with the rock.",
+    "weight": "4 kg",
+    "volume": "3600 ml",
+    "price": 0,
+    "price_postapoc": 0,
+    "material": [ "stone" ],
+    "symbol": "x",
+    "color": "dark_gray",
+    "warmth": 5,
+    "environmental_protection": 4,
+    "flags": [
+      "INTEGRATED",
+      "ALLOWS_NATURAL_ATTACKS",
+      "UNBREAKABLE",
+      "SKINTIGHT",
+      "WATER_FRIENDLY",
+      "PADDED",
+      "TOUGH_FEET",
+      "NO_SALVAGE"
+    ],
+    "armor": [
+      {
+        "material": [ { "type": "stone", "covered_by_mat": 100, "thickness": 3 } ],
+        "covers": [ "head", "torso", "arm_l", "arm_r", "leg_l", "leg_r", "hand_l", "hand_r", "foot_l", "foot_r", "mouth" ],
+        "coverage": 100,
+        "encumbrance": 8
+      }
+    ]
+  }
+]

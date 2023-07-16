@@ -45,8 +45,8 @@
     "name": "Attuned to the Wood",
     "wip": true,
     "threshold_mut": "THRESH_FOREST",
-    "mutagen_message": "You are one with the unseen currents that surround and embrace the earth and sky.",
-    "memorial_message": "Transcended to the Otherworld.",
+    "mutagen_message": "You are one with root and branch, with leaf and bough.",
+    "memorial_message": "Walked off into the wild.",
     "vitamin": "mutagen_forest"
   },
   {
@@ -54,7 +54,88 @@
     "id": "THRESH_FOREST",
     "name": { "str": "Greenheart" },
     "points": 1,
-    "description": "Sap flows in your veins and in your dreams you hear the rustle of the leaves.",
+    "description": "Sap flows in your veins, and in your dreams you hear the rustle of the leaves.",
+    "valid": false,
+    "purifiable": false,
+    "threshold": true
+  },
+  {
+    "type": "mutation_category",
+    "id": "MUTATION_MOON",
+    "name": "Attuned to the Moon",
+    "wip": true,
+    "threshold_mut": "THRESH_MOON",
+    "mutagen_message": "You are one with phases of the shining moon.",
+    "memorial_message": "Ascended to the heavenly spheres.",
+    "vitamin": "mutagen_moon"
+  },
+  {
+    "type": "mutation",
+    "id": "THRESH_MOON",
+    "name": { "str": "Lunar Disciple" },
+    "points": 1,
+    "description": "Under the light of the moon, all things are possible.",
+    "valid": false,
+    "purifiable": false,
+    "threshold": true
+  },
+  {
+    "type": "mutation_category",
+    "id": "MUTATION_EARTH",
+    "name": "Attuned to the Earth",
+    "wip": true,
+    "threshold_mut": "THRESH_EARTH",
+    "mutagen_message": "You are one with the rock and stone.",
+    "memorial_message": "Melded with the mantle.",
+    "vitamin": "mutagen_earth"
+  },
+  {
+    "type": "mutation",
+    "id": "THRESH_EARTH",
+    "name": { "str": "Earthdreamer" },
+    "points": 1,
+    "description": "The solid earth is all the strength and faith you need.",
+    "valid": false,
+    "purifiable": false,
+    "threshold": true
+  },
+  {
+    "type": "mutation_category",
+    "id": "MUTATION_SEA",
+    "name": "Attuned to the Sea",
+    "wip": true,
+    "threshold_mut": "THRESH_SEA",
+    "mutagen_message": "You are one with the tide and the current.",
+    "memorial_message": "Went out with the tides.",
+    "vitamin": "mutagen_sea"
+  },
+  {
+    "type": "mutation",
+    "id": "THRESH_SEA",
+    "name": { "str": "Sea-Borne" },
+    "points": 1,
+    "description": "Your heart beats to the eternal washing in and out of the tides.",
+    "valid": false,
+    "purifiable": false,
+    "threshold": true,
+    "flags": [ "GILLS" ]
+  },
+  {
+    "type": "mutation_category",
+    "id": "MUTATION_SKY",
+    "name": "Attuned to the Sky",
+    "wip": true,
+    "threshold_mut": "THRESH_SKY",
+    "mutagen_message": "You are one with the wind and storm.",
+    "memorial_message": "Vanished in a flash of thunder.",
+    "vitamin": "mutagen_sea"
+  },
+  {
+    "type": "mutation",
+    "id": "THRESH_SKY",
+    "name": { "str": "Child of the Winds" },
+    "points": 1,
+    "description": "To ride on the winds of the rising storm, to run to the sounds of the thunder.",
     "valid": false,
     "purifiable": false,
     "threshold": true

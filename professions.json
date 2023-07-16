@@ -1,0 +1,62 @@
+[
+  {
+    "type": "profession",
+    "id": "wise_one",
+    "name": { "male": "Wise Man", "female": "Wise Woman" },
+    "description": "From your birth, you were in contact with the spirit world.  You were trained in the ways of the spirits and intermediated between them and your tribe.  Now that you're alone, you'll need to contact the spirits of this new place and learn their ways.",
+    "points": 3,
+    "skills": [ { "level": 1, "name": "firstaid" }, { "level": 3, "name": "occult" }, { "level": 1, "name": "survival" } ],
+    "traits": [ "WITCHSIGHT_INFUSED" ],
+    "proficiencies": [ "prof_wound_care", "prof_occult_exploration", "prof_thaumatology" ],
+    "items": {
+      "both": {
+        "items": [
+          "straw_basket",
+          "grass_cloak",
+          "shirt_straw",
+          "skirt_grass",
+          "footrags_leather",
+          "grass_keffiyeh",
+          "magical_grimoire_apprentice"
+        ],
+        "entries": [ { "item": "primitive_knife", "container-item": "sheath_birchbark" } ]
+      }
+    }
+  },
+  {
+    "type": "profession",
+    "id": "lizardfolk_warrior",
+    "name": "Lizardfolk Warrior",
+    "description": "The land was your kin's long before the warmbloods came.  Someday, it will be yours again.",
+    "points": 3,
+    "skills": [
+      { "level": 2, "name": "gun" },
+      { "level": 2, "name": "stabbing" },
+      { "level": 2, "name": "melee" },
+      { "level": 1, "name": "dodge" },
+      { "level": 3, "name": "swimming" }
+    ],
+    "traits": [
+      "LARGE_OK",
+      "SCALES",
+      "COLDBLOOD4",
+      "FORKED_TONGUE",
+      "HISS",
+      "TAIL_THICK",
+      "RESISTWARM",
+      "LIZ_IR",
+      "MUZZLE_LONG",
+      "WEBBED_FEET",
+      "TALONS",
+      "SLIT_NOSTRILS",
+      "CARNIVORE",
+      "PRED2"
+    ],
+    "items": {
+      "both": {
+        "items": [ "straw_basket", "grass_cloak", "primitive_knife", "rope_loop" ],
+        "entries": [ { "item": "spear_stone", "container-item": "spearsling" } ]
+      }
+    }
+  }
+]

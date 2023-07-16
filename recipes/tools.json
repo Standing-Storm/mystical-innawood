@@ -1,0 +1,25 @@
+[
+  {
+    "type": "recipe",
+    "activity_level": "MODERATE_EXERCISE",
+    "result": "flint_knife",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_PIERCING",
+    "skill_used": "fabrication",
+    "difficulty": 3,
+    "time": "1 h 30 m",
+    "autolearn": true,
+    "proficiencies": [
+      { "proficiency": "prof_knapping" },
+      { "proficiency": "prof_knapping_speed" },
+      { "proficiency": "prof_carving", "skill_penalty": 0.15 }
+    ],
+    "qualities": [
+      { "id": "PUNCH", "level": 1 },
+      { "id": "CHISEL_WOOD", "level": 1 },
+      { "id": "HAMMER_SOFT", "level": 1 },
+      { "id": "HAMMER", "level": 1 }
+    ],
+    "components": [ [ [ "cordage_short", 2, "LIST" ] ], [ [ "rock_flaking_any", 1, "LIST" ] ], [ [ "cordage_short", 1, "LIST" ] ] ]
+  }
+]

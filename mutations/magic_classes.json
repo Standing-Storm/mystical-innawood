@@ -4,7 +4,7 @@
     "id": "EARTH",
     "name": "Initiate of the Earth",
     "points": 0,
-    "description": "You learned the secret knowledge of rock and stone, and can command the spirits of the earth.",
+    "description": "You've learned the secret knowledge of rock and stone, and can command the spirits of the earth.",
     "starting_trait": false,
     "purifiable": false,
     "valid": false
@@ -14,7 +14,7 @@
     "id": "FOREST",
     "name": "Initiate of the Forest",
     "points": 0,
-    "description": "You learned the secret knowledge of root and branch, and can command the spirits of the forest.",
+    "description": "You've learned the secret knowledge of root and branch, and can command the spirits of the forest.",
     "starting_trait": false,
     "purifiable": false,
     "valid": false
@@ -24,7 +24,7 @@
     "id": "MOON",
     "name": "Initiate of the Moon",
     "points": 0,
-    "description": "You learned the secret knowledge of the bright and dark of the moon, and can command the lunar spirits.",
+    "description": "You've learned the secret knowledge of the bright and dark of the moon, and can command the lunar spirits.",
     "starting_trait": false,
     "purifiable": false,
     "valid": false
@@ -34,7 +34,7 @@
     "id": "SEA",
     "name": "Initiate of the Sea",
     "points": 0,
-    "description": "You learned the secret knowledge of the tides and depths, and can command the spirits of the sea.",
+    "description": "You've learned the secret knowledge of the tides and depths, and can command the spirits of the sea.",
     "starting_trait": false,
     "purifiable": false,
     "valid": false
@@ -44,7 +44,7 @@
     "id": "SKY",
     "name": "Initiate of the Sky",
     "points": 0,
-    "description": "You learned the secret knowledge of the winds and rain, and can command the spirits of the sky.",
+    "description": "You've learned the secret knowledge of the winds and rain, and can command the spirits of the sky.",
     "starting_trait": false,
     "purifiable": false,
     "valid": false

@@ -1,5 +1,31 @@
 [
   {
+    "type": "mutation",
+    "id": "WAKEFUL",
+    "name": { "str": "Less Sleep" },
+    "points": 1,
+    "description": "Who has time to sleep when there's all that glorious sunshine? You need less sleep, and recover faster from fatigue while you sleep.",
+    "changes_to": [  ],
+    "types": [ "SLEEP" ],
+    "starting_trait": true,
+    "category": [ "MUTATION_FOREST" ],
+    "fatigue_modifier": -0.15,
+    "fatigue_regen_modifier": 0.15
+  },
+  {
+    "type": "mutation",
+    "id": "PLANTSKIN",
+    "name": { "str": "Skin of the Wilds" },
+    "points": 3,
+    "visibility": 3,
+    "ugliness": 2,
+    "description": "Your skin is light green and has a slightly woody quality to it.  This provides armor and helps you retain moisture, resulting in less thirst.  Greatly decreases wet penalties.",
+    "types": [ "SKIN" ],
+    "category": [ "MUTATION_FOREST" ],
+    "thirst_modifier": -0.2,
+    "integrated_armor": [ "integrated_plantskin" ]
+  },
+  {
     "id": "MOSS",
     "type": "mutation",
     "name": { "str": "Mossy" },
@@ -24,5 +50,54 @@
     "armor": [ { "part_types": [ "ALL" ], "acid": 1, "heat": 4 } ],
     "prereqs": [ "PLANTSKIN" ],
     "category": [ "MUTATION_FOREST" ]
+  },
+  {
+    "type": "mutation",
+    "id": "LEAVES3",
+    "name": { "str": "Verdant Leaves" },
+    "points": 9,
+    "visibility": 3,
+    "ugliness": 3,
+    "description": "Leaves, vines, and even small flowers have begun growing through your hair.  You are invigorated by the sun--whenever you stand in sunlight and your arms and head are uncovered, you will absorb nutrients from the sunlight.",
+    "types": [ "HAIR" ],
+    "prereqs": [  ],
+    "prereqs2": [  ],
+    "threshreq": [ "THRESH_FOREST" ],
+    "category": [ "MUTATION_FOREST" ],
+    "scent_type": "sc_flower",
+    "wet_protection": [ { "part": "head", "ignored": 5 }, { "part": "arm_l", "ignored": 8 }, { "part": "arm_r", "ignored": 8 } ]
+  },
+  {
+    "type": "mutation",
+    "id": "SUNLIGHT_DEPENDENT",
+    "name": { "str": "Sunlight Dependent" },
+    "points": -5,
+    "description": "You feel very sluggish when not in direct sunlight.  You suffer a 5% drop in speed when in shade, and a 10% drop in speed when in the dark.",
+    "types": [ "SUNLIGHT" ],
+    "category": [ "MUTATION_FOREST" ]
+  },
+  {
+    "type": "mutation",
+    "id": "ANIMALEMPATH2",
+    "name": { "str": "Animal Kinship" },
+    "points": 2,
+    "description": "Something about your presence is calming to animals, and they will treat you with innate trust.  This only applies to natural animals such as woodland creatures.",
+    "types": [ "ANIMAL_EMPATHY" ],
+    "threshreq": [ "THRESH_FOREST" ],
+    "category": [ "MUTATION_FOREST" ],
+    "prereqs": [  ]
+  },
+  {
+    "type": "mutation",
+    "id": "STRONGER_RESISTWARM",
+    "name": { "str": "High Heat Tolerance" },
+    "points": 3,
+    "valid": true,
+    "description": "With all the time you spend in the sun, you have a much easier time resisting its heat.",
+    "prereqs": [  ],
+    "types": [ "ACCLIMATIZATION" ],
+    "threshreq": [ "THRESH_FOREST" ],
+    "category": [ "MUTATION_FOREST" ],
+    "enchantments": [ { "condition": "ALWAYS", "values": [ { "value": "CLIMATE_CONTROL_CHILL", "add": 25 } ] } ]
   }
 ]

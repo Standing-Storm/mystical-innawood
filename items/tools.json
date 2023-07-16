@@ -23,5 +23,24 @@
     "copy-from": "feather",
     "description": "A feather that has been specially prepared for writing.  Small runes have been carved along its length.",
     "qualities": [ [ "MAGICAL_WRITING", 1 ] ]
+  },
+  {
+    "id": "flint_knife",
+    "type": "TOOL",
+    "name": { "str": "flint knife", "str_pl": "flint knives" },
+    "description": "A knife made of flint with a simple handle.  One of humanity's first tools.",
+    "weight": "250 g",
+    "volume": "300 ml",
+    "longest_side": "25 cm",
+    "price": 3000,
+    "price_postapoc": 10,
+    "to_hit": -2,
+    "material": [ "stone" ],
+    "symbol": ";",
+    "color": "light_gray",
+    "qualities": [ [ "CUT", 1 ], [ "FABRIC_CUT", 1 ], [ "CUT_FINE", 1 ], [ "BUTCHER", 6 ] ],
+    "flags": [ "SHEATH_KNIFE", "ALLOWS_BODY_BLOCK", "FRAGILE" ],
+    "weapon_category": [ "KNIVES" ],
+    "melee_damage": { "bash": 1, "stab": 8 }
   }
 ]

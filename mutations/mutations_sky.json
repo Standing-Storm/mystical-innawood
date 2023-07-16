@@ -1,0 +1,51 @@
+[
+  {
+    "type": "mutation",
+    "id": "EAGLEEYED",
+    "//": "Can't change the ID as that breaks save-compatibility.",
+    "name": { "str": "Scout" },
+    "points": 1,
+    "description": "You're an excellent navigator and your ability to recognize distant landmarks is unmatched.  Your sight radius on the overmap extends beyond the normal range.",
+    "category": [ "MUTATION_SKY" ],
+    "cancels": [ "UNOBSERVANT" ],
+    "overmap_sight": 5
+  },
+  {
+    "type": "mutation",
+    "id": "CARRIED_WINDS",
+    "name": { "str": "Carried by the Winds [soft]" },
+    "points": 2,
+    "description": "You can speed your movement by following the rushing winds.",
+    "active": true,
+    "player_display": true,
+    "purifiable": false,
+    "threshreq": [ "THRESH_SKY" ],
+    "category": [ "MUTATION_SKY" ],
+    "cost": 0,
+    "transform": { "target": "CARRIED_WINDS_A", "msg_transform": "The winds around you pick up speed.", "active": true, "moves": 10 }
+  },
+  {
+    "type": "mutation",
+    "id": "CARRIED_WINDS_A",
+    "name": { "str": "Carried by the Winds (on)" },
+    "description": "You are carried along by the winds, speeding your movements.",
+    "copy-from": "CARRIED_WINDS",
+    "bodytemp_modifiers": [ -600, -600 ],
+    "valid": false,
+    "transform": { "target": "CARRIED_WINDS", "msg_transform": "The winds around you die down.", "active": false, "moves": 10 },
+    "movecost_modifier": 0.8
+  },
+  {
+    "type": "mutation",
+    "id": "STRONGER_RESISTCHILL",
+    "name": { "str": "High Cold Tolerance" },
+    "points": 3,
+    "valid": true,
+    "description": "The blowing of the wind and snow doesn't bother you nearly as much as it did before.",
+    "prereqs": [  ],
+    "types": [ "ACCLIMATIZATION", "ECTOTHERMIC" ],
+    "threshreq": [ "THRESH_SKY" ],
+    "category": [ "MUTATION_SKY" ],
+    "enchantments": [ { "condition": "ALWAYS", "values": [ { "value": "CLIMATE_CONTROL_HEAT", "add": 25 } ] } ]
+  }
+]

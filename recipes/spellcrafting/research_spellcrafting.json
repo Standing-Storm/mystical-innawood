@@ -138,7 +138,7 @@
         "condition": { "roll_contested": { "math": [ "rng( u_val('intelligence'), u_skill('occult') )" ] }, "difficulty": 15 },
         "effect": [
           {
-            "u_message": "You can see the energies, you can extract them from natural components, and you can manipulate them.  Putting all that knowledge together, you're ready to begin your research into sorcery.",
+            "u_message": "You can see the energies of the Unseen World, you can extract them from natural components, and you can manipulate them.  Putting all that knowledge together, you're ready to begin your research into sorcery.",
             "type": "good"
           },
           { "u_spawn_item": "used_occult_notes", "suppress_message": true },

@@ -1,0 +1,42 @@
+[
+  {
+    "type": "mutation",
+    "id": "WEBBED_SEA",
+    "name": { "str": "Webbed Hands and Feet" },
+    "points": 0,
+    "visibility": 3,
+    "ugliness": 2,
+    "types": [ "HANDS", "FEET" ],
+    "description": "Your hands and feet are webbed, causing problems with gloves.  However, you can swim much faster.  Slightly decreases wet penalties.",
+    "threshreq": [ "THRESH_SEA" ],
+    "category": [ "MUTATION_SEA" ],
+    "flags": [ "WEBBED_HANDS", "WEBBED_FEET" ],
+    "wet_protection": [
+      { "part": "hand_l", "good": 6 },
+      { "part": "hand_r", "good": 6 },
+      { "part": "foot_l", "good": 6 },
+      { "part": "foot_r", "good": 6 }
+    ],
+    "encumbrance_covered": [ [ "hand_l", 30 ], [ "hand_r", 30 ] ]
+  },
+  {
+    "type": "mutation",
+    "id": "FRESHWATEROSMOSIS",
+    "name": { "str": "Freshwater Osmosis" },
+    "points": 4,
+    "description": "The water is your home, and it sustains you.  While submerged in fresh water, any thirst you might have will be slaked.",
+    "prereqs": [  ],
+    "threshreq": [ "THRESH_SEA" ],
+    "category": [ "MUTATION_SEA" ]
+  },
+  {
+    "type": "mutation",
+    "id": "WATERSLEEP",
+    "name": { "str": "Aqueous Repose" },
+    "points": 1,
+    "description": "Falling asleep underwater is easy for you, and you spend less time asleep when you rest there.  You can also eat underwater, though you can't drink.",
+    "prereqs": [  ],
+    "threshreq": [ "THRESH_SEA" ],
+    "category": [ "MUTATION_SEA" ]
+  }
+]
