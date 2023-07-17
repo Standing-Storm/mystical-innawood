@@ -138,7 +138,8 @@
       "LUPINE_EARS",
       "PADDED_FEET",
       "GOODCARDIO",
-      "HEAVYSLEEPER"
+      "HEAVYSLEEPER",
+      "PER_UP_2"
     ],
     "items": { "both": { "items": [ "loincloth_leather", "leather_belt", "chestwrap_leather" ] } }
   },
@@ -146,7 +147,7 @@
     "type": "profession",
     "id": "Hawkman_shaman",
     "name": "Hawkman Mystic",
-    "description": "Run.  Hunt.  Howl at the moon.  Do you need anything more?",
+    "description": "You left your tribe behind long ago, to travel wherever the winds carry you.  Your travels are more dangerous than you ever imagined they would be, but you have faith in the spirits that you'll make it. ",
     "points": 3,
     "skills": [
       { "level": 3, "name": "occult" },
@@ -154,6 +155,7 @@
       { "level": 1, "name": "dodge" },
       { "level": 2, "name": "athletics" }
     ],
+    "spells": [ { "id": "air_burst_of_wind", "level": 2 } ],
     "traits": [
       "HAWKMAN_SPECIES",
       "HOLLOW_BONES",
@@ -165,7 +167,10 @@
       "BIRD_LEGS",
       "BIRD_EYE",
       "GIZZARD",
-      "BEAK_HAWK"
+      "BEAK_HAWK",
+      "LIGHTSTEP",
+      "QUICK",
+      "NOMAD"
     ],
     "items": {
       "both": {

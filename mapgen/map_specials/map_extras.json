@@ -1,0 +1,22 @@
+[
+  {
+    "id": "mx_witchwood_grove",
+    "type": "map_extra",
+    "name": { "str": "witchwood grove" },
+    "description": "A grove of witchwood trees.",
+    "generator": { "generator_method": "update_mapgen", "generator_id": "mx_witchwood_grove" },
+    "sym": "F",
+    "color": "cyan",
+    "autonote": true
+  },
+  {
+    "id": "mx_burial_mound",
+    "type": "map_extra",
+    "name": { "str": "burial mound" },
+    "description": "An ancient burial mound.",
+    "generator": { "generator_method": "update_mapgen", "generator_id": "mx_burial_mound" },
+    "sym": "o",
+    "color": "light_gray",
+    "autonote": true
+  }
+]

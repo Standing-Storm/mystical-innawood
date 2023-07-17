@@ -1,0 +1,621 @@
+[
+  {
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "name": "magical research: earth (easy)",
+    "id": "magical_research_earth_easy",
+    "description": "Conduct magical research related to the basic manipulation of rock and soil.",
+    "category": "CC_*",
+    "subcategory": "CSC_*_NESTED",
+    "difficulty": 2,
+    "time": "12 h",
+    "autolearn": false,
+    "qualities": [
+      { "id": "MAGICAL_RESEARCH", "level": 2 },
+      { "id": "MAGICAL_SENSE", "level": 1 },
+      { "id": "MAGICAL_WRITING", "level": 1 }
+    ],
+    "components": [ [ [ "paper", 20 ], [ "used_occult_notes", 5 ] ], [ [ "earth_research_materials", 1 ] ] ],
+    "book_learn": { "earth_research_materials": { "skill_level": 2, "hidden": true } },
+    "skill_used": "occult",
+    "flags": [ "SECRET", "BLIND_HARD" ],
+    "proficiencies": [
+      { "proficiency": "prof_thaumatology", "required": true },
+      { "proficiency": "prof_spell_research", "required": false },
+      { "proficiency": "prof_spellcrafting_earth", "required": false }
+    ],
+    "result_eocs": [
+      {
+        "id": "EOC_GET_EARTH_SPELLS_EASY",
+        "condition": { "roll_contested": { "math": [ "rng( u_val('intelligence'), u_skill('spellcraft') )" ] }, "difficulty": 14 },
+        "effect": [ { "u_roll_remainder": [ "formula_earth_danger_sense", "formula_earth_turning_of_earth" ], "type": "recipe" } ],
+        "false_effect": [
+          {
+            "u_message": "There's something on the edge of your mind, but you can't quite grasp it.  You've hit a dead end.  You'll need to try a new approach.",
+            "type": "bad"
+          },
+          { "u_spawn_item": "used_research_materials", "suppress_message": true }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "name": "magical research: earth (medium)",
+    "id": "magical_research_earth_medium",
+    "description": "Conduct magical research related to complex manipulation of rock and soil.",
+    "category": "CC_*",
+    "subcategory": "CSC_*_NESTED",
+    "difficulty": 4,
+    "time": "24 h",
+    "autolearn": false,
+    "qualities": [
+      { "id": "MAGICAL_RESEARCH", "level": 2 },
+      { "id": "MAGICAL_SENSE", "level": 1 },
+      { "id": "MAGICAL_WRITING", "level": 2 }
+    ],
+    "components": [ [ [ "paper", 35 ], [ "used_occult_notes", 5 ] ], [ [ "earth_research_materials", 1 ] ] ],
+    "book_learn": { "earth_research_materials": { "skill_level": 5, "hidden": true } },
+    "skill_used": "occult",
+    "flags": [ "SECRET", "BLIND_HARD" ],
+    "proficiencies": [
+      { "proficiency": "prof_thaumatology", "required": true },
+      { "proficiency": "prof_spell_research", "required": true },
+      { "proficiency": "prof_spellcrafting_earth", "required": false }
+    ],
+    "result_eocs": [
+      {
+        "id": "EOC_GET_EARTH_SPELLS_MEDIUM",
+        "condition": { "roll_contested": { "math": [ "rng( u_val('intelligence'), u_skill('spellcraft') )" ] }, "difficulty": 16 },
+        "effect": [
+          { "u_roll_remainder": [ "formula_earth_resilience_mountain", "formula_earth_raising_earthbones" ], "type": "recipe" }
+        ],
+        "false_effect": [
+          {
+            "u_message": "There's something on the edge of your mind, but you can't quite grasp it.  You've hit a dead end.  You'll need to try a new approach.",
+            "type": "bad"
+          },
+          { "u_spawn_item": "used_research_materials", "suppress_message": true }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "name": "magical research: earth (hard)",
+    "id": "magical_research_earth_hard",
+    "description": "Conduct magical research related to esoteric manipulation of rock and soil.",
+    "category": "CC_*",
+    "subcategory": "CSC_*_NESTED",
+    "difficulty": 7,
+    "time": "48 h",
+    "autolearn": false,
+    "qualities": [
+      { "id": "MAGICAL_RESEARCH", "level": 3 },
+      { "id": "MAGICAL_SENSE", "level": 1 },
+      { "id": "MAGICAL_WRITING", "level": 2 }
+    ],
+    "components": [ [ [ "paper", 50 ], [ "used_occult_notes", 5 ] ], [ [ "earth_research_materials", 1 ] ] ],
+    "book_learn": { "earth_research_materials": { "skill_level": 8, "hidden": true } },
+    "flags": [ "SECRET", "BLIND_HARD" ],
+    "skill_used": "occult",
+    "proficiencies": [
+      { "proficiency": "prof_thaumatology", "required": true },
+      { "proficiency": "prof_spell_research", "required": true },
+      { "proficiency": "prof_spellcrafting_earth", "required": true }
+    ],
+    "result_eocs": [
+      {
+        "id": "EOC_GET_EARTH_SPELLS_HARD",
+        "condition": { "roll_contested": { "math": [ "rng( u_val('intelligence'), u_skill('spellcraft') )" ] }, "difficulty": 18 },
+        "effect": [ { "u_roll_remainder": [ "formula_earth_draw_on_earth_power" ], "type": "recipe" } ],
+        "false_effect": [
+          {
+            "u_message": "There's something on the edge of your mind, but you can't quite grasp it.  You've hit a dead end.  You'll need to try a new approach.",
+            "type": "bad"
+          },
+          { "u_spawn_item": "used_research_materials", "suppress_message": true }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "name": "magical research: forest (easy)",
+    "id": "magical_research_forest_easy",
+    "description": "Conduct magical research related to the basic manipulation of plants and living things.",
+    "category": "CC_*",
+    "subcategory": "CSC_*_NESTED",
+    "difficulty": 2,
+    "time": "12 h",
+    "autolearn": false,
+    "qualities": [
+      { "id": "MAGICAL_RESEARCH", "level": 2 },
+      { "id": "MAGICAL_SENSE", "level": 1 },
+      { "id": "MAGICAL_WRITING", "level": 1 }
+    ],
+    "components": [ [ [ "paper", 20 ], [ "used_occult_notes", 5 ] ], [ [ "forest_research_materials", 1 ] ] ],
+    "book_learn": { "forest_research_materials": { "skill_level": 2, "hidden": true } },
+    "skill_used": "occult",
+    "flags": [ "SECRET", "BLIND_HARD" ],
+    "proficiencies": [
+      { "proficiency": "prof_thaumatology", "required": true },
+      { "proficiency": "prof_spell_research", "required": false },
+      { "proficiency": "prof_spellcrafting_forest", "required": false }
+    ],
+    "result_eocs": [
+      {
+        "id": "EOC_GET_FOREST_SPELLS_EASY",
+        "condition": { "roll_contested": { "math": [ "rng( u_val('intelligence'), u_skill('spellcraft') )" ] }, "difficulty": 14 },
+        "effect": [ { "u_roll_remainder": [ "formula_forest_harvest_hunter", "formula_forest_unity_nature" ], "type": "recipe" } ],
+        "false_effect": [
+          {
+            "u_message": "There's something on the edge of your mind, but you can't quite grasp it.  You've hit a dead end.  You'll need to try a new approach.",
+            "type": "bad"
+          },
+          { "u_spawn_item": "used_research_materials", "suppress_message": true }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "name": "magical research: forest (medium)",
+    "id": "magical_research_forest_medium",
+    "description": "Conduct magical research related to complex manipulation of plants and living things.",
+    "category": "CC_*",
+    "subcategory": "CSC_*_NESTED",
+    "difficulty": 4,
+    "time": "24 h",
+    "autolearn": false,
+    "qualities": [
+      { "id": "MAGICAL_RESEARCH", "level": 2 },
+      { "id": "MAGICAL_SENSE", "level": 1 },
+      { "id": "MAGICAL_WRITING", "level": 2 }
+    ],
+    "components": [ [ [ "paper", 35 ], [ "used_occult_notes", 5 ] ], [ [ "forest_research_materials", 1 ] ] ],
+    "book_learn": { "forest_research_materials": { "skill_level": 5, "hidden": true } },
+    "skill_used": "occult",
+    "flags": [ "SECRET", "BLIND_HARD" ],
+    "proficiencies": [
+      { "proficiency": "prof_thaumatology", "required": true },
+      { "proficiency": "prof_spell_research", "required": true },
+      { "proficiency": "prof_spellcrafting_forest", "required": false }
+    ],
+    "result_eocs": [
+      {
+        "id": "EOC_GET_FOREST_SPELLS_MEDIUM",
+        "condition": { "roll_contested": { "math": [ "rng( u_val('intelligence'), u_skill('spellcraft') )" ] }, "difficulty": 16 },
+        "effect": [
+          {
+            "u_roll_remainder": [ "formula_forest_bandage_heal", "formula_forest_thorn_skin", "formula_forest_whispers" ],
+            "type": "recipe"
+          }
+        ],
+        "false_effect": [
+          {
+            "u_message": "There's something on the edge of your mind, but you can't quite grasp it.  You've hit a dead end.  You'll need to try a new approach.",
+            "type": "bad"
+          },
+          { "u_spawn_item": "used_research_materials", "suppress_message": true }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "name": "magical research: forest (hard)",
+    "id": "magical_research_forest_hard",
+    "description": "Conduct magical research related to esoteric manipulation of plants and living things.",
+    "category": "CC_*",
+    "subcategory": "CSC_*_NESTED",
+    "difficulty": 7,
+    "time": "48 h",
+    "autolearn": false,
+    "qualities": [
+      { "id": "MAGICAL_RESEARCH", "level": 3 },
+      { "id": "MAGICAL_SENSE", "level": 1 },
+      { "id": "MAGICAL_WRITING", "level": 2 }
+    ],
+    "components": [ [ [ "paper", 50 ], [ "used_occult_notes", 5 ] ], [ [ "forest_research_materials", 1 ] ] ],
+    "book_learn": { "forest_research_materials": { "skill_level": 8, "hidden": true } },
+    "flags": [ "SECRET", "BLIND_HARD" ],
+    "skill_used": "occult",
+    "proficiencies": [
+      { "proficiency": "prof_thaumatology", "required": true },
+      { "proficiency": "prof_spell_research", "required": true },
+      { "proficiency": "prof_spellcrafting_forest", "required": true }
+    ],
+    "result_eocs": [
+      {
+        "id": "EOC_GET_FOREST_SPELLS_HARD",
+        "condition": { "roll_contested": { "math": [ "rng( u_val('intelligence'), u_skill('spellcraft') )" ] }, "difficulty": 18 },
+        "effect": [
+          { "u_roll_remainder": [ "formula_forest_verdant_form", "formula_forest_summon_defender_of_wild" ], "type": "recipe" }
+        ],
+        "false_effect": [
+          {
+            "u_message": "There's something on the edge of your mind, but you can't quite grasp it.  You've hit a dead end.  You'll need to try a new approach.",
+            "type": "bad"
+          },
+          { "u_spawn_item": "used_research_materials", "suppress_message": true }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "name": "magical research: moon (easy)",
+    "id": "magical_research_moon_easy",
+    "description": "Conduct magical research related to the basic manipulation of moonlight and the night.",
+    "category": "CC_*",
+    "subcategory": "CSC_*_NESTED",
+    "difficulty": 2,
+    "time": "12 h",
+    "autolearn": false,
+    "qualities": [
+      { "id": "MAGICAL_RESEARCH", "level": 2 },
+      { "id": "MAGICAL_SENSE", "level": 1 },
+      { "id": "MAGICAL_WRITING", "level": 1 }
+    ],
+    "components": [ [ [ "paper", 20 ], [ "used_occult_notes", 5 ] ], [ [ "sky_research_materials", 1 ] ] ],
+    "book_learn": { "sky_research_materials": { "skill_level": 2, "hidden": true } },
+    "skill_used": "occult",
+    "flags": [ "SECRET", "BLIND_HARD" ],
+    "proficiencies": [
+      { "proficiency": "prof_thaumatology", "required": true },
+      { "proficiency": "prof_spell_research", "required": false },
+      { "proficiency": "prof_spellcrafting_sky", "required": false }
+    ],
+    "result_eocs": [
+      {
+        "id": "EOC_GET_SKY_SPELLS_EASY",
+        "condition": { "roll_contested": { "math": [ "rng( u_val('intelligence'), u_skill('spellcraft') )" ] }, "difficulty": 14 },
+        "effect": [ { "u_roll_remainder": [ "formula_moon_lambent_glow" ], "type": "recipe" } ],
+        "false_effect": [
+          {
+            "u_message": "There's something on the edge of your mind, but you can't quite grasp it.  You've hit a dead end.  You'll need to try a new approach.",
+            "type": "bad"
+          },
+          { "u_spawn_item": "used_research_materials", "suppress_message": true }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "name": "magical research: moon (medium)",
+    "id": "magical_research_moon_medium",
+    "description": "Conduct magical research related to the complex manipulation of moonlight and the night.",
+    "category": "CC_*",
+    "subcategory": "CSC_*_NESTED",
+    "difficulty": 2,
+    "time": "24 h",
+    "autolearn": false,
+    "qualities": [
+      { "id": "MAGICAL_RESEARCH", "level": 2 },
+      { "id": "MAGICAL_SENSE", "level": 1 },
+      { "id": "MAGICAL_WRITING", "level": 2 }
+    ],
+    "components": [ [ [ "paper", 35 ], [ "used_occult_notes", 5 ] ], [ [ "sky_research_materials", 1 ] ] ],
+    "book_learn": { "sky_research_materials": { "skill_level": 5, "hidden": true } },
+    "skill_used": "occult",
+    "flags": [ "SECRET", "BLIND_HARD" ],
+    "proficiencies": [
+      { "proficiency": "prof_thaumatology", "required": true },
+      { "proficiency": "prof_spell_research", "required": true },
+      { "proficiency": "prof_spellcrafting_sky", "required": false }
+    ],
+    "result_eocs": [
+      {
+        "id": "EOC_GET_MOON_SPELLS_MEDIUM",
+        "condition": { "roll_contested": { "math": [ "rng( u_val('intelligence'), u_skill('spellcraft') )" ] }, "difficulty": 16 },
+        "effect": [ { "u_roll_remainder": [ "formula_moon_selene_embrace" ], "type": "recipe" } ],
+        "false_effect": [
+          {
+            "u_message": "There's something on the edge of your mind, but you can't quite grasp it.  You've hit a dead end.  You'll need to try a new approach.",
+            "type": "bad"
+          },
+          { "u_spawn_item": "used_research_materials", "suppress_message": true }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "name": "magical research: moon (hard)",
+    "id": "magical_research_moon_hard",
+    "description": "Conduct magical research related to the esoteric manipulation of moonlight and the night.",
+    "category": "CC_*",
+    "subcategory": "CSC_*_NESTED",
+    "difficulty": 2,
+    "time": "48 h",
+    "autolearn": false,
+    "qualities": [
+      { "id": "MAGICAL_RESEARCH", "level": 3 },
+      { "id": "MAGICAL_SENSE", "level": 1 },
+      { "id": "MAGICAL_WRITING", "level": 2 }
+    ],
+    "components": [ [ [ "paper", 50 ], [ "used_occult_notes", 5 ] ], [ [ "sky_research_materials", 1 ] ] ],
+    "book_learn": { "sky_research_materials": { "skill_level": 8, "hidden": true } },
+    "skill_used": "occult",
+    "flags": [ "SECRET", "BLIND_HARD" ],
+    "proficiencies": [
+      { "proficiency": "prof_thaumatology", "required": true },
+      { "proficiency": "prof_spell_research", "required": true },
+      { "proficiency": "prof_spellcrafting_moon", "required": true }
+    ],
+    "result_eocs": [
+      {
+        "id": "EOC_GET_MOON_SPELLS_HARD",
+        "condition": { "roll_contested": { "math": [ "rng( u_val('intelligence'), u_skill('spellcraft') )" ] }, "difficulty": 18 },
+        "effect": [ { "u_roll_remainder": [ "formula_moon_travel_teleport" ], "type": "recipe" } ],
+        "false_effect": [
+          {
+            "u_message": "There's something on the edge of your mind, but you can't quite grasp it.  You've hit a dead end.  You'll need to try a new approach.",
+            "type": "bad"
+          },
+          { "u_spawn_item": "used_research_materials", "suppress_message": true }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "name": "magical research: sea (easy)",
+    "id": "magical_research_sea_easy",
+    "description": "Conduct magical research related to the basic manipulation ofcurrents and the tides.",
+    "category": "CC_*",
+    "subcategory": "CSC_*_NESTED",
+    "difficulty": 2,
+    "time": "12 h",
+    "autolearn": false,
+    "qualities": [
+      { "id": "MAGICAL_RESEARCH", "level": 2 },
+      { "id": "MAGICAL_SENSE", "level": 1 },
+      { "id": "MAGICAL_WRITING", "level": 1 }
+    ],
+    "components": [ [ [ "paper", 20 ], [ "used_occult_notes", 5 ] ], [ [ "sea_research_materials", 1 ] ] ],
+    "book_learn": { "sea_research_materials": { "skill_level": 2, "hidden": true } },
+    "skill_used": "occult",
+    "flags": [ "SECRET", "BLIND_HARD" ],
+    "proficiencies": [
+      { "proficiency": "prof_thaumatology", "required": true },
+      { "proficiency": "prof_spell_research", "required": false },
+      { "proficiency": "prof_spellcrafting_sky", "required": false }
+    ],
+    "result_eocs": [
+      {
+        "id": "EOC_GET_SEA_SPELLS_EASY",
+        "condition": { "roll_contested": { "math": [ "rng( u_val('intelligence'), u_skill('spellcraft') )" ] }, "difficulty": 14 },
+        "effect": [
+          {
+            "u_roll_remainder": [ "formula_sea_water_protection", "formula_sea_breathing_water", "formula_sea_cooling_touch" ],
+            "type": "recipe"
+          }
+        ],
+        "false_effect": [
+          {
+            "u_message": "There's something on the edge of your mind, but you can't quite grasp it.  You've hit a dead end.  You'll need to try a new approach.",
+            "type": "bad"
+          },
+          { "u_spawn_item": "used_research_materials", "suppress_message": true }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "name": "magical research: sea (medium)",
+    "id": "magical_research_sea_medium",
+    "description": "Conduct magical research related to complex manipulation of currents and the tides.",
+    "category": "CC_*",
+    "subcategory": "CSC_*_NESTED",
+    "difficulty": 2,
+    "time": "24 h",
+    "autolearn": false,
+    "qualities": [
+      { "id": "MAGICAL_RESEARCH", "level": 2 },
+      { "id": "MAGICAL_SENSE", "level": 1 },
+      { "id": "MAGICAL_WRITING", "level": 2 }
+    ],
+    "components": [ [ [ "paper", 35 ], [ "used_occult_notes", 5 ] ], [ [ "sea_research_materials", 1 ] ] ],
+    "book_learn": { "sea_research_materials": { "skill_level": 5, "hidden": true } },
+    "skill_used": "occult",
+    "flags": [ "SECRET", "BLIND_HARD" ],
+    "proficiencies": [
+      { "proficiency": "prof_thaumatology", "required": true },
+      { "proficiency": "prof_spell_research", "required": true },
+      { "proficiency": "prof_spellcrafting_sky", "required": false }
+    ],
+    "result_eocs": [
+      {
+        "id": "EOC_GET_SEA_SPELLS_MEDIUM",
+        "condition": { "roll_contested": { "math": [ "rng( u_val('intelligence'), u_skill('spellcraft') )" ] }, "difficulty": 16 },
+        "effect": [ { "u_roll_remainder": [ "formula_sea_purify_water", "formula_sea_summon_elemental" ], "type": "recipe" } ],
+        "false_effect": [
+          {
+            "u_message": "There's something on the edge of your mind, but you can't quite grasp it.  You've hit a dead end.  You'll need to try a new approach.",
+            "type": "bad"
+          },
+          { "u_spawn_item": "used_research_materials", "suppress_message": true }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "name": "magical research: sea (hard)",
+    "id": "magical_research_sea_hard",
+    "description": "Conduct magical research related to esoteric manipulation of currents and the tides.",
+    "category": "CC_*",
+    "subcategory": "CSC_*_NESTED",
+    "difficulty": 2,
+    "time": "48 h",
+    "autolearn": false,
+    "qualities": [
+      { "id": "MAGICAL_RESEARCH", "level": 3 },
+      { "id": "MAGICAL_SENSE", "level": 1 },
+      { "id": "MAGICAL_WRITING", "level": 2 }
+    ],
+    "components": [ [ [ "paper", 50 ], [ "used_occult_notes", 5 ] ], [ [ "sea_research_materials", 1 ] ] ],
+    "book_learn": { "sea_research_materials": { "skill_level": 8, "hidden": true } },
+    "skill_used": "occult",
+    "flags": [ "SECRET", "BLIND_HARD" ],
+    "proficiencies": [
+      { "proficiency": "prof_thaumatology", "required": true },
+      { "proficiency": "prof_spell_research", "required": true },
+      { "proficiency": "prof_spellcrafting_sea", "required": true }
+    ],
+    "result_eocs": [
+      {
+        "id": "EOC_GET_SEA_SPELLS_HARD",
+        "condition": { "roll_contested": { "math": [ "rng( u_val('intelligence'), u_skill('spellcraft') )" ] }, "difficulty": 18 },
+        "effect": [ { "u_roll_remainder": [  ], "type": "recipe" } ],
+        "false_effect": [
+          {
+            "u_message": "There's something on the edge of your mind, but you can't quite grasp it.  You've hit a dead end.  You'll need to try a new approach.",
+            "type": "bad"
+          },
+          { "u_spawn_item": "used_research_materials", "suppress_message": true }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "name": "magical research: sky (easy)",
+    "id": "magical_research_sky_easy",
+    "description": "Conduct magical research related to the basic manipulation of wind and storm.",
+    "category": "CC_*",
+    "subcategory": "CSC_*_NESTED",
+    "difficulty": 2,
+    "time": "12 h",
+    "autolearn": false,
+    "qualities": [
+      { "id": "MAGICAL_RESEARCH", "level": 2 },
+      { "id": "MAGICAL_SENSE", "level": 1 },
+      { "id": "MAGICAL_WRITING", "level": 1 }
+    ],
+    "components": [ [ [ "paper", 20 ], [ "used_occult_notes", 5 ] ], [ [ "sky_research_materials", 1 ] ] ],
+    "book_learn": { "sky_research_materials": { "skill_level": 2, "hidden": true } },
+    "skill_used": "occult",
+    "flags": [ "SECRET", "BLIND_HARD" ],
+    "proficiencies": [
+      { "proficiency": "prof_thaumatology", "required": true },
+      { "proficiency": "prof_spell_research", "required": false },
+      { "proficiency": "prof_spellcrafting_sky", "required": false }
+    ],
+    "result_eocs": [
+      {
+        "id": "EOC_GET_SKY_SPELLS_EASY",
+        "condition": { "roll_contested": { "math": [ "rng( u_val('intelligence'), u_skill('spellcraft') )" ] }, "difficulty": 14 },
+        "effect": [
+          {
+            "u_roll_remainder": [ "formula_sky_burst_of_wind", "formula_sky_cloak_of_fog", "formula_sky_call_sylph" ],
+            "type": "recipe"
+          }
+        ],
+        "false_effect": [
+          {
+            "u_message": "There's something on the edge of your mind, but you can't quite grasp it.  You've hit a dead end.  You'll need to try a new approach.",
+            "type": "bad"
+          },
+          { "u_spawn_item": "used_research_materials", "suppress_message": true }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "name": "magical research: sky (medium)",
+    "id": "magical_research_sky_medium",
+    "description": "Conduct magical research related to complex manipulation of wind and storm.",
+    "category": "CC_*",
+    "subcategory": "CSC_*_NESTED",
+    "difficulty": 2,
+    "time": "24 h",
+    "autolearn": false,
+    "qualities": [
+      { "id": "MAGICAL_RESEARCH", "level": 2 },
+      { "id": "MAGICAL_SENSE", "level": 1 },
+      { "id": "MAGICAL_WRITING", "level": 2 }
+    ],
+    "components": [ [ [ "paper", 35 ], [ "used_occult_notes", 5 ] ], [ [ "sky_research_materials", 1 ] ] ],
+    "book_learn": { "sky_research_materials": { "skill_level": 5, "hidden": true } },
+    "skill_used": "occult",
+    "flags": [ "SECRET", "BLIND_HARD" ],
+    "proficiencies": [
+      { "proficiency": "prof_thaumatology", "required": true },
+      { "proficiency": "prof_spell_research", "required": true },
+      { "proficiency": "prof_spellcrafting_sky", "required": false }
+    ],
+    "result_eocs": [
+      {
+        "id": "EOC_GET_SKY_SPELLS_MEDIUM",
+        "condition": { "roll_contested": { "math": [ "rng( u_val('intelligence'), u_skill('spellcraft') )" ] }, "difficulty": 16 },
+        "effect": [ { "u_roll_remainder": [ "formula_sky_call_lightning", "formula_sky_reveal_world_map" ], "type": "recipe" } ],
+        "false_effect": [
+          {
+            "u_message": "There's something on the edge of your mind, but you can't quite grasp it.  You've hit a dead end.  You'll need to try a new approach.",
+            "type": "bad"
+          },
+          { "u_spawn_item": "used_research_materials", "suppress_message": true }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "name": "magical research: sky (hard)",
+    "id": "magical_research_sky_hard",
+    "description": "Conduct magical research related to esoteric manipulation of wind and storm.",
+    "category": "CC_*",
+    "subcategory": "CSC_*_NESTED",
+    "difficulty": 2,
+    "time": "48 h",
+    "autolearn": false,
+    "qualities": [
+      { "id": "MAGICAL_RESEARCH", "level": 3 },
+      { "id": "MAGICAL_SENSE", "level": 1 },
+      { "id": "MAGICAL_WRITING", "level": 2 }
+    ],
+    "components": [ [ [ "paper", 50 ], [ "used_occult_notes", 5 ] ], [ [ "sky_research_materials", 1 ] ] ],
+    "book_learn": { "sky_research_materials": { "skill_level": 8, "hidden": true } },
+    "skill_used": "occult",
+    "flags": [ "SECRET", "BLIND_HARD" ],
+    "proficiencies": [
+      { "proficiency": "prof_thaumatology", "required": true },
+      { "proficiency": "prof_spell_research", "required": true },
+      { "proficiency": "prof_spellcrafting_sky", "required": true }
+    ],
+    "result_eocs": [
+      {
+        "id": "EOC_GET_SKY_SPELLS_HARD",
+        "condition": { "roll_contested": { "math": [ "rng( u_val('intelligence'), u_skill('spellcraft') )" ] }, "difficulty": 18 },
+        "effect": [ { "u_roll_remainder": [  ], "type": "recipe" } ],
+        "false_effect": [
+          {
+            "u_message": "There's something on the edge of your mind, but you can't quite grasp it.  You've hit a dead end.  You'll need to try a new approach.",
+            "type": "bad"
+          },
+          { "u_spawn_item": "used_research_materials", "suppress_message": true }
+        ]
+      }
+    ]
+  }
+]

@@ -57,8 +57,8 @@
     "valid_targets": [ "self" ],
     "skill": "occult",
     "flags": [ "CONCENTRATE", "VERBAL", "SOMATIC" ],
-    "effect": "spawn_item",
-    "effect_str": "item_whisper_ear",
+    "effect": "effect_on_condition",
+    "effect_str": "EOC_GAIN_WHISPER_LEAVES",
     "extra_effects": [ { "id": "channeling_fatigue_spell", "hit_self": true, "max_level": 3 } ],
     "shape": "blast",
     "energy_source": "MANA",
@@ -68,9 +68,23 @@
     "max_damage": 1,
     "max_level": 15,
     "base_casting_time": 6000,
-    "base_energy_cost": 650,
-    "min_duration": 100000,
-    "max_duration": 400000,
-    "duration_increment": 20000
+    "base_energy_cost": 3000,
+    "final_energy_cost": 1500,
+    "energy_increment": -100,
+    "min_duration": { "math": [ "spell_duration(u_val('time: 20 h'))" ] }
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_GAIN_WHISPER_LEAVES",
+    "effect": [
+      { "u_message": "You are in tune with the wood and the wilds." },
+      { "u_add_trait": "TREE_COMMUNION", "duration": "20 hours" },
+      { "queue_eocs": "EOC_LOSE_WHISPER_LEAVES", "time_in_future": [ "20 hours", "20 hours" ] }
+    ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_LOSE_WHISPER_LEAVES",
+    "effect": [ { "u_lose_trait": "TREE_COMMUNION" } ]
   }
 ]

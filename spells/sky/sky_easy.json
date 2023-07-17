@@ -1,6 +1,6 @@
 [
   {
-    "id": "air_burst_of_wind",
+    "id": "sky_burst_of_wind",
     "type": "SPELL",
     "name": "Burst of Wind",
     "description": "Call up a burst of wind to push nearby targets away.",
