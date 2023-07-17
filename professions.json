@@ -25,18 +25,19 @@
   },
   {
     "type": "profession",
-    "id": "lizardfolk_warrior",
-    "name": "Lizardfolk Warrior",
+    "id": "lizardman_warrior",
+    "name": "Lizardman Warrior",
     "description": "The land was your kin's long before the warmbloods came.  Someday, it will be yours again.",
     "points": 3,
     "skills": [
-      { "level": 2, "name": "gun" },
+      { "level": 2, "name": "unarmed" },
       { "level": 2, "name": "stabbing" },
       { "level": 2, "name": "melee" },
       { "level": 1, "name": "dodge" },
       { "level": 3, "name": "swimming" }
     ],
     "traits": [
+      "LIZARDMAN_SPECIES",
       "LARGE_OK",
       "SCALES",
       "COLDBLOOD4",
@@ -50,11 +51,134 @@
       "TALONS",
       "SLIT_NOSTRILS",
       "CARNIVORE",
-      "PRED2"
+      "PRED2",
+      "PADDED_FEET"
     ],
     "items": {
       "both": {
-        "items": [ "straw_basket", "grass_cloak", "primitive_knife", "rope_loop" ],
+        "items": [ "straw_basket", "grass_cloak", "rope_loop" ],
+        "entries": [
+          { "item": "spear_stone", "container-item": "spearsling" },
+          { "item": "primitive_knife", "container-item": "sheath_birchbark" }
+        ]
+      }
+    }
+  },
+  {
+    "type": "profession",
+    "id": "lizardman_shaman",
+    "name": "Lizardman Shaman",
+    "description": "You practice the ancient rites, taught you to by your clutch-mother and passed down from uncountable aeons in the past.  With the changes to the world now, you'll need them all.",
+    "points": 3,
+    "skills": [
+      { "level": 2, "name": "unarmed" },
+      { "level": 2, "name": "occult" },
+      { "level": 2, "name": "melee" },
+      { "level": 1, "name": "dodge" },
+      { "level": 3, "name": "swimming" }
+    ],
+    "spells": [
+      { "id": "sea_purify_water", "level": 2 },
+      { "id": "sea_summon_elemental", "level": 3 },
+      { "id": "sky_cloak_of_fog", "level": 4 },
+      { "id": "forest_unity_nature", "level": 4 },
+      { "id": "forest_bandage_heal", "level": 3 }
+    ],
+    "traits": [
+      "LIZARDMAN_SPECIES",
+      "LARGE_OK",
+      "SCALES",
+      "COLDBLOOD4",
+      "FORKED_TONGUE",
+      "HISS",
+      "TAIL_THICK",
+      "RESISTWARM",
+      "LIZ_IR",
+      "MUZZLE_LONG",
+      "WEBBED_FEET",
+      "TALONS",
+      "SLIT_NOSTRILS",
+      "CARNIVORE",
+      "PRED2",
+      "PADDED_FEET"
+    ],
+    "items": {
+      "both": {
+        "items": [ "straw_basket", "grass_cloak", "rope_loop" ],
+        "entries": [ { "item": "primitive_knife", "container-item": "sheath_birchbark" } ]
+      }
+    }
+  },
+  {
+    "type": "profession",
+    "id": "wolfman_hunter",
+    "name": "Wolfman Hunter",
+    "description": "Run.  Hunt.  Howl at the moon.  Do you need anything more?",
+    "points": 3,
+    "skills": [
+      { "level": 3, "name": "unarmed" },
+      { "level": 2, "name": "melee" },
+      { "level": 1, "name": "dodge" },
+      { "level": 3, "name": "survival" }
+    ],
+    "traits": [
+      "WOLFMAN_SPECIES",
+      "PRED2",
+      "MUZZLE",
+      "SNARL",
+      "FANGS",
+      "CARNIVORE",
+      "RESISTCHILL",
+      "ANIMAL_FEET",
+      "PAWS",
+      "LUPINE_FUR",
+      "NIGHTVISION2",
+      "TAIL_FLUFFY",
+      "PERSISTENCE_HUNTER2",
+      "LUPINE_EARS",
+      "PADDED_FEET",
+      "GOODCARDIO",
+      "HEAVYSLEEPER"
+    ],
+    "items": { "both": { "items": [ "loincloth_leather", "leather_belt", "chestwrap_leather" ] } }
+  },
+  {
+    "type": "profession",
+    "id": "Hawkman_shaman",
+    "name": "Hawkman Mystic",
+    "description": "Run.  Hunt.  Howl at the moon.  Do you need anything more?",
+    "points": 3,
+    "skills": [
+      { "level": 3, "name": "occult" },
+      { "level": 1, "name": "survival" },
+      { "level": 1, "name": "dodge" },
+      { "level": 2, "name": "athletics" }
+    ],
+    "traits": [
+      "HAWKMAN_SPECIES",
+      "HOLLOW_BONES",
+      "TALONS",
+      "FEATHERS",
+      "DOWN",
+      "SCREECH",
+      "WINGS_BIRD",
+      "BIRD_LEGS",
+      "BIRD_EYE",
+      "GIZZARD",
+      "BEAK_HAWK"
+    ],
+    "items": {
+      "both": {
+        "items": [
+          "loincloth_leather",
+          "leather_belt",
+          "chestwrap_leather",
+          "witchwood_bark",
+          "witchwood_bark",
+          "morningflower_leaves_smoked",
+          "morningflower_leaves_smoked",
+          "leather_pouch"
+        ],
         "entries": [ { "item": "spear_stone", "container-item": "spearsling" } ]
       }
     }
