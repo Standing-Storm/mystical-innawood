@@ -1,0 +1,17 @@
+[
+  {
+   "id": "orichalcum_ingot_innawood",
+    "type": "GENERIC",
+    "category": "spare_parts",
+    "name": "orichalcum ingot",
+    "description": "An ingot of orichalcum, forged of magic and metal and sunlight.  It is heavier than steel",
+    "weight": "4 kg",
+    "volume": "253 ml",
+    "price": 6399,
+    "to_hit": -3,
+    "material": [ "orichalcum_metal" ],
+    "symbol": "=",
+    "color": "light_green",
+    "melee_damage": { "bash": 6 }
+  }
+]
