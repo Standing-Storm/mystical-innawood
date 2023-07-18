@@ -144,7 +144,7 @@
     "subcategory": "CSC_*_NESTED",
     "difficulty": 5,
     "time": "6 h",
-    "components": [ [ [ "paper", 20 ] ], [ [ "platinum_small",2 ], [ "silver_small",2 ], ["gold_small",2], ["tin",6], ["iron_ore", 6] ], [ [ "crystallized_mana_base", 2 ] ] ],
+    "components": [ [ [ "paper", 20 ] ], [ [ "platinum_small",2 ], [ "silver_small",2 ], [ "copper",2 ], ["gold_small",2], ["tin",6], ["iron_ore", 6] ], [ [ "crystallized_mana_base", 2 ] ] ],
     "using": [
       [ "writing_standard", 1 ]
       [ "magical_materials", 4, "LIST" ],
