@@ -24,7 +24,7 @@
       {
         "id": "EOC_CONDUCT_WEATHER_OBSERVATIONS",
         "condition": { "and": [ "is_day", "u_is_outside", { "is_weather": "sunny" } ] },
-        "effect": [  { "u_message": "The metal and sunlight and magic all combine into an ingot of orichalcum.", "type": "good"}, { "u_spawn_item": "orichalcum_ingot", "suppress_message": true } ],
+        "effect": [  { "u_message": "The metal and sunlight and magic all combine into an ingot of orichalcum.", "type": "good"}, { "u_spawn_item": "orichalcum_ingot_innawood", "suppress_message": true } ],
         "false_effect": [ { "u_message": "Without the necessary conditions, you produce only dross.", "type": "bad" } ]
       }
     ]
