@@ -133,5 +133,54 @@
         ]
       }
     ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "name": "journeyman enchantment research",
+    "id": "enchantment_research_journeyman",
+    "description": "You've found plenty of enchanted materials in nature, but there has to be a way to create your own.  Rather than magical rocks or bark, if you could make an enchanted metal, whole worlds would open up to you.",
+    "category": "CC_*",
+    "subcategory": "CSC_*_NESTED",
+    "difficulty": 5,
+    "time": "6 h",
+    "components": [ [ [ "paper", 20 ] ], [ [ "platinum_small",2 ], [ "silver_small",2 ], ["gold_small",2], ["tin",6], ["iron_ore", 6] ], [ [ "crystallized_mana_base", 2 ] ] ],
+    "using": [
+      [ "writing_standard", 1 ]
+      [ "magical_materials", 4, "LIST" ],
+      [ "blacksmithing_standard", 1 ]
+    ],
+    "qualities": [ { "id": "MAGICAL_RESEARCH", "level": 2 }, { "id": "MAGICAL_SENSE", "level": 1 } ],
+    "skill_used": "occult",
+    "flags": [ "BLIND_HARD" ],
+    "proficiencies": [
+      { "proficiency": "prof_occult_exploration", "required": true },
+      { "proficiency": "prof_thaumatology", "required": false },
+      { "proficiency": "prof_enchanting_basic", "required": false },
+      { "proficiency": "prof_metalworking", "required": false }
+    ],
+    "result_eocs": [
+        {
+        "id": "EOC_ENCHANTING_RESEARCH_JOURNEYMAN",
+        "condition": { "roll_contested": { "math": [ "rng( u_val('intelligence'), u_skill('occult') )" ] }, "difficulty": 15 },
+        "effect": [
+          {
+            "u_message": "After several false starts, you've found there are certain combinations of metals and magic that take a stable form.  You can use those to create more powerful items.",
+            "type": "good"
+          },
+          { "u_spawn_item": "used_occult_notes", "suppress_message": true },
+          { "u_learn_recipe": "enchantment_orichalcum_recipe" },
+          { "u_learn_recipe": "enchantment_moonsilver_recipe" },
+          { "u_learn_recipe": "enchantment_crimsonite_recipe" }
+        ],
+        "false_effect": [
+          {
+            "u_message": "You really thought you had something here, but it's just a dead end.  You'll have to try again.",
+            "type": "bad"
+          },
+          { "u_spawn_item": "used_occult_notes", "suppress_message": true }
+        ]
+      }
+    ]
   }
 ]
