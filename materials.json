@@ -28,6 +28,23 @@
   },
   {
     "type": "material",
+    "id": "raw_orichalcum",
+    "name": "Orichalcum",
+    "density": 60,
+    "specific_heat_liquid": 0.82,
+    "specific_heat_solid": 0.45,
+    "latent_heat": 273,
+    "chip_resist": 45,
+    "repaired_with": "orichalcum_ingot_innawood",
+    "dmg_adj": [ "marked", "dented", "smashed", "shattered" ],
+    "bash_dmg_verb": "dented",
+    "cut_dmg_verb": "scratched",
+    "burn_products": [ [ "scrap_bronze", 1 ] ],
+    "resist": { "bash": 8, "cut": 15, "acid": 6, "heat": 10, "bullet": 16, "electric": 0 },
+    "repair_difficulty": 7
+  },
+  {
+    "type": "material",
     "id": "mooncloth",
     "//": "copied from canvas",
     "name": "mooncloth",
