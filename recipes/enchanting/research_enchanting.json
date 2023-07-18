@@ -169,9 +169,10 @@
             "type": "good"
           },
           { "u_spawn_item": "used_occult_notes", "suppress_message": true },
-          { "u_learn_recipe": "enchantment_orichalcum_recipe" },
-          { "u_learn_recipe": "enchantment_moonsilver_recipe" },
-          { "u_learn_recipe": "enchantment_crimsonite_recipe" }
+          { "u_learn_recipe": "enchantment_orichalcum_ingot" },
+          { "u_learn_recipe": "enchantment_moonsilver_ingot" },
+          { "u_learn_recipe": "enchantment_crimsonite_ingot" }, 
+          { "u_learn_recipe": "enchantment_hammer_journeyman" }
         ],
         "false_effect": [
           {
