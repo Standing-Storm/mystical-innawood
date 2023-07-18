@@ -21,5 +21,24 @@
       { "id": "HAMMER", "level": 1 }
     ],
     "components": [ [ [ "cordage_short", 2, "LIST" ] ], [ [ "rock_flaking_any", 1, "LIST" ] ], [ [ "cordage_short", 1, "LIST" ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "BRISK_EXERCISE",
+    "result": "hammer",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_TOOLS",
+    "skill_used": "fabrication",
+    "difficulty": 5,
+    "time": "2 h",
+    "using": [ [ "forging_standard", 12 ], [ "steel_standard", 1 ] ],
+    "proficiencies": [
+      { "proficiency": "prof_metalworking" },
+      { "proficiency": "prof_blacksmithing" },
+      { "proficiency": "prof_toolsmithing" }
+    ],
+    "qualities": [ { "id": "ANVIL", "level": 3 }, { "id": "HAMMER", "level": 2 } ],
+    "tools": [ [ [ "tongs", -1 ], [ "drift", -1 ] ] ],
+    "components": [ [ [ "2x4", 1 ], [ "stick", 2 ] ], [[ "crystallized_mana_base",2 ]] ]
   }
 ]
