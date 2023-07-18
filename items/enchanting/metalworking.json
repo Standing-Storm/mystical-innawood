@@ -9,7 +9,7 @@
     "volume": "253 ml",
     "price": 6399,
     "to_hit": -3,
-    "material": [ "orichalcum_metal" ],
+    "material": [ "raw_orichalcum" ],
     "symbol": "=",
     "color": "yellow",
     "melee_damage": { "bash": 6 }
