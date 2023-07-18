@@ -13,5 +13,10 @@
     "type": "tool_quality",
     "id": "MAGICAL_WRITING",
     "name": { "str": "Spellcrafting" }
+  },
+    {
+    "type": "tool_quality",
+    "id": "MAGICAL_FORGING",
+    "name": { "str": "Mage-smithing" }
   }
 ]
