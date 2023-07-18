@@ -4,14 +4,29 @@
     "type": "GENERIC",
     "category": "spare_parts",
     "name": "orichalcum ingot",
-    "description": "An ingot of orichalcum, forged of magic and metal and sunlight.  It is heavier than steel",
-    "weight": "4 kg",
+    "description": "An ingot of orichalcum, forged of magic and metal and sunlight.  It is much heavier than steel.",
+    "weight": "7 kg",
     "volume": "253 ml",
     "price": 6399,
     "to_hit": -3,
     "material": [ "raw_orichalcum" ],
     "symbol": "=",
     "color": "yellow",
+    "melee_damage": { "bash": 6 }
+  }, 
+    {
+   "id": "moonsilver_ingot_innawood",
+    "type": "GENERIC",
+    "category": "spare_parts",
+    "name": "moonsilver ingot",
+    "description": "An ingot of moonsilver, forged of magic and metal and moonlight.  It gleams with a soft radiance.",
+    "weight": "2 kg",
+    "volume": "253 ml",
+    "price": 6399,
+    "to_hit": -3,
+    "material": [ "raw_moonsilver" ],
+    "symbol": "=",
+    "color": "light_gray",
     "melee_damage": { "bash": 6 }
   }
 ]
