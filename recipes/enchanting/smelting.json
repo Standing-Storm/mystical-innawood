@@ -2,7 +2,7 @@
   {
     "type": "recipe",
     "activity_level": "BRISK_EXERCISE",
-    "name": "orichalcum ingot enchantment research",
+    "name": "orichalcum ingot",
     "id": "enchantment_orichalcum_ingot",
     "description": "Produce an orichalcum ingot from gold, copper, and magic.  The forging must be performed outdoors in the sunlight.",
     "category": "CC_OCCULT",
@@ -22,9 +22,39 @@
     ],
     "result_eocs": [
       {
-        "id": "EOC_CONDUCT_WEATHER_OBSERVATIONS",
+        "id": "EOC_FORGE_ORICHALCUM_INGOT",
         "condition": { "and": [ "is_day", "u_is_outside", { "is_weather": "sunny" } ] },
         "effect": [  { "u_message": "The metal and sunlight and magic all combine into an ingot of orichalcum.", "type": "good"}, { "u_spawn_item": "orichalcum_ingot_innawood", "suppress_message": true } ],
+        "false_effect": [ { "u_message": "Without the necessary conditions, you produce only dross.", "type": "bad" } ]
+      }
+    ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "BRISK_EXERCISE",
+    "name": "moonsilver ingot",
+    "id": "enchantment_moonsilver_ingot",
+    "description": "Produce a moonsilver ingot from magic and silver and moonlight.  The forging must be performed outdoors under the moon.",
+    "category": "CC_OCCULT",
+    "subcategory": "CSC_OCCULT_MATERIALS",
+    "skill_used": "fabrication",
+    "difficulty": 4,
+    "time": "45 m",
+    "batch_time_factors": [ 90, 4 ],
+    "qualities": [ { "id": "MAGICAL_SENSE", "level": 1 }, { "id": "MAGICAL_FORGING", "level": 1 } ],
+    "tools": [ [ [ "crucible", -1 ], [ "crucible_clay", -1 ] ], [ [ "fire", -1 ], [ "toolset", 10 ] ] ],
+    "components": [ [ [ "silver_small", 2 ] ], [ [ "crystallized_mana_base", 1 ] ] ],
+    "flags": [ "BLIND_HARD" ],
+    "proficiencies": [
+      { "proficiency": "prof_occult_exploration", "required": true },
+      { "proficiency": "prof_enchanting_basic", "required": false },
+      { "proficiency": "prof_metalworking", "required": false }
+    ],
+    "result_eocs": [
+      {
+        "id": "EOC_FORGE_MOONSILVER_INGOT",
+        "condition": { "and": [ { "not": "is_day" }, "u_is_outside", { "is_weather": "sunny" } ] },
+        "effect": [  { "u_message": "The metal and moonlight and magic all combine into an ingot of moonsilver.", "type": "good"}, { "u_spawn_item": "moonsilver_ingot_innawood", "suppress_message": true } ],
         "false_effect": [ { "u_message": "Without the necessary conditions, you produce only dross.", "type": "bad" } ]
       }
     ]
