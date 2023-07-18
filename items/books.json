@@ -131,6 +131,34 @@
   },
   {
     "type": "BOOK",
+    "id": "item_weather_observations_rain",
+    "copy-from": "research_notes_abstract",
+    "name": { "str": "rain observations", "str_pl": "sets of rain observations" },
+    "description": "A study of falling rain and the patterns of the lightning."
+  },
+  {
+    "type": "BOOK",
+    "id": "item_weather_observations_clouds",
+    "copy-from": "research_notes_abstract",
+    "name": { "str": "cloud observations", "str_pl": "sets of cloud observations" },
+    "description": "A study of the movements of the clouds and their shapes."
+  },
+  {
+    "type": "BOOK",
+    "id": "item_weather_observations_sun",
+    "copy-from": "research_notes_abstract",
+    "name": { "str": "solar observations", "str_pl": "sets of solar observations" },
+    "description": "A study of the angles of the sun and the strength of the sunbeams."
+  },
+  {
+    "type": "BOOK",
+    "id": "item_tidal_observations",
+    "copy-from": "research_notes_abstract",
+    "name": { "str": "tidal observations", "str_pl": "sets of tidal observations" },
+    "description": "A study of the tidal patterns and the flow of currents."
+  },
+  {
+    "type": "BOOK",
     "id": "magical_grimoire_apprentice",
     "name": { "str": "apprentice's grimoire", "str_pl": "copies of apprentice's grimoire" },
     "description": "A compilation of your elementary magical observations.  This would be extremely useful as a reference material.",
