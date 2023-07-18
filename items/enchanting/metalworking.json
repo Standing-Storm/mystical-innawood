@@ -11,7 +11,7 @@
     "to_hit": -3,
     "material": [ "orichalcum_metal" ],
     "symbol": "=",
-    "color": "light_green",
+    "color": "yellow",
     "melee_damage": { "bash": 6 }
   }
 ]
