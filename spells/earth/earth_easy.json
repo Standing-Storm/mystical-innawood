@@ -65,5 +65,28 @@
     "min_range": 3,
     "max_range": 20,
     "range_increment": 1.1
+  },
+  {
+    "id": "earth_fortitude_of_stone",
+    "type": "SPELL",
+    "name": "Stones' Fortitude",
+    "description": "Draw on the eternal endurance of the stones, slowing your metabolism and staving off hunger and thirst.  However, while the enchantment is in effect, you will not heal.",
+    "flags": [ "CONCENTRATE", "SOMATIC", "VERBAL" ],
+    "valid_targets": [ "self" ],
+    "skill": "occult",
+    "spell_class": "EARTH",
+    "energy_source": "MANA",
+    "effect": "attack",
+    "effect_str": "effect_fortitude_of_stone",
+    "extra_effects": [ { "id": "channeling_fatigue_spell", "hit_self": true, "max_level": 4 } ],
+    "components": "spell_components_resilience_mountain",
+    "shape": "blast",
+    "difficulty": 4,
+    "base_casting_time": 6000,
+    "base_energy_cost": 650,
+    "max_level": 20,
+    "min_duration": 360000,
+    "max_duration": 2160000,
+    "duration_increment": 100000
   }
 ]

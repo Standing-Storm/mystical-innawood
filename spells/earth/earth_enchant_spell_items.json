@@ -12,7 +12,7 @@
     "color": "light_gray",
     "warmth": 5,
     "material_thickness": 2.8,
-    "environmental_protection": 2,
+    "environmental_protection": 4,
     "flags": [ "ONLY_ONE", "OVERSIZE", "NO_TAKEOFF", "PERSONAL", "STURDY", "PADDED", "ALLOWS_NATURAL_ATTACKS" ],
     "relic_data": { "passive_effects": [ { "id": "enchant_stone_skin" } ] },
     "armor": [

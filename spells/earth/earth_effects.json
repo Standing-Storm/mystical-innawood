@@ -1,6 +1,35 @@
 [
   {
     "type": "effect_type",
+    "id": "earth_fortitude_of_stone",
+    "name": [ "Stones' Fortitude" ],
+    "desc": [ "You feel no hunger or thirst." ],
+    "apply_message": "",
+    "remove_message": "Your stomach suddenly rumbles as you feel a pang of hunger.",
+    "rating": "good",
+    "max_duration": "24 hours",
+    "enchantments": [
+      {
+        "values": [
+          {
+            "value": "HUNGER",
+            "multiply": { "math": [ "(-0.2 - (0.04 * u_val('spell_level', 'spell: earth_fortitude_of_stone')))" ] }
+          },
+          {
+            "value": "THIRST",
+            "multiply": { "math": [ "(-0.2 - (0.04 * u_val('spell_level', 'spell: earth_fortitude_of_stone')))" ] }
+          },
+          {
+            "value": "METABOLISM",
+            "multiply": { "math": [ "(-0.2 - (0.04 * u_val('spell_level', 'spell: earth_fortitude_of_stone')))" ] }
+          },
+          { "value": "REGEN_HP", "multiply": -1.0 }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "effect_type",
     "id": "effect_tremorsense",
     "name": [ "Tremorsense" ],
     "desc": [ "You can feel them moving around you." ],
