@@ -42,5 +42,24 @@
     "flags": [ "SHEATH_KNIFE", "ALLOWS_BODY_BLOCK", "FRAGILE" ],
     "weapon_category": [ "KNIVES" ],
     "melee_damage": { "bash": 1, "stab": 8 }
+  },
+  {
+    "id": "enchantment_hammer_journeyman",
+    "type": "TOOL",
+    "name": { "str": "mage-smith's hammer" },
+    "description": "A hammer created through smithing and ritual, specially designed to smith enchanted metals.  It's not particularly useful as a normal hammer.",
+    "ascii_picture": "hammer",
+    "longest_side": "25 cm",
+    "weight": "566 g",
+    "volume": "320 ml",
+    "price": 700,
+    "price_postapoc": 100,
+    "to_hit": -1,
+    "material": [ "steel", "wood" ],
+    "symbol": ";",
+    "color": "brown",
+    "qualities": [ [ "HAMMER", 1 ], [ "HAMMER_FINE", 1 ], [ "MAGICAL_FORGING", 1 ] ],
+    "flags": [ "BELT_CLIP", "NONCONDUCTIVE", "ALLOWS_BODY_BLOCK" ],
+    "weapon_category": [ "BATONS" ],
+    "melee_damage": { "bash": 9 }
   }
-]
