@@ -14,7 +14,7 @@
     "material": [ "flesh" ],
     "symbol": "L",
     "color": "green",
-    "aggression": 0,
+    "aggression": -10,
     "morale": 80,
     "vision_day": 30,
     "vision_night": 20,
@@ -24,14 +24,16 @@
     "melee_dice_sides": 4,
     "dodge": 5,
     "harvest": "lizardman",
+      "chat_topics": [ "TALK_LIZARDMAN_WARRIOR" ]
+      "anger_triggers": [ "FRIEND_ATTACKED", "FRIEND_DIED", "HURT" ],
     "weakpoint_sets": [ "wps_humanoid_body", "wps_humanoid_body_armor", "wps_humanoid_open_helmet" ],
     "families": [ "prof_wp_demihuman" ],
     "death_drops": [
-      { "item": "lizardfolk_club", "prob": 30 },
+      { "item": "spear_stone", "prob": 30 },
       { "item": "loincloth", "prob": 40 },
       { "item": "leather_belt", "prob": 20 }
     ],
-    "special_attacks": [ [ "crush", 5 ], { "type": "bite", "cooldown": 5 } ],
+    "special_attacks": [ {"id": "impale", "cooldown": 10, }, { "id": "scratch", "cooldown": 15 }, { "type": "bite", "cooldown": 10 } ],
     "flags": [
       "SEES",
       "HEARS",
@@ -44,20 +46,21 @@
       "PUSH_MON",
       "SWARMS",
       "CAN_OPEN_DOORS",
-      "NO_BREATHE"
+      "NO_BREATHE",
+       "CONVERSATION"
     ],
     "armor": { "bash": 2, "cut": 12, "stab": 6, "bullet": 10 }
   },
   {
-    "id": "mon_lizardman_hunter",
-    "type": "MONSTER",
-    "name": "lizardman hunter",
-    "description": "The hunter is smaller than a warrior, but equally as deadly, with their lithe figures and accurate javelin throws.",
-    "copy-from": "mon_lizardman_warrior",
-    "symbol": "L",
-    "special_attacks": [
-      {
-        "type": "gun",
+     "id": "mon_lizardman_hunter",
+     "type": "MONSTER",
+     "name": "lizardman hunter",
+     "description": "The hunter is smaller than a warrior, but equally as deadly, with their lithe figures and accurate javelin throws.",
+     "copy-from": "mon_lizardman_warrior",
+     "symbol": "L",
+     "special_attacks": [
+       {
+         "type": "gun",
         "cooldown": 5,
         "move_cost": 150,
         "gun_type": "lizardman_javelin_throw",
@@ -66,12 +69,14 @@
         "fake_per": 8,
         "require_targeting_player": false,
         "ranges": [ [ 2, 10, "DEFAULT" ] ],
-        "description": "The lizardman hunter hurls a barbed javelin at you!"
+        "description": "The lizardman hunter hurls a spear at you!"
       },
-      { "type": "bite", "cooldown": 5 }
+       { "type": "bite", "cooldown": 10 },
+       { "id": "scratch", "cooldown": 15 }
     ],
+     "chat_topics": [ "TALK_LIZARDMAN_HUNTER" ]
     "death_drops": [
-      { "item": "lizardman_javelin", "prob": 30 },
+      { "item": "spear_stone", "prob": 30 },
       { "item": "loincloth", "prob": 40 },
       { "item": "spearsling", "prob": 20 }
     ]
