@@ -54,6 +54,7 @@
     "flags": [ "CONCENTRATE", "SOMATIC", "VERBAL" ],
     "valid_targets": [ "self" ],
     "max_level": 10,
+    "extra_effects": [ { "id": "channeling_fatigue_spell", "hit_self": true, "max_level": 4 } ],
     "skill": "occult",
     "spell_class": "EARTH",
     "energy_source": "MANA",
