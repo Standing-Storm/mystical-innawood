@@ -101,6 +101,114 @@
     "death_drops": {
       "subtype": "distribution",
       "items": [
+         { "item": "spear_stone", "prob": 30 },
+         { "item": "loincloth", "prob": 40 },
+         { "item": "spearsling", "prob": 20 }
+      ]
+    }
+  },
+     {
+    "id": "mon_lizardman_warrior_hostile",
+    "type": "MONSTER",
+    "name": "lizardman warrior",
+    "description": "A tall, powerful, reptilian humanoid with a muscular tail whose skin is covered in dark gray-green scales.  They are coldblooded and primarily live in swamps.",
+    "default_faction": "lizardman_faction",
+    "bodytype": "human",
+    "species": [ "LIZARDMAN" ],
+    "volume": "80 L",
+    "weight": "100 kg",
+    "hp": 70,
+    "speed": 105,
+    "material": [ "flesh" ],
+    "symbol": "L",
+    "color": "green",
+    "aggression": 30,
+    "morale": 80,
+    "vision_day": 30,
+    "vision_night": 20,
+    "path_settings": { "avoid_traps": true, "avoid_sharp": true },
+    "melee_skill": 4,
+    "melee_dice": 2,
+    "melee_dice_sides": 4,
+    "dodge": 5,
+    "harvest": "lizardman",
+      "chat_topics": [ "TALK_LIZARDMAN_WARRIOR" ]
+      "anger_triggers": [ "FRIEND_ATTACKED", "FRIEND_DIED", "HURT", "PLAYER_CLOSE" ],
+    "weakpoint_sets": [ "wps_humanoid_body", "wps_humanoid_body_armor", "wps_humanoid_open_helmet" ],
+    "families": [ "prof_wp_demihuman" ],
+    "death_drops": [
+      { "item": "spear_stone", "prob": 30 },
+      { "item": "loincloth", "prob": 40 },
+      { "item": "leather_belt", "prob": 20 }
+    ],
+    "special_attacks": [ {"id": "impale", "cooldown": 10 }, { "id": "scratch", "cooldown": 15 }, { "type": "bite", "cooldown": 10 } ],
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "KEENNOSE",
+      "PATH_AVOID_DANGER_1",
+      "CLIMBS",
+      "GROUP_MORALE",
+      "SWIMS",
+      "PUSH_MON",
+      "SWARMS",
+      "CAN_OPEN_DOORS",
+      "NO_BREATHE",
+       "CONVERSATION"
+    ],
+    "armor": { "bash": 2, "cut": 12, "stab": 6, "bullet": 10 }
+  },
+  {
+     "id": "mon_lizardman_hunter_hostile",
+     "type": "MONSTER",
+     "name": "lizardman hunter",
+     "description": "The hunter is smaller than a warrior, but equally as deadly, with their lithe figures and accurate javelin throws.",
+     "copy-from": "mon_lizardman_warrior",
+     "symbol": "L",
+         "volume": "72 L",
+    "weight": "90 kg",
+     "special_attacks": [
+       {
+         "type": "gun",
+        "cooldown": 5,
+        "move_cost": 150,
+        "gun_type": "lizardman_javelin_throw",
+        "fake_skills": [ [ "gun", 5 ], [ "rifle", 4 ] ],
+        "fake_dex": 8,
+        "fake_per": 8,
+        "require_targeting_player": false,
+        "ranges": [ [ 2, 10, "DEFAULT" ] ],
+        "description": "The lizardman hunter hurls a spear at you!"
+      },
+       { "type": "bite", "cooldown": 10 },
+       { "id": "scratch", "cooldown": 15 }
+    ],
+     "chat_topics": [ "TALK_LIZARDMAN_HUNTER" ]
+    "death_drops": [
+      { "item": "spear_stone", "prob": 30 },
+      { "item": "loincloth", "prob": 40 },
+      { "item": "spearsling", "prob": 20 }
+    ]
+  },
+   {
+    "id": "mon_lizardman_shaman_hostile",
+    "type": "MONSTER",
+    "name": "lizardman shaman",
+    "description": "Living as they do in the wild, good relations with the spirits are very important to the lizardmen.  Shamans are their intermediaries with the spirit world, performing the appropriate rites and offering the appropriate sacrifices.",
+    "copy-from": "mon_lizardman_warrior",
+    "symbol": "L",
+    "hp": 80,
+    "melee_skill": 3,
+    "melee_dice": 2,
+    "melee_dice_sides": 5,
+    "special_attacks": [ 
+       { "type": "spell", "spell_data": { "id": "monster_summon_undine" }, "cooldown": 25 }, { "id": "scratch", "cooldown": 15 } 
+    ],
+      "chat_topics": [ "TALK_LIZARDMAN_SHAMAN" ]
+    "death_drops": {
+      "subtype": "distribution",
+      "items": [
       { "item": "spear_stone", "prob": 30 },
       { "item": "loincloth", "prob": 40 },
       { "item": "spearsling", "prob": 20 }
