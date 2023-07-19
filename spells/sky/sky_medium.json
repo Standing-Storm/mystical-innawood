@@ -128,5 +128,37 @@
     "shape": "blast",
     "max_level": 1,
     "min_aoe": { "math": [ "( 8 + (u_val('spell_level', 'spell: sky_reveal_world_map') * 3) )" ] }
+  },
+  {
+    "id": "sky_summon_rain",
+    "type": "SPELL",
+    "name": "Symphony of the Rains",
+    "description": "Close your eyes and open yourself up to the sky, gazing down on the land below from a great height.  The ritual will only work when you have an unobstructed view of the sky.",
+    "valid_targets": [ "self" ],
+    "skill": "occult",
+    "flags": [ "SOMATIC", "VERBAL", "CONCENTRATE", "SILENT" ],
+    "effect": "effect_on_condition",
+    "effect_str": "EOC_SKY_SUMMON_RAIN",
+    "extra_effects": [ { "id": "channeling_fatigue_spell", "hit_self": true, "max_level": 4 } ],
+    "spell_class": "SKY",
+    "shape": "blast",
+    "max_level": 15,
+    "difficulty": 4,
+    "base_casting_time": 30000,
+    "energy_source": "MANA",
+    "base_energy_cost": 2500,
+    "final_energy_cost": 1250,
+    "energy_increment": -83
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_SKY_SUMMON_RAIN",
+    "condition": "u_is_outside",
+    "effect": [ 
+      { "math": [ "weather('humidity')", "=", "99" ] },
+      { "math": [ "weather('pressure')", "=", "995" ] },
+      { "queue_eocs": "EOC_CHANGE_WEATHER", "time_in_future": [ "3 minutes", "10 minutes" ] }
+    ],
+    "false_effect": [ { "u_message": "Without a view of the open sky, the spell fails." } ]
   }
 ]
