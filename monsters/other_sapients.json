@@ -33,7 +33,7 @@
       { "item": "loincloth", "prob": 40 },
       { "item": "leather_belt", "prob": 20 }
     ],
-    "special_attacks": [ {"id": "impale", "cooldown": 10, }, { "id": "scratch", "cooldown": 15 }, { "type": "bite", "cooldown": 10 } ],
+    "special_attacks": [ {"id": "impale", "cooldown": 10 }, { "id": "scratch", "cooldown": 15 }, { "type": "bite", "cooldown": 10 } ],
     "flags": [
       "SEES",
       "HEARS",
