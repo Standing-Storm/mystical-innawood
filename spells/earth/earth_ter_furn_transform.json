@@ -110,7 +110,9 @@
           "t_clay",
           "t_dirtmound",
           "t_sandmound",
-          "t_forestfloor" ],
+          "t_forestfloor",
+        "t_moss",
+        "t_region_soil" ],
         "message": "A wall of smooth stone rises up around you!."
       }
     ]
