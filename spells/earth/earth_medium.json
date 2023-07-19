@@ -45,5 +45,38 @@
     "min_range": 10,
     "max_range": 25,
     "range_increment": 1
+  },
+  {
+    "id": "earth_granite_aegis",
+    "type": "SPELL",
+    "name": "Granite Aegis",
+    "description": "In an extremity of danger, summon a hollow shell of rock around yourself.  It lasts only a few moments, but sometimes that's all you need.  You must be standing on the living earth to invoke it.",
+    "flags": [ "CONCENTRATE", "SOMATIC", "VERBAL" ],
+    "valid_targets": [ "self" ],
+    "max_level": 10,
+    "skill": "occult",
+    "spell_class": "EARTH",
+    "energy_source": "MANA",
+    "shape": "blast",
+    "difficulty": 4,
+    "effect": "effect_on_condition",
+    "effect_str": "EOC_EARTH_GRANITE_AEGIS",
+    "base_casting_time": 100,
+    "base_energy_cost": 1000
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_EARTH_GRANITE_AEGIS",
+    "effect": [
+       { "u_transform_radius": 1, "ter_furn_transform": "earth_granite_aegis_to_stone" },
+      {
+        "u_transform_radius": 0, "ter_furn_transform": "earth_granite_aegis_to_stone_safe",
+        "time_in_future": [ "0 seconds", "0 seconds" ]
+      },
+      {
+        "u_transform_radius": 1, "ter_furn_transform": "earth_granite_aegis_from_stone",
+        "time_in_future": [ "10 seconds", "30 seconds" ]
+      }
+    ] 
   }
 ]
