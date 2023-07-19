@@ -157,7 +157,9 @@
     "effect": [ 
       { "math": [ "weather('humidity')", "=", "99" ] },
       { "math": [ "weather('pressure')", "=", "995" ] },
-      { "queue_eocs": "EOC_CHANGE_WEATHER", "time_in_future": [ "3 minutes", "10 minutes" ] }
+      { "queue_eocs": "EOC_CHANGE_WEATHER", "time_in_future": [ "2 minutes", "4 minutes" ] },
+      { "queue_eocs": "EOC_CHANGE_WEATHER", "time_in_future": [ "3 minutes", "10 minutes" ] },
+      { "queue_eocs": "EOC_CHANGE_WEATHER", "time_in_future": [ "6 minutes", "15 minutes" ] }
     ],
     "false_effect": [ { "u_message": "Without a view of the open sky, the spell fails." } ]
   }
