@@ -23,7 +23,7 @@
     "melee_dice": 2,
     "melee_dice_sides": 4,
     "dodge": 5,
-    "harvest": "lizardman",
+    "harvest": "havest_lizardman",
       "chat_topics": [ "TALK_LIZARDMAN_WARRIOR" ]
       "anger_triggers": [ "FRIEND_ATTACKED", "FRIEND_DIED", "HURT" ],
     "weakpoint_sets": [ "wps_humanoid_body", "wps_humanoid_body_armor", "wps_humanoid_open_helmet" ],
