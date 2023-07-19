@@ -99,5 +99,42 @@
         "message": "The ground churns as a long straight furrow suitable for planting appears."
       }
     ]
+  },
+  {
+    "type": "ter_furn_transform",
+    "id": "earth_granite_aegis_to_stone",
+    "terrain": [
+      {
+        "result": "t_rock_smooth",
+        "valid_terrain": [ "t_dirt", "t_dirtfloor", "t_grass", "t_grass_long", "t_grass_tall", "t_grass_dead", "t_grass_white", "t_pit_shallow", "t_sand",
+          "t_clay",
+          "t_dirtmound",
+          "t_sandmound",
+          "t_forestfloor" ],
+        "message": "A wall of smooth stone rises up around you!."
+      }
+    ]
+  },
+    {
+    "type": "ter_furn_transform",
+    "id": "earth_granite_aegis_to_stone_safe",
+    "terrain": [
+      {
+        "result": "t_dirt",
+        "valid_terrain": [ "t_rock_smooth" ],
+        "message": ""
+      }
+    ]
+  },
+  {
+    "type": "ter_furn_transform",
+    "id": "earth_granite_aegis_from_stone",
+    "terrain": [
+      {
+        "result": "t_dirt",
+        "valid_terrain": [ "t_rock_smooth" ],
+        "message": "The stone wall crumbes to dust."
+      }
+    ]
   }
 ]
