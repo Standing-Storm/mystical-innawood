@@ -9,3 +9,7 @@ Research magic and become a mighty sorcerer!  Research follows four paths:
 4) Spellcrafting: Learn spells, gaining the magic of the earth, forest, moon, sea, and sky.
 
 Also adds new locations, items, materials, monsters, etc.  Most non-hostile inhabitants of the forest have Stone Age technology, so the Innawoods progression is not affected.
+
+# Can I run this in base CDDA?
+
+Sure, if you want, though it won't make much sense what with the Stone Age lizardmen and hawkmen and other beastmen running around.  I also had to heavily edit a lot of mutations to make the mod's mutations to work, so it will break most if not all of the base game's mutation paths.
