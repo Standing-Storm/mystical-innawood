@@ -133,7 +133,7 @@
     "id": "sky_summon_rain",
     "type": "SPELL",
     "name": "Symphony of the Rains",
-    "description": "Close your eyes and open yourself up to the sky, gazing down on the land below from a great height.  The ritual will only work when you have an unobstructed view of the sky.",
+    "description": "While standing outside, conjure up a rainstorm.  It takes time for the weather to change.",
     "valid_targets": [ "self" ],
     "skill": "occult",
     "flags": [ "SOMATIC", "VERBAL", "CONCENTRATE", "SILENT" ],
