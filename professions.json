@@ -43,6 +43,7 @@
       "COLDBLOOD4",
       "FORKED_TONGUE",
       "HISS",
+      "ANTIWHEAT",
       "TAIL_THICK",
       "RESISTWARM",
       "LIZ_IR",
@@ -50,7 +51,6 @@
       "WEBBED_FEET",
       "TALONS",
       "SLIT_NOSTRILS",
-      "CARNIVORE",
       "PRED2",
       "PADDED_FEET"
     ],
@@ -98,7 +98,7 @@
       "WEBBED_FEET",
       "TALONS",
       "SLIT_NOSTRILS",
-      "CARNIVORE",
+      "ANTIWHEAT",
       "PRED2",
       "PADDED_FEET"
     ],
@@ -145,7 +145,7 @@
   },
   {
     "type": "profession",
-    "id": "Hawkman_shaman",
+    "id": "Hawkman_mystic",
     "name": "Hawkman Mystic",
     "description": "You left your tribe behind long ago, to travel wherever the winds carry you.  Your travels are more dangerous than you ever imagined they would be, but you have faith in the spirits that you'll make it. ",
     "points": 3,
