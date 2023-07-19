@@ -1,7 +1,7 @@
 [
   {
      "type": "effect_on_condition",
-    "id": "EOC_BASIC_GRIMOIRE_RECIPES",
+    "id": "EOC_CHANGE_WEATHER",
     "effect": [
      "next_weather" 
     ]
