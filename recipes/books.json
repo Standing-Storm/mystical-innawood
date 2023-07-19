@@ -51,10 +51,7 @@
     "difficulty": 5,
     "skill_used": "occult",
     "time": "4 h",
-    "using": [
-      [ "writing_formulae_journeyman_standard", 1 ],
-      [ "magical_herbs", 3, "LIST" ]
-    ],
+    "using": [ [ "writing_formulae_journeyman_standard", 1 ], [ "magical_herbs", 3, "LIST" ] ],
     "qualities": [ { "id": "MAGICAL_RESEARCH", "level": 2 } ],
     "components": [ [ [ "paper", 50 ] ], [ [ "used_occult_notes", 2 ] ], [ [ "mossling_fur", 4 ] ] ],
     "proficiencies": [
@@ -96,11 +93,7 @@
     "time": "4 h",
     "using": [ [ "writing_formulae_journeyman_standard", 1 ] ],
     "qualities": [ { "id": "MAGICAL_RESEARCH", "level": 2 } ],
-    "components": [
-      [ [ "paper", 50 ] ],
-      [ [ "used_occult_notes", 2 ] ],
-      [ [ "elf_shot", 10 ], [ "glimmerstone", 5 ] ]
-    ],
+    "components": [ [ [ "paper", 50 ] ], [ [ "used_occult_notes", 2 ] ], [ [ "elf_shot", 10 ], [ "glimmerstone", 5 ] ] ],
     "proficiencies": [
       { "proficiency": "prof_occult_exploration", "required": true },
       { "proficiency": "prof_thaumatology", "required": false },
@@ -140,11 +133,7 @@
     "time": "4 h",
     "using": [ [ "writing_formulae_journeyman_standard", 1 ] ],
     "qualities": [ { "id": "MAGICAL_RESEARCH", "level": 2 } ],
-    "components": [
-      [ [ "paper", 50 ] ],
-      [ [ "used_occult_notes", 2 ] ],
-      [ [ "item_astrological_observations", 3 ] ]
-    ],
+    "components": [ [ [ "paper", 50 ] ], [ [ "used_occult_notes", 2 ] ], [ [ "item_astrological_observations", 3 ] ] ],
     "proficiencies": [
       { "proficiency": "prof_occult_exploration", "required": true },
       { "proficiency": "prof_thaumatology", "required": false },

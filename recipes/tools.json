@@ -39,6 +39,6 @@
     ],
     "qualities": [ { "id": "ANVIL", "level": 3 }, { "id": "HAMMER", "level": 2 } ],
     "tools": [ [ [ "tongs", -1 ], [ "drift", -1 ] ] ],
-    "components": [ [ [ "2x4", 1 ], [ "stick", 2 ] ], [ [ "crystallized_mana_base",2 ] ] ]
+    "components": [ [ [ "2x4", 1 ], [ "stick", 2 ] ], [ [ "crystallized_mana_base", 2 ] ] ]
   }
 ]

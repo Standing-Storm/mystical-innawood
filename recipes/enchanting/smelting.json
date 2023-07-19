@@ -13,7 +13,7 @@
     "batch_time_factors": [ 90, 4 ],
     "qualities": [ { "id": "MAGICAL_SENSE", "level": 1 }, { "id": "MAGICAL_FORGING", "level": 1 } ],
     "tools": [ [ [ "crucible", -1 ], [ "crucible_clay", -1 ] ], [ [ "fire", -1 ], [ "toolset", 10 ] ] ],
-    "components": [ [ [ "copper", 2 ] ], [ ["gold_small", 2] ], [ [ "crystallized_mana_base", 1 ] ] ],
+    "components": [ [ [ "copper", 2 ] ], [ [ "gold_small", 2 ] ], [ [ "crystallized_mana_base", 1 ] ] ],
     "flags": [ "BLIND_HARD" ],
     "proficiencies": [
       { "proficiency": "prof_occult_exploration", "required": true },
@@ -24,7 +24,10 @@
       {
         "id": "EOC_FORGE_ORICHALCUM_INGOT",
         "condition": { "and": [ "is_day", "u_is_outside", { "is_weather": "sunny" } ] },
-        "effect": [  { "u_message": "The metal and sunlight and magic all combine into an ingot of orichalcum.", "type": "good"}, { "u_spawn_item": "orichalcum_ingot_innawood", "suppress_message": true } ],
+        "effect": [
+          { "u_message": "The metal and sunlight and magic all combine into an ingot of orichalcum.", "type": "good" },
+          { "u_spawn_item": "orichalcum_ingot_innawood", "suppress_message": true }
+        ],
         "false_effect": [ { "u_message": "Without the necessary conditions, you produce only dross.", "type": "bad" } ]
       }
     ]
@@ -54,7 +57,10 @@
       {
         "id": "EOC_FORGE_MOONSILVER_INGOT",
         "condition": { "and": [ { "not": "is_day" }, "u_is_outside", { "is_weather": "sunny" } ] },
-        "effect": [  { "u_message": "The metal and moonlight and magic all combine into an ingot of moonsilver.", "type": "good"}, { "u_spawn_item": "moonsilver_ingot_innawood", "suppress_message": true } ],
+        "effect": [
+          { "u_message": "The metal and moonlight and magic all combine into an ingot of moonsilver.", "type": "good" },
+          { "u_spawn_item": "moonsilver_ingot_innawood", "suppress_message": true }
+        ],
         "false_effect": [ { "u_message": "Without the necessary conditions, you produce only dross.", "type": "bad" } ]
       }
     ]

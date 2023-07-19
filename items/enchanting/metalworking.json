@@ -1,6 +1,6 @@
 [
   {
-   "id": "orichalcum_ingot_innawood",
+    "id": "orichalcum_ingot_innawood",
     "type": "GENERIC",
     "category": "spare_parts",
     "name": "orichalcum ingot",
@@ -13,9 +13,9 @@
     "symbol": "=",
     "color": "yellow",
     "melee_damage": { "bash": 6 }
-  }, 
-    {
-   "id": "moonsilver_ingot_innawood",
+  },
+  {
+    "id": "moonsilver_ingot_innawood",
     "type": "GENERIC",
     "category": "spare_parts",
     "name": "moonsilver ingot",

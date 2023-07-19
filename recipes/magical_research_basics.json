@@ -224,7 +224,7 @@
       }
     ]
   },
-   {
+  {
     "type": "recipe",
     "activity_level": "LIGHT_EXERCISE",
     "name": "tidal observations",
@@ -244,33 +244,35 @@
       { "proficiency": "prof_thaumatology", "required": false },
       { "proficiency": "prof_spellcrafting_basic", "required": false }
     ],
-    "result_eocs": [{
-      "id": "EOC_CONDUCT_TIDAL_OBSERVATIONS",
-    "condition": {
-      "or": [
-        { "u_at_om_location": "generic_river" },
-        { "u_at_om_location": "generic_river_bank" },
-        { "u_at_om_location": "river_center" },
-        { "u_at_om_location": "generic_river_bank" },
-        { "u_at_om_location": "river_c_not_ne" },
-        { "u_at_om_location": "river_c_not_nw" },
-        { "u_at_om_location": "river_c_not_se" },
-        { "u_at_om_location": "river_c_not_sw" },
-        { "u_at_om_location": "river_ne" },
-        { "u_at_om_location": "river_nw" },
-        { "u_at_om_location": "river_se" },
-        { "u_at_om_location": "river_sw" },
-        { "u_at_om_location": "lake_dock_small" },
-        { "u_at_om_location": "lake_shore" },
-        { "u_at_om_location": "generic_lake" },
-        { "u_at_om_location": "lake_surface" }
-      ]    
-    },
-    "effect": [
-      { "u_message": "You write down your observations for later", "type": "good" },
-      { "u_spawn_item": "item_tidal_observations", "suppress_message": true }
-    ],
-    "false_effect": [ { "u_message": "You need to be near a body of water to observe it.", "type": "bad" } ] }
+    "result_eocs": [
+      {
+        "id": "EOC_CONDUCT_TIDAL_OBSERVATIONS",
+        "condition": {
+          "or": [
+            { "u_at_om_location": "generic_river" },
+            { "u_at_om_location": "generic_river_bank" },
+            { "u_at_om_location": "river_center" },
+            { "u_at_om_location": "generic_river_bank" },
+            { "u_at_om_location": "river_c_not_ne" },
+            { "u_at_om_location": "river_c_not_nw" },
+            { "u_at_om_location": "river_c_not_se" },
+            { "u_at_om_location": "river_c_not_sw" },
+            { "u_at_om_location": "river_ne" },
+            { "u_at_om_location": "river_nw" },
+            { "u_at_om_location": "river_se" },
+            { "u_at_om_location": "river_sw" },
+            { "u_at_om_location": "lake_dock_small" },
+            { "u_at_om_location": "lake_shore" },
+            { "u_at_om_location": "generic_lake" },
+            { "u_at_om_location": "lake_surface" }
+          ]
+        },
+        "effect": [
+          { "u_message": "You write down your observations for later", "type": "good" },
+          { "u_spawn_item": "item_tidal_observations", "suppress_message": true }
+        ],
+        "false_effect": [ { "u_message": "You need to be near a body of water to observe it.", "type": "bad" } ]
+      }
     ]
-   }
+  }
 ]

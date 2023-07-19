@@ -11,7 +11,7 @@
     "flags": [ "UNIQUE" ],
     "rotate": true
   },
-   {
+  {
     "type": "overmap_special",
     "id": "cave_tunnels_aboveground",
     "overmaps": [ { "point": [ 0, 0, 0 ], "overmap": "cave_tunnels_aboveground_north" } ],
