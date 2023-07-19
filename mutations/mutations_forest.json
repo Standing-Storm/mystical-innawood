@@ -14,7 +14,7 @@
   },
   {
     "type": "mutation",
-    "id": "PLANTSKIN",
+    "id": "WILD_SKIN",
     "name": { "str": "Skin of the Wilds" },
     "points": 3,
     "visibility": 3,
@@ -48,7 +48,7 @@
       { "part": "torso", "neutral": 15, "good": 27 }
     ],
     "armor": [ { "part_types": [ "ALL" ], "acid": 1, "heat": 4 } ],
-    "prereqs": [ "PLANTSKIN" ],
+    "prereqs": [  ],
     "category": [ "MUTATION_FOREST" ]
   },
   {
@@ -89,7 +89,7 @@
   },
   {
     "type": "mutation",
-    "id": "STRONGER_RESISTWARM",
+    "id": "FOREST_RESISTWARM",
     "name": { "str": "High Heat Tolerance" },
     "points": 3,
     "valid": true,
@@ -98,6 +98,6 @@
     "types": [ "ACCLIMATIZATION" ],
     "threshreq": [ "THRESH_FOREST" ],
     "category": [ "MUTATION_FOREST" ],
-    "enchantments": [ { "condition": "ALWAYS", "values": [ { "value": "CLIMATE_CONTROL_CHILL", "add": 25 } ] } ]
+    "enchantments": [ "enchant_high_resist_warm" ]
   }
 ]

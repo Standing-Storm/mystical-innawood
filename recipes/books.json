@@ -45,7 +45,6 @@
     "name": "assemble forest research materials",
     "id": "assemble_forest_research_materials",
     "description": "Conduct observation of the trees and grass and study magical herbs to develop a corpus of research for spellcrafting.  Your Witchsight must be active to have any hope of success.",
-    "result": "forest_research_materials",
     "category": "CC_OCCULT",
     "subcategory": "CSC_OCCULT_MATERIALS",
     "difficulty": 5,
@@ -71,7 +70,7 @@
           },
           { "u_spawn_item": "forest_research_materials", "suppress_message": true }
         ],
-        "false-effect": [
+        "false_effect": [
           {
             "u_message": "Without your Witchsight active, your observations aren't acute enough to form the foundation for any further research.",
             "type": "bad"
@@ -111,7 +110,7 @@
           },
           { "u_spawn_item": "earth_research_materials", "suppress_message": true }
         ],
-        "false-effect": [
+        "false_effect": [
           {
             "u_message": "Without your Witchsight active, your observations aren't acute enough to form the foundation for any further research.",
             "type": "bad"
@@ -151,7 +150,7 @@
           },
           { "u_spawn_item": "moon_research_materials", "suppress_message": true }
         ],
-        "false-effect": [
+        "false_effect": [
           {
             "u_message": "Without your Witchsight active, your observations aren't acute enough to form the foundation for any further research.",
             "type": "bad"
@@ -173,7 +172,7 @@
     "time": "4 h",
     "using": [ [ "writing_formulae_journeyman_standard", 1 ] ],
     "qualities": [ { "id": "MAGICAL_RESEARCH", "level": 2 } ],
-    "components": [ [ [ "paper", 50 ] ], [ [ "used_occult_notes", 2 ] ], [ [ "item_weather_observations", 3 ] ] ],
+    "components": [ [ [ "paper", 50 ] ], [ [ "used_occult_notes", 2 ] ], [ [ "item_weather_observations", 3, "LIST" ] ] ],
     "proficiencies": [
       { "proficiency": "prof_occult_exploration", "required": true },
       { "proficiency": "prof_thaumatology", "required": false },
@@ -191,7 +190,7 @@
           },
           { "u_spawn_item": "sky_research_materials", "suppress_message": true }
         ],
-        "false-effect": [
+        "false_effect": [
           {
             "u_message": "Without your Witchsight active, your observations aren't acute enough to form the foundation for any further research.",
             "type": "bad"
@@ -231,7 +230,7 @@
           },
           { "u_spawn_item": "sea_research_materials", "suppress_message": true }
         ],
-        "false-effect": [
+        "false_effect": [
           {
             "u_message": "Without your Witchsight active, your observations aren't acute enough to form the foundation for any further research.",
             "type": "bad"

@@ -26,6 +26,7 @@
   {
     "type": "mutation",
     "id": "LARGE_OK",
+    "copy-from": "LARGE_OK",
     "flags": [ "LARGE" ],
     "name": { "str": "Large" },
     "points": 2,
@@ -35,8 +36,8 @@
     "prereqs": [  ],
     "prereqs2": [  ],
     "threshreq": [  ],
-    "changes_to": [ "HUGE" ],
-    "category": [ "URSINE", "CATTLE", "LIZARD", "CHIMERA", "CRUSTACEAN" ],
+    "changes_to": [  ],
+    "category": [  ],
     "passive_mods": { "str_mod": 2 },
     "stomach_size_multiplier": 1.5,
     "weight_capacity_modifier": 1.05
@@ -44,6 +45,7 @@
   {
     "type": "mutation",
     "id": "COLDBLOOD4",
+    "copy-from": "COLDBLOOD4",
     "flags": [ "ECTOTHERM" ],
     "name": { "str": "Ectothermic" },
     "points": 0,
@@ -60,6 +62,7 @@
   {
     "type": "mutation",
     "id": "WEBBED_FEET",
+    "copy-from": "WEBBED_FEET",
     "name": { "str": "Webbed Feet" },
     "points": 1,
     "types": [ "FEET" ],
@@ -71,24 +74,21 @@
   },
   {
     "type": "mutation",
-    "id": "PRED2",
+    "id": "PRED2_HUNTER",
     "name": { "str": "Hunter" },
     "points": 3,
     "description": "Your brain has a lot more in common with a predatory animal than a human, making it easier to control misplaced reactions to the death of your prey.  Additionally, combat skills, which you use to hunt, are easier to learn and maintain.",
     "social_modifiers": { "intimidate": 3 },
     "purifiable": false,
     "types": [ "PREDATION" ],
-    "prereqs": [  ],
-    "prereqs2": [  ],
-    "changes_to": [ "PRED3" ],
-    "threshreq": [  ],
     "category": [ "BEAST", "RAPTOR", "CHIMERA", "LUPINE", "FELINE", "URSINE", "LIZARD", "SPIDER" ],
     "flags": [ "PRED2" ],
-    "enchantments": [ { "condition": "ALWAYS", "values": [ { "value": "COMBAT_CATCHUP", "multiply": 2 } ] } ]
+    "enchantments": [ "enchant_predator_combat_catchup" ]
   },
   {
     "type": "mutation",
     "id": "MUZZLE",
+    "copy-from": "MUZZLE",
     "name": { "str": "Lupine Muzzle" },
     "points": 0,
     "visibility": 5,
@@ -112,6 +112,7 @@
   {
     "type": "mutation",
     "id": "SNARL",
+    "copy-from": "SNARL",
     "name": { "str": "Snarling Voice" },
     "points": 0,
     "mixed_effect": true,
@@ -124,6 +125,7 @@
   {
     "type": "mutation",
     "id": "ANIMAL_FEET",
+    "copy-from": "ANIMAL_FEET",
     "name": { "str": "Digitigrade Legs" },
     "points": -1,
     "visibility": 2,
@@ -132,7 +134,7 @@
     "types": [ "FEET" ],
     "prereqs": [  ],
     "category": [ "LUPINE", "FELINE", "BEAST", "RABBIT" ],
-    "changes_to": [ "RABBIT_FEET" ],
+    "changes_to": [  ],
     "wet_protection": [ { "part": "foot_l", "neutral": 10 }, { "part": "foot_r", "neutral": 10 } ],
     "restricts_gear": [ "foot_l", "foot_r" ],
     "destroys_gear": true,
@@ -140,64 +142,18 @@
     "triggers": [
       [
         {
-          "condition": {
-            "and": [
-              { "u_has_move_mode": "run" },
-              { "not": "u_can_drop_weapon" },
-              { "u_has_any_trait": [ "THRESH_BEAST", "THRESH_FELINE", "THRESH_LUPINE" ] },
-              { "u_has_trait": "PAWS" }
-            ]
-          },
+          "condition": { "and": [ { "u_has_move_mode": "run" }, { "not": "u_can_drop_weapon" }, { "u_has_trait": "PAWS" } ] },
           "msg_on": { "text": "You drop down on all fours." },
           "msg_off": { "text": "You rise up to walk on your hind feet." }
         }
       ]
     ],
-    "enchantments": [
-      {
-        "condition": {
-          "and": [
-            { "u_has_move_mode": "crouch" },
-            { "not": "u_can_drop_weapon" },
-            { "u_has_any_trait": [ "THRESH_LUPINE", "THRESH_FELINE", "THRESH_BEAST" ] },
-            { "u_has_trait": "PAWS" }
-          ]
-        },
-        "values": [ { "value": "MOVE_COST", "multiply": -0.15 }, { "value": "CARRY_WEIGHT", "multiply": 0.35 } ]
-      },
-      {
-        "condition": {
-          "and": [
-            { "u_has_move_mode": "run" },
-            { "not": "u_can_drop_weapon" },
-            { "u_has_any_trait": [ "THRESH_LUPINE", "THRESH_FELINE", "THRESH_BEAST" ] },
-            { "u_has_trait": "PAWS" }
-          ]
-        },
-        "values": [ { "value": "MOVE_COST", "multiply": -0.15 }, { "value": "CARRY_WEIGHT", "multiply": 0.35 } ]
-      },
-      {
-        "condition": {
-          "or": [
-            "u_can_drop_weapon",
-            { "u_has_move_mode": "walk" },
-            {
-              "and": [
-                { "not": { "u_has_trait": "THRESH_LUPINE" } },
-                { "not": { "u_has_trait": "THRESH_FELINE" } },
-                { "not": { "u_has_trait": "THRESH_BEAST" } }
-              ]
-            },
-            { "not": { "u_has_trait": "PAWS" } }
-          ]
-        },
-        "values": [ { "value": "MOVE_COST", "multiply": -0.1 } ]
-      }
-    ]
+    "enchantments": [ "enchant_digitigrade_couch", "enchant_digitigrade_run", "enchant_digitigrade_walk" ]
   },
   {
     "type": "mutation",
     "id": "PAWS",
+    "copy-from": "PAWS",
     "name": { "str": "Paws" },
     "points": 0,
     "visibility": 3,
@@ -229,24 +185,12 @@
         }
       ]
     ],
-    "enchantments": [
-      {
-        "condition": {
-          "and": [
-            { "u_has_move_mode": "crouch" },
-            { "not": "u_can_drop_weapon" },
-            {
-              "u_has_any_trait": [ "THRESH_BEAST", "THRESH_FELINE", "THRESH_LUPINE", "THRESH_URSINE", "THRESH_RAT", "THRESH_MOUSE", "THRESH_RABBIT" ]
-            }
-          ]
-        },
-        "values": [ { "value": "MOVE_COST", "multiply": -0.5 } ]
-      }
-    ]
+    "enchantments": [ "enchant_paws_movement" ]
   },
   {
     "type": "mutation",
     "id": "LUPINE_FUR",
+    "copy-from": "LUPINE_FUR",
     "name": { "str": "Gray Fur" },
     "points": 2,
     "visibility": 10,
@@ -261,6 +205,7 @@
   {
     "type": "mutation",
     "id": "TAIL_FLUFFY",
+    "copy-from": "TAIL_FLUFFY",
     "name": { "str": "Fluffy Tail" },
     "points": 1,
     "visibility": 7,
@@ -277,6 +222,7 @@
   {
     "type": "mutation",
     "id": "PERSISTENCE_HUNTER2",
+    "copy-from": "PERSISTENCE_HUNTER2",
     "name": { "str": "Extreme Persistence Hunter" },
     "points": 10,
     "description": "You can pursue prey for days until they literally die from exhaustion.  It's too bad zombies don't fatigue either.",
@@ -290,6 +236,7 @@
   {
     "type": "mutation",
     "id": "HOLLOW_BONES",
+    "copy-from": "HOLLOW_BONES",
     "name": { "str": "Hollow Bones" },
     "points": 1,
     "mixed_effect": true,
@@ -300,11 +247,12 @@
     "movecost_modifier": 0.8,
     "attackcost_modifier": 0.8,
     "weight_capacity_modifier": 0.6,
-    "enchantments": [ { "condition": "ALWAYS", "values": [ { "value": "EXTRA_BASH", "multiply": 0.8 } ] } ]
+    "enchantments": [ "enchant_hollow_bones" ]
   },
   {
     "type": "mutation",
     "id": "DOWN",
+    "copy-from": "DOWN",
     "name": { "str": "Down" },
     "points": 0,
     "visibility": 4,
@@ -320,6 +268,7 @@
   {
     "type": "mutation",
     "id": "WINGS_BIRD",
+    "copy-from": "WINGS_BIRD",
     "name": { "str": "Bird Wings" },
     "points": 2,
     "visibility": 4,
@@ -334,6 +283,7 @@
   {
     "type": "mutation",
     "id": "BIRD_LEGS",
+    "copy-from": "BIRD_LEGS",
     "name": { "str": "Avian Legs" },
     "points": 0,
     "visibility": 4,
@@ -352,6 +302,7 @@
   {
     "type": "mutation",
     "id": "BIRD_EYE",
+    "copy-from": "BIRD_EYE",
     "name": { "str": "Avian Eyes" },
     "points": 5,
     "visibility": 1,

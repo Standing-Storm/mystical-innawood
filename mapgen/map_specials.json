@@ -1,13 +1,3 @@
 [
-  {
-    "id": "mx_witchwood_grove",
-    "type": "map_extra",
-    "name": { "str": "witchwood grove" },
-    "description": "A cluster of witchwood trees.",
-    "generator": { "generator_method": "update_mapgen", "generator_id": "mx_witchwood_grove" },
-    "min_max_zlevel": [ 0, 0 ],
-    "sym": "F",
-    "color": "light_gray",
-    "autonote": true
-  }
+  
 ]

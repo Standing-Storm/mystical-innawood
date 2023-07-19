@@ -84,7 +84,7 @@
     "category": "CC_OCCULT",
     "subcategory": "CSC_OCCULT_RESEARCH",
     "name": "forest magic research",
-    "description": "Recipes related to learning spells related to the earth.",
+    "description": "Recipes related to learning spells related to the forest.",
     "skill_used": "occult",
     "nested_category_data": [ "magical_research_forest_easy", "magical_research_forest_medium", "magical_research_forest_hard" ],
     "difficulty": 1
@@ -96,7 +96,7 @@
     "category": "CC_OCCULT",
     "subcategory": "CSC_OCCULT_RESEARCH",
     "name": "moon magic research",
-    "description": "Recipes related to learning spells related to the earth.",
+    "description": "Recipes related to learning spells related to the moon.",
     "skill_used": "occult",
     "nested_category_data": [ "magical_research_moon_easy", "magical_research_moon_medium", "magical_research_moon_hard" ],
     "difficulty": 1
@@ -108,19 +108,19 @@
     "category": "CC_OCCULT",
     "subcategory": "CSC_OCCULT_RESEARCH",
     "name": "sea magic research",
-    "description": "Recipes related to learning spells related to the earth.",
+    "description": "Recipes related to learning spells related to the sea.",
     "skill_used": "occult",
     "nested_category_data": [ "magical_research_sea_easy", "magical_research_sea_medium", "magical_research_sea_hard" ],
     "difficulty": 1
   },
   {
-    "id": "nested_earth_research",
+    "id": "nested_sky_research",
     "type": "nested_category",
     "activity_level": "LIGHT_EXERCISE",
     "category": "CC_OCCULT",
     "subcategory": "CSC_OCCULT_RESEARCH",
     "name": "sky magic research",
-    "description": "Recipes related to learning spells related to the earth.",
+    "description": "Recipes related to learning spells related to the sky.",
     "skill_used": "occult",
     "nested_category_data": [ "magical_research_sky_easy", "magical_research_sky_medium", "magical_research_sky_hard" ],
     "difficulty": 1
@@ -158,7 +158,12 @@
     "name": "enchantment research",
     "description": "Recipes related to drawing magic out of or imbuing it into physical materials.",
     "skill_used": "occult",
-    "nested_category_data": [ "enchantment_research_intro", "enchantment_research_beginner", "enchantment_analyze_mana" ],
+    "nested_category_data": [
+      "enchantment_research_intro",
+      "enchantment_research_beginner",
+      "enchantment_analyze_mana",
+      "enchantment_research_journeyman"
+    ],
     "difficulty": 1
   },
   {

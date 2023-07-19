@@ -95,6 +95,7 @@
     "description": "The spell that inflicts you with sickness if a lilitu gets angry at you.",
     "valid_targets": [ "hostile" ],
     "flags": [ "CONCENTRATE", "NO_PROJECTILE" ],
+    "difficulty": 1,
     "max_level": 20,
     "effect": "effect_on_condition",
     "effect_str": "EOC_LILITU_DISEASE",
@@ -104,7 +105,7 @@
     "sound_description": "gust of wind"
   },
   {
-    "type": "effect",
+    "type": "effect_on_condition",
     "id": "EOC_LILITU_DISEASE",
     "effect": [
       {

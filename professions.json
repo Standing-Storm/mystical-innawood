@@ -153,7 +153,7 @@
       { "level": 3, "name": "occult" },
       { "level": 1, "name": "survival" },
       { "level": 1, "name": "dodge" },
-      { "level": 2, "name": "athletics" }
+      { "level": 2, "name": "swimming" }
     ],
     "spells": [ { "id": "air_burst_of_wind", "level": 2 } ],
     "traits": [

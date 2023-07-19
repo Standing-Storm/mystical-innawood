@@ -22,7 +22,6 @@
     "name": { "str": "Dweller in the Depths" },
     "points": 3,
     "description": "You are at home in the depths of the earth.  While underground, you avoid danger better and sleep easier.",
-    "leads_to": [ "NIGHT_RAIDER" ],
     "category": [ "MUTATION_EARTH" ],
     "enchantments": [
       {
@@ -39,7 +38,7 @@
     "types": [ "PAIN_RECOVERY" ],
     "description": "You recover from pain faster than normal.",
     "prereqs": [  ],
-    "changes_to": [ "PAINREC3" ],
+    "changes_to": [  ],
     "threshreq": [ "THRESH_EARTH" ],
     "category": [ "MUTATION_EARTH" ]
   },

@@ -78,7 +78,7 @@
     "id": "EOC_GAIN_WHISPER_LEAVES",
     "effect": [
       { "u_message": "You are in tune with the wood and the wilds." },
-      { "u_add_trait": "TREE_COMMUNION", "duration": "20 hours" },
+      { "u_add_trait": "TREE_COMMUNION" },
       { "queue_eocs": "EOC_LOSE_WHISPER_LEAVES", "time_in_future": [ "20 hours", "20 hours" ] }
     ]
   },

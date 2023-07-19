@@ -37,7 +37,7 @@
   },
   {
     "type": "mutation",
-    "id": "STRONGER_RESISTCHILL",
+    "id": "SKY_RESISTCHILL",
     "name": { "str": "High Cold Tolerance" },
     "points": 3,
     "valid": true,
@@ -46,6 +46,6 @@
     "types": [ "ACCLIMATIZATION", "ECTOTHERMIC" ],
     "threshreq": [ "THRESH_SKY" ],
     "category": [ "MUTATION_SKY" ],
-    "enchantments": [ { "condition": "ALWAYS", "values": [ { "value": "CLIMATE_CONTROL_HEAT", "add": 25 } ] } ]
+    "enchantments": [ "enchant_high_resist_cold" ]
   }
 ]

@@ -20,8 +20,12 @@
     "id": "enchanting_magic_quill",
     "type": "TOOL",
     "name": { "str": "enchanted quill" },
-    "copy-from": "feather",
     "description": "A feather that has been specially prepared for writing.  Small runes have been carved along its length.",
+    "symbol": "=",
+    "color": "white",
+    "longest_side": "22 cm",
+    "volume": "200 ml",
+    "weight": "1 g",
     "qualities": [ [ "MAGICAL_WRITING", 1 ] ]
   },
   {

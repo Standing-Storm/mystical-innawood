@@ -8,18 +8,7 @@
     "types": [ "SUNLIGHT" ],
     "threshreq": [ "THRESH_MOON" ],
     "category": [ "MUTATION_MOON" ],
-    "enchantments": [
-      {
-        "condition": { "not": "is_day" },
-        "values": [
-          { "value": "FOOTSTEP_NOISE", "multiply": -0.5 },
-          { "value": "ATTACK_NOISE", "multiply": -0.3 },
-          { "value": "MOVE_COST", "multiply": 0.95 },
-          { "value": "EVASION", "add": 0.15 },
-          { "value": "PAIN", "multiply": -0.15 }
-        ]
-      }
-    ]
+    "enchantments": [ "enchant_night_dweller" ]
   },
   {
     "type": "mutation",

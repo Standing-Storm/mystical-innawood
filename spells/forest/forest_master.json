@@ -64,6 +64,7 @@
     "spell_class": "FOREST",
     "effect": "ter_transform",
     "effect_str": "forest_ter_land_renewal",
+    "shape": "blast",
     "min_aoe": { "math": [ "( (u_val('spell_level', 'spell: forest_land_renewal') * 1.5) + 0.5)" ] }
   }
 ]

@@ -102,7 +102,7 @@
     "difficulty": 6,
     "time": "3 h",
     "qualities": [ { "id": "MAGICAL_RESEARCH", "level": 1 } ],
-    "using": [ [ "magical_creature_materials", 6 ] ],
+    "using": [ [ "magical_creature_materials", 6, "LIST" ] ],
     "skill_used": "occult",
     "flags": [ "BLIND_HARD" ],
     "proficiencies": [

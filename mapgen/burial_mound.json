@@ -2,9 +2,8 @@
   {
     "type": "mapgen",
     "method": "json",
-    "om_terrain": [ "mound_base_NW", "mound_base_NE", "mound_base_SW", "mound_base_SE" ],
+    "om_terrain": [ [ "mound_base_NW", "mound_base_NE" ], [ "mound_base_SW", "mound_base_SE" ] ],
     "object": {
-      "fill_ter": [ "t_grass" ],
       "rotation": [ 0, 3 ],
       "rows": [
         "................................................",
@@ -60,11 +59,12 @@
         ".": [ [ "t_grass", 75 ], [ "t_dirt", 25 ] ],
         "|": "t_soil",
         "<": "t_earth_ramp_up_low",
-        "b": "f_boulder_large",
         ",": "t_dirt",
-        "C": "t_dirt"
+        "C": "t_dirt",
+        "c": "t_dirt",
+        "b": "t_dirt"
       },
-      "furniture": { "C": "f_coffin_c", "c": "f_chest" }
+      "furniture": { "C": "f_coffin_c", "c": "f_chest", "b": "f_boulder_large" }
     }
   }
 ]

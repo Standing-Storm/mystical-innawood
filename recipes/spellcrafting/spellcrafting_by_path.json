@@ -21,7 +21,7 @@
     "flags": [ "SECRET", "BLIND_HARD" ],
     "proficiencies": [
       { "proficiency": "prof_thaumatology", "required": true },
-      { "proficiency": "prof_spell_research", "required": false },
+      { "proficiency": "prof_spellcrafting_basic", "required": false },
       { "proficiency": "prof_spellcrafting_earth", "required": false }
     ],
     "result_eocs": [
@@ -66,7 +66,7 @@
     "flags": [ "SECRET", "BLIND_HARD" ],
     "proficiencies": [
       { "proficiency": "prof_thaumatology", "required": true },
-      { "proficiency": "prof_spell_research", "required": true },
+      { "proficiency": "prof_spellcrafting_basic", "required": true },
       { "proficiency": "prof_spellcrafting_earth", "required": false }
     ],
     "result_eocs": [
@@ -108,7 +108,7 @@
     "skill_used": "occult",
     "proficiencies": [
       { "proficiency": "prof_thaumatology", "required": true },
-      { "proficiency": "prof_spell_research", "required": true },
+      { "proficiency": "prof_spellcrafting_basic", "required": true },
       { "proficiency": "prof_spellcrafting_earth", "required": true }
     ],
     "result_eocs": [
@@ -148,7 +148,7 @@
     "flags": [ "SECRET", "BLIND_HARD" ],
     "proficiencies": [
       { "proficiency": "prof_thaumatology", "required": true },
-      { "proficiency": "prof_spell_research", "required": false },
+      { "proficiency": "prof_spellcrafting_basic", "required": false },
       { "proficiency": "prof_spellcrafting_forest", "required": false }
     ],
     "result_eocs": [
@@ -188,7 +188,7 @@
     "flags": [ "SECRET", "BLIND_HARD" ],
     "proficiencies": [
       { "proficiency": "prof_thaumatology", "required": true },
-      { "proficiency": "prof_spell_research", "required": true },
+      { "proficiency": "prof_spellcrafting_basic", "required": true },
       { "proficiency": "prof_spellcrafting_forest", "required": false }
     ],
     "result_eocs": [
@@ -233,7 +233,7 @@
     "skill_used": "occult",
     "proficiencies": [
       { "proficiency": "prof_thaumatology", "required": true },
-      { "proficiency": "prof_spell_research", "required": true },
+      { "proficiency": "prof_spellcrafting_basic", "required": true },
       { "proficiency": "prof_spellcrafting_forest", "required": true }
     ],
     "result_eocs": [
@@ -275,12 +275,12 @@
     "flags": [ "SECRET", "BLIND_HARD" ],
     "proficiencies": [
       { "proficiency": "prof_thaumatology", "required": true },
-      { "proficiency": "prof_spell_research", "required": false },
+      { "proficiency": "prof_spellcrafting_basic", "required": false },
       { "proficiency": "prof_spellcrafting_sky", "required": false }
     ],
     "result_eocs": [
       {
-        "id": "EOC_GET_SKY_SPELLS_EASY",
+        "id": "EOC_GET_MOON_SPELLS_EASY",
         "condition": { "roll_contested": { "math": [ "rng( u_val('intelligence'), u_skill('spellcraft') )" ] }, "difficulty": 14 },
         "effect": [ { "u_roll_remainder": [ "formula_moon_lambent_glow" ], "type": "recipe" } ],
         "false_effect": [
@@ -315,7 +315,7 @@
     "flags": [ "SECRET", "BLIND_HARD" ],
     "proficiencies": [
       { "proficiency": "prof_thaumatology", "required": true },
-      { "proficiency": "prof_spell_research", "required": true },
+      { "proficiency": "prof_spellcrafting_basic", "required": true },
       { "proficiency": "prof_spellcrafting_sky", "required": false }
     ],
     "result_eocs": [
@@ -355,7 +355,7 @@
     "flags": [ "SECRET", "BLIND_HARD" ],
     "proficiencies": [
       { "proficiency": "prof_thaumatology", "required": true },
-      { "proficiency": "prof_spell_research", "required": true },
+      { "proficiency": "prof_spellcrafting_basic", "required": true },
       { "proficiency": "prof_spellcrafting_moon", "required": true }
     ],
     "result_eocs": [
@@ -395,7 +395,7 @@
     "flags": [ "SECRET", "BLIND_HARD" ],
     "proficiencies": [
       { "proficiency": "prof_thaumatology", "required": true },
-      { "proficiency": "prof_spell_research", "required": false },
+      { "proficiency": "prof_spellcrafting_basic", "required": false },
       { "proficiency": "prof_spellcrafting_sky", "required": false }
     ],
     "result_eocs": [
@@ -440,7 +440,7 @@
     "flags": [ "SECRET", "BLIND_HARD" ],
     "proficiencies": [
       { "proficiency": "prof_thaumatology", "required": true },
-      { "proficiency": "prof_spell_research", "required": true },
+      { "proficiency": "prof_spellcrafting_basic", "required": true },
       { "proficiency": "prof_spellcrafting_sky", "required": false }
     ],
     "result_eocs": [
@@ -480,7 +480,7 @@
     "flags": [ "SECRET", "BLIND_HARD" ],
     "proficiencies": [
       { "proficiency": "prof_thaumatology", "required": true },
-      { "proficiency": "prof_spell_research", "required": true },
+      { "proficiency": "prof_spellcrafting_basic", "required": true },
       { "proficiency": "prof_spellcrafting_sea", "required": true }
     ],
     "result_eocs": [
@@ -520,7 +520,7 @@
     "flags": [ "SECRET", "BLIND_HARD" ],
     "proficiencies": [
       { "proficiency": "prof_thaumatology", "required": true },
-      { "proficiency": "prof_spell_research", "required": false },
+      { "proficiency": "prof_spellcrafting_basic", "required": false },
       { "proficiency": "prof_spellcrafting_sky", "required": false }
     ],
     "result_eocs": [
@@ -565,7 +565,7 @@
     "flags": [ "SECRET", "BLIND_HARD" ],
     "proficiencies": [
       { "proficiency": "prof_thaumatology", "required": true },
-      { "proficiency": "prof_spell_research", "required": true },
+      { "proficiency": "prof_spellcrafting_basic", "required": true },
       { "proficiency": "prof_spellcrafting_sky", "required": false }
     ],
     "result_eocs": [
@@ -605,7 +605,7 @@
     "flags": [ "SECRET", "BLIND_HARD" ],
     "proficiencies": [
       { "proficiency": "prof_thaumatology", "required": true },
-      { "proficiency": "prof_spell_research", "required": true },
+      { "proficiency": "prof_spellcrafting_basic", "required": true },
       { "proficiency": "prof_spellcrafting_sky", "required": true }
     ],
     "result_eocs": [

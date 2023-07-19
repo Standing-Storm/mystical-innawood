@@ -129,6 +129,7 @@
     "id": "herbalism_corpsefire_low_metabolism",
     "name": { "str": "corpsefire elixir" },
     "description": "A mixture of powdered corpsefire caps, other mushrooms, water, alcohol, and concentrated mana.  It lowers your metabolism.",
+    "comestible_type": "DRINK",
     "weight": "225 g",
     "quench": 1,
     "calories": 0,

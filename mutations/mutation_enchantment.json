@@ -1,0 +1,81 @@
+[
+  {
+    "type": "enchantment",
+    "id": "enchant_predator_combat_catchup",
+    "condition": "ALWAYS",
+    "has": "HELD",
+    "values": [ { "value": "COMBAT_CATCHUP", "multiply": 2 } ]
+  },
+  {
+    "type": "enchantment",
+    "id": "enchant_digitigrade_couch",
+    "condition": { "and": [ { "u_has_move_mode": "crouch" }, { "not": "u_can_drop_weapon" }, { "u_has_trait": "PAWS" } ] },
+    "values": [ { "value": "MOVE_COST", "multiply": -0.15 }, { "value": "CARRY_WEIGHT", "multiply": 0.35 } ]
+  },
+  {
+    "type": "enchantment",
+    "id": "enchant_digitigrade_run",
+    "condition": { "and": [ { "u_has_move_mode": "run" }, { "not": "u_can_drop_weapon" }, { "u_has_trait": "PAWS" } ] },
+    "values": [ { "value": "MOVE_COST", "multiply": -0.15 }, { "value": "CARRY_WEIGHT", "multiply": 0.35 } ]
+  },
+  {
+    "type": "enchantment",
+    "id": "enchant_digitigrade_walk",
+    "condition": { "or": [ "u_can_drop_weapon", { "u_has_move_mode": "walk" }, { "not": { "u_has_trait": "PAWS" } } ] },
+    "values": [ { "value": "MOVE_COST", "multiply": -0.1 } ]
+  },
+  {
+    "type": "enchantment",
+    "id": "enchant_paws_movement",
+    "condition": {
+      "and": [
+        { "u_has_move_mode": "crouch" },
+        { "not": "u_can_drop_weapon" },
+        {
+          "u_has_any_trait": [ "THRESH_BEAST", "THRESH_FELINE", "THRESH_LUPINE", "THRESH_URSINE", "THRESH_RAT", "THRESH_MOUSE", "THRESH_RABBIT" ]
+        }
+      ]
+    },
+    "values": [ { "value": "MOVE_COST", "multiply": -0.5 } ]
+  },
+  {
+    "type": "enchantment",
+    "id": "enchant_hollow_bones",
+    "condition": "ALWAYS",
+    "has": "HELD",
+    "values": [ { "value": "EXTRA_BASH", "multiply": 0.8 } ]
+  },
+  {
+    "type": "enchantment",
+    "id": "enchant_light_bones",
+    "condition": "ALWAYS",
+    "has": "HELD",
+    "values": [ { "value": "EXTRA_BASH", "multiply": 0.4 } ]
+  },
+  {
+    "type": "enchantment",
+    "id": "enchant_high_resist_warm",
+    "condition": "ALWAYS",
+    "has": "HELD",
+    "values": [ { "value": "CLIMATE_CONTROL_CHILL", "add": 25 } ]
+  },
+  {
+    "type": "enchantment",
+    "id": "enchant_high_resist_cold",
+    "condition": "ALWAYS",
+    "has": "HELD",
+    "values": [ { "value": "CLIMATE_CONTROL_HEAT", "add": 25 } ]
+  },
+  {
+    "type": "enchantment",
+    "id": "enchant_night_dweller",
+    "condition": { "not": "is_day" },
+    "values": [
+      { "value": "FOOTSTEP_NOISE", "multiply": -0.5 },
+      { "value": "ATTACK_NOISE", "multiply": -0.3 },
+      { "value": "MOVE_COST", "multiply": 0.95 },
+      { "value": "EVASION", "add": 0.15 },
+      { "value": "PAIN", "multiply": -0.15 }
+    ]
+  }
+]
