@@ -116,5 +116,22 @@
         ]
       }
     ]
+  },
+  {
+    "type": "SPELL",
+    "id": "monster_summon_undine",
+    "name": "Summon Undine",
+    "description": "Summons an undine.",
+    "flags": [ "PERMANENT", "NO_PROJECTILE" ],
+    "valid_targets": [ "ground" ],
+    "base_casting_time": 200,
+    "min_damage": 1,
+    "max_damage": 1,
+    "min_aoe": 2,
+    "max_aoe": 2,
+    "message": "The shaman summons a spirit of the waters!",
+    "shape": "blast",
+    "effect": "summon",
+    "effect_str": "mon_undine_lizardmen"
   }
 ]
