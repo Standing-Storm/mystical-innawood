@@ -58,6 +58,8 @@
      "description": "The hunter is smaller than a warrior, but equally as deadly, with their lithe figures and accurate javelin throws.",
      "copy-from": "mon_lizardman_warrior",
      "symbol": "L",
+         "volume": "72 L",
+    "weight": "90 kg",
      "special_attacks": [
        {
          "type": "gun",
@@ -80,5 +82,29 @@
       { "item": "loincloth", "prob": 40 },
       { "item": "spearsling", "prob": 20 }
     ]
+  },
+   {
+    "id": "mon_lizardman_shaman",
+    "type": "MONSTER",
+    "name": "lizardman shaman",
+    "description": "Living as they do in the wild, good relations with the spirits are very important to the lizardmen.  Shamans are their intermediaries with the spirit world, performing the appropriate rites and offering the appropriate sacrifices.",
+    "copy-from": "mon_lizardman_warrior",
+    "symbol": "L",
+    "hp": 80,
+    "melee_skill": 3,
+    "melee_dice": 2,
+    "melee_dice_sides": 5,
+    "special_attacks": [ 
+       { "type": "spell", "spell_data": { "id": "monster_summon_undine" }, "cooldown": 25 }, { "id": "scratch", "cooldown": 15 } 
+    ],
+      "chat_topics": [ "TALK_LIZARDMAN_SHAMAN" ]
+    "death_drops": {
+      "subtype": "distribution",
+      "items": [
+      { "item": "spear_stone", "prob": 30 },
+      { "item": "loincloth", "prob": 40 },
+      { "item": "spearsling", "prob": 20 }
+    ]
+    }
   }
 ]
