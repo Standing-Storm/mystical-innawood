@@ -4,7 +4,7 @@
     "type": "MONSTER",
     "name": "lizardman warrior",
     "description": "A tall, powerful, reptilian humanoid with a muscular tail whose skin is covered in dark gray-green scales.  They are coldblooded and primarily live in swamps.",
-    "default_faction": "lizardfolk",
+    "default_faction": "lizardman_faction",
     "bodytype": "human",
     "species": [ "LIZARDMAN" ],
     "volume": "80 L",
