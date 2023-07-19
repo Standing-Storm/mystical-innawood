@@ -1,0 +1,9 @@
+[
+  {
+     "type": "effect_on_condition",
+    "id": "EOC_BASIC_GRIMOIRE_RECIPES",
+    "effect": [
+     "next_weather" 
+    ]
+  }
+]
