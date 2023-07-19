@@ -27,7 +27,7 @@
     "type": "MONSTER_FACTION",
     "name": "sea_elemental_faction",
     "base_faction": "animal",
-    "neutral": [ "small_animal", "herbivore", "fish" ],
+    "neutral": [ "small_animal", "herbivore", "fish", "lizardman" ],
     "hate": [ "zombie", "nether_player_hate" ],
     "by_mood": [ "human", "player" ]
   },
@@ -44,5 +44,10 @@
     "name": "shadow_elemental_faction",
     "base_faction": "animal",
     "by_mood": [ "human", "player" ]
+  },
+  {
+    "type": "MONSTER_FACTION",
+    "name": "lizardman_faction",
+    "friendly": [ "lizardman_faction", "sea_elemental_faction" ]
   }
 ]
