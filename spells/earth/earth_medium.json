@@ -76,7 +76,7 @@
         { "u_is_on_terrain": "t_claymound" },
         { "u_is_on_terrain": "t_sandmound" },
         { "u_is_on_terrain": "t_dirtmoundfloor" },
-        { "u_is_on_terrain": "t_dirt_underground" },,
+        { "u_is_on_terrain": "t_dirt_underground" },
         { "u_is_on_terrain": "t_forestfloor" },
         { "u_is_on_terrain": "t_moss" },
         { "u_is_on_terrain": "t_soil" },
@@ -88,21 +88,27 @@
       ]
     },
     "effect": [
-       {
+      {
         "u_location_variable": { "global_val": "earth_granite_aegis_location" },
         "min_radius": 1,
         "max_radius": 1,
         "outdoor_only": false
       },
-       { "u_transform_radius": 1, "ter_furn_transform": "earth_granite_aegis_to_stone", "target_var": { "global_val": "earth_granite_aegis_location" } },
       {
-        "u_transform_radius": 0, "ter_furn_transform": "earth_granite_aegis_to_stone_safe",
+        "u_transform_radius": 1,
+        "ter_furn_transform": "earth_granite_aegis_to_stone",
         "target_var": { "global_val": "earth_granite_aegis_location" }
+      },
+      {
+        "u_transform_radius": 0,
+        "ter_furn_transform": "earth_granite_aegis_to_stone_safe",
+        "target_var": { "global_val": "earth_granite_aegis_location" },
         "time_in_future": [ "0 seconds", "0 seconds" ]
       },
       {
-        "u_transform_radius": 1, "ter_furn_transform": "earth_granite_aegis_from_stone",
-        "target_var": { "global_val": "earth_granite_aegis_location" }
+        "u_transform_radius": 1,
+        "ter_furn_transform": "earth_granite_aegis_from_stone",
+        "target_var": { "global_val": "earth_granite_aegis_location" },
         "time_in_future": [ "10 seconds", "30 seconds" ]
       }
     ],

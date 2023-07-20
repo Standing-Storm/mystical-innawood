@@ -61,7 +61,7 @@
       { "drop": "feather_lilitu", "type": "skin", "mass_ratio": 0.002 }
     ]
   },
-   {
+  {
     "id": "havest_lizardman",
     "type": "harvest",
     "entries": [
