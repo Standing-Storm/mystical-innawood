@@ -68,6 +68,7 @@
     "types": [ "FEET" ],
     "description": "Your feet are heavily webbed, allowing you to swim faster if you aren't wearing footwear.",
     "prereqs": [  ],
+    "starting_trait": true,
     "category": [ "LIZARD", "FISH", "SLIME", "BATRACHIAN" ],
     "flags": [ "WEBBED_FEET" ],
     "wet_protection": [ { "part": "foot_l", "good": 6 }, { "part": "foot_r", "good": 6 } ]
