@@ -1,5 +1,5 @@
 [
-   {
+  {
     "id": "mon_lizardman_warrior",
     "type": "MONSTER",
     "name": "lizardman warrior",
@@ -24,16 +24,12 @@
     "melee_dice_sides": 4,
     "dodge": 5,
     "harvest": "havest_lizardman",
-      "chat_topics": [ "TALK_LIZARDMAN_WARRIOR" ]
-      "anger_triggers": [ "FRIEND_ATTACKED", "FRIEND_DIED", "HURT" ],
+    "chat_topics": [ "TALK_LIZARDMAN_WARRIOR" ],
+    "anger_triggers": [ "FRIEND_ATTACKED", "FRIEND_DIED", "HURT" ],
     "weakpoint_sets": [ "wps_humanoid_body", "wps_humanoid_body_armor", "wps_humanoid_open_helmet" ],
     "families": [ "prof_wp_demihuman" ],
-    "death_drops": [
-      { "item": "spear_stone", "prob": 30 },
-      { "item": "loincloth", "prob": 40 },
-      { "item": "leather_belt", "prob": 20 }
-    ],
-    "special_attacks": [ {"id": "impale", "cooldown": 10 }, { "id": "scratch", "cooldown": 15 }, { "type": "bite", "cooldown": 10 } ],
+    "death_drops": [ { "item": "spear_stone", "prob": 30 }, { "item": "loincloth", "prob": 40 }, { "item": "leather_belt", "prob": 20 } ],
+    "special_attacks": [ { "id": "impale", "cooldown": 10 }, { "id": "scratch", "cooldown": 15 }, { "type": "bite", "cooldown": 10 } ],
     "flags": [
       "SEES",
       "HEARS",
@@ -47,22 +43,22 @@
       "SWARMS",
       "CAN_OPEN_DOORS",
       "NO_BREATHE",
-       "CONVERSATION"
+      "CONVERSATION"
     ],
     "armor": { "bash": 2, "cut": 12, "stab": 6, "bullet": 10 }
   },
   {
-     "id": "mon_lizardman_hunter",
-     "type": "MONSTER",
-     "name": "lizardman hunter",
-     "description": "The hunter is smaller than a warrior, but equally as deadly, with their lithe figures and accurate javelin throws.",
-     "copy-from": "mon_lizardman_warrior",
-     "symbol": "L",
-         "volume": "72 L",
+    "id": "mon_lizardman_hunter",
+    "type": "MONSTER",
+    "name": "lizardman hunter",
+    "description": "The hunter is smaller than a warrior, but equally as deadly, with their lithe figures and accurate javelin throws.",
+    "copy-from": "mon_lizardman_warrior",
+    "symbol": "L",
+    "volume": "72 L",
     "weight": "90 kg",
-     "special_attacks": [
-       {
-         "type": "gun",
+    "special_attacks": [
+      {
+        "type": "gun",
         "cooldown": 5,
         "move_cost": 150,
         "gun_type": "lizardman_javelin_throw",
@@ -73,17 +69,13 @@
         "ranges": [ [ 2, 10, "DEFAULT" ] ],
         "description": "The lizardman hunter hurls a spear at you!"
       },
-       { "type": "bite", "cooldown": 10 },
-       { "id": "scratch", "cooldown": 15 }
+      { "type": "bite", "cooldown": 10 },
+      { "id": "scratch", "cooldown": 15 }
     ],
-     "chat_topics": [ "TALK_LIZARDMAN_HUNTER" ]
-    "death_drops": [
-      { "item": "spear_stone", "prob": 30 },
-      { "item": "loincloth", "prob": 40 },
-      { "item": "spearsling", "prob": 20 }
-    ]
+    "chat_topics": [ "TALK_LIZARDMAN_HUNTER" ],
+    "death_drops": [ { "item": "spear_stone", "prob": 30 }, { "item": "loincloth", "prob": 40 }, { "item": "spearsling", "prob": 20 } ]
   },
-   {
+  {
     "id": "mon_lizardman_shaman",
     "type": "MONSTER",
     "name": "lizardman shaman",
@@ -94,20 +86,17 @@
     "melee_skill": 3,
     "melee_dice": 2,
     "melee_dice_sides": 5,
-    "special_attacks": [ 
-       { "type": "spell", "spell_data": { "id": "monster_summon_undine" }, "cooldown": 25 }, { "id": "scratch", "cooldown": 15 } 
+    "special_attacks": [
+      { "type": "spell", "spell_data": { "id": "monster_summon_undine" }, "cooldown": 25 },
+      { "id": "scratch", "cooldown": 15 }
     ],
-      "chat_topics": [ "TALK_LIZARDMAN_SHAMAN" ]
+    "chat_topics": [ "TALK_LIZARDMAN_SHAMAN" ],
     "death_drops": {
       "subtype": "distribution",
-      "items": [
-         { "item": "spear_stone", "prob": 30 },
-         { "item": "loincloth", "prob": 40 },
-         { "item": "spearsling", "prob": 20 }
-      ]
+      "items": [ { "item": "spear_stone", "prob": 30 }, { "item": "loincloth", "prob": 40 }, { "item": "spearsling", "prob": 20 } ]
     }
   },
-     {
+  {
     "id": "mon_lizardman_warrior_hostile",
     "type": "MONSTER",
     "name": "lizardman warrior",
@@ -132,16 +121,11 @@
     "melee_dice_sides": 4,
     "dodge": 5,
     "harvest": "lizardman",
-      "chat_topics": [ "TALK_LIZARDMAN_WARRIOR" ]
-      "anger_triggers": [ "FRIEND_ATTACKED", "FRIEND_DIED", "HURT", "PLAYER_CLOSE" ],
+    "anger_triggers": [ "FRIEND_ATTACKED", "FRIEND_DIED", "HURT", "PLAYER_CLOSE" ],
     "weakpoint_sets": [ "wps_humanoid_body", "wps_humanoid_body_armor", "wps_humanoid_open_helmet" ],
     "families": [ "prof_wp_demihuman" ],
-    "death_drops": [
-      { "item": "spear_stone", "prob": 30 },
-      { "item": "loincloth", "prob": 40 },
-      { "item": "leather_belt", "prob": 20 }
-    ],
-    "special_attacks": [ {"id": "impale", "cooldown": 10 }, { "id": "scratch", "cooldown": 15 }, { "type": "bite", "cooldown": 10 } ],
+    "death_drops": [ { "item": "spear_stone", "prob": 30 }, { "item": "loincloth", "prob": 40 }, { "item": "leather_belt", "prob": 20 } ],
+    "special_attacks": [ { "id": "impale", "cooldown": 10 }, { "id": "scratch", "cooldown": 15 }, { "type": "bite", "cooldown": 10 } ],
     "flags": [
       "SEES",
       "HEARS",
@@ -155,22 +139,22 @@
       "SWARMS",
       "CAN_OPEN_DOORS",
       "NO_BREATHE",
-       "CONVERSATION"
+      "CONVERSATION"
     ],
     "armor": { "bash": 2, "cut": 12, "stab": 6, "bullet": 10 }
   },
   {
-     "id": "mon_lizardman_hunter_hostile",
-     "type": "MONSTER",
-     "name": "lizardman hunter",
-     "description": "The hunter is smaller than a warrior, but equally as deadly, with their lithe figures and accurate javelin throws.",
-     "copy-from": "mon_lizardman_warrior",
-     "symbol": "L",
-         "volume": "72 L",
+    "id": "mon_lizardman_hunter_hostile",
+    "type": "MONSTER",
+    "name": "lizardman hunter",
+    "description": "The hunter is smaller than a warrior, but equally as deadly, with their lithe figures and accurate javelin throws.",
+    "copy-from": "mon_lizardman_warrior",
+    "symbol": "L",
+    "volume": "72 L",
     "weight": "90 kg",
-     "special_attacks": [
-       {
-         "type": "gun",
+    "special_attacks": [
+      {
+        "type": "gun",
         "cooldown": 5,
         "move_cost": 150,
         "gun_type": "lizardman_javelin_throw",
@@ -181,17 +165,12 @@
         "ranges": [ [ 2, 10, "DEFAULT" ] ],
         "description": "The lizardman hunter hurls a spear at you!"
       },
-       { "type": "bite", "cooldown": 10 },
-       { "id": "scratch", "cooldown": 15 }
+      { "type": "bite", "cooldown": 10 },
+      { "id": "scratch", "cooldown": 15 }
     ],
-     "chat_topics": [ "TALK_LIZARDMAN_HUNTER" ]
-    "death_drops": [
-      { "item": "spear_stone", "prob": 30 },
-      { "item": "loincloth", "prob": 40 },
-      { "item": "spearsling", "prob": 20 }
-    ]
+    "death_drops": [ { "item": "spear_stone", "prob": 30 }, { "item": "loincloth", "prob": 40 }, { "item": "spearsling", "prob": 20 } ]
   },
-   {
+  {
     "id": "mon_lizardman_shaman_hostile",
     "type": "MONSTER",
     "name": "lizardman shaman",
@@ -202,17 +181,13 @@
     "melee_skill": 3,
     "melee_dice": 2,
     "melee_dice_sides": 5,
-    "special_attacks": [ 
-       { "type": "spell", "spell_data": { "id": "monster_summon_undine" }, "cooldown": 25 }, { "id": "scratch", "cooldown": 15 } 
+    "special_attacks": [
+      { "type": "spell", "spell_data": { "id": "monster_summon_undine" }, "cooldown": 25 },
+      { "id": "scratch", "cooldown": 15 }
     ],
-      "chat_topics": [ "TALK_LIZARDMAN_SHAMAN" ]
     "death_drops": {
       "subtype": "distribution",
-      "items": [
-      { "item": "spear_stone", "prob": 30 },
-      { "item": "loincloth", "prob": 40 },
-      { "item": "spearsling", "prob": 20 }
-    ]
+      "items": [ { "item": "spear_stone", "prob": 30 }, { "item": "loincloth", "prob": 40 }, { "item": "spearsling", "prob": 20 } ]
     }
   }
 ]

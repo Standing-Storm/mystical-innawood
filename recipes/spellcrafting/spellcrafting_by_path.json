@@ -74,7 +74,10 @@
         "id": "EOC_GET_EARTH_SPELLS_MEDIUM",
         "condition": { "roll_contested": { "math": [ "rng( u_val('intelligence'), u_skill('spellcraft') )" ] }, "difficulty": 16 },
         "effect": [
-          { "u_roll_remainder": [ "formula_earth_resilience_mountain", "formula_earth_raising_earthbones", "formula_earth_granite_aegis" ], "type": "recipe" }
+          {
+            "u_roll_remainder": [ "formula_earth_resilience_mountain", "formula_earth_raising_earthbones", "formula_earth_granite_aegis" ],
+            "type": "recipe"
+          }
         ],
         "false_effect": [
           {
@@ -572,7 +575,12 @@
       {
         "id": "EOC_GET_SKY_SPELLS_MEDIUM",
         "condition": { "roll_contested": { "math": [ "rng( u_val('intelligence'), u_skill('spellcraft') )" ] }, "difficulty": 16 },
-        "effect": [ { "u_roll_remainder": [ "formula_sky_call_lightning", "formula_sky_reveal_world_map", "formula_sky_summon_rain" ], "type": "recipe" } ],
+        "effect": [
+          {
+            "u_roll_remainder": [ "formula_sky_call_lightning", "formula_sky_reveal_world_map", "formula_sky_summon_rain" ],
+            "type": "recipe"
+          }
+        ],
         "false_effect": [
           {
             "u_message": "There's something on the edge of your mind, but you can't quite grasp it.  You've hit a dead end.  You'll need to try a new approach.",

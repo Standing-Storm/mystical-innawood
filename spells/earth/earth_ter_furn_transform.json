@@ -96,7 +96,10 @@
       { "result": "t_pit", "valid_terrain": [ "t_hole" ], "message": "Part of the hole fills in." },
       { "result": "t_pit_shallow", "valid_terrain": [ "t_pit" ], "message": "Part of the hole fills in." },
       { "result": "t_dirt", "valid_terrain": [ "t_pit_shallow" ], "message": "The pit fills in." },
-      { "results": "t_rock": "valid_terrain": [ "t_grave",
+      {
+        "results": "t_rock",
+        "valid_terrain": [
+          "t_grave",
           "t_dirt",
           "t_sand",
           "t_clay",
@@ -112,10 +115,12 @@
           "t_fungus_floor_in",
           "t_fungus_floor_sup",
           "t_fungus_floor_out",
-          "t_sandbox" ],
-        "message": "A chunk of rock rises up from the ground!" }
+          "t_sandbox"
+        ],
+        "message": "A chunk of rock rises up from the ground!"
+      }
     ]
-  },  
+  },
   {
     "type": "ter_furn_transform",
     "id": "earth_turning_earth",

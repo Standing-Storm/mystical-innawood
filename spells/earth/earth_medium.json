@@ -46,35 +46,30 @@
     "max_range": 25,
     "range_increment": 1
   },
-    {
+  {
     "type": "effect_on_condition",
     "id": "EOC_EARTHBONES_SELECTOR",
-    "effect" [
-       {
-            "run_eoc_selector": [
-              "EOC_EARTH_RAISE_TERRAIN",
-              "EOC_EARTH_LOWER_TERRAIN"
-            ],
-            "names": [
-              "Raising the Earthbones",
-              "Lowering the Earthbones"
-            ],
-            "keys": [ "1", "2", "3", "4", "5" ],
-            "descriptions": [
-              "Raise the earth, filling in pits and creating rock walls from the ground.",
-              "Lower the earth, grinding rock to nothing and creating pits in the ground"
-            ]
+    "effect": [
+      {
+        "run_eoc_selector": [ "EOC_EARTH_RAISE_TERRAIN", "EOC_EARTH_LOWER_TERRAIN" ],
+        "names": [ "Raising the Earthbones", "Lowering the Earthbones" ],
+        "keys": [ "1", "2" ],
+        "descriptions": [
+          "Raise the earth, filling in pits and creating rock walls from the ground.",
+          "Lower the earth, grinding rock to nothing and creating pits in the ground"
+        ]
+      }
     ]
-    },
-  {
-   "type": "effect_on_condition",
-    "id": "EOC_EARTH_RAISE_TERRAIN",
-    "effect" [ {"u_cast_spell": { "id": "earth_raising_earthbones_raise" }, "targeted": true } ]
   },
-    {
-   "type": "effect_on_condition",
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_EARTH_RAISE_TERRAIN",
+    "effect": [ { "u_cast_spell": { "id": "earth_raising_earthbones_raise" }, "targeted": true } ]
+  },
+  {
+    "type": "effect_on_condition",
     "id": "EOC_EARTH_LOWER_TERRAIN",
-    "effect" [ {"u_cast_spell": { "id": "earth_raising_earthbones_lower" }, "targeted": true } ]
+    "effect": [ { "u_cast_spell": { "id": "earth_raising_earthbones_lower" }, "targeted": true } ]
   },
   {
     "id": "earth_raising_earthbones_raise",
@@ -89,7 +84,7 @@
     "effect": "ter_transform",
     "effect_str": "earth_manipulate_earthbones_raise",
     "min_range": { "math": [ "( (u_val('spell_level', 'spell: earth_raising_earthbones') * 1) + 9)" ] }
-},  
+  },
   {
     "id": "earth_raising_earthbones_lower",
     "type": "SPELL",
