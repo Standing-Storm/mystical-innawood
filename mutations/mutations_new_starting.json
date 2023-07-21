@@ -13,6 +13,20 @@
   },
   {
     "type": "mutation",
+    "id": "URSINE_EYE",
+    "name": { "str": "Ursine Vision" },
+    "points": 1,
+    "description": "You have been blessed by a bear-spirit with excellent vision at night, though like a bear, your vision in the daytime is correspondingly worse.  Activate to toggle NV-visible areas on or off.",
+    "types": [ "EYES", "VISION" ],
+    "cancels": [ "MYOPIC" ],
+    "category": [  ], 
+    "starting_trait": true,
+    "flags": [ "MYOPIC_IN_LIGHT" ],
+    "active": true,
+    "starts_active": true
+  },
+  {
+    "type": "mutation",
     "id": "FELINE_EARS",
     "name": { "str": "Feline Ears" },
     "points": 1,
@@ -51,6 +65,17 @@
     "starting_trait": true,
     "flags": [ "GILLS" ],
     "wet_protection": [ { "part": "head", "good": 1 } ]
+  },
+  {
+    "type": "mutation",
+    "id": "SPINES",
+    "name": { "str": "Spines" },
+    "points": 1,
+    "visibility": 1,
+    "ugliness": 2,
+    "starting_trait": true,
+    "description": "Your skin is covered with fine spines.  Whenever an unarmed opponent strikes a part of your body that is not covered by clothing, they will receive moderate damage.",
+    "changes_to": [ "QUILLS" ]
   },
   {
     "type": "mutation",
