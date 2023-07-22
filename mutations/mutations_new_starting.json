@@ -172,7 +172,7 @@
         "blocker_mutations": [ "MUZZLE", "MUZZLE_LONG", "MUZZLE_RAT" ],
         "body_part": "mouth",
         "chance": 20,
-        "base_damage": { "damage_type": "stab", "amount": 20 }
+        "base_damage": { "damage_type": "stab", "amount": 10 }
       },
       {
         "attack_text_u": "You sink your fangs into %s!",
