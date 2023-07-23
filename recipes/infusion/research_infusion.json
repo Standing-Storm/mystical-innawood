@@ -22,7 +22,7 @@
     "result_eocs": [
       {
         "id": "EOC_INFUSION_RESEARCH_INTRO",
-        "condition": { "roll_contested": { "math": [ "rng( u_val('intelligence'), u_skill('occult') )" ] }, "difficulty": 12 },
+        "condition": { "roll_contested": { "math": [ "rng( u_val('intelligence'), u_skill('occult') )" ] }, "difficulty": 11 },
         "effect": [ { "run_eocs": "EOC_INFUSION_RESEARCH_INTRO_2" } ],
         "false_effect": [
           {
@@ -79,7 +79,7 @@
     "result_eocs": [
       {
         "id": "EOC_ENCHANTING_RESEARCH_SUBTLE_CONNECTION",
-        "condition": { "roll_contested": { "math": [ "rng( u_val('intelligence'), u_skill('occult') )" ] }, "difficulty": 14 },
+        "condition": { "roll_contested": { "math": [ "rng( u_val('intelligence'), u_skill('occult') )" ] }, "difficulty": 12 },
         "effect": [
           {
             "u_message": "There is a way to use a large quantity of mana all at once to enhance your ability to channel it in the future.  It requires specific circumstances, but that won't be a problem now that you know them.",

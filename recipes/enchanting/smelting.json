@@ -13,7 +13,7 @@
     "batch_time_factors": [ 90, 4 ],
     "qualities": [ { "id": "MAGICAL_SENSE", "level": 1 }, { "id": "MAGICAL_FORGING", "level": 1 } ],
     "tools": [ [ [ "crucible", -1 ], [ "crucible_clay", -1 ] ], [ [ "fire", -1 ], [ "toolset", 10 ] ] ],
-    "components": [ [ [ "copper", 2 ] ], [ [ "gold_small", 2 ] ], [ [ "crystallized_mana_base", 1 ] ] ],
+    "components": [ [ [ "chunk_gold", 4 ] ], [ [ "chunk_hematite", 2 ] ], [ [ "crystallized_mana_base", 1 ] ] ],
     "flags": [ "BLIND_HARD" ],
     "proficiencies": [
       { "proficiency": "prof_occult_exploration", "required": true },
@@ -46,7 +46,7 @@
     "batch_time_factors": [ 90, 4 ],
     "qualities": [ { "id": "MAGICAL_SENSE", "level": 1 }, { "id": "MAGICAL_FORGING", "level": 1 } ],
     "tools": [ [ [ "crucible", -1 ], [ "crucible_clay", -1 ] ], [ [ "fire", -1 ], [ "toolset", 10 ] ] ],
-    "components": [ [ [ "silver_small", 2 ] ], [ [ "crystallized_mana_base", 1 ] ] ],
+    "components": [ [ [ "chunk_silver", 4 ] ], [ [ "chunk_galena", 2 ] ], [ [ "crystallized_mana_base", 1 ] ] ],
     "flags": [ "BLIND_HARD" ],
     "proficiencies": [
       { "proficiency": "prof_occult_exploration", "required": true },
@@ -60,6 +60,39 @@
         "effect": [
           { "u_message": "The metal and moonlight and magic all combine into an ingot of moonsilver.", "type": "good" },
           { "u_spawn_item": "moonsilver_ingot_innawood", "suppress_message": true }
+        ],
+        "false_effect": [ { "u_message": "Without the necessary conditions, you produce only dross.", "type": "bad" } ]
+      }
+    ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "BRISK_EXERCISE",
+    "name": "crimsonite ingot",
+    "id": "crimsonite_ingot_innawood",
+    "description": "Produce a crimsonite ingot from magic and flames.  The forging must be performed near a roaring fire.",
+    "category": "CC_OCCULT",
+    "subcategory": "CSC_OCCULT_MATERIALS",
+    "skill_used": "fabrication",
+    "difficulty": 4,
+    "time": "45 m",
+    "batch_time_factors": [ 90, 4 ],
+    "qualities": [ { "id": "MAGICAL_SENSE", "level": 1 }, { "id": "MAGICAL_FORGING", "level": 1 } ],
+    "tools": [ [ [ "crucible", -1 ], [ "crucible_clay", -1 ] ], [ [ "fire", -1 ] ], [ [ "toolset", 10 ] ] ],
+    "components": [ [ [ "chunk_copper", 4 ] ], [ [ "chunk_cassiterite", 2 ] ], [ [ "crystallized_mana_base", 1 ] ] ],
+    "flags": [ "BLIND_HARD" ],
+    "proficiencies": [
+      { "proficiency": "prof_occult_exploration", "required": true },
+      { "proficiency": "prof_enchanting_basic", "required": false },
+      { "proficiency": "prof_metalworking", "required": false }
+    ],
+    "result_eocs": [
+      {
+        "id": "EOC_FORGE_CRIMSONITE_INGOT",
+        "condition": { "or": [ { "u_is_in_field": "fd_hot_air1" }, { "u_is_in_field": "fd_hot_air2" } ] },
+        "effect": [
+          { "u_message": "The metal and fire and magic all combine into an ingot of crimsonite.", "type": "good" },
+          { "u_spawn_item": "crimsonite_ingot_innawood", "suppress_message": true }
         ],
         "false_effect": [ { "u_message": "Without the necessary conditions, you produce only dross.", "type": "bad" } ]
       }

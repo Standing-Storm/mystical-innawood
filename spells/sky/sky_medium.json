@@ -24,7 +24,7 @@
     "type": "effect_on_condition",
     "id": "EOC_SKY_CALL_LIGHTNING",
     "condition": { "and": [ "u_is_outside", { "or": [ { "is_weather": "thunder" }, { "is_weather": "lightning" } ] } ] },
-    "effect": { "u_cast_spell": { "id": "sky_call_lightning_real", "min_level": 15 } },
+    "effect": { "u_cast_spell": { "id": "sky_call_lightning_real", "min_level": 15, "targeted": true } },
     "false_effect": [ { "run_eocs": "EOC_SKY_CALL_LIGHTNING_2" } ]
   },
   {
@@ -33,26 +33,27 @@
     "condition": {
       "and": [ "u_is_outside", { "or": [ { "is_weather": "rainstorm" }, { "is_weather": "rain" }, { "is_weather": "drizzle" } ] } ]
     },
-    "effect": { "u_cast_spell": { "id": "sky_call_lightning_real", "min_level": 10, "max_level": 10 } },
+    "effect": { "u_cast_spell": { "id": "sky_call_lightning_real", "min_level": 10, "max_level": 10, "targeted": true } },
     "false_effect": [ { "run_eocs": "EOC_SKY_CALL_LIGHTNING_3" } ]
   },
   {
     "type": "effect_on_condition",
     "id": "EOC_SKY_CALL_LIGHTNING_3",
     "condition": { "and": [ "u_is_outside", { "or": [ { "is_weather": "light_drizzle" }, { "is_weather": "cloudy" } ] } ] },
-    "effect": { "u_cast_spell": { "id": "sky_call_lightning_real", "min_level": 5, "max_level": 5 } },
+    "effect": { "u_cast_spell": { "id": "sky_call_lightning_real", "min_level": 5, "max_level": 5, "targeted": true } },
     "false_effect": [ { "run_eocs": "EOC_SKY_CALL_LIGHTNING_4" } ]
   },
   {
     "type": "effect_on_condition",
     "id": "EOC_SKY_CALL_LIGHTNING_4",
-    "condition": { "and": [ { "u_has_item": "crystallized_mana_sky" }, "u_is_outside" ] },
+    "condition": { "and": [ { "u_has_item": "crystallized_mana" }, "u_is_outside" ] },
     "effect": [
       {
         "u_cast_spell": {
           "id": "sky_call_lightning_real",
           "min_level": 7,
           "max_level": 7,
+          "targeted": true,
           "message": "Though the weather conditions are wrong, you draw on the power in the crystallized mana to call the lightning."
         }
       },
@@ -132,13 +133,13 @@
   {
     "id": "sky_summon_rain",
     "type": "SPELL",
-    "name": "Symphony of the Rains",
-    "description": "While standing outside, conjure up a rainstorm.  It takes time for the weather to change.",
+    "name": "Symphony of Wind and Rain",
+    "description": "While standing outside, control the weather.  It takes some time for the weather to change.",
     "valid_targets": [ "self" ],
     "skill": "occult",
-    "flags": [ "SOMATIC", "VERBAL", "CONCENTRATE", "SILENT" ],
+    "flags": [ "SOMATIC", "VERBAL", "CONCENTRATE" ],
     "effect": "effect_on_condition",
-    "effect_str": "EOC_SKY_SUMMON_RAIN",
+    "effect_str": "EOC_SKY_WEATHER_CONTROL_SELECTOR",
     "extra_effects": [ { "id": "channeling_fatigue_spell", "hit_self": true, "max_level": 4 } ],
     "spell_class": "SKY",
     "shape": "blast",
@@ -152,11 +153,68 @@
   },
   {
     "type": "effect_on_condition",
+    "id": "EOC_SKY_WEATHER_CONTROL_SELECTOR",
+    "effect": [
+      {
+        "run_eoc_selector": [ "EOC_SKY_SUMMON_RAIN", "EOC_SKY_SUMMON_THUNDER", "EOC_SKY_SUMMON_FOG", "EOC_SKY_SUMMON_SUN" ],
+        "names": [ "Call the rains", "Call the storms", "Call up fog", "Clear the skies" ],
+        "keys": [ "1", "2", "3", "4" ],
+        "descriptions": [
+          "Summon rains.  In winter, this will summon snow.",
+          "Summon a thunderstorm.  It must already be raining.  In winter, this will summon a blizzard.",
+          "Call up a fog.",
+          "Clear away the clouds and let the sun shine."
+        ]
+      }
+    ]
+  },
+  {
+    "type": "effect_on_condition",
     "id": "EOC_SKY_SUMMON_RAIN",
     "condition": "u_is_outside",
-    "effect": [ 
+    "effect": [
       { "math": [ "weather('humidity')", "=", "99" ] },
-      { "math": [ "weather('pressure')", "=", "995" ] },
+      { "math": [ "weather('pressure')", "=", "993" ] },
+      { "queue_eocs": "EOC_CHANGE_WEATHER", "time_in_future": [ "2 minutes", "4 minutes" ] },
+      { "queue_eocs": "EOC_CHANGE_WEATHER", "time_in_future": [ "3 minutes", "10 minutes" ] },
+      { "queue_eocs": "EOC_CHANGE_WEATHER", "time_in_future": [ "6 minutes", "15 minutes" ] }
+    ],
+    "false_effect": [ { "u_message": "Without a view of the open sky, the spell fails." } ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_SKY_SUMMON_THUNDER",
+    "condition": "u_is_outside",
+    "effect": [
+      { "math": [ "weather('humidity')", "=", "99" ] },
+      { "math": [ "weather('pressure')", "=", "985" ] },
+      { "queue_eocs": "EOC_CHANGE_WEATHER", "time_in_future": [ "2 minutes", "4 minutes" ] },
+      { "queue_eocs": "EOC_CHANGE_WEATHER", "time_in_future": [ "3 minutes", "10 minutes" ] },
+      { "queue_eocs": "EOC_CHANGE_WEATHER", "time_in_future": [ "6 minutes", "15 minutes" ] }
+    ],
+    "false_effect": [ { "u_message": "Without a view of the open sky, the spell fails." } ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_SKY_SUMMON_FOG",
+    "condition": "u_is_outside",
+    "effect": [
+      { "math": [ "weather('humidity')", "=", "80" ] },
+      { "math": [ "weather('pressure')", "=", "1000" ] },
+      { "math": [ "weather('windpower')", "=", "6" ] },
+      { "queue_eocs": "EOC_CHANGE_WEATHER", "time_in_future": [ "2 minutes", "4 minutes" ] },
+      { "queue_eocs": "EOC_CHANGE_WEATHER", "time_in_future": [ "3 minutes", "10 minutes" ] },
+      { "queue_eocs": "EOC_CHANGE_WEATHER", "time_in_future": [ "6 minutes", "15 minutes" ] }
+    ],
+    "false_effect": [ { "u_message": "Without a view of the open sky, the spell fails." } ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_SKY_SUMMON_SUN",
+    "condition": "u_is_outside",
+    "effect": [
+      { "math": [ "weather('humidity')", "=", "60" ] },
+      { "math": [ "weather('pressure')", "=", "1025" ] },
       { "queue_eocs": "EOC_CHANGE_WEATHER", "time_in_future": [ "2 minutes", "4 minutes" ] },
       { "queue_eocs": "EOC_CHANGE_WEATHER", "time_in_future": [ "3 minutes", "10 minutes" ] },
       { "queue_eocs": "EOC_CHANGE_WEATHER", "time_in_future": [ "6 minutes", "15 minutes" ] }

@@ -64,12 +64,12 @@
   {
     "type": "effect_on_condition",
     "id": "EOC_EARTH_RAISE_TERRAIN",
-    "effect": [ { "u_cast_spell": { "id": "earth_raising_earthbones_raise" }, "targeted": true } ]
+    "effect": [ { "u_cast_spell": { "id": "earth_raising_earthbones_raise", "targeted": true } } ]
   },
   {
     "type": "effect_on_condition",
     "id": "EOC_EARTH_LOWER_TERRAIN",
-    "effect": [ { "u_cast_spell": { "id": "earth_raising_earthbones_lower" }, "targeted": true } ]
+    "effect": [ { "u_cast_spell": { "id": "earth_raising_earthbones_lower", "targeted": true } } ]
   },
   {
     "id": "earth_raising_earthbones_raise",

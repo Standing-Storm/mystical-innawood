@@ -67,7 +67,7 @@
     "result_eocs": [
       {
         "id": "EOC_HERBALISM_RESEARCH_BEGINNER",
-        "condition": { "roll_contested": { "math": [ "rng( u_val('intelligence'), u_skill('occult') )" ] }, "difficulty": 13 },
+        "condition": { "roll_contested": { "math": [ "rng( u_val('intelligence'), u_skill('occult') )" ] }, "difficulty": 11 },
         "effect": [
           {
             "u_message": "You've found ways to extract the most magically-resonant parts of various herbs and prepare them for use.  But is there a way to more easily transfer that magic?",
@@ -114,7 +114,7 @@
     "result_eocs": [
       {
         "id": "EOC_HERBALISM_RESEARCH_MANA_HERBS",
-        "condition": { "roll_contested": { "math": [ "rng( u_val('intelligence'), u_skill('occult') )" ] }, "difficulty": 14 },
+        "condition": { "roll_contested": { "math": [ "rng( u_val('intelligence'), u_skill('occult') )" ] }, "difficulty": 13 },
         "effect": [
           {
             "u_message": "Mixed with pure crystalline mana, herbs gain even stronger powers.  There are definitely several ways you can use this.",

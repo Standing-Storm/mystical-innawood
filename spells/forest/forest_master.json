@@ -50,7 +50,7 @@
         }
       ]
     },
-    "effect": { "u_cast_spell": { "id": "forest_land_renewal_real" } },
+    "effect": { "u_cast_spell": { "id": "forest_land_renewal_real", "targeted": true } },
     "false_effect": [ { "u_message": "You must be on fertile land for the forest to take root." } ]
   },
   {

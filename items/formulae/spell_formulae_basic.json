@@ -25,6 +25,15 @@
     "type": "BOOK",
     "category": "manuals",
     "copy-from": "spell_formula_abstract",
+    "id": "spell_formula_mystical_firestarter",
+    "name": { "str": "Spell Formula for Call the Flames", "str_pl": "Spell Formulae for Call the Flames" },
+    "description": "The gestures, incantations, and mental constructs necessary to conjure up fire from thin air.",
+    "use_action": { "type": "learn_spell", "spells": [ "mystical_firestarter" ] }
+  },
+  {
+    "type": "BOOK",
+    "category": "manuals",
+    "copy-from": "spell_formula_abstract",
     "id": "spell_formula_crystallize_mana_innawood",
     "name": {
       "str": "Spell Formula for the Ritual of Arcane Coalescence",

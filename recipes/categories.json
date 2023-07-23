@@ -44,7 +44,12 @@
     "name": "theoretical spell research",
     "description": "Recipes related to the theoretical creation of new spells.",
     "skill_used": "occult",
-    "nested_category_data": [ "spellcrafting_research_intro", "spellcrafting_research_journeyman" ],
+    "nested_category_data": [
+      "spellcrafting_research_intro",
+      "spellcrafting_research_apprentice",
+      "spellcrafting_research_crystallize_mana",
+      "spellcrafting_research_journeyman"
+    ],
     "difficulty": 1
   },
   {

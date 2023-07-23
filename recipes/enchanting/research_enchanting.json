@@ -22,7 +22,7 @@
     "result_eocs": [
       {
         "id": "EOC_ENCHANTING_RESEARCH_INTRO",
-        "condition": { "roll_contested": { "math": [ "rng( u_val('intelligence'), u_skill('occult') )" ] }, "difficulty": 11 },
+        "condition": { "roll_contested": { "math": [ "rng( u_val('intelligence'), u_skill('occult') )" ] }, "difficulty": 9 },
         "effect": [
           {
             "u_message": "Some of the samples you used reacted to each other.  Maybe you can use that to make a tool that's sensitive to the unseen world.",
@@ -70,7 +70,7 @@
     "result_eocs": [
       {
         "id": "EOC_ENCHANTING_RESEARCH_BEGINNER",
-        "condition": { "roll_contested": { "math": [ "rng( u_val('intelligence'), u_skill('occult') )" ] }, "difficulty": 13 },
+        "condition": { "roll_contested": { "math": [ "rng( u_val('intelligence'), u_skill('occult') )" ] }, "difficulty": 11 },
         "effect": [
           {
             "u_message": "Even the simple act of writing using enchanted ink can transfer that power to the medium, if the writing is done in the proper way.  You can definitely use that.  If the quill you were writing with were enchanted as well, how much more powerful would the result be?",
@@ -112,7 +112,7 @@
     "result_eocs": [
       {
         "id": "EOC_ENCHANTING_RESEARCH_ANALYZE_MANA",
-        "condition": { "roll_contested": { "math": [ "rng( u_val('intelligence'), u_skill('occult') )" ] }, "difficulty": 14 },
+        "condition": { "roll_contested": { "math": [ "rng( u_val('intelligence'), u_skill('occult') )" ] }, "difficulty": 12 },
         "effect": [
           {
             "u_message": "Though it looks solid to the naked eye, the mana in the crystal is constantly in motion, swirling and twisting in on itself.  Creating it already did all the hard work, and it takes very little effort to move it to where you want it to go.  Maybe you could draw on it directly?",
@@ -169,7 +169,7 @@
     "result_eocs": [
       {
         "id": "EOC_ENCHANTING_RESEARCH_JOURNEYMAN",
-        "condition": { "roll_contested": { "math": [ "rng( u_val('intelligence'), u_skill('occult') )" ] }, "difficulty": 15 },
+        "condition": { "roll_contested": { "math": [ "rng( u_val('intelligence'), u_skill('occult') )" ] }, "difficulty": 13 },
         "effect": [
           {
             "u_message": "After several false starts, you've found there are certain combinations of metals and magic that take a stable form.  You can use those to create more powerful items.",

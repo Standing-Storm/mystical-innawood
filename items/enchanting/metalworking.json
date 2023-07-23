@@ -28,5 +28,20 @@
     "symbol": "=",
     "color": "light_gray",
     "melee_damage": { "bash": 6 }
+  },
+  {
+    "id": "crimsonite_ingot_innawood",
+    "type": "GENERIC",
+    "category": "spare_parts",
+    "name": "crimsonite ingot",
+    "description": "An ingot of crimsonite, forged of magic and fire.  Its surface seems to reflect unseen flames.",
+    "weight": "2 kg",
+    "volume": "253 ml",
+    "price": 6399,
+    "to_hit": -3,
+    "material": [ "raw_crimsonite" ],
+    "symbol": "=",
+    "color": "red",
+    "melee_damage": { "bash": 6 }
   }
 ]
