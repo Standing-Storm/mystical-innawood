@@ -12,11 +12,16 @@
   {
     "type": "tool_quality",
     "id": "MAGICAL_WRITING",
-    "name": { "str": "Spellcrafting" }
+    "name": { "str": "spellcrafting" }
   },
   {
     "type": "tool_quality",
     "id": "MAGICAL_FORGING",
-    "name": { "str": "Mage-smithing" }
+    "name": { "str": "mage-smithing" }
+  },
+  {
+    "type": "tool_quality",
+    "id": "CASTING_AID",
+    "name": { "str": "aetheric channeling" }
   }
 ]
