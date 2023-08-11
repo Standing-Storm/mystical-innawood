@@ -3,7 +3,7 @@
     "id": "enchant_apprentice_staff",
     "type": "GENERIC",
     "name": { "str": "apprentice's staff", "str_pl": "apprentice's staves" },
-    "description": "A staff with a crystal of condensed mana at the top, bound in leather and inlaid with silver and golden runes.  Magic comes easier to if you're wielding it.",
+    "description": "A staff with a crystal of condensed mana at the top, bound in leather and inlaid with silver and golden runes.  Magic comes easier to you if you're wielding it.",
     "price": 40000,
     "material": [ "wood" ],
     "symbol": "/",
@@ -12,7 +12,13 @@
     "weapon_category": [ "QUARTERSTAVES" ],
     "flags": [ "SHEATH_SPEAR", "ALWAYS_TWOHAND", "FRAGILE_MELEE", "MAGIC_FOCUS" ],
     "relic_data": {
-      "passive_effects": [ { "has": "WIELD", "condition": "ALWAYS", "values": [ { "value": "REGEN_MANA", "multiply": 0.1 }, { "value": "MAX_MANA", "add": 500 } ] } ]
+      "passive_effects": [
+        {
+          "has": "WIELD",
+          "condition": "ALWAYS",
+          "values": [ { "value": "REGEN_MANA", "multiply": 0.1 }, { "value": "MAX_MANA", "add": 500 } ]
+        }
+      ]
     },
     "weight": "1400 g",
     "volume": "3 L",
