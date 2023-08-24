@@ -100,7 +100,7 @@
         "miss_msg_npc": "The water churns around %s but <npcname> keeps their distance!"
       }
     ],
-    "death_function": { "message": "The %s falls dissolves into foam!", "corpse_type": "NO_CORPSE" },
+    "death_function": { "message": "The %s dissolves into foam!", "corpse_type": "NO_CORPSE" },
     "flags": [ "SEES", "HEARS", "SMELLS", "SWIMS", "AQUATIC", "NO_BREATHE" ]
   }
 ]
